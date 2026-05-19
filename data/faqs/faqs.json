@@ -1,0 +1,1202 @@
+[
+    {
+        "faq_id": "FAQ-0001",
+        "category": "Orders",
+        "question": "How do I place an order?",
+        "answer": "Browse our catalog, add items to your cart, and proceed to checkout. You can check out as a guest or create an account."
+    },
+    {
+        "faq_id": "FAQ-0002",
+        "category": "Orders",
+        "question": "Where is my order?",
+        "answer": "You can track your order by logging into your ShopSphere account, navigating to 'Order History', and clicking 'Track Package'."
+    },
+    {
+        "faq_id": "FAQ-0003",
+        "category": "Orders",
+        "question": "Can I modify my order after placing it?",
+        "answer": "You have a strict 60-minute window to modify your shipping address or cancel the order via the automated portal."
+    },
+    {
+        "faq_id": "FAQ-0004",
+        "category": "Orders",
+        "question": "I didn't receive an order confirmation email.",
+        "answer": "Please check your spam or promotions folder. If it's not there, verify the email address on your account or contact support."
+    },
+    {
+        "faq_id": "FAQ-0005",
+        "category": "Orders",
+        "question": "My order is missing an item.",
+        "answer": "If your order arrived incomplete, please contact support immediately with your order number. Some items may ship separately."
+    },
+    {
+        "faq_id": "FAQ-0006",
+        "category": "Orders",
+        "question": "Can I place a bulk order for my business?",
+        "answer": "Yes, please contact our B2B sales team for volume discounts and specialized shipping arrangements."
+    },
+    {
+        "faq_id": "FAQ-0007",
+        "category": "Orders",
+        "question": "What does 'Processing' mean?",
+        "answer": "It means our warehouse team is currently picking and packing your items. Orders placed before 2:00 PM EST ship the same day."
+    },
+    {
+        "faq_id": "FAQ-0008",
+        "category": "Orders",
+        "question": "Is it safe to order online?",
+        "answer": "Absolutely. We use industry-standard encryption and fraud-prevention tools to ensure your data is secure."
+    },
+    {
+        "faq_id": "FAQ-0009",
+        "category": "Orders",
+        "question": "Can I order over the phone?",
+        "answer": "For security reasons, we do not accept payment information over the phone. All orders must be placed through our website or app."
+    },
+    {
+        "faq_id": "FAQ-0010",
+        "category": "Orders",
+        "question": "I want to reorder a previous purchase.",
+        "answer": "Go to your 'Order History', find the item, and click 'Buy Again' to quickly add it to your cart."
+    },
+    {
+        "faq_id": "FAQ-0011",
+        "category": "Orders",
+        "question": "Why is my order on hold?",
+        "answer": "Orders may be placed on hold if there is a payment authorization issue or if the shipping address needs verification."
+    },
+    {
+        "faq_id": "FAQ-0012",
+        "category": "Orders",
+        "question": "Can I add a gift message?",
+        "answer": "Yes! While we don't offer standard gift wrapping, we can add a personalized, handwritten gift card for free at checkout."
+    },
+    {
+        "faq_id": "FAQ-0013",
+        "category": "Orders",
+        "question": "Order placed but not showing in my account.",
+        "answer": "Ensure you didn't check out as a guest or use a different email address. Contact support if you need us to link the guest order to your account."
+    },
+    {
+        "faq_id": "FAQ-0014",
+        "category": "Orders",
+        "question": "How to check if my order was successful?",
+        "answer": "You will see an order confirmation screen with a 'ORD-' number and receive a confirmation email immediately."
+    },
+    {
+        "faq_id": "FAQ-0015",
+        "category": "Orders",
+        "question": "Do you price match?",
+        "answer": "We do not currently offer price matching against competitors, but we frequently run sales and promotions."
+    },
+    {
+        "faq_id": "FAQ-0016",
+        "category": "Orders",
+        "question": "Are there hidden charges?",
+        "answer": "No, the total price shown at checkout includes all applicable taxes and shipping fees. There are no hidden charges."
+    },
+    {
+        "faq_id": "FAQ-0017",
+        "category": "Orders",
+        "question": "My order status is 'Unfulfilled'. What now?",
+        "answer": "This usually means an item is on backorder. You can choose to wait, or cancel the backordered item for a full refund."
+    },
+    {
+        "faq_id": "FAQ-0018",
+        "category": "Shipping",
+        "question": "What are your shipping costs?",
+        "answer": "Standard shipping is free for orders over $50. For orders under $50, standard shipping is calculated at checkout based on your location."
+    },
+    {
+        "faq_id": "FAQ-0019",
+        "category": "Shipping",
+        "question": "How long does Standard Shipping take?",
+        "answer": "Standard shipping typically takes 3 to 5 business days after the order is processed."
+    },
+    {
+        "faq_id": "FAQ-0020",
+        "category": "Shipping",
+        "question": "Do you offer expedited shipping?",
+        "answer": "Yes, we offer Expedited Shipping (2 business days) and Overnight Shipping (1 business day)."
+    },
+    {
+        "faq_id": "FAQ-0021",
+        "category": "Shipping",
+        "question": "Can you ship to a P.O. Box?",
+        "answer": "Yes, but only via Standard Shipping. Expedited and Overnight options require a physical address."
+    },
+    {
+        "faq_id": "FAQ-0022",
+        "category": "Shipping",
+        "question": "Do you ship internationally?",
+        "answer": "Yes, we ship to select countries. Please note that international customers are responsible for local customs duties and import taxes."
+    },
+    {
+        "faq_id": "FAQ-0023",
+        "category": "Shipping",
+        "question": "Can I change my delivery address?",
+        "answer": "You can update your shipping address within 60 minutes of placing the order via your account portal. After 60 minutes, it cannot be changed."
+    },
+    {
+        "faq_id": "FAQ-0024",
+        "category": "Shipping",
+        "question": "What if my item is oversized?",
+        "answer": "Oversized items like Smart TVs require specialized freight delivery, which takes 7 to 10 business days and requires an appointment."
+    },
+    {
+        "faq_id": "FAQ-0025",
+        "category": "Shipping",
+        "question": "Do you ship hazardous materials?",
+        "answer": "Items with lithium-ion batteries or hazardous materials are restricted to standard ground shipping due to air freight regulations."
+    },
+    {
+        "faq_id": "FAQ-0026",
+        "category": "Shipping",
+        "question": "Why is my shipping delayed during holidays?",
+        "answer": "During peak periods like Black Friday, standard shipping timelines may be extended by up to 3 business days due to high carrier volume."
+    },
+    {
+        "faq_id": "FAQ-0027",
+        "category": "Shipping",
+        "question": "Where does my order ship from?",
+        "answer": "We have multiple fulfillment centers. Your order will ship from the warehouse closest to you that has the item in stock."
+    },
+    {
+        "faq_id": "FAQ-0028",
+        "category": "Shipping",
+        "question": "Can I use my own shipping carrier?",
+        "answer": "We currently only use our partnered top-tier global logistics providers and cannot accommodate personal carrier accounts."
+    },
+    {
+        "faq_id": "FAQ-0029",
+        "category": "Shipping",
+        "question": "Will all my items ship together?",
+        "answer": "We try to consolidate items, but they may ship separately if they are stored in different warehouses or if one is oversized."
+    },
+    {
+        "faq_id": "FAQ-0030",
+        "category": "Shipping",
+        "question": "How do I know my tracking number?",
+        "answer": "Tracking numbers are generated and emailed to you within 12 hours of the package leaving our fulfillment center."
+    },
+    {
+        "faq_id": "FAQ-0031",
+        "category": "Shipping",
+        "question": "Do you offer weekend delivery?",
+        "answer": "Weekend delivery depends on the carrier and your location, but standard deliveries are typically Monday through Friday."
+    },
+    {
+        "faq_id": "FAQ-0032",
+        "category": "Shipping",
+        "question": "Can I delay my shipping date?",
+        "answer": "We process orders immediately and cannot hold or delay shipping. Please place the order closer to your desired arrival date."
+    },
+    {
+        "faq_id": "FAQ-0033",
+        "category": "Shipping",
+        "question": "What happens if my package is returned to sender?",
+        "answer": "If a package is undeliverable, it will be returned to us. We will issue a refund minus the original shipping costs."
+    },
+    {
+        "faq_id": "FAQ-0034",
+        "category": "Shipping",
+        "question": "Is signature required for delivery?",
+        "answer": "Signatures are generally not required unless the order value exceeds $500 or it is an oversized freight delivery."
+    },
+    {
+        "faq_id": "FAQ-0035",
+        "category": "Delivery",
+        "question": "My package shows delivered but I can't find it.",
+        "answer": "Please wait 24 hours, as carriers sometimes scan prematurely. Check with neighbors or building management. If still missing, contact support."
+    },
+    {
+        "faq_id": "FAQ-0036",
+        "category": "Delivery",
+        "question": "Out for delivery but not reached.",
+        "answer": "If your tracking says 'Out for Delivery' but it hasn't arrived by 8 PM, it may have been delayed on the route. It usually arrives the next day."
+    },
+    {
+        "faq_id": "FAQ-0037",
+        "category": "Delivery",
+        "question": "What if I'm not home for delivery?",
+        "answer": "The carrier will usually leave the package in a safe place. If a signature is required, they will leave a note and attempt delivery again."
+    },
+    {
+        "faq_id": "FAQ-0038",
+        "category": "Delivery",
+        "question": "Can I open the package before paying (Open Delivery)?",
+        "answer": "No, we do not allow open deliveries. You must accept the package first. You are fully protected by our 30-day Return Policy if there is an issue."
+    },
+    {
+        "faq_id": "FAQ-0039",
+        "category": "Delivery",
+        "question": "The delivery boy was rude.",
+        "answer": "We sincerely apologize for this experience. Please provide your order number and we will escalate this feedback to the carrier's local hub manager."
+    },
+    {
+        "faq_id": "FAQ-0040",
+        "category": "Delivery",
+        "question": "My delivery appointment for the TV was missed.",
+        "answer": "We apologize for the inconvenience. Please contact support immediately, and we will reschedule and offer a credit for the hassle."
+    },
+    {
+        "faq_id": "FAQ-0041",
+        "category": "Delivery",
+        "question": "Can I pick up my order from a warehouse?",
+        "answer": "No, our fulfillment centers are not open to the public for order pickups."
+    },
+    {
+        "faq_id": "FAQ-0042",
+        "category": "Delivery",
+        "question": "Package arrived damaged.",
+        "answer": "Please do not reject the delivery. Accept it, take photos of the damaged box, and contact us immediately for a swift replacement."
+    },
+    {
+        "faq_id": "FAQ-0043",
+        "category": "Delivery",
+        "question": "Carrier tracking is not updating.",
+        "answer": "If tracking hasn't updated in 5 consecutive business days, we consider the package lost and will escalate to our Tier 2 Logistics Team."
+    },
+    {
+        "faq_id": "FAQ-0044",
+        "category": "Delivery",
+        "question": "Can the delivery driver call me before arriving?",
+        "answer": "For standard deliveries, drivers do not usually call. For heavy freight deliveries, the carrier will call to schedule a specific window."
+    },
+    {
+        "faq_id": "FAQ-0045",
+        "category": "Delivery",
+        "question": "Can you deliver to my office?",
+        "answer": "Yes, please ensure you include the company name and any relevant floor or suite numbers in the shipping address."
+    },
+    {
+        "faq_id": "FAQ-0046",
+        "category": "Delivery",
+        "question": "Why was my delivery attempted but failed?",
+        "answer": "This usually happens if the address is incomplete, a gate code is missing, or a required signature couldn't be obtained."
+    },
+    {
+        "faq_id": "FAQ-0047",
+        "category": "Delivery",
+        "question": "How many delivery attempts will be made?",
+        "answer": "Carriers typically make up to 3 delivery attempts before returning the package to ShopSphere."
+    },
+    {
+        "faq_id": "FAQ-0048",
+        "category": "Delivery",
+        "question": "Can I instruct the driver to leave the package at the back door?",
+        "answer": "You can often add delivery instructions via the carrier's tracking link once you receive it."
+    },
+    {
+        "faq_id": "FAQ-0049",
+        "category": "Delivery",
+        "question": "Do you deliver on public holidays?",
+        "answer": "Our carriers observe most major public holidays, so deliveries will pause and resume the next business day."
+    },
+    {
+        "faq_id": "FAQ-0050",
+        "category": "Delivery",
+        "question": "Is contactless delivery available?",
+        "answer": "Yes, most standard shipments are left at your door contact-free by default."
+    },
+    {
+        "faq_id": "FAQ-0051",
+        "category": "Delivery",
+        "question": "My overnight delivery failed.",
+        "answer": "If an Overnight Shipping commitment is missed, you are entitled to an immediate refund of the shipping cost and priority escalation."
+    },
+    {
+        "faq_id": "FAQ-0052",
+        "category": "Refunds",
+        "question": "How long does a refund take?",
+        "answer": "Once approved, it takes 3 to 5 business days for funds to reflect in your bank account or on your credit card statement."
+    },
+    {
+        "faq_id": "FAQ-0053",
+        "category": "Refunds",
+        "question": "Amount deducted but order not placed.",
+        "answer": "This is an authorization hold. It will automatically be voided by our system and release back to your account in 1-3 business days."
+    },
+    {
+        "faq_id": "FAQ-0054",
+        "category": "Refunds",
+        "question": "Refund not credited in my account yet.",
+        "answer": "If it has been more than 5 business days since you received our refund confirmation, please contact your bank with the transaction ID."
+    },
+    {
+        "faq_id": "FAQ-0055",
+        "category": "Refunds",
+        "question": "Can I get my refund in store credit?",
+        "answer": "Yes! Store credit refunds are processed instantly to your ShopSphere account upon approval of the return."
+    },
+    {
+        "faq_id": "FAQ-0056",
+        "category": "Refunds",
+        "question": "Will my shipping fees be refunded?",
+        "answer": "Original shipping fees are non-refundable unless the return is due to a ShopSphere error or a missed expedited delivery commitment."
+    },
+    {
+        "faq_id": "FAQ-0057",
+        "category": "Refunds",
+        "question": "I no longer have the card I used to pay.",
+        "answer": "If the original card is closed, the refund will fail and we will automatically issue the refund as ShopSphere Store Credit."
+    },
+    {
+        "faq_id": "FAQ-0058",
+        "category": "Refunds",
+        "question": "Do I get a full refund for an open item?",
+        "answer": "Yes, as long as it is within the 30-day window and is in 'like-new' condition with all original accessories and packaging."
+    },
+    {
+        "faq_id": "FAQ-0059",
+        "category": "Refunds",
+        "question": "Refund for Cash on Delivery (COD)?",
+        "answer": "For COD orders, we will send you a secure link to enter your bank account or UPI details to process an electronic refund."
+    },
+    {
+        "faq_id": "FAQ-0060",
+        "category": "Refunds",
+        "question": "My refund request was rejected.",
+        "answer": "Refunds may be rejected if the item shows user damage, is missing parts, or falls outside the 30-day window. You can appeal this through support."
+    },
+    {
+        "faq_id": "FAQ-0061",
+        "category": "Refunds",
+        "question": "I accidentally ordered twice. How do I get a refund?",
+        "answer": "If you cancel within 60 minutes, the hold drops automatically. If it shipped, you must return the duplicate item for a refund."
+    },
+    {
+        "faq_id": "FAQ-0062",
+        "category": "Refunds",
+        "question": "Do you refund customs duties for international orders?",
+        "answer": "No, ShopSphere cannot refund customs duties or import taxes paid to your local government."
+    },
+    {
+        "faq_id": "FAQ-0063",
+        "category": "Refunds",
+        "question": "How do I request a refund?",
+        "answer": "Go to 'My Orders', select the item, click 'Request Refund', and follow the prompts to get your Return Merchandise Authorization (RMA)."
+    },
+    {
+        "faq_id": "FAQ-0064",
+        "category": "Refunds",
+        "question": "What is the refund policy for clearance items?",
+        "answer": "Items marked 'Final Sale' or 'Clearance' cannot be refunded unless they arrive damaged or defective."
+    },
+    {
+        "faq_id": "FAQ-0065",
+        "category": "Refunds",
+        "question": "I returned a gift. Who gets the refund?",
+        "answer": "Refunds for gifts are automatically issued as Store Credit to the account of the person who initiated the return."
+    },
+    {
+        "faq_id": "FAQ-0066",
+        "category": "Refunds",
+        "question": "Can you refund me via wire transfer?",
+        "answer": "No, we only process refunds back to the original payment method or as Store Credit."
+    },
+    {
+        "faq_id": "FAQ-0067",
+        "category": "Refunds",
+        "question": "I was promised a partial refund, where is it?",
+        "answer": "Partial refunds follow the same timeline as full refunds (3-5 business days) once processed by an agent."
+    },
+    {
+        "faq_id": "FAQ-0068",
+        "category": "Refunds",
+        "question": "Why did I only receive a pro-rated refund?",
+        "answer": "If you returned a bundled kit but kept some parts, the refund is pro-rated to account for the unreturned items."
+    },
+    {
+        "faq_id": "FAQ-0069",
+        "category": "Returns",
+        "question": "What is your return policy?",
+        "answer": "We offer a 30-day return window from the delivery date. Items must be in new, resalable condition with original packaging."
+    },
+    {
+        "faq_id": "FAQ-0070",
+        "category": "Returns",
+        "question": "Do I have to pay for return shipping?",
+        "answer": "No, ShopSphere provides a free prepaid return shipping label for all eligible domestic returns."
+    },
+    {
+        "faq_id": "FAQ-0071",
+        "category": "Returns",
+        "question": "How do I start a return?",
+        "answer": "Log into your account, go to 'My Orders', click 'Start Return' on the item, and print the generated label and RMA slip."
+    },
+    {
+        "faq_id": "FAQ-0072",
+        "category": "Returns",
+        "question": "What is an RMA?",
+        "answer": "RMA stands for Return Merchandise Authorization. It is required for all returns. Packages sent without an RMA cannot be processed."
+    },
+    {
+        "faq_id": "FAQ-0073",
+        "category": "Returns",
+        "question": "Return pickup scheduled but boy didn't come.",
+        "answer": "We apologize! Carrier pickups can sometimes be missed. Please use your prepaid label to drop it at the nearest carrier location, or contact us to reschedule."
+    },
+    {
+        "faq_id": "FAQ-0074",
+        "category": "Returns",
+        "question": "I threw away the original box. Can I still return it?",
+        "answer": "Original manufacturer packaging is required for a full refund. Without it, your return may be rejected or subject to a restocking fee."
+    },
+    {
+        "faq_id": "FAQ-0075",
+        "category": "Returns",
+        "question": "Do I need to take an unboxing video?",
+        "answer": "While not strictly required, taking photos or an unboxing video helps speed up the process if an item arrives physically damaged."
+    },
+    {
+        "faq_id": "FAQ-0076",
+        "category": "Returns",
+        "question": "Can I return an electric toothbrush?",
+        "answer": "For health and hygiene reasons, personal care items like toothbrushes can only be returned if they are completely unopened with the safety seal intact."
+    },
+    {
+        "faq_id": "FAQ-0077",
+        "category": "Returns",
+        "question": "How long do I have to ship the return?",
+        "answer": "You have 14 days from the date the RMA and shipping label are generated to hand the package over to the courier."
+    },
+    {
+        "faq_id": "FAQ-0078",
+        "category": "Returns",
+        "question": "Can I return multiple items in one box?",
+        "answer": "Yes, provided you requested returns for all those items and included their respective RMA slips in the box."
+    },
+    {
+        "faq_id": "FAQ-0079",
+        "category": "Returns",
+        "question": "My return is stuck in transit.",
+        "answer": "If your returned package is scanned by the carrier but fails to reach our warehouse within 15 business days, we will escalate it and process your refund."
+    },
+    {
+        "faq_id": "FAQ-0080",
+        "category": "Returns",
+        "question": "Do you charge a restocking fee?",
+        "answer": "We do not charge restocking fees for standard items. However, heavy/oversized freight returns (over 150 lbs) are subject to a 15% restocking fee."
+    },
+    {
+        "faq_id": "FAQ-0081",
+        "category": "Returns",
+        "question": "I returned the wrong item by mistake.",
+        "answer": "If you accidentally return an item not purchased from us, please contact support. We will try to locate it and send it back, but we are not responsible for it."
+    },
+    {
+        "faq_id": "FAQ-0082",
+        "category": "Returns",
+        "question": "Can I return a digital gift card?",
+        "answer": "No, digital and physical gift cards are final sale and cannot be returned."
+    },
+    {
+        "faq_id": "FAQ-0083",
+        "category": "Returns",
+        "question": "Do I have to factory reset my electronic device?",
+        "answer": "Yes. All electronics like phones or tablets must be factory reset with no personal data remaining before returning."
+    },
+    {
+        "faq_id": "FAQ-0084",
+        "category": "Returns",
+        "question": "Will you let me know when you get my return?",
+        "answer": "Yes! You will receive an email confirmation within 2 business days of the package arriving at our dock and being processed."
+    },
+    {
+        "faq_id": "FAQ-0085",
+        "category": "Returns",
+        "question": "Is there a limit on how many items I can return?",
+        "answer": "If a single customer attempts to return more than 5 distinct orders in a 30-day period, it triggers an automatic review by our fraud team."
+    },
+    {
+        "faq_id": "FAQ-0086",
+        "category": "Payments",
+        "question": "What payment methods do you accept?",
+        "answer": "We accept Visa, MasterCard, American Express, Discover, PayPal, Apple Pay, Google Pay, UPI, COD, and ShopSphere Gift Cards."
+    },
+    {
+        "faq_id": "FAQ-0087",
+        "category": "Payments",
+        "question": "Is Cash on Delivery (COD) available?",
+        "answer": "Yes, COD is available for select zip codes and for orders under $200. A small handling fee may apply."
+    },
+    {
+        "faq_id": "FAQ-0088",
+        "category": "Payments",
+        "question": "Do you accept UPI?",
+        "answer": "Yes, UPI is fully supported. Just select the UPI option at checkout and enter your VPA or scan the QR code."
+    },
+    {
+        "faq_id": "FAQ-0089",
+        "category": "Payments",
+        "question": "My card was declined but I have funds.",
+        "answer": "Ensure your billing ZIP code perfectly matches your bank's records. Alternatively, call your bank, as they may block high-value electronics purchases for fraud prevention."
+    },
+    {
+        "faq_id": "FAQ-0090",
+        "category": "Payments",
+        "question": "Do you accept cryptocurrency?",
+        "answer": "No, ShopSphere currently does not accept Bitcoin or any other cryptocurrencies."
+    },
+    {
+        "faq_id": "FAQ-0091",
+        "category": "Payments",
+        "question": "Can I use multiple credit cards for one order?",
+        "answer": "We do not support split payments across multiple credit cards. However, you can combine a ShopSphere Gift Card with one credit card."
+    },
+    {
+        "faq_id": "FAQ-0092",
+        "category": "Payments",
+        "question": "What is ShopSphere Wallet?",
+        "answer": "The Wallet holds your Store Credit. You can use this balance at checkout to pay for part or all of your order."
+    },
+    {
+        "faq_id": "FAQ-0093",
+        "category": "Payments",
+        "question": "Are my payment details secure?",
+        "answer": "Absolutely. We do not store your raw credit card numbers. All transactions are processed through highly encrypted, PCI-DSS compliant gateways."
+    },
+    {
+        "faq_id": "FAQ-0094",
+        "category": "Payments",
+        "question": "I got a 'Fraud Lockout' error.",
+        "answer": "If your account is suspended due to automated anti-fraud triggers, please contact our Secure Payments Team to complete manual identity verification."
+    },
+    {
+        "faq_id": "FAQ-0095",
+        "category": "Payments",
+        "question": "Why am I seeing two charges on my statement?",
+        "answer": "One is likely a temporary authorization hold and the other is the actual charge. The hold will drop off in 1-3 business days."
+    },
+    {
+        "faq_id": "FAQ-0096",
+        "category": "Payments",
+        "question": "Can I pay via direct bank wire transfer?",
+        "answer": "No, direct wire transfers and physical checks are not accepted for retail consumer purchases."
+    },
+    {
+        "faq_id": "FAQ-0097",
+        "category": "Payments",
+        "question": "My gift card says zero balance but I didn't use it.",
+        "answer": "Please contact support immediately. This will be escalated to our Secure Payments Team to investigate the gift card log."
+    },
+    {
+        "faq_id": "FAQ-0098",
+        "category": "Payments",
+        "question": "Can I pay with a prepaid debit card?",
+        "answer": "Some prepaid cards are rejected by our system if they cannot perform Address Verification System (AVS) checks. We recommend registering the card with your address first."
+    },
+    {
+        "faq_id": "FAQ-0099",
+        "category": "Payments",
+        "question": "When exactly will my card be charged?",
+        "answer": "Your card is pre-authorized at checkout, but the actual funds are captured only when your order physically ships from our warehouse."
+    },
+    {
+        "faq_id": "FAQ-0100",
+        "category": "Payments",
+        "question": "How do I remove a saved card?",
+        "answer": "Go to 'Account Settings', click on 'Payment Methods', and click 'Delete' next to the card you wish to remove."
+    },
+    {
+        "faq_id": "FAQ-0101",
+        "category": "Payments",
+        "question": "Is there a fee for using a credit card?",
+        "answer": "No, ShopSphere does not charge any extra transaction fees for using credit or debit cards."
+    },
+    {
+        "faq_id": "FAQ-0102",
+        "category": "Payments",
+        "question": "What happens if my payment fails?",
+        "answer": "The order will not be placed. You will remain on the checkout screen where you can try a different payment method."
+    },
+    {
+        "faq_id": "FAQ-0103",
+        "category": "Warranty",
+        "question": "Do your products come with a warranty?",
+        "answer": "Yes, all electronics, appliances, and mechanical goods sold directly by ShopSphere include a standard 1-Year Limited Manufacturer Warranty."
+    },
+    {
+        "faq_id": "FAQ-0104",
+        "category": "Warranty",
+        "question": "What is ShopSphere Protect?",
+        "answer": "It is our extended warranty plan. Purchasing ShopSphere Protect at checkout adds 2 additional years of coverage, giving you 3 years total."
+    },
+    {
+        "faq_id": "FAQ-0105",
+        "category": "Warranty",
+        "question": "What does the warranty cover?",
+        "answer": "It covers internal hardware failures, electrical defects, and manufacturing flaws that occur under normal, intended use."
+    },
+    {
+        "faq_id": "FAQ-0106",
+        "category": "Warranty",
+        "question": "Does the warranty cover physical damage?",
+        "answer": "No. Drops, spills, cracks, and physical trauma to the device void the warranty entirely."
+    },
+    {
+        "faq_id": "FAQ-0107",
+        "category": "Warranty",
+        "question": "Is water damage covered?",
+        "answer": "Liquid exposure voids the warranty on devices not explicitly rated as waterproof, or if exposed beyond their IP rating limits."
+    },
+    {
+        "faq_id": "FAQ-0108",
+        "category": "Warranty",
+        "question": "How do I file a warranty claim?",
+        "answer": "Log into the Warranty Portal, select the item, and fill out the defect report. We will review it within 48 hours."
+    },
+    {
+        "faq_id": "FAQ-0109",
+        "category": "Warranty",
+        "question": "Do I have to pay to ship a warranty item back?",
+        "answer": "No, if your claim is approved, we will provide a prepaid shipping label."
+    },
+    {
+        "faq_id": "FAQ-0110",
+        "category": "Warranty",
+        "question": "How long does a warranty repair take?",
+        "answer": "We guarantee a resolution (repair or replacement) within 14 business days of receiving the item at our certified repair center."
+    },
+    {
+        "faq_id": "FAQ-0111",
+        "category": "Warranty",
+        "question": "What happens if it can't be repaired?",
+        "answer": "If the item is beyond repair, we will issue a full brand-new replacement unit at no extra cost."
+    },
+    {
+        "faq_id": "FAQ-0112",
+        "category": "Warranty",
+        "question": "What is the Lemon Policy?",
+        "answer": "If you have to send the exact same product in for warranty repair three times for the same issue, we will immediately offer a brand new replacement or a full refund."
+    },
+    {
+        "faq_id": "FAQ-0113",
+        "category": "Warranty",
+        "question": "I lost my receipt. Can I claim warranty?",
+        "answer": "Your order history in your ShopSphere account acts as your digital receipt and proof of purchase."
+    },
+    {
+        "faq_id": "FAQ-0114",
+        "category": "Warranty",
+        "question": "Can I get it repaired at a local shop?",
+        "answer": "No. Unauthorized repair by a third-party service not authorized by ShopSphere or the manufacturer will void your warranty."
+    },
+    {
+        "faq_id": "FAQ-0115",
+        "category": "Warranty",
+        "question": "Does the warranty cover battery degradation?",
+        "answer": "Normal battery degradation is wear-and-tear. However, if a battery drops below 50% capacity in the first 6 months, it is covered."
+    },
+    {
+        "faq_id": "FAQ-0116",
+        "category": "Warranty",
+        "question": "Are vacuum filters covered?",
+        "answer": "No, consumables like printer ink, vacuum filters, or replaceable brush heads are exempt from warranty coverage."
+    },
+    {
+        "faq_id": "FAQ-0117",
+        "category": "Warranty",
+        "question": "What if the device is a safety hazard?",
+        "answer": "If the defect involves overheating, sparking, or battery swelling, we immediately escalate to Product Safety Compliance for urgent resolution."
+    },
+    {
+        "faq_id": "FAQ-0118",
+        "category": "Warranty",
+        "question": "How is the repaired item sent back?",
+        "answer": "Repaired or replacement units are shipped back to you via expedited 2-day delivery at no cost."
+    },
+    {
+        "faq_id": "FAQ-0119",
+        "category": "Warranty",
+        "question": "Can I buy the extended warranty later?",
+        "answer": "ShopSphere Protect must be purchased at the time of checkout. It cannot be added retroactively."
+    },
+    {
+        "faq_id": "FAQ-0120",
+        "category": "Product Replacement",
+        "question": "Can I exchange an item for a different size?",
+        "answer": "Yes! Exchanges are permitted for the exact same product in a different size or color within 30 days."
+    },
+    {
+        "faq_id": "FAQ-0121",
+        "category": "Product Replacement",
+        "question": "Exchange possible for different color?",
+        "answer": "Absolutely, as long as the new color is in stock and the original item is unworn/unused with tags attached."
+    },
+    {
+        "faq_id": "FAQ-0122",
+        "category": "Product Replacement",
+        "question": "What is an Advanced Exchange?",
+        "answer": "For defective items, we can ship the new item instantly. We put a temporary hold on your card, which is removed once you return the defective item within 14 days."
+    },
+    {
+        "faq_id": "FAQ-0123",
+        "category": "Product Replacement",
+        "question": "My item arrived broken. What do I do?",
+        "answer": "You are eligible for an exact 1:1 replacement exchange. Start the exchange in your portal and select 'Replace Defective Unit'."
+    },
+    {
+        "faq_id": "FAQ-0124",
+        "category": "Product Replacement",
+        "question": "Can I exchange my headphones for a toaster?",
+        "answer": "No, like-for-like exchanges only. To get a completely different product line, you must return the original and place a new order."
+    },
+    {
+        "faq_id": "FAQ-0125",
+        "category": "Product Replacement",
+        "question": "What if the new size is out of stock?",
+        "answer": "If the requested variant is out of stock, an exchange cannot be processed. The system will default to a standard return for a refund."
+    },
+    {
+        "faq_id": "FAQ-0126",
+        "category": "Product Replacement",
+        "question": "How long does a standard exchange take?",
+        "answer": "The new item is processed and shipped via 2-day delivery *after* the warehouse receives and inspects the original item."
+    },
+    {
+        "faq_id": "FAQ-0127",
+        "category": "Product Replacement",
+        "question": "Do I pay for exchange shipping?",
+        "answer": "No, standard exchange return shipping and the shipping of the new item are both free of charge."
+    },
+    {
+        "faq_id": "FAQ-0128",
+        "category": "Product Replacement",
+        "question": "What if the new color costs more?",
+        "answer": "If the new variant costs more, you will be prompted to pay the price difference during the exchange process."
+    },
+    {
+        "faq_id": "FAQ-0129",
+        "category": "Product Replacement",
+        "question": "Can I exchange a Final Sale item?",
+        "answer": "No, clearance items marked 'Final Sale' cannot be exchanged for a different color or size."
+    },
+    {
+        "faq_id": "FAQ-0130",
+        "category": "Product Replacement",
+        "question": "I was sent the wrong replacement item.",
+        "answer": "We deeply apologize. This will be escalated to our Customer Success Resolution Team to overnight the correct item to you immediately."
+    },
+    {
+        "faq_id": "FAQ-0131",
+        "category": "Product Replacement",
+        "question": "What happens if I don't return the original item on an Advanced Exchange?",
+        "answer": "If the defective item is not shipped back within 14 days, the temporary hold on your credit card will be captured as a permanent charge."
+    },
+    {
+        "faq_id": "FAQ-0132",
+        "category": "Product Replacement",
+        "question": "Can I exchange an item I bought with a coupon?",
+        "answer": "Yes, the exchange will honor the original discounted price as long as it's the same product model."
+    },
+    {
+        "faq_id": "FAQ-0133",
+        "category": "Product Replacement",
+        "question": "The warehouse rejected my exchange item.",
+        "answer": "If the warehouse finds the returned item damaged (for non-defect claims) or worn, the exchange halts, and our mediation team will contact you."
+    },
+    {
+        "faq_id": "FAQ-0134",
+        "category": "Product Replacement",
+        "question": "I need an urgent exchange for a trip.",
+        "answer": "Premium customers can request an immediate, overnight exchange via support for critical needs."
+    },
+    {
+        "faq_id": "FAQ-0135",
+        "category": "Product Replacement",
+        "question": "Can I just drop the exchange at a physical store?",
+        "answer": "We do not have physical storefronts. All exchanges must be mailed back using the provided prepaid label."
+    },
+    {
+        "faq_id": "FAQ-0136",
+        "category": "Product Replacement",
+        "question": "How do I track my replacement item?",
+        "answer": "You will receive a new tracking number via email as soon as the replacement order is dispatched."
+    },
+    {
+        "faq_id": "FAQ-0137",
+        "category": "Account & Login",
+        "question": "I forgot my password.",
+        "answer": "Click the 'Forgot Password' link on the login page. An automated reset email will be dispatched and should arrive within 2 minutes."
+    },
+    {
+        "faq_id": "FAQ-0138",
+        "category": "Account & Login",
+        "question": "My account is locked.",
+        "answer": "Accounts lock after 5 failed password attempts. You can wait 30 minutes for an auto-unlock, or use the 'Unlock Account via SMS' feature."
+    },
+    {
+        "faq_id": "FAQ-0139",
+        "category": "Account & Login",
+        "question": "Is 2FA required?",
+        "answer": "Two-Factor Authentication (2FA) is optional for standard accounts, but mandatory for ShopSphere Premium members and purchases over $1,000."
+    },
+    {
+        "faq_id": "FAQ-0140",
+        "category": "Account & Login",
+        "question": "I lost my phone and can't get 2FA codes.",
+        "answer": "Click 'Try another way' on the login screen to use your backup codes, or contact support for manual identity verification (takes 24-48 hours)."
+    },
+    {
+        "faq_id": "FAQ-0141",
+        "category": "Account & Login",
+        "question": "How do I change my email address?",
+        "answer": "Log in, go to 'Account Settings', enter your new email, and verify it via the confirmation link sent to both the old and new addresses."
+    },
+    {
+        "faq_id": "FAQ-0142",
+        "category": "Account & Login",
+        "question": "Can I check out without an account?",
+        "answer": "Yes, you can use Guest Checkout. However, you will lose access to self-service order tracking and rapid returns."
+    },
+    {
+        "faq_id": "FAQ-0143",
+        "category": "Account & Login",
+        "question": "How do I delete my account?",
+        "answer": "Submit a request through 'Privacy Settings'. GDPR/CCPA-compliant account deletions are fully processed within 30 days."
+    },
+    {
+        "faq_id": "FAQ-0144",
+        "category": "Account & Login",
+        "question": "I think my account was hacked.",
+        "answer": "If you see unauthorized orders or changes, contact security@shopsphere.com immediately. Your issue will be escalated to our Cybersecurity Team."
+    },
+    {
+        "faq_id": "FAQ-0145",
+        "category": "Account & Login",
+        "question": "Can my wife and I share an account?",
+        "answer": "While discouraged for security, households can share. Note that ShopSphere will only verify and assist the primary account holder listed on the profile."
+    },
+    {
+        "faq_id": "FAQ-0146",
+        "category": "Account & Login",
+        "question": "How do I update my billing address?",
+        "answer": "Go to 'Payment Methods' in your account dashboard and edit the billing address attached to your saved cards."
+    },
+    {
+        "faq_id": "FAQ-0147",
+        "category": "Account & Login",
+        "question": "Why am I in an infinite login loop?",
+        "answer": "This is a rare database sync error. Please clear your browser cookies. If it persists, contact support for an escalation."
+    },
+    {
+        "faq_id": "FAQ-0148",
+        "category": "Account & Login",
+        "question": "My account says 'Suspended'.",
+        "answer": "Your account may have triggered our automated fraud-detection systems. You can appeal this suspension by contacting customer support."
+    },
+    {
+        "faq_id": "FAQ-0149",
+        "category": "Account & Login",
+        "question": "What is the age requirement for an account?",
+        "answer": "Users must be at least 18 years of age to create an independent ShopSphere account."
+    },
+    {
+        "faq_id": "FAQ-0150",
+        "category": "Account & Login",
+        "question": "Password requirements?",
+        "answer": "Passwords must be at least 12 characters, including one uppercase letter, one number, and one special character."
+    },
+    {
+        "faq_id": "FAQ-0151",
+        "category": "Account & Login",
+        "question": "Can I link my social media to log in?",
+        "answer": "Currently, we rely on standard email/password and robust 2FA rather than social media SSO (Single Sign-On)."
+    },
+    {
+        "faq_id": "FAQ-0152",
+        "category": "Account & Login",
+        "question": "How do I manage my email subscriptions?",
+        "answer": "You can opt in or out of marketing emails anytime from the 'Notification Preferences' in your account settings."
+    },
+    {
+        "faq_id": "FAQ-0153",
+        "category": "Account & Login",
+        "question": "I can't verify my identity with support.",
+        "answer": "If you cannot provide the last 4 digits of the card used and the billing address, we cannot unlock the account due to strict security protocols."
+    },
+    {
+        "faq_id": "FAQ-0154",
+        "category": "Coupons & Discounts",
+        "question": "How do I apply a promo code?",
+        "answer": "Enter your code in the 'Promo Code' box during checkout and click 'Apply'. The discount will reflect in your order total instantly."
+    },
+    {
+        "faq_id": "FAQ-0155",
+        "category": "Coupons & Discounts",
+        "question": "My coupon code is not working.",
+        "answer": "Please check the expiration date, ensure there are no typos, and verify that the items in your cart meet the coupon's eligibility requirements."
+    },
+    {
+        "faq_id": "FAQ-0156",
+        "category": "Coupons & Discounts",
+        "question": "Can I stack multiple coupons?",
+        "answer": "No, our system only allows one promotional code to be applied per order."
+    },
+    {
+        "faq_id": "FAQ-0157",
+        "category": "Coupons & Discounts",
+        "question": "I forgot to add my coupon at checkout.",
+        "answer": "Unfortunately, we cannot apply discount codes retroactively once an order has been successfully placed."
+    },
+    {
+        "faq_id": "FAQ-0158",
+        "category": "Coupons & Discounts",
+        "question": "Do you have a new user discount?",
+        "answer": "Yes! New customers who sign up for an account receive a 10% off welcome code via email."
+    },
+    {
+        "faq_id": "FAQ-0159",
+        "category": "Coupons & Discounts",
+        "question": "Does the discount apply to shipping?",
+        "answer": "Generally, promo codes only discount the subtotal of the items, not taxes or shipping fees, unless it is specifically a 'Free Shipping' code."
+    },
+    {
+        "faq_id": "FAQ-0160",
+        "category": "Coupons & Discounts",
+        "question": "Why doesn't the coupon work on electronics?",
+        "answer": "Some premium electronics and specific brands are excluded from site-wide promotions due to manufacturer pricing rules."
+    },
+    {
+        "faq_id": "FAQ-0161",
+        "category": "Coupons & Discounts",
+        "question": "Are there special discounts for Premium members?",
+        "answer": "Yes! ShopSphere Premium members receive exclusive monthly discount codes and early access to major sales."
+    },
+    {
+        "faq_id": "FAQ-0162",
+        "category": "Coupons & Discounts",
+        "question": "I used a coupon, but I'm returning the item.",
+        "answer": "You will be refunded the actual amount you paid after the discount was applied, not the retail price of the item."
+    },
+    {
+        "faq_id": "FAQ-0163",
+        "category": "Coupons & Discounts",
+        "question": "Do you offer student discounts?",
+        "answer": "We do! Verify your student status through our partner link at the bottom of the page to receive a 15% discount code."
+    },
+    {
+        "faq_id": "FAQ-0164",
+        "category": "Coupons & Discounts",
+        "question": "Can I use a coupon with Store Credit?",
+        "answer": "Yes! You can apply a promo code to discount the order, and then use your Store Credit to pay the remaining balance."
+    },
+    {
+        "faq_id": "FAQ-0165",
+        "category": "Coupons & Discounts",
+        "question": "How often do you have sales?",
+        "answer": "We host major sales during Black Friday, Cyber Monday, and our ShopSphere Anniversary in May, along with flash sales year-round."
+    },
+    {
+        "faq_id": "FAQ-0166",
+        "category": "Coupons & Discounts",
+        "question": "My code says 'One time use only'.",
+        "answer": "This means the code is tied to your account and becomes invalid once you successfully complete a checkout with it."
+    },
+    {
+        "faq_id": "FAQ-0167",
+        "category": "Coupons & Discounts",
+        "question": "Can I share my coupon code?",
+        "answer": "Generic promo codes can be shared, but unique personalized codes sent to your email are locked to your specific account."
+    },
+    {
+        "faq_id": "FAQ-0168",
+        "category": "Coupons & Discounts",
+        "question": "What happens to my coupon if my order is cancelled?",
+        "answer": "If we cancel your order due to an inventory error, we will issue you a new replacement coupon. If you cancel it, the single-use coupon is voided."
+    },
+    {
+        "faq_id": "FAQ-0169",
+        "category": "Coupons & Discounts",
+        "question": "Do promotional codes expire at midnight?",
+        "answer": "Yes, all our promo codes expire at 11:59 PM EST on the stated expiration date."
+    },
+    {
+        "faq_id": "FAQ-0170",
+        "category": "Coupons & Discounts",
+        "question": "Are B2B bulk orders eligible for standard coupons?",
+        "answer": "No, bulk orders have specialized wholesale pricing and cannot be combined with consumer retail promo codes."
+    },
+    {
+        "faq_id": "FAQ-0171",
+        "category": "Cancellations",
+        "question": "How do I cancel my order?",
+        "answer": "Log into your account, go to 'Order History', and click the 'Cancel Order' button. This is only available within 60 minutes of placing the order."
+    },
+    {
+        "faq_id": "FAQ-0172",
+        "category": "Cancellations",
+        "question": "Can I cancel after 60 minutes?",
+        "answer": "No. Because we process orders at lightning speed, the window to cancel is strictly restricted to 60 minutes."
+    },
+    {
+        "faq_id": "FAQ-0173",
+        "category": "Cancellations",
+        "question": "The cancel button is greyed out.",
+        "answer": "If the button is greyed out, your 60-minute cancellation window has passed and the order is locked for fulfillment."
+    },
+    {
+        "faq_id": "FAQ-0174",
+        "category": "Cancellations",
+        "question": "Can customer support cancel it for me later?",
+        "answer": "No. Once it changes to 'Shipped' or 'Label Created', it is physically loaded onto a truck and cannot be stopped by agents."
+    },
+    {
+        "faq_id": "FAQ-0175",
+        "category": "Cancellations",
+        "question": "How do I cancel a backordered item?",
+        "answer": "If an item is on backorder and hasn't entered fulfillment, you can cancel it at any time prior to the stock arriving."
+    },
+    {
+        "faq_id": "FAQ-0176",
+        "category": "Cancellations",
+        "question": "Can I cancel a pre-order?",
+        "answer": "Yes, pre-ordered items can be cancelled any time up to 48 hours before the official release date."
+    },
+    {
+        "faq_id": "FAQ-0177",
+        "category": "Cancellations",
+        "question": "What happens to my money when I cancel?",
+        "answer": "The temporary authorization hold on your credit card is voided instantly and will disappear from your statement in 1 to 3 business days."
+    },
+    {
+        "faq_id": "FAQ-0178",
+        "category": "Cancellations",
+        "question": "I missed the 60-minute window. Now what?",
+        "answer": "You must wait for the item to arrive, and then initiate a standard Return to get a refund."
+    },
+    {
+        "faq_id": "FAQ-0179",
+        "category": "Cancellations",
+        "question": "Can I cancel a personalized item?",
+        "answer": "Once production begins on a custom item (usually within 15 minutes), the order is locked and cannot be cancelled."
+    },
+    {
+        "faq_id": "FAQ-0180",
+        "category": "Cancellations",
+        "question": "Can I cancel a digital gift card?",
+        "answer": "No, digital goods are delivered instantly and cannot be cancelled once checkout is complete."
+    },
+    {
+        "faq_id": "FAQ-0181",
+        "category": "Cancellations",
+        "question": "Why did ShopSphere cancel my order?",
+        "answer": "We may cancel an order due to a ghost inventory discrepancy (out of stock) or if the transaction was flagged by our automated fraud systems."
+    },
+    {
+        "faq_id": "FAQ-0182",
+        "category": "Cancellations",
+        "question": "My order was cancelled for fraud by mistake.",
+        "answer": "Please contact our security team. Unfortunately, the cancelled order cannot be reinstated; you will need to place a new order once verified."
+    },
+    {
+        "faq_id": "FAQ-0183",
+        "category": "Cancellations",
+        "question": "Will I get a confirmation of my cancellation?",
+        "answer": "Yes, upon clicking 'Cancel Order' and confirming, you will receive an immediate verification email."
+    },
+    {
+        "faq_id": "FAQ-0184",
+        "category": "Cancellations",
+        "question": "System glitched and I couldn't cancel.",
+        "answer": "If you attempted to cancel within 60 minutes but a verified system failure occurred, we will escalate to intercept the package at our expense."
+    },
+    {
+        "faq_id": "FAQ-0185",
+        "category": "Cancellations",
+        "question": "Does cancelling an order affect my loyalty points?",
+        "answer": "If you used points for the order, they will be automatically refunded to your account upon cancellation."
+    },
+    {
+        "faq_id": "FAQ-0186",
+        "category": "Cancellations",
+        "question": "Can I cancel just one item in a multi-item order?",
+        "answer": "Yes, during the 60-minute window, you can select specific items to cancel without cancelling the entire order."
+    },
+    {
+        "faq_id": "FAQ-0187",
+        "category": "Cancellations",
+        "question": "How long does chat support take to cancel?",
+        "answer": "If requested via live chat, it takes up to 15 minutes. If the 60-min window closes *while* chatting, the agent can still force the cancellation."
+    },
+    {
+        "faq_id": "FAQ-0188",
+        "category": "Loyalty Program",
+        "question": "What is the ShopSphere Loyalty Program?",
+        "answer": "It is our rewards system where you earn points for every dollar spent, which can be redeemed for discounts or Store Credit."
+    },
+    {
+        "faq_id": "FAQ-0189",
+        "category": "Loyalty Program",
+        "question": "How do I become a Premium member?",
+        "answer": "You automatically upgrade to the Premium tier once your total annual spend exceeds $1,000 on ShopSphere."
+    },
+    {
+        "faq_id": "FAQ-0190",
+        "category": "Loyalty Program",
+        "question": "What are the benefits of Premium?",
+        "answer": "Premium members get free Expedited shipping, a dedicated account manager, priority support escalation, and exclusive sale access."
+    },
+    {
+        "faq_id": "FAQ-0191",
+        "category": "Loyalty Program",
+        "question": "Do my loyalty points expire?",
+        "answer": "Yes, standard loyalty points expire 12 months from the date they were earned. Premium tier points do not expire as long as you maintain Premium status."
+    },
+    {
+        "faq_id": "FAQ-0192",
+        "category": "Loyalty Program",
+        "question": "How do I redeem my points?",
+        "answer": "At checkout, you will see a slider allowing you to apply your available points as a discount against your subtotal."
+    },
+    {
+        "faq_id": "FAQ-0193",
+        "category": "Loyalty Program",
+        "question": "Can I transfer points to another account?",
+        "answer": "No, loyalty points are strictly non-transferable and have no cash value outside of the ShopSphere platform."
+    },
+    {
+        "faq_id": "FAQ-0194",
+        "category": "Loyalty Program",
+        "question": "Do I earn points on shipping fees or taxes?",
+        "answer": "No, points are strictly earned on the subtotal of the physical products after discounts, excluding taxes and shipping."
+    },
+    {
+        "faq_id": "FAQ-0195",
+        "category": "Loyalty Program",
+        "question": "What happens to my points if I return an item?",
+        "answer": "The points earned from purchasing that specific item will be deducted from your account balance upon processing the return."
+    },
+    {
+        "faq_id": "FAQ-0196",
+        "category": "Loyalty Program",
+        "question": "I returned an item I bought with points.",
+        "answer": "The points used to purchase the returned item will be refunded back to your loyalty account alongside any monetary refund."
+    },
+    {
+        "faq_id": "FAQ-0197",
+        "category": "Loyalty Program",
+        "question": "Is there a sign-up bonus?",
+        "answer": "Yes! Creating an account automatically enrolls you in the program and grants you 500 bonus welcome points."
+    },
+    {
+        "faq_id": "FAQ-0198",
+        "category": "Loyalty Program",
+        "question": "How do I check my points balance?",
+        "answer": "Your current points balance is always visible at the top of your 'Account Dashboard'."
+    },
+    {
+        "faq_id": "FAQ-0199",
+        "category": "Loyalty Program",
+        "question": "Do I get points for writing reviews?",
+        "answer": "Yes! Verified purchasers receive 50 bonus points for leaving a text review, and 100 points for adding a photo or video."
+    },
+    {
+        "faq_id": "FAQ-0200",
+        "category": "Loyalty Program",
+        "question": "What is priority support escalation?",
+        "answer": "If a Premium member faces an issue (e.g., delayed refund, damaged product), the ticket instantly bypasses Tier 1 and goes directly to a resolution manager."
+    }
+]

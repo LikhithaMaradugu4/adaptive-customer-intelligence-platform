@@ -1,0 +1,2802 @@
+[
+  {
+    "text": "My payment got deducted but my order was not confirmed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "payment failed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "Hey, money got deducted but no order confirmation",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "I made the payment yesterday and still haven't received any update regarding my order.",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "charged twice",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my credit card is constantly getting declined at checkout",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "upi error",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "money debited 2 times",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "Why is my payment not going through?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "card rejected",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "plz help money cut from bank but cart is still full",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "I have been trying to pay for the last hour but the gateway keeps crashing.",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "wallet balance used but order failed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "payment error 500",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "checkout is frozen after I entered my otp",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "how do i fix payment declined issue",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "unable to complete transaction",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my upi pin was entered correctly but it says failed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i paid via netbanking and no confirmation",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "double charge on my statement",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "can u check if my payment went thru?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "it says insufficient funds but i have enough balance",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "paymnt nt working",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "I would like to report a billing anomaly where my account was debited twice.",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "getting an error when adding new card",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "fraud alert triggered on my card during payment",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "why am i seeing an extra $5 charge?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "amount deducted from gpay but order unsuccessful",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "cannot select cash on delivery",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "cod option missing at checkout",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my emi transaction got cancelled",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "paid using gift card but asked for full amount anyway",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "hello the payment page is looping",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i think i paid 3 times by mistake",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "pls refund the extra amount charged",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "bank sent sms of deduction but site says failed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "paypal checkout not loading",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "error code: P-404 during payment",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "cvv error but i typed it right",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "can't use international card",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "payment stuck on processing",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "transaction pending since yesterday",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "is there an issue with your payment gateway right now?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my apple pay is not working on your app",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "money gone from account, where is my order!!!",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "why was my card charged before shipping",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "payment timeout",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "pls check transaction id 123456",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i paid via klarna and it failed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "getting a gateway timeout error",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my session expired during payment",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "u charged me twice for order #999",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "I am experiencing difficulties processing my payment.",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "deducted without otp",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "charged wrong amount",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "amount in cart was $20 but charged $25",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my bank blocked the transaction",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "cant finish checkout",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "payment unsucessful",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "I used my store credit but it still asked for my credit card.",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "the buy button is grayed out after payment",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i got a notification from bank but no order email",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "pls help payment declined",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "money is on hold",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "authorization failed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "why is the site rejecting my debit card?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "transaction rolled back",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "how to pay if my card fails",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "is upi down?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my payment is in processing state for 2 hours",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "paid but cart is not empty",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "help money deducted order not placed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "I attempted to pay with my Amex and received an error message.",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "why no cod?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my payment was reversed but money is missing",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i selected pay later but got charged immediately",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my visa card isn't accepted",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "can u cancel the duplicate payment?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "paid twice, need one refunded",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "the payment window closed unexpectedly",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "getting network error while paying",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i paid with points but it didn't register",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i keep getting payment auth error",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "why am i charged foreign transaction fee",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my checkout session expired after money was taken",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "payment details not saving",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "card ending in 1234 charged in error",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i cant complete the 3d secure verification",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my bank app says paid, your app says failed",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "plz look into my failed payment",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i tried 3 different cards and none work",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "why is shop pay not working",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "it says invalid zip code but it is correct",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "avs mismatch error on checkout",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "my transaction got flagged as fraud",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "payment was voided but no money back",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "i didn't authorize this charge",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "why was my payment cancelled",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "im trying to pay but the page is blank",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "can i retry my failed payment?",
+    "intent": "PAYMENT_ISSUE"
+  },
+  {
+    "text": "My package has not arrived yet",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "where is my order",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "tracking says delivered but I can't find it anywhere",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "The delivery is delayed by over a week.",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "package missing",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i paid for next day delivery and it's not here",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "pls change my delivery address",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the courier guy is not picking up my calls",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can u deliver tomorrow instead?",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my shipment is stuck at the sorting facility",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "tracking link is broken",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "why is my order taking so long to ship",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "still hasn't dispatched",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "I received an email stating my item was delivered, but my porch is empty.",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "delivry very late",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the tracking hasn't updated in 4 days",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "order shows returned to sender",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can I pick this up from the warehouse instead?",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "when will my items arrive",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "estimated delivery date is wrong",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i need this package by Friday",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "courier threw my package over the fence",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i was not home, how do i reschedule delivery",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the delivery address on the invoice is incorrect",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my package got lost in transit",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "fedex lost my box",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "tracking says attempted delivery but i was home all day",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "where is the rest of my order? only got 1 box",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "plz track my order #777",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "delivery man is demanding extra money",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i want to track my shipment",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "it says out for delivery since 8am",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can you leave the package at the back door?",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my package was left in the rain",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the courier marked it as delivered to neighbor but didn't say which one",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "I kindly request an update on my shipment status.",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my order is delayed and i want to cancel",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "how long does shipping take normally",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "why is the shipping status pending",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i want to expedite my shipping",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "box never arrived",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the tracking says handed to resident but i live alone and wasn't home",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "it's been a month where is my stuff",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my tracking number says not found",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "plz give me courier contact number",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my delivery is missing a tracking code",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can you deliver after 5 pm",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i got a text saying delivery failed",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the package was delivered to the wrong state",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "is my order lost?",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "they delivered it to the wrong apartment",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "how to find my tracking details",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "order status unfulfilled",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "when is it shipping out",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "u guys shipped it using the wrong carrier",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "this is taking way too long to arrive",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "why is the delivery date pushed back?",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can i hold my delivery at the post office?",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the mailman didn't leave a slip",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "it says delayed due to weather",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my package is stuck at customs",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i need to reroute my package",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "courier says address is incomplete",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "they asked for a pin code to deliver but i dont have it",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "delivery boy is refusing to come to my floor",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can you update my zipcode for delivery",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "I would like to file a missing package claim.",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "where my package",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "why does it say exception on tracking",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "package was stolen from my porch",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "delivery is way past the SLA",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my order is still processing after 5 days",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "tracking is stuck on label created",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "ups says they haven't received the package",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "when will it reach me?",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can i track my order via sms",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the delivery vehicle broke down according to tracking",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "it says my delivery is held at the depot",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my office was closed when they tried to deliver",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i need proof of delivery",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can you send me the tracking url again",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the estimated time of arrival changed 3 times",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i want to cancel the delivery and get it sent back",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the tracking says awaiting carrier pickup",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i moved out, please stop delivery",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "plz track my shipment",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "why is the package going backwards",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "it was marked delivered 2 days early but nothing is here",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the delivery agent left my package on the street",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can i sign for the package online",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i missed the delivery text message",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the order tracker is showing blank page",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "i did not receive my tracking details",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "the package was heavily delayed",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "how long does international shipping take",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "delivery was unsuccessful due to bad weather",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "can i change to store pickup",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "my tracking has been frozen for a week",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "where can i find my delivery pin",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "driver didn't even ring the bell",
+    "intent": "DELIVERY_ISSUE"
+  },
+  {
+    "text": "I want a refund for my cancelled order",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "when will i get my money back?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund status says completed but I have not received it",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "Please process my refund immediately, I am tired of waiting.",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund missing",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "you refunded the wrong amount",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "only got partial refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "why was my refund request rejected",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i need my money returned to my card",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how long does the refund take to reflect?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i want the refund to go to my bank, not store credit",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "where is my refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "still waiting for the money",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "I would like to inquire about the timeline for my refund processing.",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "u guys haven't refunded me yet",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "pls return my money",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my returned item reached u guys 3 days ago, where is refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my refund is delayed by 2 weeks",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "can u expedite my refund?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "the refund is not showing in my paypal",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "why did you deduct shipping charges from my refund?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "I need an ARN number for my refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund failed according to the app",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "can i get the refund via UPI?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how to track my refund status",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my card expired, how do i get the refund?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "I canceled the order 5 mins ago, when do I get a refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund process taking too long",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "u only sent me half the money back",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "why is the refund button not working",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i was promised a full refund but it hasn't arrived",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund my money now!",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "where can I put my bank details for refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "you gave me wallet cash but i want a real refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "can I request a refund for a damaged item?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my order was missing an item, need a refund for it",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "is my refund processed yet?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund window closed but i need my money",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how do i apply for a refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "the amount refunded doesn't match my invoice",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "what is the refund policy",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "you rejected my refund claiming i damaged it!",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my bank is asking for a refund reference number",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how many days till refund hits my account",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my refund was cancelled, why?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "pls give me my money back",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i returned the dress but no refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "did you process my return refund yet",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "im still waiting on the refund for order 123",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i want to claim a refund under the guarantee",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund is pending in my wallet",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "why did i get refunded for an item i wanted?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "you automatically cancelled my order, where is the refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "the refund link u sent is expired",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i haven't seen the credit on my statement",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how do i get a refund for late delivery",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "I am writing to formally request a refund for my recent transaction.",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "where is refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i need to raise a refund request",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my refund was sent to the wrong bank account",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "can i get a refund on the express shipping cost?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "why are you holding my money",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i got an email saying refund processed but bank says no",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how to change refund destination",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my friend bought it for me, can i get the refund?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "when do you initiate the refund?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i want a refund for the broken glass",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund my wallet balance to my bank",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i want to dispute the refund amount",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my cod order was returned, how to get refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "please generate refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my order was marked returned to seller, need refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "is the refund automatic?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "do i get a full refund including taxes?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund timeline",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "the refund is taking forever",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "can you check if my refund was triggered?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i did not receive my refund for the missing parts",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i sent the item back 2 weeks ago, no refund yet",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "what is the status of my refund ticket",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "money wasn't refunded",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i expect a full refund for this mess",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how to cancel the refund request",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "it's been 10 days since the refund email",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my refund was denied incorrectly",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund was credited to a closed account",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "can you process the refund faster",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i need the refund receipt",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "refund amnt is wrong",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "why did i only get a 50% refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "will u refund the return shipping fee too?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "can u reverse the refund? i want the item back",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "my refund keeps failing",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "im still waiting for the refund to clear",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i demand a refund immediately",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "did my refund get approved?",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "where is the refund tracking link",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "how do I contact billing about my refund",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "the refund is less than what i paid",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "i haven't got my refund back yet",
+    "intent": "REFUND_ISSUE"
+  },
+  {
+    "text": "The item I received is damaged",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "wrong size sent",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "This product stopped working after just one day of use.",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the color is completely different from the website",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "broken",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "parts are missing from the box",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i received someone else's order",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the quality is terrible",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "my shirt has a tear in it",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the electronics won't turn on",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "this looks like a fake product",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "product is defective",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the material feels very cheap",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i ordered a medium but got an xl",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "I am writing to inform you that the merchandise arrived in a defective state.",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "u sent me the wrong item",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "item is not as described",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the screen is cracked",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the shoes are too small",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i received an empty box",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the expiry date on this product is already passed",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "smells weird",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the zipper is broken",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "why did i get a used item?",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the charger is missing from the package",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it stopped working after 5 minutes",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the paint is chipping off",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the instructions manual is missing",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "how do i exchange a defective item",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "this is not what i ordered",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the glass is shattered",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "my phone case doesn't fit",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the button is stuck",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the fabric is torn",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i ordered blue but got red",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "this product is a health hazard, it started smoking",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "battery won't charge",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the seal was already broken",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the product is completely different from the photos",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i want a replacement for this faulty unit",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the seams are coming undone",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "bad quality",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it broke immediately",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "missing the screws to assemble it",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the taste of this supplement is awful",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the logo is printed upside down",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "my laptop stand is wobbly",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "product feels flimsy",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "I got an incorrect variation of my order",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the right earbud is not playing any sound",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i think this item is refurbished",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the package was intact but the item inside is broken",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "this does not fit my car",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "plz replace this damaged item",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the lens is scratched",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "why does it look so cheap",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the strap broke on the first day",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "this is a counterfeit product",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i received the wrong model number",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the wheels are missing",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "there is a stain on the shirt",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the stitching is terrible",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it makes a weird noise when I turn it on",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the bottle was leaking in the package",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "u sent me 1 instead of 2 items",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the item is defective and unusable",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the keyboard has sticky keys",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it keeps shutting off by itself",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the connection drops constantly",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "i want to report a fake seller",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the poster is bent and wrinkled",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "my item is malfunctioning",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the item shrank after one wash",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the remote control is not included",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it doesn't do what it claims to do",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the sizing chart is completely inaccurate",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the product is rusted",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the power cord is the wrong type",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "my product is missing parts",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "this book has missing pages",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the item was DOA (dead on arrival)",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "there's a dent in the side",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the ingredients list is different from what was advertised",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the cap is broken",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it is too heavy and not as described",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the screen protector arrived cracked",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the software key doesn't work",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "wrong language on the product box",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the watch strap is too short",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the toy is missing an arm",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "how do i return a faulty product",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the glue is dried up",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it overheats within minutes",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the fragrance is wrong",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the product causes skin irritation",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "it's missing the charging block",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the plastic is shattered",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "wrong format",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "why did i get an empty envelope",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "the item has a foul odor",
+    "intent": "PRODUCT_ISSUE"
+  },
+  {
+    "text": "I cannot log into my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "forgot password",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "I requested a password reset link but it is not arriving in my inbox.",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my account got locked",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "cant sign in",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how do I update my email address?",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i want to delete my profile",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "the 2FA OTP is not coming to my phone",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my loyalty points are missing",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "someone hacked my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "why is my account suspended?",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to change my billing address",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "getting error 403 on my profile page",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "I need to merge two accounts",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my phone number is not verifying",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "pls unlock my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "can u change my password for me",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i lost access to my 2FA authenticator app",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how do i close my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "the login button is not working",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "why am i in a login loop",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "it says invalid credentials but they are right",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my order history is totally empty",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i cannot update my saved credit card",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "I require assistance with recovering my compromised account.",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to change my username",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my account was banned for no reason",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i want to unsubscribe from emails",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "can't access my profile settings",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i didn't receive the verification email to create my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to check my reward points balance",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i accidentally created two accounts",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how do i turn off 2 factor authentication",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "it says email already in use",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my profile picture won't upload",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i want to opt out of marketing sms",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "is my data secure?",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "plz reset my password",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i lost the phone number linked to my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how do i switch to a business account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my premium membership is not showing active",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "why can't i leave a review from my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i want to request all my data under GDPR",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "app keeps logging me out",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "cannot add a new shipping address",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i'm getting a 'too many attempts' error",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to recover my disabled account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "it says my ip is blocked from logging in",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my saved items disappeared from my wishlist",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i need to update my date of birth",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "someone placed an order using my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how do i verify my student status on my profile",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "can i transfer my store credit to another account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my gift card balance is not updating",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "why am i not getting OTPs anymore",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my account language changed automatically",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how do i sign in with google",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i want to remove my phone number",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "I can't see my past invoices in my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my login session expires too quickly",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to add a secondary email",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i can't remove an old address",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "why is my account restricted from buying",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "the website says my account doesn't exist",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "can you verify my identity manually",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i need help regaining access",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "account deleted by mistake",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my points got deducted but i didn't use them",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to upgrade my account tier",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "why do i have to log in every time i open the app",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i am locked out",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "the captcha is not working for login",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to link my facebook account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i forgot the email i used to sign up",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "can i change my account currency",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "why is my name misspelled on my profile",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to set up biometric login",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my account was created without my permission",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "can i share my account with my family",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to clear my search history on my profile",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my profile page is completely blank",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how do i activate 2FA",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i want to recover my guest order into my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my login is disabled",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "the reset code says it is invalid",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i am getting someone else's emails on my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to disconnect a third party app from my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "pls help me log in",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my password doesn't meet the new requirements",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i cant access my digital downloads in my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i need to change my security questions",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my account seems to be frozen",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to export my account data",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i want to downgrade my account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "login page is broken on safari",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "my account tier was downgraded unfairly",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "how to delete a saved bank account",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i cant log in via the mobile app",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "i need to report a privacy issue",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "where is the sign out button",
+    "intent": "ACCOUNT_ISSUE"
+  },
+  {
+    "text": "what are your working hours",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have a physical store",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "I was wondering if you offer international shipping to Europe?",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how can i contact customer support",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "return policy?",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how does the loyalty program work",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you offer gift wrapping options",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "where are you located",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i buy a gift card",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what payment methods do you support",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you guys price match?",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "is there a warranty on your electronics",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to apply a promo code",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have a student discount",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "I would like to request more information about your bulk purchasing options.",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you sell wholesale",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i get a catalog of your products",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how long do refunds normally take",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you offer free shipping",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is the customer care number",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "is your packaging eco friendly?",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how do i become a premium member",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you ship to po boxes",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is shopsphere protect",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have an affiliate program",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to subscribe to the newsletter",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i return clearance items",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "is cash on delivery available",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "where can i find the sizing guide",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have an app",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "are your products vegan",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to claim warranty",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how can i leave a review",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you accept paypal",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is the maximum weight for freight delivery",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "are your products authentic?",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can you send me a sample",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to check my gift card balance",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have a holiday return policy",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "is this item in stock?",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how often do you restock",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i pre-order this item",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what does refurbished mean",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to find the user manual",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you offer technical support for electronics",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is the difference between standard and express shipping",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how do i know if my order is confirmed",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i cancel an order before it ships",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you charge sales tax",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what are the terms of the shop pay installment",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i request a custom product",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to find my order id",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you offer corporate gifting",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how can i track a package without an account",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is the email for support",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "is it safe to use my credit card on your site",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have any stores in london",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how long is the warranty period",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i use multiple promo codes",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what happens if a package is lost",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have a military discount",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to get an invoice for my company",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you offer assembly services",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is your privacy policy",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how do i exchange an item",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i add items to an existing order",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "are there any hidden fees",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to identify a fake email from you",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have a referral code system",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i drop off a return at a local post office",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what carriers do you use",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you require a signature upon delivery",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to apply for a job at shopsphere",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "is this product waterproof",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i trade in my old device",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to read the expiry date on the package",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is the minimum order value for cod",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you offer financing options",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to contact the seller directly",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "is customer service 24/7",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what do i do if my promo code expired",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to view my past orders",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have a size chart for shoes",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i purchase extended warranty later",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is the cutoff time for same day shipping",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to clear my cart",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you ship to apo/fpo addresses",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i save an item for later",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what is the return window for electronics",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to print a receipt",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you have a chat support option",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to opt out of targeted ads",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i use a prepaid visa card",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to know if my payment went through",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "what does backordered mean",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "can i get a discount for my first order",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to handle a recall",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "do you do flash sales",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "where is the headquarters located",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "how to report a bug on the website",
+    "intent": "GENERAL_QUERY"
+  },
+  {
+    "text": "your customer service is terrible",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am never buying from shopsphere again",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "This has been the worst shopping experience of my entire life and I demand compensation.",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are running a scam",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "worst app ever",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i have been waiting on hold for 2 hours",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "the support agent lied to me",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your policies are completely unfair",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "this company is a joke",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i will report you to the consumer forum",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "nobody is responding to my emails",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "u guys just stole my money",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i want to speak to a manager right now",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your return process is a nightmare",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "why do you make it so hard to get help",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "im filing a chargeback with my bank",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "the agent just disconnected the chat on me",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "I wish to formally file a grievance regarding the unacceptable conduct of your support staff.",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are pathetic",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am taking legal action",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "stop ignoring my tickets",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your delivery service is the absolute worst",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i've never dealt with such an incompetent company",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you keep sending me copy paste replies",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i want compensation for my wasted time",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your website is completely broken",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "the customer care number doesn't even work",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you ruined my daughter's birthday",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am leaving a 1 star review everywhere",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "why are you guys so slow?",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "this is false advertising",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your products are absolute trash",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i demand a supervisor",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys have zero accountability",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "worst customer support i've ever experienced",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "stop sending me promotional emails after you scammed me",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your warranty is basically useless",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i'm tired of your automated bots",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "can i talk to a real human being?!",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are crooks",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "the way you treat customers is disgusting",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i've been trying to resolve this for a month",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your system is flawed",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i hate this company",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys don't care about your customers at all",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "this is daylight robbery",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your resolution process is designed to make people give up",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am extremely frustrated with this service",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys promised 2 day delivery and it's been 2 weeks",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your support team is completely useless",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "why do you even have a phone number if no one answers",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am thoroughly disappointed",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are a massive fraud",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i want the ceo's email address",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "this is unacceptable business practice",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your app is full of bugs",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you closed my ticket without fixing the issue",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i feel completely cheated",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your sizing guide is a complete lie",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you are selling defective garbage",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am tired of arguing with you people",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your VIP membership is a scam",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you deleted my negative review, that's shady",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i will make a viral tiktok about this",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "how can you call yourselves a premium brand",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your courier partner forged my signature",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you owe me an apology",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i have never been so angry at a company",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your pricing is deceptive",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "the hold music is driving me insane",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are completely unprofessional",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "this entire process has been a headache",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i regret ever buying from you",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your 'expert' support couldn't solve a simple issue",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys make it impossible to get a refund",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am warning all my friends not to use your site",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you sent me a broken item on purpose",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your live chat is completely broken",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i want to formally complain about an agent",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you have the worst logistics team in the world",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am beyond furious right now",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are breaching consumer laws",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your guarantees mean absolutely nothing",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i have been treated horribly",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys just lost a loyal customer",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i expect better from a company like yours",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your lack of communication is appalling",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am sick and tired of your excuses",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are extremely shady",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your whole operation is a disaster",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i will be contacting the better business bureau",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you have zero respect for your customers",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i want my money back and i want to cancel my account",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your automated system is a nightmare to navigate",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i have had enough of your terrible service",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "you guys are just a bunch of thieves",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am disgusted by how you handled this",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "your quality control does not exist",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "this is the most unprofessional interaction i've ever had",
+    "intent": "COMPLAINT"
+  },
+  {
+    "text": "i am escalating this to the highest authority",
+    "intent": "COMPLAINT"
+  }
+]

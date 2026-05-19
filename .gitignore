@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+
+# Env
+.env
+
+# Data (ignore large files)
+data/full_*
+
+# Vector DB
+vectorstore/
+
+# OS
+.DS_Store
+
+#Virtual Environments
+venv/
+env/
+
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+chroma_db/
+data/chroma/
+*.sqlite3
+*.db

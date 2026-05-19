@@ -1,0 +1,1001 @@
+customer_id,full_name,customer_type,age,gender,city,country,registration_date,total_orders,total_spent,average_order_value,last_purchase_date,preferred_category,payment_preference,return_count,complaint_count,average_satisfaction_score,language_preference,account_status
+CUST-00001,Li Jones,Regular,34,Male,Berlin,Germany,2023-11-09,18,846.29,47.02,2025-12-31,Furniture,Wallet,2,1,3.8,German,Inactive
+CUST-00002,Li Garcia,Premium,72,Female,Los Angeles,USA,2024-03-07,103,41864.76,406.45,2025-05-29,Electronics,UPI,1,1,4.3,English,Active
+CUST-00003,Richard Lewis,Premium,39,Female,Mumbai,India,2024-10-18,108,12364.44,114.49,2025-07-01,Fitness,Credit Card,3,1,4.2,English,Active
+CUST-00004,Robert White,Regular,25,Female,New York,USA,2025-06-06,26,1517.87,58.38,2025-12-21,Furniture,COD,2,1,3.0,English,Active
+CUST-00005,Daniel Miller,Regular,18,Male,London,UK,2025-11-24,9,883.09,98.12,2026-02-19,Home Appliances,Credit Card,1,0,3.5,English,Active
+CUST-00006,Robert Sharma,Premium,44,Female,New York,USA,2025-10-14,57,11785.86,206.77,2026-01-31,Fitness,Debit Card,2,0,4.4,English,Active
+CUST-00007,Priya Hernandez,Regular,31,Male,Mumbai,India,2024-02-20,13,1724.06,132.62,2025-07-25,Furniture,UPI,1,1,3.3,English,Active
+CUST-00008,Mary Chen,Regular,65,Male,Los Angeles,USA,2024-01-26,24,2337.69,97.4,2025-09-02,Home Appliances,UPI,2,0,4.2,English,Active
+CUST-00009,Anthony White,Premium,53,Female,Paris,France,2024-11-09,119,43353.56,364.32,2025-06-19,Fashion,Wallet,3,1,4.9,Hindi,Active
+CUST-00010,Karen Johnson,Regular,45,Male,Munich,Germany,2024-04-15,25,4786.56,191.46,2026-03-23,Electronics,Wallet,2,0,4.1,Mandarin,Inactive
+CUST-00011,Maria Thomas,Regular,37,Female,Barcelona,Spain,2025-01-29,9,1241.83,137.98,2026-03-16,Fashion,Debit Card,0,0,3.1,Mandarin,Active
+CUST-00012,Neha Smith,Regular,67,Male,Vancouver,Canada,2024-11-05,29,3184.55,109.81,2025-08-23,Fitness,Wallet,3,2,3.0,English,Active
+CUST-00013,Lisa Jackson,Regular,52,Male,Berlin,Germany,2026-03-02,11,932.59,84.78,2026-05-13,Fitness,Wallet,1,0,3.9,Hindi,Active
+CUST-00014,William Ramirez,Premium,24,Non-Binary,Delhi,India,2022-05-01,94,21009.05,223.5,2025-09-09,Furniture,Wallet,3,0,4.7,Hindi,Active
+CUST-00015,Maria Martin,Premium,23,Female,Vancouver,Canada,2022-07-13,83,22578.18,272.03,2026-03-12,Fashion,COD,0,0,4.9,English,Active
+CUST-00016,Wei Jackson,New,53,Female,London,UK,2026-05-14,3,173.19,57.73,2026-05-16,Fashion,UPI,0,0,4.6,English,Active
+CUST-00017,Lisa Thompson,High-Risk,55,Female,Toronto,Canada,2024-01-25,38,4033.03,106.13,2025-07-03,Fitness,COD,28,12,2.1,English,Suspended
+CUST-00018,Betty Perez,Regular,67,Male,Munich,Germany,2025-02-18,16,1751.57,109.47,2025-06-28,Fashion,COD,1,0,3.8,English,Active
+CUST-00019,Sandra Rodriguez,Regular,44,Prefer not to say,Paris,France,2023-09-02,25,3124.08,124.96,2026-04-27,Electronics,Credit Card,2,1,3.9,Mandarin,Active
+CUST-00020,Joseph Sharma,Regular,73,Male,Berlin,Germany,2025-04-30,28,4746.45,169.52,2025-08-27,Fashion,Debit Card,2,1,3.3,French,Active
+CUST-00021,Matthew Martinez,New,29,Male,Berlin,Germany,2026-04-27,2,272.85,136.43,2026-04-29,Fitness,Credit Card,0,0,4.1,French,Active
+CUST-00022,Mark Miller,New,21,Male,Mumbai,India,2026-05-10,2,205.93,102.97,2026-05-12,Home Appliances,COD,0,0,3.8,English,Active
+CUST-00023,Priya Wilson,Premium,55,Female,Vancouver,Canada,2022-09-17,92,37625.91,408.98,2025-10-02,Furniture,UPI,3,0,4.8,English,Active
+CUST-00024,Susan Anderson,New,55,Female,Osaka,Japan,2026-04-28,2,169.11,84.56,2026-05-13,Furniture,COD,0,0,3.8,Hindi,Active
+CUST-00025,Barbara Patel,Premium,58,Female,Lyon,France,2023-02-11,118,55678.75,471.85,2026-03-05,Fashion,Wallet,0,1,4.8,French,Active
+CUST-00026,Betty Anderson,Regular,52,Female,Sydney,Australia,2023-10-16,7,1026.32,146.62,2025-12-05,Electronics,Credit Card,0,0,3.1,English,Active
+CUST-00027,Robert Rodriguez,Regular,27,Female,Delhi,India,2025-07-23,25,5215.27,208.61,2025-11-02,Electronics,UPI,3,0,3.6,Spanish,Active
+CUST-00028,Elizabeth Williams,Regular,23,Female,Manchester,UK,2024-09-02,28,3605.3,128.76,2025-09-15,Home Appliances,Credit Card,1,1,4.5,English,Active
+CUST-00029,Patricia Lee,Regular,63,Female,Vancouver,Canada,2024-02-27,20,3329.96,166.5,2026-02-15,Fashion,Wallet,1,0,3.5,English,Active
+CUST-00030,James Smith,Regular,69,Female,Munich,Germany,2025-06-01,6,1048.24,174.71,2025-06-26,Furniture,Debit Card,1,0,3.5,Mandarin,Inactive
+CUST-00031,Sandra Lee,High-Risk,26,Female,Munich,Germany,2024-04-09,17,3327.45,195.73,2025-08-01,Fashion,COD,9,7,1.9,German,Suspended
+CUST-00032,Anthony Sharma,Regular,62,Male,Barcelona,Spain,2025-06-16,11,1340.29,121.84,2026-01-17,Fashion,Credit Card,0,0,4.4,Mandarin,Active
+CUST-00033,David Perez,High-Risk,22,Non-Binary,Madrid,Spain,2024-03-26,19,1249.93,65.79,2026-02-02,Furniture,Debit Card,9,8,1.0,Spanish,Suspended
+CUST-00034,Barbara Garcia,Regular,66,Male,Berlin,Germany,2024-10-28,10,472.23,47.22,2025-10-08,Home Appliances,Debit Card,0,0,4.3,German,Active
+CUST-00035,Carlos Taylor,Premium,62,Female,Sydney,Australia,2022-05-13,47,4486.06,95.45,2026-03-03,Home Appliances,Debit Card,0,0,4.7,English,Active
+CUST-00036,Betty Martinez,Regular,66,Female,Barcelona,Spain,2025-11-04,21,4851.35,231.02,2025-11-22,Fashion,Debit Card,3,1,4.0,Mandarin,Active
+CUST-00037,Anthony Chen,New,68,Male,Los Angeles,USA,2026-05-14,2,202.6,101.3,2026-05-18,Fitness,UPI,0,0,4.2,English,Active
+CUST-00038,Carlos Martinez,Premium,21,Female,Osaka,Japan,2025-10-21,144,55329.15,384.23,2025-12-18,Fashion,UPI,0,2,4.6,Hindi,Active
+CUST-00039,Matthew Sanchez,Premium,70,Prefer not to say,Madrid,Spain,2024-12-03,50,20789.32,415.79,2025-07-01,Electronics,COD,1,0,4.6,Hindi,Active
+CUST-00040,Daniel Sharma,Regular,26,Male,Berlin,Germany,2025-04-27,4,977.51,244.38,2025-07-03,Electronics,Wallet,0,0,4.4,German,Active
+CUST-00041,Susan Taylor,Premium,19,Female,Manchester,UK,2022-05-03,97,30217.39,311.52,2026-05-12,Fashion,UPI,0,0,4.9,English,Active
+CUST-00042,Elizabeth Gonzalez,Regular,56,Male,Los Angeles,USA,2024-01-09,8,1598.85,199.86,2026-04-12,Fitness,Credit Card,1,0,3.6,English,Active
+CUST-00043,Mark Lee,Regular,64,Male,Berlin,Germany,2026-04-03,4,762.26,190.56,2026-04-16,Electronics,Wallet,0,0,3.6,French,Active
+CUST-00044,Li Moore,Premium,56,Female,New York,USA,2023-07-05,108,51895.2,480.51,2025-08-01,Fashion,COD,3,0,4.4,English,Active
+CUST-00045,Priya Thompson,High-Risk,49,Male,Barcelona,Spain,2023-09-02,15,1129.95,75.33,2025-06-14,Electronics,Credit Card,8,8,2.6,Spanish,Suspended
+CUST-00046,Barbara White,New,74,Female,Madrid,Spain,2026-05-07,3,168.96,56.32,2026-05-12,Furniture,Credit Card,0,0,4.8,German,Active
+CUST-00047,James Taylor,Premium,30,Male,Mumbai,India,2024-08-01,58,8583.97,148.0,2025-12-02,Home Appliances,Debit Card,2,0,4.9,English,Active
+CUST-00048,Mark Martin,High-Risk,51,Male,Barcelona,Spain,2026-02-19,25,4013.93,160.56,2026-03-29,Furniture,Debit Card,16,14,2.0,Mandarin,Active
+CUST-00049,Joseph Hernandez,New,47,Male,Dubai,UAE,2026-05-14,2,239.73,119.86,2026-05-16,Fitness,Debit Card,0,0,4.5,French,Active
+CUST-00050,Richard Martin,High-Risk,43,Male,Munich,Germany,2024-04-18,35,1804.15,51.55,2025-08-16,Electronics,Credit Card,22,9,1.5,Spanish,Inactive
+CUST-00051,Matthew Lopez,High-Risk,65,Male,Osaka,Japan,2025-02-01,46,6114.86,132.93,2025-12-02,Furniture,Debit Card,33,21,2.4,German,Suspended
+CUST-00052,Maria Miller,Regular,36,Female,Berlin,Germany,2024-04-11,23,4507.05,195.96,2025-07-26,Furniture,UPI,3,2,4.3,Mandarin,Active
+CUST-00053,David Thomas,Premium,19,Non-Binary,Toronto,Canada,2022-05-10,122,49657.84,407.03,2025-07-20,Fashion,UPI,2,0,4.9,English,Active
+CUST-00054,James Harris,Regular,67,Male,Sydney,Australia,2025-08-12,21,1905.49,90.74,2026-01-10,Fashion,COD,2,2,3.6,English,Active
+CUST-00055,Margaret Clark,New,57,Male,Barcelona,Spain,2026-04-22,3,103.42,34.47,2026-04-29,Fitness,COD,0,0,4.0,Spanish,Active
+CUST-00056,Maria Martinez,Premium,59,Female,New York,USA,2024-05-12,101,35377.24,350.27,2025-10-29,Fashion,Debit Card,1,1,4.6,English,Active
+CUST-00057,Charles Lee,Regular,71,Male,Vancouver,Canada,2023-12-24,28,2023.0,72.25,2026-02-23,Home Appliances,UPI,3,0,3.9,English,Active
+CUST-00058,Maria Sanchez,Regular,38,Female,Dubai,UAE,2024-06-18,20,1202.7,60.14,2025-11-09,Electronics,Credit Card,2,0,4.2,Hindi,Inactive
+CUST-00059,Maria Smith,Regular,34,Prefer not to say,Manchester,UK,2026-01-12,19,3970.43,208.97,2026-01-20,Home Appliances,Debit Card,2,1,3.9,English,Active
+CUST-00060,Anthony Moore,Regular,35,Female,Sydney,Australia,2024-10-21,15,2808.72,187.25,2026-03-12,Furniture,UPI,1,1,4.2,English,Active
+CUST-00061,Margaret Sharma,High-Risk,57,Male,Berlin,Germany,2024-09-19,42,5592.67,133.16,2025-09-24,Electronics,Wallet,21,23,2.9,German,Suspended
+CUST-00062,Barbara Gonzalez,Regular,35,Male,Manchester,UK,2024-06-16,14,1268.98,90.64,2025-07-07,Fashion,Credit Card,0,0,4.1,English,Active
+CUST-00063,Anthony Taylor,New,54,Male,Delhi,India,2026-05-08,1,152.23,152.23,2026-05-10,Home Appliances,Credit Card,0,0,4.5,Spanish,Active
+CUST-00064,Susan Miller,Regular,26,Female,Tokyo,Japan,2026-04-17,26,1105.74,42.53,2026-04-18,Electronics,UPI,5,1,4.2,French,Active
+CUST-00065,Lisa Johnson,Regular,71,Non-Binary,Singapore,Singapore,2025-06-17,29,1322.3,45.6,2025-11-01,Fashion,COD,3,0,3.4,Spanish,Active
+CUST-00066,Rahul Anderson,Premium,40,Female,Paris,France,2024-08-01,135,48322.11,357.94,2025-06-02,Fitness,Wallet,4,2,4.4,Mandarin,Active
+CUST-00067,Sarah White,Premium,43,Male,Lyon,France,2022-12-16,114,13467.11,118.13,2025-06-30,Fashion,Wallet,0,0,4.7,English,Active
+CUST-00068,Joseph Thompson,Premium,57,Female,Delhi,India,2022-04-17,81,25807.15,318.61,2025-11-01,Home Appliances,Wallet,3,1,4.7,Hindi,Active
+CUST-00069,Carlos Lopez,New,47,Female,Barcelona,Spain,2026-05-12,1,55.21,55.21,2026-05-14,Furniture,UPI,0,0,3.9,English,Active
+CUST-00070,Lisa Sanchez,Regular,28,Male,Melbourne,Australia,2025-01-10,19,3284.8,172.88,2026-02-28,Home Appliances,COD,2,1,3.5,English,Active
+CUST-00071,David Garcia,Regular,58,Female,Osaka,Japan,2026-02-18,16,1736.49,108.53,2026-04-03,Fashion,Credit Card,1,0,3.3,French,Inactive
+CUST-00072,Mary Chen,New,32,Female,Madrid,Spain,2026-05-02,2,164.03,82.02,2026-05-06,Fitness,Credit Card,0,0,4.8,German,Active
+CUST-00073,Joseph Robinson,High-Risk,75,Female,Madrid,Spain,2024-04-05,45,9633.88,214.09,2025-06-05,Fitness,Wallet,15,12,1.5,Hindi,Suspended
+CUST-00074,Robert Lee,Premium,64,Female,Lyon,France,2024-05-08,51,21069.26,413.12,2026-01-23,Fashion,UPI,1,0,4.3,English,Active
+CUST-00075,Christopher Chen,New,24,Non-Binary,Delhi,India,2026-05-15,3,142.05,47.35,2026-05-15,Fashion,COD,0,0,3.9,French,Active
+CUST-00076,Maria Thomas,Regular,50,Male,Barcelona,Spain,2025-11-05,13,712.84,54.83,2025-11-20,Fitness,COD,1,0,3.5,Spanish,Active
+CUST-00077,Thomas Davis,Regular,34,Non-Binary,Munich,Germany,2025-12-09,27,4384.14,162.38,2026-02-16,Fashion,Debit Card,3,1,3.2,Hindi,Active
+CUST-00078,Mark Lewis,Regular,55,Female,Melbourne,Australia,2024-12-03,14,777.73,55.55,2025-08-01,Fashion,COD,2,0,3.5,English,Active
+CUST-00079,Anthony Williams,New,41,Female,Paris,France,2026-04-22,1,124.56,124.56,2026-05-09,Home Appliances,Wallet,0,0,4.2,English,Active
+CUST-00080,Mark Robinson,New,57,Male,Paris,France,2026-05-05,3,344.76,114.92,2026-05-15,Home Appliances,Wallet,0,0,3.6,Mandarin,Active
+CUST-00081,David Ramirez,Regular,22,Female,Los Angeles,USA,2024-12-12,8,1508.43,188.55,2026-04-15,Fitness,COD,0,0,4.0,English,Active
+CUST-00082,Barbara Smith,High-Risk,51,Female,Berlin,Germany,2023-10-22,13,1962.53,150.96,2026-03-12,Furniture,Credit Card,9,4,3.0,French,Suspended
+CUST-00083,Richard Thomas,New,49,Male,Toronto,Canada,2026-04-26,1,110.53,110.53,2026-05-03,Electronics,Debit Card,0,0,3.7,English,Active
+CUST-00084,Michael Miller,Regular,75,Male,Mumbai,India,2026-04-09,19,885.56,46.61,2026-04-29,Fitness,Credit Card,2,1,3.3,Mandarin,Active
+CUST-00085,Margaret Taylor,Regular,58,Female,Mumbai,India,2024-10-24,22,4516.83,205.31,2025-10-24,Fashion,Wallet,2,1,3.6,Hindi,Active
+CUST-00086,Nancy Wilson,Regular,33,Female,Melbourne,Australia,2024-01-08,21,4121.28,196.25,2025-05-29,Home Appliances,UPI,3,1,4.1,English,Active
+CUST-00087,Thomas Lewis,Premium,54,Female,Singapore,Singapore,2023-11-02,76,14606.52,192.19,2025-06-13,Furniture,COD,3,1,4.3,German,Active
+CUST-00088,Li Singh,Premium,19,Male,Tokyo,Japan,2023-02-18,135,19763.48,146.4,2025-09-21,Electronics,Credit Card,0,1,4.2,German,Active
+CUST-00089,Charles Robinson,Regular,71,Male,Los Angeles,USA,2025-11-28,27,4740.34,175.57,2025-12-18,Electronics,COD,2,1,4.4,English,Inactive
+CUST-00090,Christopher Brown,High-Risk,74,Male,Los Angeles,USA,2023-11-11,44,5874.39,133.51,2025-06-15,Fitness,Credit Card,18,11,1.8,English,Active
+CUST-00091,John Moore,Premium,58,Female,London,UK,2023-04-06,90,23651.33,262.79,2025-07-03,Fashion,COD,2,1,4.8,English,Active
+CUST-00092,Linda White,Regular,34,Female,Mumbai,India,2024-05-07,5,686.71,137.34,2026-01-08,Electronics,Wallet,0,0,4.0,German,Active
+CUST-00093,Jennifer Brown,Regular,66,Male,New York,USA,2025-05-20,27,1221.66,45.25,2025-08-22,Home Appliances,UPI,1,0,4.2,English,Active
+CUST-00094,Matthew Clark,Premium,58,Male,Delhi,India,2025-01-22,31,3913.83,126.25,2026-01-11,Home Appliances,UPI,0,0,4.3,French,Active
+CUST-00095,Wei Patel,Regular,34,Non-Binary,Singapore,Singapore,2024-03-28,28,4611.98,164.71,2025-07-20,Home Appliances,Debit Card,5,2,4.2,French,Active
+CUST-00096,Margaret Clark,High-Risk,40,Female,Delhi,India,2025-02-21,27,5308.9,196.63,2025-11-16,Electronics,UPI,8,8,2.0,Hindi,Active
+CUST-00097,Mary Harris,Regular,61,Female,Berlin,Germany,2024-12-08,5,408.53,81.71,2025-10-03,Electronics,UPI,0,0,4.3,French,Active
+CUST-00098,Joseph Clark,Regular,37,Male,Madrid,Spain,2025-03-11,8,599.05,74.88,2026-04-15,Home Appliances,COD,0,0,4.3,English,Inactive
+CUST-00099,Mark Martinez,New,26,Prefer not to say,Vancouver,Canada,2026-05-06,2,251.02,125.51,2026-05-18,Electronics,UPI,0,0,4.6,English,Active
+CUST-00100,William Brown,High-Risk,39,Female,Berlin,Germany,2025-04-24,31,6064.45,195.63,2026-02-21,Home Appliances,Credit Card,18,12,1.7,Mandarin,Active
+CUST-00101,Maria Ramirez,Regular,51,Female,Melbourne,Australia,2026-01-25,7,1888.81,269.83,2026-02-03,Home Appliances,COD,0,0,4.2,English,Active
+CUST-00102,Linda Rodriguez,Premium,60,Female,Tokyo,Japan,2025-07-30,98,29169.31,297.65,2026-02-24,Furniture,COD,4,0,4.2,Spanish,Active
+CUST-00103,Rahul Patel,Premium,71,Prefer not to say,Osaka,Japan,2024-02-24,49,19238.83,392.63,2025-07-24,Home Appliances,UPI,1,0,4.2,Mandarin,Active
+CUST-00104,Jessica Johnson,Regular,46,Male,Berlin,Germany,2024-07-03,15,3662.53,244.17,2025-07-07,Electronics,Wallet,2,0,4.0,French,Active
+CUST-00105,Maria Robinson,Regular,65,Female,Dubai,UAE,2024-07-14,23,1272.77,55.34,2026-05-16,Electronics,Debit Card,1,0,3.9,German,Inactive
+CUST-00106,Charles Wilson,Regular,29,Female,Toronto,Canada,2023-08-22,26,1336.44,51.4,2025-10-18,Fitness,COD,1,0,3.5,English,Active
+CUST-00107,Mark Ramirez,New,63,Female,Berlin,Germany,2026-04-24,2,279.55,139.78,2026-05-07,Furniture,COD,0,0,3.6,Spanish,Active
+CUST-00108,Linda Martinez,Regular,18,Female,Lyon,France,2024-12-18,21,1849.84,88.09,2025-11-19,Electronics,COD,1,1,3.0,Hindi,Active
+CUST-00109,Linda Sanchez,New,35,Male,Barcelona,Spain,2026-04-27,3,67.06,22.35,2026-05-17,Fashion,UPI,0,0,3.7,English,Active
+CUST-00110,Matthew Wilson,Regular,40,Male,Berlin,Germany,2025-08-25,28,6842.89,244.39,2026-05-17,Fitness,Wallet,1,1,3.5,Spanish,Active
+CUST-00111,Jessica Johnson,Regular,24,Male,Manchester,UK,2024-11-27,10,938.76,93.88,2026-03-16,Electronics,Debit Card,0,0,3.1,English,Active
+CUST-00112,Robert Davis,New,25,Male,Barcelona,Spain,2026-05-13,2,116.16,58.08,2026-05-13,Fashion,Wallet,0,0,3.6,Mandarin,Active
+CUST-00113,William Thomas,New,38,Female,Lyon,France,2026-05-15,2,51.12,25.56,2026-05-16,Fashion,UPI,0,0,4.5,Spanish,Active
+CUST-00114,Mary Williams,Regular,58,Female,Madrid,Spain,2026-02-06,27,1358.57,50.32,2026-05-11,Electronics,UPI,3,1,3.8,English,Active
+CUST-00115,David Hernandez,Regular,71,Female,Singapore,Singapore,2026-01-01,17,1775.16,104.42,2026-04-20,Furniture,Credit Card,2,0,3.6,Spanish,Active
+CUST-00116,Neha Hernandez,Regular,53,Female,Los Angeles,USA,2024-08-12,19,1673.77,88.09,2026-03-19,Fitness,Wallet,2,1,4.3,English,Active
+CUST-00117,Joseph Sanchez,Regular,75,Female,Singapore,Singapore,2025-07-13,25,2530.27,101.21,2025-09-16,Electronics,Debit Card,4,0,3.8,Mandarin,Active
+CUST-00118,Nancy Harris,Premium,21,Female,Melbourne,Australia,2024-10-16,55,27523.07,500.42,2025-06-06,Fashion,UPI,2,0,4.4,English,Active
+CUST-00119,Wei Singh,New,33,Male,Munich,Germany,2026-04-28,2,214.96,107.48,2026-05-13,Fashion,COD,0,0,3.6,French,Active
+CUST-00120,Daniel Clark,New,49,Male,Los Angeles,USA,2026-04-30,3,153.52,51.17,2026-05-13,Electronics,COD,0,0,4.4,English,Active
+CUST-00121,Linda Garcia,New,26,Female,Dubai,UAE,2026-04-19,1,106.58,106.58,2026-05-04,Fashion,UPI,0,0,4.3,Hindi,Active
+CUST-00122,James Anderson,Regular,64,Male,Dubai,UAE,2025-08-11,22,3947.21,179.42,2026-03-10,Fashion,Wallet,1,1,4.0,Hindi,Active
+CUST-00123,Thomas Brown,Regular,71,Female,Sydney,Australia,2025-02-15,30,2747.01,91.57,2026-02-05,Home Appliances,Debit Card,4,1,3.4,English,Active
+CUST-00124,Elizabeth Brown,Premium,69,Male,Los Angeles,USA,2022-07-06,148,28906.39,195.31,2025-05-30,Home Appliances,Credit Card,4,1,4.8,English,Active
+CUST-00125,Robert Singh,High-Risk,35,Female,Los Angeles,USA,2025-12-05,6,666.44,111.07,2026-02-18,Fitness,COD,4,1,2.6,English,Active
+CUST-00126,Karen Martinez,Regular,24,Prefer not to say,London,UK,2024-03-10,10,2112.07,211.21,2025-06-26,Electronics,COD,1,0,4.3,English,Active
+CUST-00127,Maria Davis,New,41,Male,New York,USA,2026-05-02,1,43.24,43.24,2026-05-05,Fitness,Credit Card,0,0,3.6,English,Active
+CUST-00128,James Ramirez,Regular,29,Female,Mumbai,India,2024-12-26,30,2674.52,89.15,2025-09-25,Electronics,Debit Card,2,1,3.7,French,Active
+CUST-00129,John Gonzalez,Regular,40,Female,Lyon,France,2024-12-08,26,1642.07,63.16,2025-11-20,Furniture,COD,5,1,4.3,German,Active
+CUST-00130,Nancy Wilson,Premium,33,Prefer not to say,Dubai,UAE,2023-03-04,87,18394.1,211.43,2026-05-08,Furniture,Debit Card,2,0,4.5,Mandarin,Active
+CUST-00131,Joseph Lewis,Regular,19,Female,Vancouver,Canada,2025-11-19,23,2149.08,93.44,2026-03-13,Fitness,Credit Card,2,1,3.9,English,Active
+CUST-00132,Daniel Jackson,Regular,51,Male,London,UK,2023-11-05,22,4395.83,199.81,2025-05-31,Home Appliances,Wallet,3,0,3.8,English,Active
+CUST-00133,Lisa Williams,High-Risk,28,Male,Manchester,UK,2023-12-13,43,3758.94,87.42,2025-12-26,Furniture,Credit Card,23,9,1.8,English,Suspended
+CUST-00134,Barbara Chen,Regular,64,Female,Barcelona,Spain,2024-09-05,13,693.26,53.33,2026-03-24,Home Appliances,UPI,1,0,3.9,English,Active
+CUST-00135,Margaret Gonzalez,Regular,38,Male,Los Angeles,USA,2026-02-25,13,1130.28,86.94,2026-03-10,Fashion,UPI,0,1,4.2,English,Active
+CUST-00136,Joseph Harris,Regular,21,Male,Paris,France,2024-08-13,19,3458.3,182.02,2026-05-12,Fitness,Credit Card,3,1,3.8,Hindi,Active
+CUST-00137,William Miller,New,60,Male,Munich,Germany,2026-04-29,1,68.87,68.87,2026-05-05,Fitness,UPI,0,0,4.8,French,Active
+CUST-00138,Carlos Thompson,Regular,52,Male,Berlin,Germany,2025-06-22,21,4368.62,208.03,2026-04-16,Fitness,Debit Card,2,1,3.3,German,Active
+CUST-00139,Nancy Williams,New,27,Female,London,UK,2026-05-01,3,85.17,28.39,2026-05-10,Fashion,UPI,0,0,3.6,English,Active
+CUST-00140,Wei Lewis,Regular,31,Female,New York,USA,2026-01-13,6,518.69,86.45,2026-02-15,Fitness,COD,0,0,3.4,English,Active
+CUST-00141,Lisa Patel,Regular,72,Female,Barcelona,Spain,2025-07-04,10,405.83,40.58,2025-11-28,Fitness,Wallet,0,0,3.0,English,Inactive
+CUST-00142,Christopher Martin,Regular,21,Female,Tokyo,Japan,2024-10-16,6,1168.87,194.81,2025-08-02,Furniture,COD,1,0,3.5,Spanish,Active
+CUST-00143,Li Garcia,Premium,49,Female,Paris,France,2025-08-05,90,27530.1,305.89,2026-01-18,Electronics,UPI,4,1,4.8,Spanish,Active
+CUST-00144,Elizabeth Lopez,Regular,48,Male,Paris,France,2024-12-26,15,3510.54,234.04,2025-06-13,Furniture,Credit Card,1,0,4.3,Mandarin,Active
+CUST-00145,Robert Lewis,New,30,Female,Berlin,Germany,2026-05-06,1,27.79,27.79,2026-05-11,Home Appliances,Debit Card,0,0,4.4,Spanish,Active
+CUST-00146,Nancy Robinson,New,34,Male,Munich,Germany,2026-04-22,3,344.93,114.98,2026-04-30,Fashion,Debit Card,0,0,4.1,Mandarin,Active
+CUST-00147,Sandra Lewis,Regular,73,Male,Dubai,UAE,2024-06-13,23,3197.14,139.01,2025-07-27,Fashion,Debit Card,4,1,3.9,French,Active
+CUST-00148,Amit Singh,New,68,Male,Delhi,India,2026-04-29,3,270.99,90.33,2026-05-05,Fitness,Credit Card,0,0,4.4,French,Active
+CUST-00149,Christopher White,Premium,24,Non-Binary,New York,USA,2024-01-14,120,40264.7,335.54,2026-03-09,Fitness,COD,4,1,4.8,English,Active
+CUST-00150,Jennifer Clark,Regular,21,Male,Lyon,France,2025-08-16,26,3590.29,138.09,2026-02-15,Home Appliances,UPI,4,1,4.0,English,Active
+CUST-00151,Neha Perez,New,61,Female,Munich,Germany,2026-04-24,2,159.76,79.88,2026-05-04,Electronics,Credit Card,0,0,4.4,German,Active
+CUST-00152,William Lewis,High-Risk,34,Female,Toronto,Canada,2025-12-27,35,1778.11,50.8,2026-04-09,Fashion,COD,12,16,2.5,English,Inactive
+CUST-00153,Jennifer Martin,New,45,Male,Paris,France,2026-04-29,3,119.55,39.85,2026-05-05,Fashion,Credit Card,0,0,4.7,English,Active
+CUST-00154,Elizabeth Lee,Regular,65,Female,Sydney,Australia,2025-09-22,13,523.31,40.25,2026-02-28,Home Appliances,Wallet,1,0,3.5,English,Active
+CUST-00155,Karen Gonzalez,Regular,58,Female,London,UK,2026-03-11,8,1240.57,155.07,2026-04-28,Furniture,Wallet,0,0,3.4,English,Active
+CUST-00156,James Jones,Regular,46,Female,Mumbai,India,2025-07-01,26,3393.96,130.54,2026-01-04,Furniture,COD,1,0,3.3,French,Active
+CUST-00157,Margaret Taylor,Regular,61,Non-Binary,Los Angeles,USA,2023-12-24,21,4693.84,223.52,2025-11-15,Home Appliances,COD,2,1,4.2,English,Inactive
+CUST-00158,Anthony Williams,Premium,21,Non-Binary,Manchester,UK,2025-04-18,89,29013.44,325.99,2025-09-17,Furniture,UPI,0,1,4.3,English,Active
+CUST-00159,Richard Lee,Regular,61,Male,Berlin,Germany,2026-04-06,25,1485.05,59.4,2026-05-13,Furniture,Wallet,3,1,3.4,French,Active
+CUST-00160,Margaret Rodriguez,Regular,40,Female,Mumbai,India,2024-09-18,24,4759.18,198.3,2026-02-04,Electronics,COD,3,2,3.8,Spanish,Active
+CUST-00161,Priya Harris,New,75,Female,Osaka,Japan,2026-05-01,2,115.83,57.91,2026-05-11,Furniture,Debit Card,0,0,4.7,Mandarin,Active
+CUST-00162,Joseph Gonzalez,Regular,57,Male,Dubai,UAE,2024-03-14,15,1140.95,76.06,2026-04-03,Home Appliances,UPI,1,1,3.6,Mandarin,Active
+CUST-00163,Patricia Ramirez,Regular,58,Female,Manchester,UK,2025-10-01,23,3311.52,143.98,2026-05-04,Home Appliances,Wallet,2,2,4.2,English,Active
+CUST-00164,Wei Harris,Regular,30,Male,Mumbai,India,2024-08-30,24,3207.53,133.65,2025-11-01,Fitness,Credit Card,1,2,4.0,Spanish,Active
+CUST-00165,Karen Thomas,Regular,22,Male,Berlin,Germany,2024-05-08,4,342.78,85.69,2026-04-15,Furniture,Credit Card,0,0,4.1,Hindi,Active
+CUST-00166,Joseph Martinez,Regular,28,Female,Manchester,UK,2025-10-18,27,5739.42,212.57,2026-05-08,Fashion,UPI,2,2,4.3,English,Active
+CUST-00167,Amit Taylor,Regular,29,Female,Vancouver,Canada,2024-12-14,17,2927.59,172.21,2026-04-05,Electronics,UPI,0,0,3.6,English,Active
+CUST-00168,Daniel Lewis,Regular,74,Male,Melbourne,Australia,2024-04-04,10,493.23,49.32,2025-05-25,Fashion,Debit Card,1,0,4.1,English,Active
+CUST-00169,Sandra Jackson,High-Risk,66,Female,Los Angeles,USA,2025-12-03,18,2546.49,141.47,2026-02-13,Electronics,Credit Card,7,9,1.7,English,Suspended
+CUST-00170,Patricia Williams,New,69,Male,Paris,France,2026-04-18,3,448.73,149.58,2026-05-13,Furniture,Credit Card,0,0,4.7,Spanish,Active
+CUST-00171,Margaret White,Regular,42,Female,New York,USA,2025-01-15,11,1917.8,174.35,2026-01-31,Home Appliances,Credit Card,1,0,3.2,English,Active
+CUST-00172,Rahul White,Premium,45,Non-Binary,Manchester,UK,2022-11-17,140,47090.0,336.36,2026-01-22,Home Appliances,Wallet,3,0,4.6,English,Active
+CUST-00173,Priya Ramirez,New,36,Non-Binary,Singapore,Singapore,2026-05-12,3,131.31,43.77,2026-05-15,Electronics,COD,0,0,4.9,Mandarin,Active
+CUST-00174,Michael Thompson,Regular,28,Male,New York,USA,2025-04-17,23,3525.95,153.3,2026-01-30,Home Appliances,Wallet,2,1,3.2,English,Active
+CUST-00175,Margaret Thompson,Regular,26,Male,Vancouver,Canada,2025-10-15,30,1659.55,55.32,2026-02-06,Furniture,Wallet,2,1,3.6,English,Active
+CUST-00176,Neha Anderson,High-Risk,56,Male,London,UK,2024-10-28,20,1632.17,81.61,2025-08-01,Fitness,Wallet,10,10,2.0,English,Suspended
+CUST-00177,Priya Wang,Regular,37,Female,Toronto,Canada,2025-08-15,6,1565.74,260.96,2026-03-24,Fitness,Credit Card,1,0,4.3,English,Active
+CUST-00178,James Hernandez,New,28,Male,Madrid,Spain,2026-05-06,2,279.83,139.91,2026-05-12,Home Appliances,Credit Card,0,0,4.6,English,Active
+CUST-00179,John Robinson,Regular,62,Female,Vancouver,Canada,2024-11-08,5,714.67,142.93,2026-01-18,Furniture,Credit Card,0,0,3.0,English,Active
+CUST-00180,William Martinez,Regular,74,Female,Toronto,Canada,2026-03-29,17,2984.25,175.54,2026-05-16,Fitness,UPI,2,0,4.0,English,Inactive
+CUST-00181,John Davis,High-Risk,22,Female,Paris,France,2024-03-17,43,8260.49,192.1,2026-05-08,Electronics,Credit Card,14,11,1.9,German,Suspended
+CUST-00182,Richard Wang,Premium,36,Male,Delhi,India,2023-04-03,52,6515.12,125.29,2026-01-11,Home Appliances,Credit Card,2,0,4.4,French,Active
+CUST-00183,Mary Rodriguez,Regular,27,Prefer not to say,Manchester,UK,2023-09-16,26,4543.89,174.77,2026-05-03,Fitness,COD,1,0,4.4,English,Active
+CUST-00184,Mary Anderson,High-Risk,63,Male,New York,USA,2025-09-21,7,630.6,90.09,2026-02-10,Furniture,UPI,2,2,1.6,English,Active
+CUST-00185,John Anderson,Regular,21,Female,Osaka,Japan,2024-06-25,11,2723.07,247.55,2025-07-01,Fitness,UPI,2,0,3.8,English,Active
+CUST-00186,Thomas Taylor,Regular,27,Male,Manchester,UK,2024-09-19,10,2025.17,202.52,2026-02-05,Furniture,Wallet,0,0,3.2,English,Active
+CUST-00187,Robert Smith,Premium,41,Male,Tokyo,Japan,2024-03-01,77,8623.07,111.99,2025-06-26,Fashion,Credit Card,1,1,4.6,Spanish,Active
+CUST-00188,William Jackson,Premium,61,Male,Berlin,Germany,2024-01-23,140,38518.26,275.13,2025-05-18,Home Appliances,Debit Card,0,2,4.5,German,Active
+CUST-00189,James Johnson,Regular,49,Female,London,UK,2024-01-17,17,2251.0,132.41,2025-12-07,Furniture,UPI,3,1,3.6,English,Active
+CUST-00190,Daniel Thompson,New,46,Prefer not to say,New York,USA,2026-05-10,2,261.82,130.91,2026-05-13,Furniture,Debit Card,0,0,3.6,English,Active
+CUST-00191,Robert Jackson,Regular,57,Female,Sydney,Australia,2025-04-15,9,1167.17,129.69,2025-10-18,Fitness,Debit Card,1,0,3.4,English,Active
+CUST-00192,Charles Martinez,Regular,41,Male,London,UK,2023-12-05,19,3122.11,164.32,2025-10-06,Fashion,COD,1,1,4.1,English,Active
+CUST-00193,Jennifer Sanchez,Regular,63,Female,Melbourne,Australia,2024-04-15,6,626.59,104.43,2025-09-20,Furniture,UPI,0,0,4.1,English,Active
+CUST-00194,Daniel Smith,Premium,49,Male,Manchester,UK,2022-12-10,145,23938.93,165.1,2025-07-17,Home Appliances,Credit Card,1,1,4.3,English,Active
+CUST-00195,Christopher Wilson,Premium,42,Male,Dubai,UAE,2023-06-17,51,9702.89,190.25,2025-08-20,Fitness,Debit Card,0,0,4.8,Spanish,Active
+CUST-00196,Nancy Johnson,Regular,45,Female,Dubai,UAE,2024-12-19,9,1797.86,199.76,2025-10-13,Fashion,Credit Card,0,0,3.2,Hindi,Active
+CUST-00197,Barbara Robinson,Regular,44,Female,Singapore,Singapore,2023-10-17,26,2193.1,84.35,2026-04-28,Fitness,UPI,1,1,3.3,English,Active
+CUST-00198,Barbara Thompson,New,60,Male,Manchester,UK,2026-04-30,2,255.44,127.72,2026-05-09,Fitness,Debit Card,0,0,4.7,English,Active
+CUST-00199,Michael Smith,High-Risk,53,Male,Delhi,India,2025-09-08,46,5251.45,114.16,2026-01-17,Fashion,Debit Card,26,13,1.4,French,Inactive
+CUST-00200,Elizabeth Anderson,Premium,63,Female,Tokyo,Japan,2024-03-31,48,10561.23,220.03,2026-03-25,Furniture,Wallet,1,0,5.0,French,Active
+CUST-00201,Neha Martinez,Regular,46,Female,Berlin,Germany,2026-02-14,29,5951.76,205.23,2026-04-14,Electronics,Debit Card,4,0,4.5,Mandarin,Active
+CUST-00202,Lisa Harris,High-Risk,70,Female,Vancouver,Canada,2024-03-15,5,207.0,41.4,2025-06-21,Fashion,UPI,3,1,1.4,English,Active
+CUST-00203,Sarah Wilson,High-Risk,39,Male,New York,USA,2025-05-22,47,9728.04,206.98,2025-07-24,Fashion,Wallet,24,19,1.9,English,Suspended
+CUST-00204,Lisa Perez,Regular,47,Female,Osaka,Japan,2023-09-26,19,3046.81,160.36,2025-11-14,Fashion,UPI,2,1,4.1,German,Active
+CUST-00205,Lisa Thomas,New,29,Female,Lyon,France,2026-05-12,3,325.0,108.33,2026-05-12,Fashion,Debit Card,0,0,4.1,Spanish,Active
+CUST-00206,Susan Thomas,Regular,50,Male,Dubai,UAE,2024-02-12,16,3230.19,201.89,2025-06-29,Fashion,COD,1,0,3.7,Hindi,Active
+CUST-00207,Thomas Lee,Premium,44,Female,Paris,France,2023-10-03,56,25870.47,461.97,2026-03-06,Electronics,COD,1,0,4.9,Mandarin,Active
+CUST-00208,Sarah Jackson,Regular,48,Female,Singapore,Singapore,2024-07-11,20,1112.66,55.63,2025-06-30,Electronics,COD,1,0,4.5,English,Active
+CUST-00209,Robert Rodriguez,Premium,38,Male,Barcelona,Spain,2024-07-10,50,8120.03,162.4,2026-02-12,Furniture,Wallet,0,0,4.4,English,Active
+CUST-00210,Sarah Johnson,New,21,Female,Los Angeles,USA,2026-04-22,1,92.63,92.63,2026-05-03,Electronics,Debit Card,0,0,3.8,English,Active
+CUST-00211,Lisa Hernandez,Regular,70,Female,Paris,France,2026-03-05,12,584.7,48.73,2026-04-23,Fitness,Wallet,1,0,3.2,German,Active
+CUST-00212,Patricia Hernandez,Regular,35,Male,Sydney,Australia,2024-12-15,9,341.5,37.94,2026-02-22,Furniture,Debit Card,1,0,3.4,English,Active
+CUST-00213,Matthew Moore,Regular,42,Male,Singapore,Singapore,2024-11-26,19,2099.72,110.51,2026-05-08,Electronics,Wallet,1,1,3.2,English,Active
+CUST-00214,Priya Ramirez,High-Risk,39,Male,Mumbai,India,2023-10-08,25,2147.06,85.88,2026-02-09,Home Appliances,Debit Card,9,7,2.5,English,Suspended
+CUST-00215,Richard Wilson,Regular,55,Female,Dubai,UAE,2024-07-15,24,2056.48,85.69,2026-01-16,Furniture,Wallet,3,1,4.0,German,Active
+CUST-00216,William Garcia,Premium,23,Male,Munich,Germany,2024-08-27,148,64115.56,433.21,2025-12-18,Fitness,Debit Card,3,1,4.9,Spanish,Active
+CUST-00217,Priya Wilson,Premium,69,Female,Paris,France,2022-08-11,128,26502.82,207.05,2026-01-02,Fitness,UPI,5,2,4.2,Spanish,Active
+CUST-00218,Christopher Thomas,High-Risk,46,Male,Dubai,UAE,2025-11-24,6,321.67,53.61,2026-04-11,Furniture,Credit Card,2,2,1.7,Hindi,Suspended
+CUST-00219,Robert Davis,High-Risk,55,Non-Binary,Dubai,UAE,2024-12-30,12,1206.71,100.56,2025-12-03,Fashion,UPI,9,2,2.8,German,Inactive
+CUST-00220,Karen Chen,New,68,Male,Tokyo,Japan,2026-04-29,1,47.6,47.6,2026-05-10,Fitness,COD,0,0,4.4,Hindi,Active
+CUST-00221,John Sharma,New,69,Male,Vancouver,Canada,2026-04-28,3,355.89,118.63,2026-05-04,Home Appliances,Credit Card,0,0,4.6,English,Active
+CUST-00222,Robert Anderson,High-Risk,70,Female,Tokyo,Japan,2026-04-15,28,2394.38,85.51,2026-05-13,Furniture,Debit Card,10,12,1.2,Spanish,Suspended
+CUST-00223,Karen Williams,Regular,51,Prefer not to say,Los Angeles,USA,2023-12-21,7,608.9,86.99,2025-11-28,Fashion,Debit Card,0,0,3.3,English,Active
+CUST-00224,Li Clark,New,54,Male,Vancouver,Canada,2026-05-06,3,118.62,39.54,2026-05-18,Home Appliances,UPI,0,0,4.9,English,Active
+CUST-00225,Wei Miller,Regular,19,Male,Melbourne,Australia,2024-01-22,16,2802.03,175.13,2025-09-26,Electronics,Wallet,1,0,3.4,English,Active
+CUST-00226,Michael Thomas,Regular,20,Male,Lyon,France,2024-10-30,14,1152.35,82.31,2025-05-18,Fashion,Debit Card,0,1,3.7,Spanish,Active
+CUST-00227,Matthew Thomas,Regular,19,Male,Paris,France,2023-10-25,4,678.64,169.66,2025-10-04,Furniture,Debit Card,0,0,3.7,English,Inactive
+CUST-00228,Karen Thomas,New,33,Female,Madrid,Spain,2026-04-22,3,228.36,76.12,2026-05-10,Furniture,COD,0,0,3.9,English,Active
+CUST-00229,David Robinson,Regular,75,Female,Manchester,UK,2025-08-25,7,1476.42,210.92,2026-03-11,Fitness,Credit Card,1,0,3.4,English,Active
+CUST-00230,Jennifer Taylor,Premium,72,Female,Tokyo,Japan,2022-05-22,122,19674.51,161.27,2026-03-13,Home Appliances,Wallet,2,2,4.4,Hindi,Active
+CUST-00231,James Williams,New,42,Female,Tokyo,Japan,2026-04-20,3,160.12,53.37,2026-05-07,Fashion,Wallet,0,0,4.0,Hindi,Active
+CUST-00232,Sandra Miller,Premium,45,Female,Manchester,UK,2024-02-29,112,27486.81,245.42,2025-08-13,Furniture,COD,1,0,4.7,English,Active
+CUST-00233,Nancy Jones,New,29,Male,Osaka,Japan,2026-04-25,2,178.89,89.44,2026-05-14,Fashion,Debit Card,0,0,4.9,English,Active
+CUST-00234,Linda Sanchez,High-Risk,58,Male,Berlin,Germany,2023-10-09,25,3748.95,149.96,2025-10-10,Furniture,UPI,15,11,1.4,Hindi,Suspended
+CUST-00235,Mark Ramirez,Regular,32,Male,Singapore,Singapore,2025-02-07,8,582.46,72.81,2026-04-25,Electronics,Credit Card,0,0,4.2,English,Active
+CUST-00236,Barbara Patel,High-Risk,47,Male,Toronto,Canada,2025-06-27,47,5879.62,125.1,2025-08-08,Furniture,Credit Card,35,18,1.6,English,Active
+CUST-00237,John Garcia,Premium,67,Female,Munich,Germany,2024-09-27,129,30783.82,238.63,2026-01-17,Fitness,Wallet,0,1,4.6,German,Active
+CUST-00238,Linda Singh,New,62,Female,New York,USA,2026-05-01,3,374.65,124.88,2026-05-17,Home Appliances,Wallet,0,0,4.0,English,Active
+CUST-00239,Patricia Clark,Regular,60,Male,Barcelona,Spain,2024-11-16,30,4646.72,154.89,2025-12-01,Fashion,UPI,2,2,3.4,Spanish,Inactive
+CUST-00240,Carlos Chen,Premium,52,Male,Berlin,Germany,2025-10-17,135,18971.95,140.53,2026-02-24,Home Appliances,Debit Card,2,1,4.6,Spanish,Active
+CUST-00241,Maria Chen,New,74,Female,Madrid,Spain,2026-05-10,1,103.75,103.75,2026-05-10,Home Appliances,COD,0,0,3.8,Hindi,Active
+CUST-00242,Richard Miller,New,59,Non-Binary,London,UK,2026-05-10,3,72.82,24.27,2026-05-18,Fashion,Debit Card,0,0,4.9,English,Active
+CUST-00243,Amit Miller,New,50,Female,Munich,Germany,2026-05-17,2,239.11,119.56,2026-05-17,Electronics,Wallet,0,0,4.0,Spanish,Active
+CUST-00244,Wei Rodriguez,High-Risk,38,Female,Dubai,UAE,2024-09-15,9,1290.91,143.43,2026-01-20,Home Appliances,COD,4,4,2.1,Hindi,Active
+CUST-00245,David Wang,New,44,Male,Manchester,UK,2026-04-24,1,46.82,46.82,2026-05-06,Fitness,Debit Card,0,0,4.8,English,Active
+CUST-00246,Charles Taylor,Regular,50,Male,Sydney,Australia,2026-02-13,21,2383.45,113.5,2026-02-25,Home Appliances,Wallet,3,1,3.9,English,Active
+CUST-00247,Mary Lewis,Regular,62,Female,Manchester,UK,2026-02-22,22,3104.6,141.12,2026-02-22,Fashion,UPI,3,0,3.5,English,Inactive
+CUST-00248,Margaret Lopez,Regular,49,Female,Mumbai,India,2025-01-15,16,1295.54,80.97,2025-09-29,Electronics,UPI,2,0,4.3,English,Active
+CUST-00249,James Lee,Regular,70,Female,Manchester,UK,2025-04-11,30,7071.69,235.72,2025-08-26,Home Appliances,Debit Card,4,1,3.3,English,Active
+CUST-00250,Anthony Singh,Premium,71,Female,New York,USA,2022-05-24,32,14052.82,439.15,2025-11-07,Fitness,Credit Card,0,0,4.9,English,Active
+CUST-00251,Anthony Clark,Premium,22,Female,Paris,France,2022-10-02,29,3423.64,118.06,2026-05-17,Furniture,Debit Card,1,0,4.4,Hindi,Active
+CUST-00252,Jessica Jones,Regular,55,Female,Toronto,Canada,2024-05-15,15,1407.31,93.82,2025-06-04,Fitness,UPI,1,1,3.2,English,Active
+CUST-00253,Susan Lewis,Regular,60,Female,Los Angeles,USA,2023-08-25,13,1327.72,102.13,2026-04-16,Electronics,Credit Card,2,0,3.3,English,Active
+CUST-00254,Joseph Anderson,High-Risk,44,Female,Manchester,UK,2025-08-20,23,2984.93,129.78,2025-12-01,Furniture,COD,13,10,2.8,English,Active
+CUST-00255,John Harris,High-Risk,72,Male,Toronto,Canada,2023-10-28,45,5647.67,125.5,2026-03-27,Home Appliances,Debit Card,27,22,2.0,English,Inactive
+CUST-00256,Priya Johnson,New,74,Female,Manchester,UK,2026-05-07,1,131.17,131.17,2026-05-14,Electronics,Credit Card,0,0,4.8,English,Active
+CUST-00257,Nancy Sanchez,Premium,35,Male,London,UK,2023-11-10,137,50996.4,372.24,2026-01-09,Furniture,Wallet,0,1,4.4,English,Active
+CUST-00258,Jessica Davis,Premium,54,Female,Osaka,Japan,2025-07-07,111,59469.33,535.76,2025-11-27,Fashion,Credit Card,2,2,4.6,Spanish,Active
+CUST-00259,Karen White,New,23,Female,Manchester,UK,2026-05-08,2,157.47,78.73,2026-05-10,Fashion,UPI,0,0,4.4,English,Active
+CUST-00260,David Smith,Premium,47,Female,Los Angeles,USA,2025-08-08,71,33946.88,478.13,2026-05-03,Electronics,UPI,1,1,4.3,English,Active
+CUST-00261,Thomas Martinez,Regular,45,Male,Melbourne,Australia,2024-08-18,24,3616.26,150.68,2025-12-16,Furniture,Debit Card,3,2,3.8,English,Active
+CUST-00262,Priya Hernandez,Regular,31,Male,Melbourne,Australia,2024-08-07,16,1511.73,94.48,2026-02-07,Furniture,Debit Card,1,0,3.8,English,Active
+CUST-00263,Richard Patel,Regular,47,Female,Singapore,Singapore,2026-04-07,7,602.77,86.11,2026-05-06,Furniture,Debit Card,0,0,4.5,Hindi,Active
+CUST-00264,John Sharma,Premium,43,Male,Dubai,UAE,2022-10-21,40,11688.23,292.21,2026-03-10,Home Appliances,Wallet,1,0,4.7,English,Active
+CUST-00265,Lisa Rodriguez,High-Risk,47,Female,Singapore,Singapore,2026-02-12,36,7581.17,210.59,2026-05-07,Furniture,Credit Card,12,14,2.3,English,Suspended
+CUST-00266,Daniel Harris,Premium,52,Female,New York,USA,2023-07-17,116,29677.7,255.84,2025-10-06,Electronics,COD,2,0,4.5,English,Active
+CUST-00267,Michael Chen,Premium,52,Male,Berlin,Germany,2025-04-22,58,14495.85,249.93,2025-11-05,Fashion,Debit Card,2,1,4.5,French,Active
+CUST-00268,Michael Moore,New,33,Male,Singapore,Singapore,2026-04-23,2,76.02,38.01,2026-04-30,Fashion,Credit Card,0,0,4.3,Hindi,Active
+CUST-00269,Betty Miller,Regular,33,Male,Barcelona,Spain,2025-09-15,26,1145.27,44.05,2025-09-25,Home Appliances,Wallet,3,2,4.3,Spanish,Active
+CUST-00270,Christopher Miller,Regular,23,Male,Paris,France,2024-07-08,22,3504.4,159.29,2025-07-09,Electronics,Debit Card,3,1,3.1,English,Active
+CUST-00271,Rahul Johnson,Regular,62,Female,Vancouver,Canada,2025-08-23,9,1695.93,188.44,2026-03-21,Home Appliances,COD,1,0,3.5,English,Active
+CUST-00272,Maria Martinez,Regular,21,Female,Munich,Germany,2025-05-19,10,1108.88,110.89,2025-10-01,Home Appliances,COD,1,0,3.8,Hindi,Active
+CUST-00273,David Gonzalez,High-Risk,24,Male,Paris,France,2025-05-27,11,1714.39,155.85,2025-12-13,Electronics,Credit Card,4,5,2.5,Mandarin,Suspended
+CUST-00274,Wei White,Regular,30,Non-Binary,Manchester,UK,2024-12-25,7,1342.87,191.84,2026-02-24,Fitness,Wallet,1,0,3.5,English,Active
+CUST-00275,Anthony Harris,Regular,73,Female,Madrid,Spain,2025-03-30,17,4178.78,245.81,2025-08-12,Furniture,Debit Card,0,0,3.0,French,Active
+CUST-00276,Sandra Lewis,Regular,58,Female,New York,USA,2025-09-11,6,976.1,162.68,2025-11-13,Furniture,COD,0,0,3.7,English,Active
+CUST-00277,Anthony Hernandez,Regular,37,Non-Binary,Sydney,Australia,2024-06-11,30,1973.42,65.78,2026-03-06,Home Appliances,UPI,2,1,3.5,English,Active
+CUST-00278,Christopher Miller,High-Risk,48,Male,New York,USA,2023-08-31,44,1568.7,35.65,2026-04-24,Fashion,Wallet,23,16,1.9,English,Inactive
+CUST-00279,Maria Perez,High-Risk,39,Male,Lyon,France,2023-09-07,21,1715.45,81.69,2025-10-14,Fitness,Wallet,12,10,1.3,Hindi,Active
+CUST-00280,Christopher Chen,Regular,19,Male,Madrid,Spain,2024-03-05,17,2600.75,152.99,2025-11-19,Electronics,Credit Card,0,0,3.2,French,Active
+CUST-00281,Susan Jackson,Regular,54,Female,Manchester,UK,2025-09-24,21,1255.13,59.77,2025-11-28,Furniture,Debit Card,2,1,3.3,English,Active
+CUST-00282,Richard Garcia,Premium,22,Female,London,UK,2025-04-09,51,5602.67,109.86,2026-04-13,Fashion,Credit Card,2,1,4.3,English,Active
+CUST-00283,Anthony Martin,Regular,23,Male,Madrid,Spain,2025-09-13,18,3831.93,212.88,2026-04-02,Fitness,COD,1,1,3.4,Mandarin,Active
+CUST-00284,Sarah Williams,Regular,59,Male,Vancouver,Canada,2024-06-30,23,1343.69,58.42,2025-10-28,Furniture,Wallet,2,2,3.3,English,Active
+CUST-00285,David Sanchez,Premium,23,Non-Binary,Sydney,Australia,2023-08-21,24,3332.0,138.83,2026-01-31,Furniture,Debit Card,0,0,4.7,English,Active
+CUST-00286,Barbara Lewis,Regular,31,Prefer not to say,Melbourne,Australia,2026-01-28,8,1322.66,165.33,2026-04-28,Fitness,Wallet,0,0,3.5,English,Active
+CUST-00287,Matthew White,Regular,61,Female,Los Angeles,USA,2025-09-18,26,6843.29,263.2,2025-12-28,Home Appliances,Wallet,1,0,3.9,English,Active
+CUST-00288,Priya White,Regular,47,Male,New York,USA,2026-01-09,9,487.7,54.19,2026-03-26,Fitness,Debit Card,0,0,4.0,English,Active
+CUST-00289,Carlos Clark,Premium,23,Non-Binary,London,UK,2024-11-11,56,26057.89,465.32,2025-08-23,Fashion,Credit Card,1,0,4.9,English,Active
+CUST-00290,Anthony Martin,High-Risk,75,Male,Vancouver,Canada,2025-09-10,27,1426.25,52.82,2026-05-06,Fashion,Credit Card,16,15,2.7,English,Inactive
+CUST-00291,William Rodriguez,High-Risk,51,Female,London,UK,2026-01-19,41,2027.04,49.44,2026-03-19,Electronics,Debit Card,16,8,2.8,English,Suspended
+CUST-00292,Wei Chen,New,43,Female,London,UK,2026-05-15,3,204.12,68.04,2026-05-16,Furniture,Wallet,0,0,4.4,English,Active
+CUST-00293,Joseph Robinson,Premium,55,Female,Manchester,UK,2023-06-05,44,5126.23,116.51,2025-12-27,Electronics,Wallet,1,0,4.3,English,Active
+CUST-00294,Li Jackson,Premium,39,Female,Madrid,Spain,2023-04-13,72,14308.07,198.72,2025-11-17,Electronics,Wallet,1,0,4.3,Hindi,Active
+CUST-00295,Barbara Jackson,Regular,19,Non-Binary,Sydney,Australia,2024-08-23,22,3564.49,162.02,2025-08-02,Fitness,Debit Card,3,1,4.3,English,Active
+CUST-00296,Daniel Clark,Regular,26,Female,Mumbai,India,2025-01-07,17,2669.29,157.02,2026-03-05,Fashion,UPI,1,1,3.7,French,Active
+CUST-00297,Carlos Martin,Regular,74,Male,Mumbai,India,2025-03-03,6,1310.52,218.42,2025-11-19,Electronics,Wallet,0,0,3.3,French,Active
+CUST-00298,Betty Ramirez,New,30,Female,Paris,France,2026-04-29,1,52.21,52.21,2026-05-14,Fitness,COD,0,0,4.8,French,Active
+CUST-00299,Charles Robinson,New,30,Male,New York,USA,2026-04-19,1,98.99,98.99,2026-04-19,Electronics,COD,0,0,4.0,English,Active
+CUST-00300,Sarah Sharma,Regular,29,Male,Delhi,India,2025-10-28,7,296.9,42.41,2026-03-31,Fitness,COD,0,0,4.2,Spanish,Active
+CUST-00301,Mark Patel,New,19,Female,Delhi,India,2026-05-14,1,146.01,146.01,2026-05-17,Electronics,Debit Card,0,0,4.4,English,Active
+CUST-00302,Lisa Anderson,Regular,18,Male,Los Angeles,USA,2025-01-21,13,2640.12,203.09,2026-01-02,Home Appliances,COD,2,0,3.3,English,Active
+CUST-00303,Maria Johnson,Regular,75,Female,Munich,Germany,2026-04-16,15,959.81,63.99,2026-04-19,Home Appliances,Wallet,2,1,3.1,English,Active
+CUST-00304,Jennifer Harris,Regular,32,Male,Osaka,Japan,2025-08-06,25,2321.89,92.88,2026-05-17,Furniture,Credit Card,4,2,4.3,French,Active
+CUST-00305,Priya Wang,Regular,64,Male,Melbourne,Australia,2025-05-15,16,3346.58,209.16,2026-02-21,Furniture,Debit Card,3,1,4.4,English,Active
+CUST-00306,Li Lewis,Premium,24,Female,Lyon,France,2023-04-14,25,8307.79,332.31,2025-10-26,Furniture,Wallet,0,0,4.7,Spanish,Active
+CUST-00307,Amit Clark,Regular,68,Male,Osaka,Japan,2025-09-05,19,2200.43,115.81,2026-02-03,Fitness,Wallet,3,1,3.2,Mandarin,Inactive
+CUST-00308,Priya Smith,Regular,39,Non-Binary,Toronto,Canada,2026-04-13,23,3726.33,162.01,2026-05-01,Home Appliances,Credit Card,2,1,3.0,English,Inactive
+CUST-00309,Daniel Lopez,New,36,Female,Paris,France,2026-04-20,1,89.99,89.99,2026-05-04,Fitness,Credit Card,0,0,4.3,Spanish,Active
+CUST-00310,Daniel Moore,New,31,Male,Barcelona,Spain,2026-05-07,3,151.48,50.49,2026-05-15,Electronics,Debit Card,0,0,4.7,French,Active
+CUST-00311,James Smith,Regular,37,Female,Munich,Germany,2025-01-23,7,535.16,76.45,2025-11-08,Fashion,Debit Card,0,0,3.7,Spanish,Active
+CUST-00312,Joseph Rodriguez,Regular,55,Female,London,UK,2025-11-25,16,1290.62,80.66,2026-05-08,Furniture,COD,1,0,4.1,English,Active
+CUST-00313,Daniel Thomas,Regular,40,Male,Munich,Germany,2025-03-10,4,456.64,114.16,2026-03-03,Fashion,Debit Card,0,0,3.4,Hindi,Active
+CUST-00314,Anthony Martin,New,43,Male,Toronto,Canada,2026-04-29,2,265.0,132.5,2026-05-06,Home Appliances,COD,0,0,4.0,English,Active
+CUST-00315,Li Johnson,New,39,Male,Los Angeles,USA,2026-05-16,3,187.72,62.57,2026-05-18,Furniture,COD,0,0,4.2,English,Active
+CUST-00316,Charles Johnson,High-Risk,70,Male,Delhi,India,2024-07-10,30,5049.78,168.33,2025-09-20,Electronics,COD,10,17,2.5,Mandarin,Suspended
+CUST-00317,Patricia Lewis,Premium,70,Male,Los Angeles,USA,2023-11-29,122,52275.45,428.49,2025-09-06,Fitness,Credit Card,0,0,4.7,English,Active
+CUST-00318,Daniel Wilson,Premium,71,Male,Toronto,Canada,2025-05-11,52,12279.24,236.14,2026-04-14,Fitness,Credit Card,0,0,4.2,English,Active
+CUST-00319,Li Wang,Regular,62,Male,Madrid,Spain,2024-07-22,10,2270.83,227.08,2025-11-10,Home Appliances,COD,1,0,3.0,German,Active
+CUST-00320,Jessica Singh,New,22,Female,Barcelona,Spain,2026-05-02,3,343.25,114.42,2026-05-06,Fashion,Debit Card,0,0,4.6,Spanish,Active
+CUST-00321,John Martin,Regular,59,Male,Munich,Germany,2026-01-30,9,1353.02,150.34,2026-02-19,Home Appliances,Wallet,1,0,4.3,French,Active
+CUST-00322,Sarah Taylor,Regular,55,Female,Munich,Germany,2024-05-14,14,1901.51,135.82,2026-03-15,Fashion,UPI,1,0,4.0,German,Inactive
+CUST-00323,Maria Jackson,Regular,40,Male,Singapore,Singapore,2025-10-25,28,3956.88,141.32,2026-02-18,Home Appliances,Wallet,2,2,3.3,English,Active
+CUST-00324,Mark Davis,Regular,19,Non-Binary,Los Angeles,USA,2023-12-04,8,879.38,109.92,2026-01-06,Fitness,UPI,1,0,4.5,English,Inactive
+CUST-00325,Linda Clark,High-Risk,59,Female,Dubai,UAE,2026-01-09,14,2523.26,180.23,2026-03-27,Fitness,UPI,4,5,1.3,Hindi,Active
+CUST-00326,Mark Rodriguez,Regular,71,Female,New York,USA,2023-11-30,11,2392.12,217.47,2025-11-09,Home Appliances,Wallet,1,0,3.4,English,Active
+CUST-00327,Daniel Wilson,Regular,64,Female,Berlin,Germany,2024-07-26,6,337.96,56.33,2025-09-25,Fitness,Credit Card,1,0,3.5,French,Active
+CUST-00328,William Ramirez,Regular,28,Male,Osaka,Japan,2024-01-29,8,1235.51,154.44,2025-06-20,Electronics,COD,0,0,4.1,German,Inactive
+CUST-00329,Richard Sharma,New,44,Female,Toronto,Canada,2026-04-20,1,21.53,21.53,2026-04-29,Electronics,Debit Card,0,0,3.5,English,Active
+CUST-00330,Joseph Martinez,High-Risk,39,Male,Toronto,Canada,2026-02-16,31,1132.04,36.52,2026-03-30,Fitness,Wallet,21,7,2.8,English,Inactive
+CUST-00331,Wei Garcia,Premium,72,Male,Toronto,Canada,2025-05-02,98,33589.36,342.75,2025-06-16,Fashion,UPI,4,1,4.5,English,Active
+CUST-00332,Christopher Anderson,Premium,26,Female,Melbourne,Australia,2025-03-07,105,40942.93,389.93,2026-05-05,Electronics,COD,0,1,4.3,English,Active
+CUST-00333,Daniel Clark,New,29,Female,Barcelona,Spain,2026-05-16,3,190.24,63.41,2026-05-18,Fitness,UPI,0,0,5.0,German,Active
+CUST-00334,Robert Martinez,High-Risk,68,Female,Barcelona,Spain,2024-09-03,48,2692.41,56.09,2025-12-28,Electronics,Wallet,33,25,1.7,Spanish,Suspended
+CUST-00335,Joseph Wang,Regular,32,Male,Berlin,Germany,2024-06-30,7,1636.47,233.78,2025-11-28,Fitness,Debit Card,0,0,3.3,Hindi,Active
+CUST-00336,Christopher Williams,Regular,41,Female,Berlin,Germany,2024-07-23,15,1077.53,71.84,2026-03-16,Fitness,Wallet,1,0,4.4,French,Active
+CUST-00337,James Sharma,Regular,40,Female,Paris,France,2024-08-08,24,1798.62,74.94,2026-03-06,Fashion,UPI,3,2,4.3,Hindi,Active
+CUST-00338,William Perez,Regular,38,Male,Delhi,India,2023-11-03,25,2742.74,109.71,2025-08-19,Fitness,UPI,1,2,4.2,French,Active
+CUST-00339,Susan Gonzalez,Regular,62,Female,Dubai,UAE,2025-10-24,17,3240.25,190.6,2026-01-19,Electronics,Credit Card,2,0,3.2,German,Active
+CUST-00340,Matthew Martin,Regular,58,Female,Vancouver,Canada,2025-06-26,7,573.16,81.88,2025-12-13,Fashion,COD,0,0,4.5,English,Active
+CUST-00341,Daniel Davis,Premium,25,Prefer not to say,New York,USA,2024-01-10,109,17371.28,159.37,2025-08-29,Furniture,Wallet,1,1,4.7,English,Active
+CUST-00342,James Patel,Regular,44,Male,London,UK,2026-04-08,26,3766.21,144.85,2026-04-11,Fitness,Credit Card,3,2,4.4,English,Inactive
+CUST-00343,Patricia Wang,New,32,Male,Manchester,UK,2026-04-27,3,237.36,79.12,2026-05-02,Fashion,Wallet,0,0,3.8,English,Active
+CUST-00344,Thomas Moore,Regular,34,Male,Toronto,Canada,2026-01-11,27,6185.88,229.11,2026-01-26,Electronics,Credit Card,2,1,4.3,English,Active
+CUST-00345,Betty Wang,Regular,30,Non-Binary,Toronto,Canada,2025-11-14,8,1967.59,245.95,2026-01-02,Furniture,Debit Card,0,0,4.0,English,Active
+CUST-00346,Christopher Clark,Regular,45,Female,Tokyo,Japan,2025-09-06,16,766.39,47.9,2026-02-05,Electronics,UPI,2,0,3.6,French,Active
+CUST-00347,James Thompson,Regular,66,Male,Tokyo,Japan,2024-04-04,30,5976.62,199.22,2026-03-22,Home Appliances,COD,2,2,3.5,German,Active
+CUST-00348,Priya Davis,Regular,20,Female,Manchester,UK,2024-09-06,9,2220.32,246.7,2025-07-18,Fashion,COD,0,0,4.3,English,Active
+CUST-00349,Thomas Lee,High-Risk,46,Non-Binary,Osaka,Japan,2023-11-10,9,1484.22,164.91,2025-05-27,Fashion,UPI,3,2,1.5,Mandarin,Inactive
+CUST-00350,Susan Lewis,Regular,64,Female,Manchester,UK,2023-11-03,27,6698.81,248.1,2025-08-14,Fashion,Credit Card,4,1,3.9,English,Active
+CUST-00351,James Thomas,Premium,48,Female,Munich,Germany,2025-04-15,124,59289.35,478.14,2026-01-25,Electronics,Debit Card,5,1,4.9,Spanish,Active
+CUST-00352,Nancy Jackson,Premium,52,Female,Manchester,UK,2023-06-01,114,15144.3,132.84,2026-03-12,Fitness,Wallet,3,1,4.4,English,Active
+CUST-00353,Margaret Davis,Regular,30,Female,Osaka,Japan,2026-04-15,23,1017.23,44.23,2026-05-01,Fashion,Credit Card,2,1,4.3,Hindi,Active
+CUST-00354,Jennifer Hernandez,New,72,Male,Singapore,Singapore,2026-05-05,3,285.76,95.25,2026-05-18,Electronics,Credit Card,0,0,4.6,Hindi,Active
+CUST-00355,Patricia Moore,Regular,75,Male,Sydney,Australia,2024-07-09,25,2444.86,97.79,2026-02-25,Home Appliances,Wallet,4,1,4.1,English,Active
+CUST-00356,Patricia Johnson,High-Risk,60,Female,New York,USA,2023-11-08,8,499.23,62.4,2026-04-27,Home Appliances,UPI,6,4,1.0,English,Suspended
+CUST-00357,Wei Rodriguez,Regular,23,Male,New York,USA,2026-02-22,30,6928.71,230.96,2026-02-24,Electronics,UPI,1,1,4.0,English,Active
+CUST-00358,Michael Harris,Regular,48,Female,Manchester,UK,2024-03-24,16,2596.03,162.25,2025-10-11,Furniture,COD,2,0,3.3,English,Active
+CUST-00359,Betty Jackson,Premium,61,Female,Mumbai,India,2025-07-15,129,39807.65,308.59,2025-10-03,Fitness,Debit Card,1,0,4.6,German,Active
+CUST-00360,Thomas Clark,New,60,Male,Madrid,Spain,2026-04-23,3,297.46,99.15,2026-05-02,Fashion,Credit Card,0,0,4.5,Hindi,Active
+CUST-00361,Christopher Gonzalez,Regular,65,Female,Sydney,Australia,2024-09-12,12,2834.42,236.2,2025-11-07,Fitness,UPI,1,0,4.0,English,Inactive
+CUST-00362,Anthony Chen,Regular,36,Male,Lyon,France,2024-09-14,18,2643.73,146.87,2026-01-05,Fitness,Debit Card,1,1,3.7,English,Inactive
+CUST-00363,Carlos Lee,Regular,51,Female,Delhi,India,2024-08-17,10,1295.79,129.58,2026-03-10,Furniture,Debit Card,1,0,4.1,Hindi,Active
+CUST-00364,Betty Martinez,Regular,34,Male,Manchester,UK,2025-04-08,20,3518.47,175.92,2025-09-14,Fashion,Wallet,2,0,4.1,English,Active
+CUST-00365,Charles Davis,New,19,Female,New York,USA,2026-04-25,3,127.31,42.44,2026-05-13,Furniture,Debit Card,0,0,3.9,English,Active
+CUST-00366,Barbara Clark,Regular,75,Female,Delhi,India,2024-09-03,12,1150.44,95.87,2025-11-23,Home Appliances,UPI,2,0,4.4,Mandarin,Active
+CUST-00367,Joseph White,High-Risk,59,Prefer not to say,Osaka,Japan,2023-09-04,18,1280.55,71.14,2026-01-12,Electronics,UPI,12,3,2.5,French,Suspended
+CUST-00368,Maria Wilson,Premium,47,Male,Tokyo,Japan,2022-11-21,82,11011.14,134.28,2026-03-07,Fashion,Debit Card,1,0,4.2,Hindi,Active
+CUST-00369,Margaret Lee,New,42,Non-Binary,Toronto,Canada,2026-04-25,2,182.85,91.42,2026-05-15,Furniture,UPI,0,0,4.3,English,Active
+CUST-00370,Charles Ramirez,New,23,Male,Manchester,UK,2026-04-19,2,264.34,132.17,2026-04-26,Furniture,UPI,0,0,4.6,English,Active
+CUST-00371,Mark Lewis,New,28,Female,Madrid,Spain,2026-05-08,1,111.25,111.25,2026-05-13,Fitness,Wallet,0,0,4.0,Hindi,Active
+CUST-00372,Rahul Jones,Regular,24,Male,Toronto,Canada,2023-12-31,23,3895.52,169.37,2026-02-28,Electronics,Wallet,1,2,4.3,English,Active
+CUST-00373,Wei Sanchez,Premium,26,Female,Munich,Germany,2022-07-10,63,9615.44,152.63,2026-04-17,Furniture,COD,2,1,4.5,Mandarin,Active
+CUST-00374,Carlos White,Regular,20,Prefer not to say,London,UK,2025-01-02,6,935.65,155.94,2025-05-19,Furniture,Credit Card,0,0,4.4,English,Active
+CUST-00375,Joseph Wang,Regular,50,Female,Madrid,Spain,2023-10-20,7,997.13,142.45,2026-02-26,Electronics,COD,0,0,3.9,Hindi,Active
+CUST-00376,Patricia Harris,Premium,59,Male,Mumbai,India,2025-04-07,33,15462.25,468.55,2025-07-04,Furniture,Wallet,0,0,4.7,Hindi,Active
+CUST-00377,Anthony Lee,Premium,55,Male,Melbourne,Australia,2025-06-04,23,2898.36,126.02,2025-10-21,Home Appliances,Wallet,0,0,4.9,English,Active
+CUST-00378,Neha Singh,Premium,37,Female,Los Angeles,USA,2025-09-17,109,50946.1,467.4,2026-05-09,Fashion,COD,3,0,4.3,English,Active
+CUST-00379,John Lee,Regular,71,Male,Vancouver,Canada,2025-08-17,12,916.67,76.39,2025-11-02,Furniture,Wallet,1,1,3.1,English,Active
+CUST-00380,Karen Patel,Regular,72,Male,Manchester,UK,2024-07-26,12,3090.16,257.51,2026-03-04,Fashion,Credit Card,0,0,4.5,English,Active
+CUST-00381,Charles Garcia,Regular,24,Female,Manchester,UK,2025-07-22,23,2778.56,120.81,2025-12-02,Furniture,UPI,2,2,3.9,English,Active
+CUST-00382,James White,Premium,43,Male,Sydney,Australia,2025-07-25,66,13350.84,202.29,2025-12-11,Fitness,UPI,2,0,4.3,English,Active
+CUST-00383,Elizabeth Smith,Regular,36,Female,Tokyo,Japan,2024-01-06,17,3199.99,188.23,2025-10-30,Furniture,Debit Card,2,0,3.1,Mandarin,Active
+CUST-00384,Joseph White,Regular,60,Non-Binary,Vancouver,Canada,2025-09-18,11,2259.66,205.42,2026-05-11,Fitness,Wallet,1,1,3.9,English,Inactive
+CUST-00385,Richard Martinez,New,20,Female,London,UK,2026-05-15,3,185.34,61.78,2026-05-16,Fitness,Credit Card,0,0,3.9,English,Active
+CUST-00386,Michael White,Regular,27,Female,Lyon,France,2025-08-14,13,2246.79,172.83,2026-03-31,Electronics,COD,1,1,3.5,Spanish,Active
+CUST-00387,Neha Martinez,New,20,Female,Toronto,Canada,2026-05-04,3,318.12,106.04,2026-05-18,Fitness,COD,0,0,4.1,English,Active
+CUST-00388,Margaret Wang,Premium,66,Female,Melbourne,Australia,2025-09-28,52,10705.83,205.88,2026-02-17,Fashion,COD,1,0,4.3,English,Active
+CUST-00389,Barbara Gonzalez,High-Risk,27,Female,Berlin,Germany,2024-08-14,21,3874.07,184.48,2025-07-17,Furniture,COD,14,7,2.5,Mandarin,Suspended
+CUST-00390,Daniel Gonzalez,Regular,26,Female,Toronto,Canada,2025-08-28,21,3588.02,170.86,2025-10-17,Home Appliances,UPI,3,1,3.2,English,Active
+CUST-00391,Mary White,Regular,37,Female,Manchester,UK,2025-08-16,13,756.3,58.18,2026-03-24,Electronics,Credit Card,1,1,3.3,English,Inactive
+CUST-00392,Amit Thompson,Regular,21,Male,London,UK,2024-08-10,7,460.49,65.78,2026-02-03,Fitness,Wallet,0,0,4.0,English,Active
+CUST-00393,Charles Sharma,Regular,40,Female,Melbourne,Australia,2025-08-13,13,1775.24,136.56,2026-05-15,Fitness,Wallet,2,0,3.2,English,Active
+CUST-00394,Anthony White,Premium,51,Male,Toronto,Canada,2024-09-13,116,13767.89,118.69,2026-04-12,Fitness,Debit Card,3,1,4.2,English,Active
+CUST-00395,Christopher Lee,Premium,54,Female,London,UK,2025-03-04,129,55117.35,427.27,2025-09-09,Furniture,COD,2,0,4.6,English,Active
+CUST-00396,Lisa Hernandez,New,71,Female,Toronto,Canada,2026-05-04,2,88.42,44.21,2026-05-14,Home Appliances,Wallet,0,0,4.3,English,Active
+CUST-00397,Jessica Chen,Premium,63,Female,Toronto,Canada,2023-11-14,87,43411.13,498.98,2026-01-10,Electronics,Credit Card,4,0,4.5,English,Active
+CUST-00398,William Chen,New,50,Female,Manchester,UK,2026-05-07,3,314.76,104.92,2026-05-14,Home Appliances,Credit Card,0,0,4.4,English,Active
+CUST-00399,Thomas Anderson,Premium,43,Male,Melbourne,Australia,2024-10-22,32,11563.91,361.37,2026-02-15,Home Appliances,COD,0,0,4.8,English,Active
+CUST-00400,Li Miller,High-Risk,38,Male,Tokyo,Japan,2025-05-15,26,2926.24,112.55,2026-04-17,Furniture,Credit Card,13,8,2.5,Mandarin,Suspended
+CUST-00401,James Sharma,Premium,36,Female,Manchester,UK,2023-02-06,112,14356.16,128.18,2025-11-02,Fitness,Debit Card,3,0,4.3,English,Active
+CUST-00402,Barbara Rodriguez,Regular,35,Female,Berlin,Germany,2024-07-19,17,4136.94,243.35,2026-04-20,Fitness,Wallet,1,0,4.2,German,Inactive
+CUST-00403,Wei Taylor,Regular,34,Non-Binary,New York,USA,2024-11-07,27,3391.72,125.62,2026-01-20,Furniture,Credit Card,5,1,4.4,English,Active
+CUST-00404,Daniel Garcia,Regular,75,Male,Lyon,France,2024-02-25,5,731.7,146.34,2025-07-26,Fashion,Credit Card,0,0,4.0,Mandarin,Active
+CUST-00405,Michael Taylor,Regular,33,Male,Manchester,UK,2026-02-22,11,1032.23,93.84,2026-03-10,Fitness,Credit Card,0,0,3.2,English,Active
+CUST-00406,Mary Jackson,Regular,20,Female,Sydney,Australia,2024-11-25,19,2666.05,140.32,2026-03-19,Fashion,Wallet,2,0,4.2,English,Active
+CUST-00407,Mark Taylor,New,63,Male,Paris,France,2026-04-20,3,335.54,111.85,2026-05-10,Fitness,Credit Card,0,0,5.0,English,Active
+CUST-00408,Jennifer Williams,Regular,68,Male,New York,USA,2024-04-05,10,1733.69,173.37,2025-11-10,Fashion,Wallet,1,0,3.4,English,Active
+CUST-00409,Jennifer Sharma,Regular,30,Male,Munich,Germany,2024-08-09,23,1137.04,49.44,2026-02-15,Fashion,COD,4,0,3.7,German,Active
+CUST-00410,Amit Robinson,Regular,75,Male,New York,USA,2024-01-23,9,722.5,80.28,2025-07-19,Fitness,Wallet,1,0,3.7,English,Active
+CUST-00411,Mark Jackson,Premium,56,Male,New York,USA,2023-09-01,107,16828.8,157.28,2025-09-27,Fitness,COD,5,0,4.8,English,Active
+CUST-00412,Karen Sharma,Regular,52,Female,Paris,France,2026-04-10,13,2234.51,171.89,2026-05-07,Fitness,Wallet,2,1,3.2,Mandarin,Active
+CUST-00413,Wei Clark,High-Risk,23,Female,Barcelona,Spain,2025-05-15,43,3686.02,85.72,2025-10-25,Home Appliances,COD,30,20,2.7,Hindi,Suspended
+CUST-00414,Amit Martinez,Regular,22,Male,New York,USA,2024-10-07,20,2931.04,146.55,2025-07-05,Home Appliances,Wallet,3,0,3.8,English,Inactive
+CUST-00415,Wei Moore,Regular,20,Female,Manchester,UK,2026-03-28,20,4695.98,234.8,2026-04-22,Home Appliances,COD,2,1,3.7,English,Active
+CUST-00416,Neha Jones,Regular,44,Female,Berlin,Germany,2024-03-31,23,2694.23,117.14,2025-12-05,Fashion,Wallet,1,1,3.5,German,Active
+CUST-00417,Christopher Williams,Regular,32,Male,Paris,France,2025-03-24,30,2608.71,86.96,2025-09-06,Furniture,Wallet,2,1,4.4,Hindi,Active
+CUST-00418,Daniel Patel,Regular,32,Female,Madrid,Spain,2025-08-29,17,963.22,56.66,2026-02-27,Electronics,Credit Card,0,0,3.9,Mandarin,Inactive
+CUST-00419,Robert Lopez,High-Risk,19,Prefer not to say,Mumbai,India,2025-06-06,45,3355.35,74.56,2026-04-30,Furniture,Debit Card,17,24,2.9,Mandarin,Active
+CUST-00420,Margaret Davis,Regular,29,Female,New York,USA,2025-02-04,6,1273.5,212.25,2025-09-04,Furniture,Wallet,0,0,3.1,English,Active
+CUST-00421,James Martinez,Regular,47,Male,Dubai,UAE,2025-06-22,18,4224.82,234.71,2025-06-23,Fitness,UPI,2,1,4.3,Mandarin,Active
+CUST-00422,Joseph Gonzalez,Regular,61,Male,Sydney,Australia,2025-03-23,17,2253.88,132.58,2025-12-23,Home Appliances,COD,2,0,3.1,English,Active
+CUST-00423,Thomas Lewis,Regular,65,Non-Binary,Osaka,Japan,2025-08-02,9,985.31,109.48,2026-04-04,Electronics,UPI,1,0,3.6,Hindi,Active
+CUST-00424,William Martin,Premium,37,Male,Munich,Germany,2022-05-04,20,2955.69,147.78,2026-02-28,Fitness,Debit Card,0,0,4.5,French,Active
+CUST-00425,Thomas Martinez,Premium,75,Female,Munich,Germany,2023-06-14,91,26353.28,289.6,2025-11-02,Furniture,COD,4,0,4.2,English,Active
+CUST-00426,William Ramirez,Regular,57,Female,Tokyo,Japan,2026-04-11,6,243.21,40.54,2026-05-01,Electronics,Debit Card,0,0,3.3,Mandarin,Active
+CUST-00427,Matthew Jackson,Regular,35,Female,Mumbai,India,2025-08-17,10,1141.72,114.17,2025-11-17,Fitness,Credit Card,1,0,3.7,German,Active
+CUST-00428,Robert Martin,Regular,68,Female,Madrid,Spain,2024-05-11,25,2218.37,88.73,2025-05-30,Fashion,Wallet,2,2,3.5,French,Active
+CUST-00429,Elizabeth Miller,New,20,Male,Delhi,India,2026-05-17,1,80.13,80.13,2026-05-18,Electronics,Credit Card,0,0,4.9,German,Active
+CUST-00430,Karen Sharma,New,54,Female,New York,USA,2026-05-14,3,178.52,59.51,2026-05-16,Fashion,Wallet,0,0,4.4,English,Active
+CUST-00431,David Williams,Regular,67,Female,Singapore,Singapore,2025-05-12,29,5786.9,199.55,2026-01-25,Fashion,Debit Card,2,0,4.0,German,Active
+CUST-00432,William Wilson,Regular,29,Male,Lyon,France,2024-06-14,24,2359.8,98.33,2025-08-19,Fitness,Wallet,2,1,4.3,Mandarin,Active
+CUST-00433,Priya Thomas,Regular,22,Male,Delhi,India,2024-06-07,28,6402.43,228.66,2026-03-09,Fashion,Wallet,2,1,4.3,Spanish,Active
+CUST-00434,Sarah Brown,New,71,Male,Barcelona,Spain,2026-04-30,3,67.69,22.56,2026-05-17,Electronics,Wallet,0,0,4.6,English,Active
+CUST-00435,Elizabeth Sharma,New,44,Male,Barcelona,Spain,2026-05-03,3,254.93,84.98,2026-05-17,Furniture,Credit Card,0,0,4.0,English,Active
+CUST-00436,Neha Rodriguez,Regular,70,Female,Munich,Germany,2023-09-26,25,1583.75,63.35,2025-06-20,Home Appliances,Wallet,2,1,3.1,Spanish,Active
+CUST-00437,Michael Ramirez,Regular,71,Female,Munich,Germany,2025-03-24,25,4993.06,199.72,2025-08-05,Home Appliances,Debit Card,2,2,3.4,Hindi,Active
+CUST-00438,Margaret Lee,Premium,67,Female,Melbourne,Australia,2025-02-13,49,14222.77,290.26,2026-01-15,Electronics,UPI,1,0,4.5,English,Active
+CUST-00439,Maria Williams,Regular,61,Male,Lyon,France,2024-01-15,10,669.23,66.92,2026-05-14,Home Appliances,Wallet,1,0,3.5,Mandarin,Active
+CUST-00440,Thomas Hernandez,Premium,24,Male,Tokyo,Japan,2024-11-04,55,11167.11,203.04,2026-03-09,Fashion,Wallet,0,0,4.7,German,Active
+CUST-00441,Robert Sanchez,High-Risk,58,Female,Vancouver,Canada,2025-05-20,45,6553.48,145.63,2026-04-16,Furniture,Credit Card,28,24,1.1,English,Suspended
+CUST-00442,Margaret Sharma,Regular,51,Prefer not to say,Delhi,India,2025-06-08,7,1123.7,160.53,2025-08-23,Fitness,Credit Card,0,0,3.0,Mandarin,Active
+CUST-00443,William Chen,High-Risk,42,Male,Osaka,Japan,2024-06-05,6,668.96,111.49,2026-01-25,Furniture,Debit Card,2,3,1.1,French,Active
+CUST-00444,Michael Williams,High-Risk,41,Female,Manchester,UK,2024-08-17,15,993.14,66.21,2025-09-27,Fashion,UPI,11,8,1.7,English,Suspended
+CUST-00445,Anthony Ramirez,Premium,30,Male,New York,USA,2024-08-13,130,14143.48,108.8,2026-01-19,Fashion,Debit Card,1,1,4.4,English,Active
+CUST-00446,Joseph Perez,Regular,29,Female,Berlin,Germany,2026-03-29,28,5700.29,203.58,2026-05-17,Electronics,Wallet,3,1,3.8,Mandarin,Inactive
+CUST-00447,Carlos Lewis,New,53,Male,Singapore,Singapore,2026-04-28,2,169.83,84.92,2026-05-04,Fashion,Debit Card,0,0,3.5,Spanish,Active
+CUST-00448,Neha Thompson,High-Risk,36,Male,Lyon,France,2024-03-23,11,1839.82,167.26,2026-04-13,Fashion,COD,7,3,2.4,French,Active
+CUST-00449,Charles Sharma,Premium,52,Female,Sydney,Australia,2025-10-28,63,22234.17,352.92,2025-11-11,Furniture,Debit Card,1,1,4.6,English,Active
+CUST-00450,Robert Sanchez,Premium,50,Male,London,UK,2025-10-07,106,14968.25,141.21,2026-01-04,Fitness,Credit Card,4,0,4.2,English,Active
+CUST-00451,Neha Martinez,High-Risk,64,Female,New York,USA,2024-12-16,33,1483.68,44.96,2025-08-01,Fashion,Credit Card,25,7,1.5,English,Inactive
+CUST-00452,Carlos Miller,New,39,Male,London,UK,2026-05-12,2,224.26,112.13,2026-05-13,Home Appliances,Wallet,0,0,4.0,English,Active
+CUST-00453,Sandra Hernandez,Regular,50,Female,Munich,Germany,2025-07-12,4,485.78,121.44,2025-11-14,Fitness,Wallet,0,0,3.4,French,Active
+CUST-00454,Elizabeth Sharma,Regular,28,Male,Los Angeles,USA,2025-02-22,8,322.04,40.26,2025-09-09,Furniture,Credit Card,0,0,4.0,English,Active
+CUST-00455,Linda Jackson,Regular,50,Male,Melbourne,Australia,2025-09-01,23,5549.4,241.28,2025-12-12,Home Appliances,Debit Card,3,2,3.4,English,Active
+CUST-00456,Wei Martin,Regular,66,Male,London,UK,2025-09-01,21,3645.85,173.61,2025-11-09,Fashion,Wallet,2,1,3.2,English,Active
+CUST-00457,Anthony Perez,New,70,Prefer not to say,Paris,France,2026-04-29,3,331.79,110.6,2026-04-30,Electronics,COD,0,0,3.7,French,Active
+CUST-00458,Karen Jones,Regular,63,Male,New York,USA,2025-01-06,6,1319.57,219.93,2026-02-11,Fitness,Credit Card,1,0,3.3,English,Inactive
+CUST-00459,Lisa Lee,High-Risk,20,Female,Delhi,India,2024-10-24,45,1469.99,32.67,2026-01-14,Furniture,Debit Card,19,24,1.3,French,Active
+CUST-00460,Mark Sharma,Regular,36,Male,Singapore,Singapore,2024-10-25,24,3450.18,143.76,2025-09-23,Electronics,Wallet,2,1,4.0,Spanish,Inactive
+CUST-00461,Robert Sanchez,Regular,60,Female,London,UK,2025-05-17,13,774.91,59.61,2025-07-26,Home Appliances,Credit Card,2,1,3.8,English,Active
+CUST-00462,Daniel Wilson,New,68,Female,Vancouver,Canada,2026-05-03,2,214.96,107.48,2026-05-16,Furniture,Debit Card,0,0,4.2,English,Active
+CUST-00463,Mark Jones,Premium,73,Male,Berlin,Germany,2023-01-19,86,32371.37,376.41,2026-01-14,Electronics,Wallet,3,0,4.4,German,Active
+CUST-00464,Matthew Sanchez,Regular,18,Non-Binary,Vancouver,Canada,2024-02-07,4,795.53,198.88,2025-11-09,Home Appliances,Debit Card,0,0,3.4,English,Active
+CUST-00465,Richard Miller,Regular,19,Female,Sydney,Australia,2025-09-20,7,1124.07,160.58,2025-10-25,Fashion,UPI,0,0,3.2,English,Active
+CUST-00466,Barbara Perez,Regular,21,Male,Barcelona,Spain,2025-12-16,20,2318.27,115.91,2026-04-12,Home Appliances,UPI,2,0,3.7,Spanish,Active
+CUST-00467,Barbara Martinez,Regular,43,Female,Tokyo,Japan,2023-08-23,30,5400.58,180.02,2025-08-17,Fashion,Credit Card,4,1,3.3,French,Active
+CUST-00468,Maria Brown,High-Risk,32,Non-Binary,Manchester,UK,2024-02-26,15,2237.25,149.15,2026-03-28,Electronics,Credit Card,6,4,2.2,English,Suspended
+CUST-00469,Sarah Martinez,New,22,Female,Barcelona,Spain,2026-05-03,3,92.04,30.68,2026-05-05,Fitness,UPI,0,0,3.7,Hindi,Active
+CUST-00470,Michael Harris,Premium,50,Male,London,UK,2024-07-09,97,19239.44,198.34,2025-10-14,Home Appliances,Credit Card,4,1,4.9,English,Active
+CUST-00471,Christopher Sharma,New,55,Female,Osaka,Japan,2026-04-27,2,313.0,156.5,2026-05-15,Home Appliances,Wallet,0,0,4.7,German,Active
+CUST-00472,Maria Robinson,Premium,26,Female,New York,USA,2024-10-19,51,7561.71,148.27,2025-11-29,Electronics,UPI,2,0,4.3,English,Active
+CUST-00473,Jessica Miller,New,73,Male,Melbourne,Australia,2026-05-06,1,127.02,127.02,2026-05-06,Home Appliances,Credit Card,0,0,4.5,English,Active
+CUST-00474,Betty Taylor,High-Risk,60,Male,London,UK,2025-10-29,47,4997.59,106.33,2026-04-04,Electronics,Debit Card,20,10,1.6,English,Active
+CUST-00475,Richard Sanchez,Regular,33,Male,Mumbai,India,2025-11-13,9,1975.84,219.54,2026-05-06,Fitness,Debit Card,0,0,3.3,Mandarin,Active
+CUST-00476,Sarah Brown,Regular,18,Prefer not to say,Delhi,India,2025-10-18,30,4915.76,163.86,2026-03-23,Electronics,Wallet,2,1,4.3,Hindi,Inactive
+CUST-00477,Maria Robinson,New,73,Male,Paris,France,2026-04-29,3,131.29,43.76,2026-05-16,Furniture,UPI,0,0,4.7,English,Active
+CUST-00478,Amit Jones,New,66,Female,Melbourne,Australia,2026-05-08,1,91.29,91.29,2026-05-09,Fitness,Debit Card,0,0,4.5,English,Active
+CUST-00479,Matthew Jackson,Regular,52,Male,Munich,Germany,2025-02-22,17,1194.34,70.26,2025-09-05,Furniture,COD,1,1,3.0,Mandarin,Active
+CUST-00480,Carlos Ramirez,Regular,63,Non-Binary,Toronto,Canada,2023-11-18,13,1583.4,121.8,2025-08-13,Fitness,Wallet,1,1,4.4,English,Active
+CUST-00481,Susan Lopez,High-Risk,43,Female,Tokyo,Japan,2026-04-13,8,1309.58,163.7,2026-04-20,Fitness,Credit Card,3,3,1.1,Spanish,Active
+CUST-00482,John Thompson,Regular,58,Male,Singapore,Singapore,2024-05-19,8,377.37,47.17,2025-09-24,Electronics,Debit Card,0,0,3.6,Mandarin,Active
+CUST-00483,James White,New,30,Male,Singapore,Singapore,2026-05-13,1,67.88,67.88,2026-05-16,Home Appliances,COD,0,0,4.1,French,Active
+CUST-00484,Christopher Lopez,Regular,64,Male,Los Angeles,USA,2025-12-16,21,3787.0,180.33,2026-04-25,Home Appliances,UPI,1,1,3.3,English,Active
+CUST-00485,Christopher Jackson,Regular,59,Female,Dubai,UAE,2025-11-17,7,1802.2,257.46,2026-02-13,Fitness,COD,1,0,3.2,Hindi,Active
+CUST-00486,Maria Patel,High-Risk,51,Non-Binary,New York,USA,2024-08-23,45,5881.44,130.7,2025-07-09,Fashion,COD,14,14,2.1,English,Suspended
+CUST-00487,Anthony Perez,Regular,66,Male,Barcelona,Spain,2025-11-20,20,3861.71,193.09,2025-12-02,Fashion,Wallet,1,0,3.3,Mandarin,Active
+CUST-00488,Linda Sharma,New,27,Female,Delhi,India,2026-05-15,3,322.15,107.38,2026-05-15,Electronics,Wallet,0,0,3.8,Mandarin,Active
+CUST-00489,Susan Wilson,Regular,30,Male,Berlin,Germany,2023-09-27,15,1237.53,82.5,2025-05-29,Fashion,Credit Card,0,1,3.8,English,Active
+CUST-00490,Christopher Sharma,High-Risk,21,Female,Lyon,France,2024-02-20,5,509.37,101.87,2026-01-28,Furniture,UPI,2,1,2.3,Hindi,Active
+CUST-00491,Priya Smith,Regular,19,Female,Berlin,Germany,2024-04-29,26,3158.38,121.48,2025-05-23,Fitness,Debit Card,3,0,3.0,German,Inactive
+CUST-00492,John Gonzalez,Premium,42,Male,Madrid,Spain,2023-07-19,132,41798.25,316.65,2025-10-16,Electronics,COD,0,1,4.9,Spanish,Active
+CUST-00493,Jessica Clark,High-Risk,70,Female,Melbourne,Australia,2026-03-19,33,2357.55,71.44,2026-05-06,Electronics,Wallet,14,12,2.8,English,Active
+CUST-00494,Matthew Brown,Premium,71,Female,Paris,France,2024-12-21,121,37418.11,309.24,2025-08-31,Electronics,Wallet,1,2,4.8,French,Active
+CUST-00495,Matthew Taylor,Regular,61,Prefer not to say,Manchester,UK,2023-09-27,16,999.13,62.45,2026-05-17,Home Appliances,COD,2,0,4.0,English,Active
+CUST-00496,Carlos Garcia,High-Risk,32,Non-Binary,Singapore,Singapore,2023-09-25,12,1806.21,150.52,2026-04-23,Fashion,Wallet,5,4,1.6,Mandarin,Active
+CUST-00497,Anthony Taylor,Regular,30,Male,Dubai,UAE,2024-06-24,27,5192.4,192.31,2025-07-30,Furniture,UPI,5,1,3.8,Spanish,Active
+CUST-00498,Lisa Thomas,Regular,19,Male,Singapore,Singapore,2023-12-19,21,3922.48,186.78,2025-07-28,Fashion,Debit Card,3,0,3.4,French,Active
+CUST-00499,Daniel Sanchez,Premium,60,Male,Dubai,UAE,2024-01-06,118,16443.72,139.35,2025-08-04,Fashion,UPI,4,0,4.2,Mandarin,Active
+CUST-00500,Christopher Patel,Premium,61,Female,Osaka,Japan,2023-01-06,129,31972.85,247.85,2026-03-30,Home Appliances,COD,3,0,4.5,Spanish,Active
+CUST-00501,David Robinson,Regular,68,Male,Madrid,Spain,2026-04-03,16,3439.68,214.98,2026-05-15,Electronics,COD,2,0,4.2,French,Active
+CUST-00502,Linda Hernandez,Regular,24,Prefer not to say,London,UK,2025-04-23,24,4197.36,174.89,2025-06-11,Furniture,Credit Card,2,1,3.2,English,Inactive
+CUST-00503,Susan Jackson,Regular,22,Male,Manchester,UK,2023-09-27,4,764.23,191.06,2026-05-17,Fitness,Wallet,0,0,3.8,English,Active
+CUST-00504,Michael Davis,High-Risk,51,Prefer not to say,Dubai,UAE,2025-12-23,13,595.27,45.79,2026-01-01,Fitness,Debit Card,7,4,1.0,Mandarin,Suspended
+CUST-00505,Carlos Martin,High-Risk,27,Female,Sydney,Australia,2025-12-18,38,3025.13,79.61,2025-12-22,Home Appliances,Credit Card,28,15,1.4,English,Active
+CUST-00506,Rahul Sanchez,Premium,51,Female,Madrid,Spain,2023-10-17,89,10993.76,123.53,2025-08-03,Fitness,Wallet,1,0,4.5,Hindi,Active
+CUST-00507,Anthony Chen,New,26,Female,Melbourne,Australia,2026-05-13,3,342.3,114.1,2026-05-14,Home Appliances,Credit Card,0,0,3.9,English,Active
+CUST-00508,Jennifer White,Regular,73,Male,Singapore,Singapore,2023-12-16,30,2995.41,99.85,2026-04-07,Electronics,Debit Card,3,2,3.1,Mandarin,Active
+CUST-00509,Thomas Jones,Premium,54,Female,Singapore,Singapore,2025-04-15,96,20415.02,212.66,2026-02-26,Fashion,Wallet,2,0,4.6,English,Active
+CUST-00510,Mary Thomas,High-Risk,56,Male,Lyon,France,2026-03-23,26,2463.34,94.74,2026-03-27,Furniture,UPI,9,13,1.4,German,Inactive
+CUST-00511,Lisa Jones,New,34,Male,Sydney,Australia,2026-05-04,1,106.82,106.82,2026-05-11,Fashion,COD,0,0,3.9,English,Active
+CUST-00512,Sandra Lopez,High-Risk,23,Female,Lyon,France,2025-09-27,10,523.2,52.32,2026-05-16,Fashion,UPI,5,5,1.3,French,Suspended
+CUST-00513,Mark Lewis,Regular,30,Female,London,UK,2024-11-08,19,2176.38,114.55,2025-10-03,Electronics,Debit Card,1,0,3.8,English,Active
+CUST-00514,Charles Davis,New,19,Female,Munich,Germany,2026-05-16,2,100.95,50.48,2026-05-17,Home Appliances,Wallet,0,0,3.8,Hindi,Active
+CUST-00515,Amit Sharma,Regular,26,Male,Vancouver,Canada,2026-03-28,22,1482.29,67.38,2026-03-30,Fashion,COD,1,0,3.2,English,Active
+CUST-00516,Jennifer Thomas,High-Risk,26,Female,Tokyo,Japan,2024-06-02,28,4540.94,162.18,2025-07-14,Home Appliances,Credit Card,18,9,1.9,Mandarin,Suspended
+CUST-00517,David Thompson,Premium,19,Non-Binary,London,UK,2025-07-03,57,26435.28,463.78,2026-03-20,Fashion,Credit Card,1,0,4.7,English,Active
+CUST-00518,Daniel Hernandez,Regular,28,Non-Binary,New York,USA,2024-09-12,12,1972.32,164.36,2025-07-26,Furniture,Wallet,0,0,4.4,English,Active
+CUST-00519,Robert Anderson,Regular,73,Male,London,UK,2025-04-15,10,1087.01,108.7,2025-11-15,Fitness,Credit Card,0,0,4.0,English,Active
+CUST-00520,Karen Brown,High-Risk,42,Female,Manchester,UK,2025-01-21,21,3266.75,155.56,2025-08-21,Furniture,COD,13,4,1.1,English,Suspended
+CUST-00521,Daniel Smith,Regular,20,Female,Osaka,Japan,2023-09-22,22,5513.71,250.62,2025-07-21,Furniture,Credit Card,3,1,3.7,Spanish,Active
+CUST-00522,Carlos Wang,Premium,47,Male,Tokyo,Japan,2023-12-20,91,13626.99,149.75,2025-06-05,Fashion,Wallet,2,0,4.9,English,Active
+CUST-00523,Michael Garcia,New,58,Male,Paris,France,2026-05-07,2,274.6,137.3,2026-05-13,Furniture,Wallet,0,0,3.8,English,Active
+CUST-00524,David Thomas,High-Risk,21,Male,Sydney,Australia,2024-11-24,9,1921.61,213.51,2025-09-07,Electronics,COD,6,3,1.7,English,Suspended
+CUST-00525,David Davis,Regular,19,Female,Munich,Germany,2026-04-10,6,301.18,50.2,2026-05-12,Home Appliances,Credit Card,0,0,3.1,English,Active
+CUST-00526,Nancy Thomas,New,29,Female,Barcelona,Spain,2026-04-23,2,42.58,21.29,2026-05-09,Electronics,Debit Card,0,0,4.1,Spanish,Active
+CUST-00527,Mark Martinez,Regular,43,Male,Tokyo,Japan,2024-03-06,11,2386.7,216.97,2025-11-08,Electronics,Debit Card,0,0,4.5,Mandarin,Active
+CUST-00528,Wei Lopez,Regular,23,Non-Binary,Barcelona,Spain,2025-09-04,6,621.67,103.61,2025-11-19,Fashion,UPI,0,0,3.7,French,Active
+CUST-00529,Richard Harris,Premium,72,Female,Munich,Germany,2022-09-03,98,43647.13,445.38,2025-06-24,Furniture,COD,4,0,4.4,Spanish,Active
+CUST-00530,Sandra Clark,Regular,37,Male,New York,USA,2025-09-08,16,3139.99,196.25,2026-05-14,Furniture,Debit Card,2,0,3.0,English,Active
+CUST-00531,Maria Harris,Regular,75,Male,Dubai,UAE,2024-08-07,30,3983.08,132.77,2026-03-28,Home Appliances,Debit Card,3,1,3.4,Hindi,Active
+CUST-00532,Carlos Chen,Premium,33,Female,Mumbai,India,2022-08-30,31,11977.69,386.38,2026-01-06,Fitness,Debit Card,0,0,4.7,Spanish,Active
+CUST-00533,Patricia Perez,Regular,48,Male,New York,USA,2025-01-06,12,2519.86,209.99,2026-03-07,Home Appliances,Debit Card,0,0,3.4,English,Active
+CUST-00534,David Hernandez,Regular,37,Male,Vancouver,Canada,2025-05-12,28,1976.02,70.57,2025-06-18,Fitness,Wallet,4,1,3.6,English,Active
+CUST-00535,Betty Lee,Premium,18,Male,Osaka,Japan,2022-10-18,45,6060.7,134.68,2026-05-18,Fashion,Credit Card,1,0,4.6,Spanish,Active
+CUST-00536,Jessica Perez,Regular,42,Non-Binary,London,UK,2024-01-11,17,763.06,44.89,2026-04-13,Electronics,Credit Card,1,1,4.3,English,Active
+CUST-00537,William Thompson,Regular,61,Male,Tokyo,Japan,2026-03-16,27,5859.13,217.0,2026-03-31,Home Appliances,UPI,1,0,4.1,Mandarin,Active
+CUST-00538,Nancy Jackson,Premium,40,Male,Melbourne,Australia,2024-12-08,46,11358.73,246.93,2025-12-31,Furniture,Wallet,2,0,4.8,English,Active
+CUST-00539,Rahul Clark,Premium,27,Male,Tokyo,Japan,2024-04-10,95,38651.21,406.85,2026-04-09,Furniture,Wallet,2,1,4.2,Mandarin,Active
+CUST-00540,Patricia Moore,New,36,Male,Tokyo,Japan,2026-04-19,1,94.15,94.15,2026-04-23,Home Appliances,Credit Card,0,0,4.3,Mandarin,Active
+CUST-00541,Margaret Jones,Regular,22,Prefer not to say,Paris,France,2024-04-13,19,3551.13,186.9,2025-12-10,Home Appliances,Debit Card,0,0,4.2,German,Active
+CUST-00542,William Miller,New,21,Male,Berlin,Germany,2026-05-09,2,107.23,53.62,2026-05-16,Fashion,UPI,0,0,3.9,Hindi,Active
+CUST-00543,Amit Jackson,New,18,Female,Sydney,Australia,2026-05-07,3,106.27,35.42,2026-05-16,Home Appliances,Wallet,0,0,3.9,English,Active
+CUST-00544,Lisa Clark,Regular,51,Male,Melbourne,Australia,2025-10-04,25,2155.73,86.23,2026-01-06,Home Appliances,COD,4,2,3.9,English,Active
+CUST-00545,Charles Clark,Regular,74,Female,Toronto,Canada,2024-11-01,20,3413.19,170.66,2026-03-26,Fitness,COD,3,0,4.0,English,Active
+CUST-00546,Karen Jackson,Premium,47,Female,London,UK,2024-09-30,24,6623.93,276.0,2026-01-08,Fashion,Wallet,0,0,4.3,English,Active
+CUST-00547,Charles Lee,New,66,Male,Manchester,UK,2026-05-12,2,218.96,109.48,2026-05-17,Electronics,Debit Card,0,0,4.5,English,Active
+CUST-00548,Robert White,Regular,25,Male,Manchester,UK,2025-06-07,25,1188.01,47.52,2025-10-01,Fashion,UPI,2,0,4.5,English,Active
+CUST-00549,Linda Patel,New,66,Non-Binary,London,UK,2026-04-25,1,111.23,111.23,2026-04-25,Electronics,Credit Card,0,0,4.5,English,Active
+CUST-00550,Sarah Davis,Regular,71,Female,Osaka,Japan,2025-06-09,30,5392.87,179.76,2026-01-15,Electronics,UPI,2,0,4.3,French,Active
+CUST-00551,Carlos Johnson,Premium,30,Male,Paris,France,2024-08-08,87,9655.23,110.98,2025-08-27,Fitness,Credit Card,2,1,4.6,Hindi,Active
+CUST-00552,Rahul White,New,29,Male,Lyon,France,2026-05-17,2,245.93,122.97,2026-05-17,Fashion,Debit Card,0,0,4.1,Hindi,Active
+CUST-00553,Rahul Wilson,High-Risk,42,Male,Toronto,Canada,2023-09-24,36,5216.23,144.9,2025-10-02,Home Appliances,Debit Card,16,13,2.8,English,Active
+CUST-00554,Anthony Jackson,High-Risk,40,Female,Melbourne,Australia,2023-08-23,20,3798.55,189.93,2025-12-25,Electronics,Debit Card,12,9,1.5,English,Active
+CUST-00555,Mark Brown,Regular,46,Female,Sydney,Australia,2025-02-04,5,1175.89,235.18,2026-02-09,Electronics,Debit Card,0,0,3.8,English,Active
+CUST-00556,Carlos Robinson,Regular,48,Male,Singapore,Singapore,2024-10-10,23,2153.27,93.62,2026-01-02,Home Appliances,Debit Card,2,1,3.8,French,Active
+CUST-00557,Mary Sanchez,Premium,23,Male,Berlin,Germany,2024-06-30,134,66449.28,495.89,2025-11-28,Fashion,COD,5,1,4.5,French,Active
+CUST-00558,Wei Patel,Premium,63,Female,Melbourne,Australia,2024-01-22,108,52365.58,484.87,2025-07-20,Furniture,UPI,4,1,4.5,English,Active
+CUST-00559,Daniel Smith,Regular,41,Female,Tokyo,Japan,2025-05-13,19,3777.99,198.84,2026-01-01,Fashion,COD,2,1,4.3,Spanish,Active
+CUST-00560,Mark Johnson,Regular,51,Female,Toronto,Canada,2023-09-16,4,223.85,55.96,2025-07-17,Fitness,UPI,0,0,3.7,English,Active
+CUST-00561,Mark Sanchez,New,66,Male,London,UK,2026-04-30,1,83.69,83.69,2026-05-01,Fashion,Credit Card,0,0,3.7,English,Active
+CUST-00562,Maria Jackson,Regular,28,Female,Madrid,Spain,2025-08-28,16,1130.95,70.68,2026-02-26,Fitness,COD,1,1,4.1,Mandarin,Active
+CUST-00563,Michael Hernandez,High-Risk,74,Female,Singapore,Singapore,2024-09-20,44,6501.06,147.75,2026-03-28,Furniture,Credit Card,33,9,1.3,English,Suspended
+CUST-00564,Betty Patel,Regular,64,Male,Berlin,Germany,2024-11-19,17,3026.8,178.05,2025-09-04,Furniture,UPI,1,0,3.8,French,Active
+CUST-00565,Elizabeth Clark,Regular,53,Female,Mumbai,India,2024-04-03,14,3256.69,232.62,2026-03-21,Fitness,UPI,2,0,3.3,Spanish,Active
+CUST-00566,Jessica Jones,Premium,30,Female,London,UK,2023-07-26,51,17725.93,347.57,2026-03-13,Fashion,COD,0,0,4.8,English,Active
+CUST-00567,Barbara Jackson,High-Risk,53,Female,London,UK,2024-01-17,37,3367.35,91.01,2025-05-27,Furniture,UPI,28,9,2.3,English,Suspended
+CUST-00568,Matthew Martinez,New,36,Female,Dubai,UAE,2026-05-16,1,102.22,102.22,2026-05-16,Fitness,Wallet,0,0,3.5,French,Active
+CUST-00569,Lisa Patel,Premium,22,Male,Dubai,UAE,2025-04-15,65,29322.55,451.12,2025-08-01,Fitness,Wallet,0,0,4.7,French,Active
+CUST-00570,Karen Martin,High-Risk,45,Male,Toronto,Canada,2025-09-18,38,7739.17,203.66,2025-10-29,Furniture,Wallet,14,19,1.5,English,Suspended
+CUST-00571,Susan Sanchez,Premium,20,Female,Melbourne,Australia,2025-08-21,118,40257.7,341.17,2025-09-15,Fitness,Wallet,0,0,4.8,English,Active
+CUST-00572,Anthony Chen,High-Risk,38,Female,Lyon,France,2023-10-18,42,6294.36,149.87,2025-06-09,Electronics,Wallet,25,19,1.5,French,Suspended
+CUST-00573,Richard Harris,Regular,18,Male,London,UK,2025-07-15,5,1037.08,207.42,2025-10-15,Fitness,UPI,0,0,3.5,English,Active
+CUST-00574,Thomas Singh,Premium,63,Male,Barcelona,Spain,2024-09-24,74,25561.48,345.43,2026-02-01,Fitness,Wallet,1,0,4.3,Hindi,Active
+CUST-00575,Joseph Patel,Regular,22,Female,Osaka,Japan,2026-04-08,30,3022.67,100.76,2026-05-07,Fitness,UPI,5,2,4.2,English,Active
+CUST-00576,Amit Gonzalez,Regular,75,Female,Tokyo,Japan,2025-06-10,28,3214.9,114.82,2025-11-06,Home Appliances,COD,4,2,3.7,Hindi,Active
+CUST-00577,Margaret Taylor,New,42,Female,Los Angeles,USA,2026-05-15,2,148.97,74.48,2026-05-17,Furniture,COD,0,0,4.5,English,Active
+CUST-00578,Susan Hernandez,High-Risk,52,Prefer not to say,London,UK,2024-06-07,11,984.76,89.52,2026-05-17,Electronics,Credit Card,5,4,1.8,English,Active
+CUST-00579,Sandra Thompson,Regular,56,Male,Toronto,Canada,2025-10-23,23,4979.28,216.49,2026-04-01,Fashion,COD,1,1,4.3,English,Active
+CUST-00580,Carlos White,Regular,32,Female,Singapore,Singapore,2026-02-17,28,5463.07,195.11,2026-03-03,Furniture,Wallet,3,1,3.8,Hindi,Active
+CUST-00581,Li Garcia,Regular,27,Male,Los Angeles,USA,2024-08-31,13,769.8,59.22,2026-03-07,Home Appliances,UPI,1,1,4.1,English,Active
+CUST-00582,Nancy Johnson,Regular,47,Prefer not to say,Dubai,UAE,2026-02-19,8,1655.0,206.88,2026-03-08,Furniture,Debit Card,0,0,4.3,French,Active
+CUST-00583,Mark Smith,Premium,45,Female,Manchester,UK,2025-07-27,138,12657.62,91.72,2025-11-04,Fashion,UPI,3,1,4.8,English,Active
+CUST-00584,Anthony Hernandez,New,31,Male,Dubai,UAE,2026-04-20,1,107.93,107.93,2026-04-23,Fitness,UPI,0,0,4.9,Hindi,Active
+CUST-00585,Elizabeth Perez,Premium,24,Female,Berlin,Germany,2023-12-02,125,23125.39,185.0,2025-10-20,Electronics,UPI,4,0,4.6,Hindi,Active
+CUST-00586,Robert Martin,Regular,28,Female,Tokyo,Japan,2025-06-16,5,713.83,142.77,2026-01-29,Fashion,Wallet,0,0,3.3,English,Active
+CUST-00587,David Patel,Regular,52,Male,Madrid,Spain,2024-02-08,21,3746.65,178.41,2025-05-18,Fitness,UPI,3,0,3.8,French,Active
+CUST-00588,Patricia Smith,Regular,56,Male,Sydney,Australia,2025-08-29,13,631.22,48.56,2026-03-05,Fashion,Credit Card,1,1,3.0,English,Active
+CUST-00589,William Garcia,Regular,41,Non-Binary,Melbourne,Australia,2023-08-26,27,5839.9,216.29,2025-09-27,Furniture,Debit Card,4,2,3.2,English,Active
+CUST-00590,Karen Lewis,New,46,Female,Paris,France,2026-04-28,2,222.91,111.45,2026-05-05,Furniture,Credit Card,0,0,4.6,English,Active
+CUST-00591,Jennifer Williams,Premium,38,Male,Paris,France,2024-09-14,58,25319.26,436.54,2025-07-07,Home Appliances,UPI,0,0,5.0,French,Active
+CUST-00592,Patricia Garcia,New,63,Male,Toronto,Canada,2026-04-29,2,101.08,50.54,2026-04-30,Home Appliances,Debit Card,0,0,3.8,English,Active
+CUST-00593,Daniel Harris,High-Risk,21,Prefer not to say,Tokyo,Japan,2025-12-17,49,4225.5,86.23,2026-02-27,Furniture,UPI,21,18,1.7,Mandarin,Suspended
+CUST-00594,Thomas Moore,New,51,Female,Mumbai,India,2026-05-10,2,111.49,55.74,2026-05-16,Furniture,UPI,0,0,4.2,German,Active
+CUST-00595,Lisa Anderson,Regular,75,Prefer not to say,Madrid,Spain,2024-05-19,13,1161.18,89.32,2025-06-06,Home Appliances,Credit Card,1,0,3.5,German,Active
+CUST-00596,Rahul Martin,Regular,68,Male,Toronto,Canada,2023-10-06,11,2649.17,240.83,2026-04-09,Furniture,COD,2,0,3.7,English,Active
+CUST-00597,David Anderson,Regular,75,Female,Osaka,Japan,2025-02-14,18,1299.49,72.19,2026-02-25,Fashion,Credit Card,2,1,3.8,German,Active
+CUST-00598,Sarah Johnson,New,61,Female,Barcelona,Spain,2026-05-02,3,225.82,75.27,2026-05-09,Furniture,Debit Card,0,0,4.0,English,Active
+CUST-00599,Elizabeth Garcia,New,54,Female,Delhi,India,2026-05-07,1,152.89,152.89,2026-05-15,Electronics,Wallet,0,0,4.1,Hindi,Active
+CUST-00600,Priya Thomas,Regular,41,Female,Manchester,UK,2024-01-30,20,3313.33,165.67,2025-07-19,Fitness,COD,1,1,4.2,English,Active
+CUST-00601,Daniel Perez,Regular,57,Female,Toronto,Canada,2025-05-31,13,2356.22,181.25,2025-12-16,Fitness,Debit Card,2,0,3.3,English,Active
+CUST-00602,Mary Harris,New,21,Male,Melbourne,Australia,2026-04-28,3,350.28,116.76,2026-04-30,Electronics,UPI,0,0,4.0,English,Active
+CUST-00603,Anthony Clark,New,66,Male,Singapore,Singapore,2026-04-18,2,172.09,86.05,2026-05-01,Fashion,COD,0,0,3.8,German,Active
+CUST-00604,Barbara Lewis,Regular,65,Prefer not to say,Berlin,Germany,2025-06-03,10,2427.51,242.75,2026-01-19,Furniture,COD,1,0,4.0,German,Active
+CUST-00605,Matthew Rodriguez,Premium,40,Male,Osaka,Japan,2025-05-19,131,66468.16,507.39,2026-03-04,Furniture,COD,2,0,4.4,Spanish,Active
+CUST-00606,Susan Jones,High-Risk,28,Female,Delhi,India,2024-10-20,22,3423.89,155.63,2025-06-05,Electronics,Wallet,17,8,1.3,Spanish,Suspended
+CUST-00607,James Martin,Premium,32,Female,Dubai,UAE,2025-02-22,38,18271.24,480.82,2025-12-16,Fashion,COD,0,0,4.6,Mandarin,Active
+CUST-00608,Anthony Sharma,Regular,63,Female,Manchester,UK,2024-09-30,24,1062.01,44.25,2025-12-26,Fashion,Wallet,1,2,3.4,English,Active
+CUST-00609,Mary Jackson,Regular,46,Male,Sydney,Australia,2025-04-06,4,599.8,149.95,2025-06-09,Furniture,UPI,0,0,3.9,English,Inactive
+CUST-00610,Priya Garcia,Premium,25,Female,Tokyo,Japan,2025-04-29,78,22556.05,289.18,2025-11-01,Furniture,Wallet,1,0,4.7,German,Active
+CUST-00611,Rahul Robinson,Regular,51,Female,Delhi,India,2024-07-01,5,868.5,173.7,2026-01-21,Home Appliances,Credit Card,0,0,3.2,French,Active
+CUST-00612,Linda Singh,Regular,34,Female,Mumbai,India,2025-10-26,19,3931.31,206.91,2025-12-29,Fashion,Debit Card,2,0,4.4,English,Inactive
+CUST-00613,Susan Taylor,Premium,45,Male,Sydney,Australia,2022-12-13,128,23077.39,180.29,2025-12-21,Furniture,COD,5,1,4.7,English,Active
+CUST-00614,Mary Clark,Regular,58,Male,Osaka,Japan,2024-02-15,9,1015.16,112.8,2025-12-09,Home Appliances,Wallet,1,0,3.7,Hindi,Active
+CUST-00615,Richard Miller,New,69,Female,Paris,France,2026-04-24,3,74.62,24.87,2026-05-04,Home Appliances,Wallet,0,0,4.9,English,Active
+CUST-00616,Mary Hernandez,Regular,44,Male,Mumbai,India,2023-12-06,28,1120.36,40.01,2026-01-23,Home Appliances,Wallet,1,0,4.5,German,Active
+CUST-00617,Lisa Martin,Premium,50,Prefer not to say,Vancouver,Canada,2025-08-02,29,11282.65,389.06,2026-02-22,Electronics,Debit Card,0,0,4.8,English,Active
+CUST-00618,Matthew Thompson,New,38,Female,Singapore,Singapore,2026-04-28,3,343.56,114.52,2026-05-09,Electronics,COD,0,0,4.9,Hindi,Active
+CUST-00619,Barbara Chen,Premium,74,Female,Munich,Germany,2023-02-04,83,18697.89,225.28,2026-01-29,Fitness,Wallet,2,0,4.4,English,Active
+CUST-00620,Jessica Taylor,Regular,68,Male,Melbourne,Australia,2023-10-04,7,1369.92,195.7,2025-07-29,Fitness,COD,1,0,3.6,English,Active
+CUST-00621,David Williams,New,26,Prefer not to say,Manchester,UK,2026-05-09,3,111.2,37.07,2026-05-15,Home Appliances,Debit Card,0,0,4.7,English,Active
+CUST-00622,William Patel,Premium,44,Male,Sydney,Australia,2024-05-23,89,17892.53,201.04,2026-04-03,Electronics,Debit Card,0,0,4.8,English,Active
+CUST-00623,Carlos Lewis,Regular,71,Female,Munich,Germany,2024-07-21,6,1069.7,178.28,2025-10-04,Fitness,Wallet,1,0,3.8,English,Active
+CUST-00624,Richard Lee,Regular,26,Male,New York,USA,2025-01-29,13,1234.78,94.98,2026-05-17,Electronics,COD,2,0,4.2,English,Active
+CUST-00625,Daniel Lee,High-Risk,70,Prefer not to say,Paris,France,2025-07-05,15,2618.53,174.57,2025-09-27,Fitness,Credit Card,7,3,1.2,Mandarin,Inactive
+CUST-00626,Carlos Garcia,Premium,37,Female,Melbourne,Australia,2023-12-30,93,25322.14,272.28,2025-09-12,Fitness,COD,2,1,4.5,English,Active
+CUST-00627,Priya Hernandez,New,35,Female,Lyon,France,2026-04-25,3,353.1,117.7,2026-04-27,Home Appliances,UPI,0,0,3.7,French,Active
+CUST-00628,Lisa Jackson,Regular,64,Female,Barcelona,Spain,2024-10-17,21,4869.37,231.87,2025-09-25,Fitness,COD,3,1,3.4,English,Active
+CUST-00629,Michael Perez,Premium,55,Female,Toronto,Canada,2024-04-03,140,26304.75,187.89,2026-04-05,Home Appliances,Credit Card,5,2,4.7,English,Active
+CUST-00630,Richard Robinson,Regular,73,Female,Sydney,Australia,2025-07-08,21,4802.48,228.69,2026-02-05,Fitness,COD,3,0,3.1,English,Active
+CUST-00631,James Jones,Regular,72,Male,Tokyo,Japan,2023-10-25,11,1651.54,150.14,2025-08-15,Furniture,Wallet,1,0,4.4,French,Active
+CUST-00632,Karen Anderson,Premium,22,Male,Dubai,UAE,2022-08-21,107,35984.86,336.31,2025-12-27,Home Appliances,Debit Card,1,2,4.3,Spanish,Active
+CUST-00633,Daniel Smith,Premium,38,Female,Mumbai,India,2025-08-04,33,3484.52,105.59,2026-03-16,Electronics,COD,0,0,4.3,Spanish,Active
+CUST-00634,Joseph Moore,Regular,66,Female,Osaka,Japan,2023-10-17,10,912.76,91.28,2025-08-28,Fashion,Credit Card,1,0,3.9,German,Active
+CUST-00635,Barbara Davis,Regular,23,Male,Berlin,Germany,2024-09-07,17,1472.91,86.64,2026-02-19,Furniture,UPI,3,1,3.4,Mandarin,Active
+CUST-00636,Priya Singh,Regular,18,Male,Manchester,UK,2026-01-09,18,2808.55,156.03,2026-05-14,Home Appliances,Credit Card,1,1,4.3,English,Active
+CUST-00637,Lisa Gonzalez,Regular,27,Female,Lyon,France,2026-03-11,14,1207.39,86.24,2026-04-26,Home Appliances,UPI,0,1,3.0,Mandarin,Active
+CUST-00638,Patricia Anderson,Premium,18,Female,New York,USA,2025-06-09,47,16720.57,355.76,2025-12-20,Furniture,UPI,2,0,4.4,English,Active
+CUST-00639,Elizabeth Martinez,Regular,53,Male,Berlin,Germany,2023-10-08,4,655.39,163.85,2026-03-03,Fashion,Credit Card,0,0,3.2,English,Active
+CUST-00640,Carlos Thompson,New,72,Female,Singapore,Singapore,2026-05-07,2,107.75,53.88,2026-05-10,Home Appliances,Wallet,0,0,4.4,English,Active
+CUST-00641,Sarah Chen,Regular,52,Female,Madrid,Spain,2023-12-21,15,2848.4,189.89,2025-08-29,Electronics,COD,1,1,3.7,Mandarin,Active
+CUST-00642,Li Wang,High-Risk,64,Female,Berlin,Germany,2024-01-15,21,1378.0,65.62,2026-04-20,Furniture,Wallet,13,7,2.8,German,Suspended
+CUST-00643,Jennifer Williams,New,45,Female,Mumbai,India,2026-04-20,1,116.47,116.47,2026-04-26,Electronics,Wallet,0,0,4.0,Mandarin,Active
+CUST-00644,Richard Singh,Regular,41,Male,Singapore,Singapore,2025-07-17,6,1260.82,210.14,2026-02-24,Furniture,Credit Card,0,0,3.3,German,Inactive
+CUST-00645,Thomas Lopez,Premium,65,Female,Lyon,France,2024-07-26,106,44822.14,422.85,2025-10-09,Fashion,UPI,4,0,4.6,Mandarin,Active
+CUST-00646,Patricia Singh,Premium,69,Female,Paris,France,2025-09-08,112,51114.44,456.38,2025-09-11,Fashion,Wallet,2,1,4.4,Hindi,Active
+CUST-00647,James Moore,Regular,49,Male,Dubai,UAE,2024-11-05,18,1218.86,67.71,2025-10-08,Electronics,UPI,1,0,4.0,English,Active
+CUST-00648,Robert Thompson,Regular,58,Male,London,UK,2024-03-13,30,2614.23,87.14,2025-07-02,Electronics,Credit Card,1,2,4.1,English,Active
+CUST-00649,David Sharma,Regular,49,Male,Los Angeles,USA,2024-06-20,21,1739.69,82.84,2025-05-31,Furniture,Wallet,2,1,3.5,English,Active
+CUST-00650,Christopher Thompson,New,31,Female,Lyon,France,2026-05-02,1,66.29,66.29,2026-05-13,Fashion,Credit Card,0,0,4.0,German,Active
+CUST-00651,Michael Martinez,New,64,Male,Lyon,France,2026-04-19,3,166.98,55.66,2026-05-09,Home Appliances,Wallet,0,0,4.6,German,Active
+CUST-00652,Rahul Gonzalez,High-Risk,25,Female,Mumbai,India,2025-07-25,9,1024.31,113.81,2025-09-08,Furniture,Credit Card,7,3,2.4,French,Active
+CUST-00653,Charles Perez,Regular,54,Female,Los Angeles,USA,2023-10-01,8,1258.39,157.3,2025-11-23,Furniture,Wallet,1,0,4.0,English,Active
+CUST-00654,Rahul Sharma,New,40,Male,Dubai,UAE,2026-04-26,2,279.25,139.62,2026-04-27,Furniture,Debit Card,0,0,4.8,English,Active
+CUST-00655,Neha White,New,56,Male,Mumbai,India,2026-05-03,2,194.07,97.03,2026-05-13,Furniture,UPI,0,0,4.6,Mandarin,Active
+CUST-00656,Lisa Sanchez,Regular,59,Male,Toronto,Canada,2024-05-07,20,4618.54,230.93,2025-10-06,Fitness,COD,3,1,3.6,English,Active
+CUST-00657,Susan Martin,Premium,22,Male,Barcelona,Spain,2022-12-12,86,27913.28,324.57,2025-08-16,Electronics,UPI,0,1,4.7,Mandarin,Active
+CUST-00658,Christopher Williams,Premium,32,Female,Osaka,Japan,2025-11-08,111,34385.91,309.78,2026-01-22,Fitness,Credit Card,5,1,4.5,Spanish,Active
+CUST-00659,Thomas Singh,High-Risk,44,Male,Los Angeles,USA,2024-04-20,5,440.24,88.05,2026-05-16,Fashion,Credit Card,3,1,2.3,English,Active
+CUST-00660,Li Davis,High-Risk,33,Female,Los Angeles,USA,2024-01-13,19,3046.08,160.32,2025-06-06,Home Appliances,Debit Card,12,9,1.5,English,Active
+CUST-00661,Carlos Thompson,New,34,Male,Munich,Germany,2026-05-12,2,267.56,133.78,2026-05-12,Electronics,Credit Card,0,0,3.5,Mandarin,Active
+CUST-00662,Priya Lopez,Premium,29,Male,New York,USA,2025-09-10,133,49385.39,371.32,2026-04-29,Furniture,Debit Card,2,1,4.2,English,Active
+CUST-00663,Li Lopez,Regular,40,Prefer not to say,Osaka,Japan,2024-05-24,22,1433.34,65.15,2025-09-11,Fashion,COD,1,1,3.4,German,Active
+CUST-00664,Linda Rodriguez,Regular,43,Female,Osaka,Japan,2025-09-13,22,1386.38,63.02,2025-09-23,Electronics,Wallet,3,1,4.4,Spanish,Active
+CUST-00665,Charles Hernandez,High-Risk,71,Male,Madrid,Spain,2024-05-11,38,2639.11,69.45,2026-01-28,Home Appliances,Debit Card,18,8,2.4,Hindi,Suspended
+CUST-00666,James Lee,Regular,45,Female,London,UK,2024-06-30,19,4187.98,220.42,2025-12-26,Furniture,UPI,2,1,4.4,English,Active
+CUST-00667,David Martin,New,73,Non-Binary,Melbourne,Australia,2026-05-01,3,76.85,25.62,2026-05-18,Electronics,Wallet,0,0,3.6,English,Active
+CUST-00668,Betty Rodriguez,Regular,38,Male,Singapore,Singapore,2026-03-27,24,1174.23,48.93,2026-04-20,Fashion,Wallet,2,1,3.1,Hindi,Inactive
+CUST-00669,Rahul Jones,Regular,25,Male,Los Angeles,USA,2025-10-12,8,757.54,94.69,2025-11-26,Home Appliances,Credit Card,0,0,3.4,English,Inactive
+CUST-00670,Richard Harris,Premium,47,Male,Osaka,Japan,2022-08-24,51,10307.22,202.1,2026-04-26,Fashion,Debit Card,0,0,4.4,German,Active
+CUST-00671,Amit Gonzalez,High-Risk,37,Female,Manchester,UK,2025-11-20,8,1348.44,168.56,2025-12-12,Electronics,COD,6,3,1.9,English,Suspended
+CUST-00672,Mary Anderson,Regular,18,Male,Berlin,Germany,2024-04-29,17,3221.4,189.49,2026-03-08,Home Appliances,COD,1,0,4.0,Mandarin,Active
+CUST-00673,David White,New,22,Non-Binary,New York,USA,2026-04-19,2,188.54,94.27,2026-05-10,Home Appliances,Debit Card,0,0,4.2,English,Active
+CUST-00674,Christopher Sharma,Regular,55,Male,Sydney,Australia,2025-05-10,20,4760.65,238.03,2025-08-19,Home Appliances,Wallet,3,1,4.4,English,Active
+CUST-00675,Anthony Taylor,Regular,33,Female,Sydney,Australia,2024-05-23,27,2633.4,97.53,2025-09-13,Electronics,UPI,4,0,4.3,English,Active
+CUST-00676,Nancy Hernandez,Premium,75,Male,Barcelona,Spain,2023-10-04,41,18104.87,441.58,2026-04-15,Home Appliances,Debit Card,1,0,4.8,Spanish,Active
+CUST-00677,Charles Perez,Regular,73,Male,London,UK,2024-07-10,8,875.55,109.44,2026-02-23,Fitness,Debit Card,1,0,4.4,English,Active
+CUST-00678,Carlos Hernandez,New,63,Female,Delhi,India,2026-04-25,2,210.02,105.01,2026-05-04,Fashion,COD,0,0,4.9,French,Active
+CUST-00679,Wei Patel,Regular,42,Female,New York,USA,2024-09-23,28,5859.98,209.28,2025-08-26,Fashion,UPI,4,0,3.7,English,Active
+CUST-00680,John Chen,Regular,75,Female,Tokyo,Japan,2026-01-07,14,1802.74,128.77,2026-02-03,Electronics,Credit Card,1,1,4.0,Spanish,Active
+CUST-00681,Priya Robinson,Premium,42,Male,Tokyo,Japan,2024-06-28,114,26619.89,233.51,2025-07-11,Electronics,Debit Card,5,2,4.3,German,Active
+CUST-00682,Michael Johnson,High-Risk,19,Male,Dubai,UAE,2025-09-21,48,7237.27,150.78,2026-05-18,Fitness,Debit Card,27,16,2.7,German,Active
+CUST-00683,James Sanchez,New,23,Male,Los Angeles,USA,2026-05-09,1,35.8,35.8,2026-05-17,Fitness,Credit Card,0,0,3.7,English,Active
+CUST-00684,Priya Robinson,New,55,Male,Vancouver,Canada,2026-05-05,1,117.17,117.17,2026-05-13,Fitness,Credit Card,0,0,4.7,English,Active
+CUST-00685,Christopher Chen,Regular,50,Female,Dubai,UAE,2025-05-07,28,2834.21,101.22,2026-02-28,Home Appliances,COD,5,1,3.1,Mandarin,Active
+CUST-00686,Susan Davis,Regular,60,Female,Delhi,India,2024-03-30,30,2904.83,96.83,2025-06-02,Electronics,UPI,4,1,4.3,Hindi,Active
+CUST-00687,Maria Robinson,New,53,Male,London,UK,2026-04-18,3,72.8,24.27,2026-05-10,Home Appliances,Wallet,0,0,4.5,English,Active
+CUST-00688,William Brown,Regular,29,Female,Manchester,UK,2024-02-15,28,5838.49,208.52,2026-02-04,Fashion,COD,4,1,3.7,English,Active
+CUST-00689,Patricia Martin,Premium,24,Male,Sydney,Australia,2024-05-08,94,12681.0,134.9,2025-11-18,Electronics,Debit Card,2,1,4.6,English,Active
+CUST-00690,Nancy Smith,New,68,Prefer not to say,Sydney,Australia,2026-04-19,3,292.78,97.59,2026-04-20,Electronics,Wallet,0,0,4.6,English,Active
+CUST-00691,Wei Harris,Regular,65,Male,Los Angeles,USA,2025-01-02,30,4787.36,159.58,2025-08-11,Fashion,UPI,4,1,3.3,English,Active
+CUST-00692,Robert Brown,Regular,44,Male,Osaka,Japan,2024-07-06,5,1170.72,234.14,2026-02-27,Fashion,Credit Card,0,0,3.7,English,Active
+CUST-00693,Christopher Smith,Regular,38,Female,Delhi,India,2025-10-03,27,6530.88,241.88,2026-04-13,Fitness,Debit Card,4,0,4.3,German,Active
+CUST-00694,Neha Ramirez,Regular,26,Male,Berlin,Germany,2025-06-27,11,713.28,64.84,2026-04-03,Fashion,Credit Card,0,0,3.0,German,Active
+CUST-00695,Michael Taylor,Regular,61,Female,Mumbai,India,2024-09-25,27,5914.41,219.05,2025-07-20,Electronics,Debit Card,4,1,4.0,German,Active
+CUST-00696,Priya Rodriguez,Regular,75,Female,Los Angeles,USA,2025-03-30,29,6549.18,225.83,2025-06-18,Fitness,COD,4,0,3.1,English,Active
+CUST-00697,Li Smith,Premium,31,Male,London,UK,2023-08-25,49,8985.41,183.38,2025-10-29,Fashion,Wallet,0,0,4.6,English,Active
+CUST-00698,Matthew Martinez,Regular,53,Prefer not to say,Manchester,UK,2025-09-04,27,4299.35,159.24,2025-09-07,Electronics,Credit Card,2,2,3.1,English,Active
+CUST-00699,Sarah Ramirez,Premium,26,Female,Los Angeles,USA,2024-12-13,143,22806.14,159.48,2025-12-27,Fitness,Debit Card,5,2,4.8,English,Active
+CUST-00700,Elizabeth Moore,High-Risk,55,Female,Melbourne,Australia,2024-06-17,46,8696.19,189.05,2025-09-07,Fitness,Debit Card,17,14,1.6,English,Suspended
+CUST-00701,Wei Moore,High-Risk,37,Female,Tokyo,Japan,2023-11-02,38,7873.57,207.2,2025-06-17,Home Appliances,Wallet,24,14,2.0,French,Suspended
+CUST-00702,Elizabeth Martin,Regular,73,Male,Manchester,UK,2026-02-25,12,2608.42,217.37,2026-03-14,Fitness,Wallet,0,0,3.7,English,Active
+CUST-00703,Nancy Williams,Regular,60,Female,Tokyo,Japan,2024-09-25,5,870.32,174.06,2025-12-13,Home Appliances,Wallet,0,0,3.7,French,Active
+CUST-00704,Lisa Thomas,New,20,Male,Paris,France,2026-04-22,2,153.43,76.72,2026-04-26,Fitness,UPI,0,0,4.8,English,Active
+CUST-00705,Lisa Williams,Regular,31,Female,New York,USA,2024-04-23,20,2406.32,120.32,2025-12-22,Furniture,Wallet,1,0,3.7,English,Active
+CUST-00706,Robert Jones,Premium,50,Male,Mumbai,India,2024-12-22,144,67762.03,470.57,2025-07-12,Furniture,Credit Card,6,2,4.8,Mandarin,Active
+CUST-00707,Elizabeth Clark,Premium,72,Female,London,UK,2025-03-18,22,5914.7,268.85,2025-08-10,Fashion,Debit Card,0,0,4.9,English,Active
+CUST-00708,Mary Lee,Premium,64,Male,Vancouver,Canada,2022-11-14,75,7551.74,100.69,2025-09-04,Electronics,Credit Card,1,0,4.3,English,Active
+CUST-00709,Susan Sanchez,Regular,22,Male,Madrid,Spain,2026-02-02,16,4221.56,263.85,2026-04-22,Home Appliances,Debit Card,1,1,3.2,Hindi,Active
+CUST-00710,Maria Johnson,Premium,39,Non-Binary,Vancouver,Canada,2023-06-17,27,7977.82,295.47,2026-04-17,Fitness,Credit Card,1,0,4.4,English,Active
+CUST-00711,Matthew Gonzalez,Regular,64,Female,Manchester,UK,2024-07-12,19,822.43,43.29,2025-07-15,Fashion,UPI,2,0,4.2,English,Active
+CUST-00712,Rahul Hernandez,Regular,54,Male,Toronto,Canada,2024-03-26,28,3118.64,111.38,2025-05-28,Furniture,COD,2,0,3.2,English,Active
+CUST-00713,Nancy Clark,High-Risk,48,Prefer not to say,Manchester,UK,2024-08-08,35,2111.72,60.33,2025-10-01,Electronics,UPI,26,8,1.4,English,Suspended
+CUST-00714,Priya Wilson,High-Risk,32,Male,London,UK,2024-12-30,18,2573.87,142.99,2025-09-17,Electronics,Wallet,12,3,2.6,English,Active
+CUST-00715,Neha Patel,New,18,Male,Dubai,UAE,2026-04-29,1,54.48,54.48,2026-05-02,Fashion,COD,0,0,4.0,Mandarin,Active
+CUST-00716,Patricia Wang,Regular,46,Female,London,UK,2025-01-06,19,4330.68,227.93,2026-05-12,Furniture,Credit Card,2,1,3.3,English,Active
+CUST-00717,Christopher Sharma,Regular,20,Prefer not to say,Paris,France,2025-12-20,13,1446.27,111.25,2026-03-03,Fitness,UPI,0,1,3.9,German,Active
+CUST-00718,Susan Martin,Regular,59,Male,Manchester,UK,2025-01-29,21,2384.24,113.54,2025-07-26,Fitness,Wallet,3,0,4.1,English,Active
+CUST-00719,Mary Miller,Regular,57,Male,Paris,France,2024-01-25,26,2028.72,78.03,2026-04-01,Furniture,Wallet,2,1,3.9,English,Active
+CUST-00720,Wei Thomas,Regular,38,Female,Madrid,Spain,2024-08-24,4,498.27,124.57,2026-05-06,Electronics,Credit Card,0,0,3.1,Hindi,Active
+CUST-00721,Rahul Wang,Regular,57,Prefer not to say,Sydney,Australia,2023-08-27,4,854.65,213.66,2025-07-15,Fitness,Debit Card,0,0,4.0,English,Active
+CUST-00722,James Singh,Regular,36,Female,Melbourne,Australia,2023-10-04,6,1344.03,224.0,2025-09-21,Electronics,Wallet,1,0,4.1,English,Active
+CUST-00723,Mary Clark,New,75,Female,Sydney,Australia,2026-05-05,1,74.18,74.18,2026-05-11,Fashion,COD,0,0,4.1,English,Active
+CUST-00724,Li Lewis,Premium,34,Male,Barcelona,Spain,2024-05-08,20,3265.82,163.29,2026-03-06,Home Appliances,Wallet,0,0,4.6,Spanish,Active
+CUST-00725,Linda Lewis,New,28,Female,Sydney,Australia,2026-04-27,1,93.76,93.76,2026-05-01,Electronics,Credit Card,0,0,4.0,English,Active
+CUST-00726,Amit Brown,Premium,69,Male,Toronto,Canada,2022-04-18,120,39782.33,331.52,2026-02-02,Home Appliances,Debit Card,0,1,4.9,English,Active
+CUST-00727,James Perez,Regular,40,Female,Toronto,Canada,2025-12-01,5,752.54,150.51,2026-01-04,Home Appliances,COD,0,0,3.1,English,Active
+CUST-00728,Elizabeth Sanchez,Regular,40,Female,Munich,Germany,2026-01-31,6,1167.58,194.6,2026-03-07,Furniture,UPI,0,0,4.5,German,Active
+CUST-00729,Christopher Rodriguez,Regular,33,Male,Los Angeles,USA,2024-12-01,24,2606.84,108.62,2025-07-13,Furniture,COD,3,0,3.3,English,Inactive
+CUST-00730,William Lopez,Regular,75,Female,Melbourne,Australia,2024-04-24,6,1319.35,219.89,2026-05-15,Furniture,UPI,0,0,3.7,English,Active
+CUST-00731,Mary Taylor,New,65,Female,Tokyo,Japan,2026-05-12,1,107.72,107.72,2026-05-13,Electronics,Wallet,0,0,3.7,Mandarin,Active
+CUST-00732,Betty Thomas,Regular,52,Female,Madrid,Spain,2023-11-12,12,1560.12,130.01,2025-09-29,Fitness,UPI,1,0,3.4,Spanish,Active
+CUST-00733,Wei Lewis,Regular,54,Non-Binary,Paris,France,2025-08-14,10,684.73,68.47,2025-12-23,Fitness,COD,1,0,4.0,French,Active
+CUST-00734,Wei Robinson,Regular,57,Prefer not to say,Delhi,India,2023-10-18,15,934.42,62.29,2026-01-26,Furniture,Credit Card,2,0,3.8,German,Active
+CUST-00735,Susan Wang,Regular,50,Male,Mumbai,India,2024-01-17,19,3149.28,165.75,2026-01-12,Home Appliances,COD,3,1,4.5,Spanish,Active
+CUST-00736,Sandra Smith,New,65,Male,Singapore,Singapore,2026-04-28,1,147.56,147.56,2026-05-16,Furniture,Debit Card,0,0,4.0,French,Active
+CUST-00737,Mark Perez,Regular,19,Female,Sydney,Australia,2025-05-10,10,1795.32,179.53,2026-05-03,Home Appliances,UPI,1,0,4.3,English,Active
+CUST-00738,Linda Smith,New,20,Male,Los Angeles,USA,2026-05-10,1,125.76,125.76,2026-05-16,Home Appliances,Wallet,0,0,3.6,English,Active
+CUST-00739,Maria Sharma,Premium,21,Female,London,UK,2022-06-07,28,2897.25,103.47,2025-06-29,Electronics,COD,1,0,4.5,English,Active
+CUST-00740,Richard Moore,Regular,41,Male,Barcelona,Spain,2024-06-14,30,3359.45,111.98,2026-02-15,Furniture,COD,2,1,4.0,French,Active
+CUST-00741,Priya Moore,Regular,52,Non-Binary,Manchester,UK,2025-12-22,23,4721.64,205.29,2026-03-13,Fashion,Wallet,2,0,3.7,English,Active
+CUST-00742,Matthew Garcia,Regular,21,Male,Singapore,Singapore,2025-08-19,19,2555.5,134.5,2026-02-15,Furniture,Debit Card,3,0,3.1,German,Active
+CUST-00743,Betty Anderson,Regular,70,Prefer not to say,Toronto,Canada,2025-07-21,13,2207.02,169.77,2026-03-31,Fashion,Credit Card,1,0,3.4,English,Inactive
+CUST-00744,Richard Thomas,Regular,69,Male,Lyon,France,2023-08-29,29,6198.92,213.76,2026-03-11,Furniture,UPI,1,2,3.7,English,Active
+CUST-00745,John Lee,Regular,64,Male,Sydney,Australia,2024-07-03,13,2605.72,200.44,2025-09-27,Home Appliances,COD,0,0,3.5,English,Active
+CUST-00746,David Robinson,New,59,Female,Osaka,Japan,2026-05-12,3,101.66,33.89,2026-05-13,Home Appliances,Wallet,0,0,4.7,Spanish,Active
+CUST-00747,Patricia Robinson,Premium,62,Male,Barcelona,Spain,2022-07-16,122,50284.53,412.17,2026-01-15,Home Appliances,UPI,0,1,4.5,Mandarin,Active
+CUST-00748,Neha Clark,Premium,63,Female,Mumbai,India,2023-03-15,137,46940.35,342.63,2026-03-15,Electronics,Debit Card,1,1,4.6,French,Active
+CUST-00749,Barbara Rodriguez,Regular,28,Male,London,UK,2025-06-11,4,539.4,134.85,2025-07-03,Fashion,Credit Card,0,0,3.8,English,Active
+CUST-00750,Barbara Wilson,Premium,65,Male,Singapore,Singapore,2024-12-25,115,32797.27,285.19,2026-03-24,Fashion,COD,1,1,4.9,English,Active
+CUST-00751,John Lopez,High-Risk,44,Prefer not to say,Paris,France,2025-04-25,34,4280.64,125.9,2025-10-08,Home Appliances,Credit Card,25,17,2.3,English,Suspended
+CUST-00752,Joseph Thomas,New,75,Male,Lyon,France,2026-04-26,2,90.89,45.45,2026-05-11,Home Appliances,UPI,0,0,4.2,German,Active
+CUST-00753,Matthew Johnson,Premium,27,Female,New York,USA,2022-08-23,108,42694.11,395.32,2026-04-13,Home Appliances,UPI,4,0,4.4,English,Active
+CUST-00754,John Patel,New,33,Male,Paris,France,2026-05-06,2,294.09,147.04,2026-05-18,Fitness,Debit Card,0,0,4.2,French,Active
+CUST-00755,Jennifer Robinson,Premium,18,Female,Melbourne,Australia,2024-09-19,109,40992.29,376.08,2025-05-24,Electronics,Credit Card,2,0,4.6,English,Active
+CUST-00756,Priya White,Premium,30,Female,Osaka,Japan,2023-12-31,26,9576.04,368.31,2026-03-27,Fitness,Wallet,0,0,4.7,French,Active
+CUST-00757,Anthony Robinson,Regular,39,Female,Dubai,UAE,2023-09-19,14,1544.72,110.34,2026-01-28,Fitness,UPI,1,0,3.0,Mandarin,Active
+CUST-00758,Daniel Moore,Regular,25,Female,London,UK,2025-05-15,26,2131.83,81.99,2025-08-23,Furniture,Debit Card,3,0,3.7,English,Active
+CUST-00759,Joseph Singh,New,55,Male,Berlin,Germany,2026-05-12,1,137.14,137.14,2026-05-14,Fashion,UPI,0,0,3.6,English,Active
+CUST-00760,Jessica Harris,Regular,34,Female,Lyon,France,2024-05-28,6,1300.11,216.68,2025-12-04,Furniture,Wallet,0,0,4.2,Mandarin,Active
+CUST-00761,Susan Wang,Premium,70,Female,Dubai,UAE,2023-07-21,145,56152.19,387.26,2026-01-06,Home Appliances,Wallet,5,0,4.6,Spanish,Active
+CUST-00762,Wei Clark,New,51,Female,Sydney,Australia,2026-05-08,3,233.78,77.93,2026-05-11,Fitness,COD,0,0,3.6,English,Active
+CUST-00763,Christopher Patel,New,45,Male,Madrid,Spain,2026-04-27,1,37.18,37.18,2026-05-09,Fitness,UPI,0,0,4.6,Spanish,Active
+CUST-00764,Robert Taylor,New,50,Female,Toronto,Canada,2026-04-29,3,308.48,102.83,2026-05-08,Electronics,COD,0,0,4.9,English,Active
+CUST-00765,Matthew Lopez,Premium,53,Male,Mumbai,India,2023-06-06,88,31955.61,363.13,2025-05-24,Fitness,UPI,1,0,4.8,Mandarin,Active
+CUST-00766,Anthony Davis,High-Risk,58,Female,Singapore,Singapore,2023-11-24,32,5067.32,158.35,2025-11-17,Home Appliances,Wallet,21,8,2.5,Spanish,Active
+CUST-00767,Patricia Martinez,Regular,46,Male,Paris,France,2025-07-11,5,639.18,127.84,2026-01-28,Furniture,Wallet,0,0,3.5,Hindi,Active
+CUST-00768,Linda Wang,Regular,28,Male,Barcelona,Spain,2025-11-27,10,1239.55,123.95,2025-11-30,Fashion,Debit Card,0,0,4.4,German,Active
+CUST-00769,Thomas Harris,New,60,Male,Munich,Germany,2026-04-23,3,370.66,123.55,2026-04-24,Electronics,Debit Card,0,0,4.7,Spanish,Active
+CUST-00770,Maria White,Regular,64,Male,New York,USA,2026-03-03,14,2853.5,203.82,2026-03-28,Electronics,UPI,1,0,3.8,English,Active
+CUST-00771,Betty Ramirez,Regular,24,Female,Toronto,Canada,2025-01-05,24,4570.96,190.46,2025-06-20,Electronics,COD,2,2,4.5,English,Active
+CUST-00772,Susan Martin,New,44,Female,Lyon,France,2026-04-28,2,115.22,57.61,2026-04-29,Electronics,Credit Card,0,0,4.4,Hindi,Active
+CUST-00773,Rahul Miller,Premium,70,Female,Toronto,Canada,2023-03-16,135,23793.9,176.25,2026-04-19,Home Appliances,UPI,1,0,4.4,English,Active
+CUST-00774,Priya Chen,Premium,24,Female,Vancouver,Canada,2025-05-09,84,20425.46,243.16,2025-07-15,Fashion,Wallet,0,1,4.6,English,Active
+CUST-00775,Jennifer Robinson,Regular,28,Male,Sydney,Australia,2024-02-20,4,879.32,219.83,2025-10-03,Fitness,COD,0,0,3.3,English,Active
+CUST-00776,John Patel,Premium,62,Non-Binary,Toronto,Canada,2023-05-16,26,9191.04,353.5,2026-04-28,Furniture,COD,0,0,4.8,English,Active
+CUST-00777,Amit Miller,Regular,27,Male,Madrid,Spain,2024-01-06,10,2104.51,210.45,2026-02-01,Fashion,Wallet,1,0,4.4,Mandarin,Active
+CUST-00778,Margaret Harris,Regular,45,Female,Los Angeles,USA,2026-02-09,27,5138.16,190.3,2026-05-10,Furniture,COD,4,1,3.4,English,Active
+CUST-00779,Mary Robinson,Regular,33,Female,Dubai,UAE,2025-09-16,22,5118.79,232.67,2025-09-29,Fashion,Wallet,1,1,4.0,Mandarin,Active
+CUST-00780,Maria Anderson,Regular,42,Female,Delhi,India,2024-04-27,7,388.16,55.45,2025-07-31,Fitness,Debit Card,1,0,3.2,French,Active
+CUST-00781,Christopher Ramirez,New,65,Male,Tokyo,Japan,2026-04-24,1,96.19,96.19,2026-04-28,Fitness,Debit Card,0,0,4.3,Spanish,Active
+CUST-00782,Patricia Moore,Premium,48,Male,Los Angeles,USA,2024-06-29,61,6668.27,109.32,2026-01-06,Fashion,UPI,2,0,4.9,English,Active
+CUST-00783,David Miller,Regular,64,Male,Osaka,Japan,2024-09-16,7,1690.62,241.52,2025-05-23,Fashion,COD,0,0,3.0,Spanish,Active
+CUST-00784,Michael Johnson,New,47,Non-Binary,Dubai,UAE,2026-05-14,2,293.15,146.57,2026-05-18,Home Appliances,COD,0,0,4.0,German,Active
+CUST-00785,Rahul Smith,Premium,75,Male,Paris,France,2024-08-22,124,46535.12,375.28,2025-07-30,Electronics,Debit Card,2,2,4.5,Hindi,Active
+CUST-00786,Elizabeth Williams,Regular,56,Male,London,UK,2025-02-14,10,2328.43,232.84,2025-07-26,Home Appliances,UPI,0,0,3.5,English,Active
+CUST-00787,Linda Sharma,Premium,36,Female,Lyon,France,2025-08-12,106,14646.8,138.18,2025-08-19,Home Appliances,Credit Card,3,0,4.7,Spanish,Active
+CUST-00788,Karen Wilson,Regular,62,Female,New York,USA,2024-09-08,30,2131.93,71.06,2025-05-18,Fitness,Debit Card,4,2,3.7,English,Active
+CUST-00789,Betty Sanchez,Premium,23,Male,London,UK,2022-11-29,77,22019.99,285.97,2026-04-21,Fitness,COD,0,0,4.4,English,Active
+CUST-00790,John Jones,Regular,40,Female,Melbourne,Australia,2024-08-09,16,2512.41,157.03,2025-09-21,Furniture,UPI,2,1,3.4,English,Active
+CUST-00791,Matthew Robinson,Regular,65,Female,Vancouver,Canada,2025-02-06,15,3559.0,237.27,2025-05-22,Furniture,Credit Card,1,0,4.1,English,Active
+CUST-00792,John Garcia,Regular,21,Female,Paris,France,2024-09-28,15,1744.28,116.29,2026-02-22,Fashion,Wallet,0,0,3.4,Mandarin,Active
+CUST-00793,Joseph Lewis,New,45,Male,Berlin,Germany,2026-04-20,2,54.39,27.2,2026-04-29,Electronics,Credit Card,0,0,4.5,Mandarin,Active
+CUST-00794,Margaret Williams,Regular,68,Female,Toronto,Canada,2024-12-27,30,2846.52,94.88,2026-05-02,Fashion,Debit Card,2,2,4.1,English,Active
+CUST-00795,Linda Hernandez,New,24,Male,Singapore,Singapore,2026-05-02,3,96.36,32.12,2026-05-11,Fitness,Debit Card,0,0,4.5,English,Active
+CUST-00796,Nancy Thomas,Premium,55,Male,Mumbai,India,2025-07-21,125,46275.48,370.2,2025-11-30,Fitness,Credit Card,4,1,4.4,English,Active
+CUST-00797,Priya Sharma,Regular,52,Non-Binary,Tokyo,Japan,2024-12-15,4,1088.67,272.17,2025-10-07,Home Appliances,COD,0,0,4.3,Spanish,Active
+CUST-00798,William Smith,High-Risk,26,Male,Berlin,Germany,2025-06-21,35,1650.55,47.16,2026-03-27,Furniture,UPI,20,14,2.3,English,Active
+CUST-00799,Maria Lee,Premium,56,Male,Los Angeles,USA,2023-02-15,136,29742.04,218.69,2025-06-29,Fashion,Credit Card,5,2,4.8,English,Active
+CUST-00800,Sandra Perez,Regular,53,Male,Munich,Germany,2023-09-27,24,5712.81,238.03,2026-05-02,Fitness,COD,4,0,3.2,English,Inactive
+CUST-00801,John Sanchez,Regular,38,Female,Sydney,Australia,2025-04-13,29,4213.12,145.28,2025-12-13,Fitness,Debit Card,3,2,4.2,English,Active
+CUST-00802,Wei Moore,Regular,24,Male,Munich,Germany,2025-04-23,16,1237.42,77.34,2025-10-26,Fashion,Wallet,0,0,4.2,English,Active
+CUST-00803,Charles Brown,Premium,55,Female,Lyon,France,2023-08-11,96,32833.58,342.02,2025-08-03,Fashion,Credit Card,2,1,4.9,Mandarin,Active
+CUST-00804,Priya Sanchez,Regular,34,Female,Delhi,India,2024-02-15,30,5226.75,174.22,2025-11-26,Electronics,COD,4,1,3.3,English,Active
+CUST-00805,Amit Lopez,High-Risk,44,Female,Barcelona,Spain,2024-06-23,34,1283.99,37.76,2025-10-04,Fitness,Credit Card,13,9,2.4,English,Inactive
+CUST-00806,Wei Jackson,Regular,48,Female,Barcelona,Spain,2025-09-09,5,1239.66,247.93,2026-05-13,Home Appliances,Credit Card,0,0,3.3,Hindi,Active
+CUST-00807,Patricia Ramirez,New,53,Female,Barcelona,Spain,2026-05-02,3,382.43,127.48,2026-05-06,Electronics,COD,0,0,3.6,Hindi,Active
+CUST-00808,William Taylor,Regular,71,Male,Mumbai,India,2025-03-14,25,3769.03,150.76,2025-10-15,Home Appliances,Wallet,1,0,3.4,Mandarin,Active
+CUST-00809,Maria Miller,New,21,Female,Sydney,Australia,2026-04-28,3,222.79,74.26,2026-05-14,Furniture,Credit Card,0,0,5.0,English,Active
+CUST-00810,Carlos Lopez,Premium,37,Male,Toronto,Canada,2024-07-19,43,15309.25,356.03,2026-04-27,Fashion,COD,1,0,4.7,English,Active
+CUST-00811,Lisa Anderson,Regular,61,Prefer not to say,New York,USA,2025-06-25,25,4898.43,195.94,2026-05-11,Fashion,Debit Card,1,0,4.4,English,Active
+CUST-00812,Lisa Martinez,Regular,40,Male,Paris,France,2024-05-06,19,831.06,43.74,2025-08-27,Furniture,Credit Card,3,1,3.1,Spanish,Active
+CUST-00813,Elizabeth Sanchez,Premium,72,Female,New York,USA,2024-11-15,76,29204.45,384.27,2026-02-16,Furniture,Credit Card,0,1,4.6,English,Active
+CUST-00814,Joseph Harris,Regular,71,Male,Dubai,UAE,2024-01-04,14,1200.42,85.74,2025-10-19,Fitness,Debit Card,1,0,4.0,German,Active
+CUST-00815,Sarah Anderson,Regular,45,Non-Binary,Berlin,Germany,2024-10-06,28,6307.75,225.28,2025-05-20,Furniture,Debit Card,3,2,3.2,Spanish,Active
+CUST-00816,Jennifer Robinson,Regular,58,Female,Manchester,UK,2024-01-14,11,1814.75,164.98,2026-02-13,Fashion,Wallet,2,0,3.0,English,Active
+CUST-00817,Maria Davis,Premium,22,Male,Toronto,Canada,2024-01-25,78,19804.06,253.9,2025-06-24,Furniture,COD,3,1,5.0,English,Active
+CUST-00818,Joseph Robinson,New,68,Female,Melbourne,Australia,2026-04-30,1,93.5,93.5,2026-05-04,Fashion,UPI,0,0,4.2,English,Active
+CUST-00819,Robert Patel,Regular,31,Prefer not to say,London,UK,2024-02-10,10,1613.0,161.3,2026-05-09,Fashion,Wallet,1,0,3.4,English,Inactive
+CUST-00820,Maria Taylor,Regular,41,Female,Melbourne,Australia,2025-11-26,10,545.37,54.54,2026-03-16,Home Appliances,Wallet,1,0,3.7,English,Active
+CUST-00821,Mary Williams,Regular,70,Male,Delhi,India,2026-03-09,28,6168.69,220.31,2026-04-13,Fashion,Credit Card,3,0,4.3,Mandarin,Active
+CUST-00822,Robert Anderson,New,68,Female,Manchester,UK,2026-05-10,1,98.34,98.34,2026-05-10,Electronics,Debit Card,0,0,3.6,English,Active
+CUST-00823,Mary Wang,New,58,Female,New York,USA,2026-05-01,1,68.56,68.56,2026-05-04,Electronics,Wallet,0,0,4.5,English,Active
+CUST-00824,Linda Singh,Regular,40,Female,Madrid,Spain,2024-05-03,17,1863.51,109.62,2026-03-01,Fitness,Credit Card,2,0,3.6,Hindi,Active
+CUST-00825,Karen Lewis,Regular,50,Male,Dubai,UAE,2024-06-19,6,897.6,149.6,2025-07-19,Fashion,Wallet,1,0,3.0,Hindi,Active
+CUST-00826,Robert Wang,Premium,50,Female,Sydney,Australia,2022-06-03,21,5854.22,278.77,2025-10-03,Electronics,Debit Card,0,0,4.2,English,Active
+CUST-00827,Charles Sharma,Regular,49,Female,Melbourne,Australia,2025-12-25,18,1252.69,69.59,2026-01-24,Fashion,Credit Card,2,1,3.8,English,Active
+CUST-00828,Matthew Gonzalez,Regular,74,Female,Delhi,India,2026-03-31,16,3511.39,219.46,2026-04-28,Furniture,Wallet,1,0,4.3,French,Active
+CUST-00829,Wei Sharma,Regular,47,Male,Vancouver,Canada,2024-11-29,20,2099.56,104.98,2025-06-12,Fashion,Wallet,1,0,3.8,English,Active
+CUST-00830,David Davis,Regular,44,Male,Delhi,India,2024-07-22,21,4079.87,194.28,2025-08-22,Electronics,Debit Card,1,0,3.8,Mandarin,Active
+CUST-00831,Karen Wang,Premium,62,Female,Berlin,Germany,2023-03-26,123,25116.74,204.2,2026-02-05,Furniture,COD,6,1,4.7,English,Active
+CUST-00832,Susan Clark,Premium,63,Female,Paris,France,2025-10-15,122,41601.75,341.0,2026-04-12,Home Appliances,Wallet,2,1,4.4,French,Active
+CUST-00833,Lisa Jones,Regular,29,Prefer not to say,Vancouver,Canada,2025-04-26,17,3496.94,205.7,2026-05-17,Fitness,Wallet,1,0,3.9,English,Active
+CUST-00834,Sarah Moore,New,67,Non-Binary,Melbourne,Australia,2026-04-20,1,42.91,42.91,2026-04-20,Fitness,UPI,0,0,4.0,English,Active
+CUST-00835,Karen Patel,High-Risk,46,Male,Barcelona,Spain,2025-12-27,5,379.95,75.99,2026-03-22,Furniture,Debit Card,3,2,2.1,English,Active
+CUST-00836,Amit Sharma,Regular,32,Male,Paris,France,2024-12-08,19,1455.24,76.59,2025-12-08,Home Appliances,UPI,1,1,4.3,Spanish,Active
+CUST-00837,Wei Jones,Regular,73,Male,Toronto,Canada,2025-02-16,14,2110.83,150.77,2025-08-28,Fitness,COD,2,1,3.8,English,Inactive
+CUST-00838,Richard Miller,New,23,Male,Singapore,Singapore,2026-05-09,1,131.58,131.58,2026-05-09,Fashion,Debit Card,0,0,3.7,English,Active
+CUST-00839,John Williams,Regular,56,Female,Singapore,Singapore,2025-02-21,25,5089.55,203.58,2025-06-06,Fashion,Wallet,1,1,3.7,German,Active
+CUST-00840,Richard Miller,Regular,25,Female,Delhi,India,2024-07-06,10,2059.46,205.95,2025-08-08,Home Appliances,Debit Card,1,0,3.5,French,Active
+CUST-00841,Charles Ramirez,Regular,64,Male,Manchester,UK,2025-08-11,13,1272.09,97.85,2026-04-01,Fashion,COD,1,0,3.2,English,Inactive
+CUST-00842,Wei Chen,Regular,59,Male,Melbourne,Australia,2025-11-03,17,2011.28,118.31,2025-11-29,Furniture,Wallet,3,1,3.9,English,Active
+CUST-00843,Anthony Sanchez,Premium,48,Female,Madrid,Spain,2023-09-06,145,69809.7,481.45,2025-06-28,Fitness,Credit Card,5,1,4.8,Hindi,Active
+CUST-00844,Rahul Thomas,Regular,27,Female,Sydney,Australia,2025-05-28,29,5950.5,205.19,2026-05-15,Home Appliances,Wallet,2,2,4.0,English,Active
+CUST-00845,William Johnson,High-Risk,42,Female,Mumbai,India,2025-09-18,37,4268.82,115.37,2025-11-02,Electronics,Wallet,27,12,1.0,French,Suspended
+CUST-00846,Matthew Rodriguez,Regular,51,Male,Dubai,UAE,2024-12-12,9,1759.99,195.55,2025-12-16,Fashion,COD,0,0,4.1,German,Active
+CUST-00847,Rahul Clark,High-Risk,20,Male,Dubai,UAE,2023-10-27,36,6090.24,169.17,2025-07-25,Fashion,Credit Card,17,18,2.5,Hindi,Inactive
+CUST-00848,Elizabeth Martin,Regular,51,Male,London,UK,2025-11-27,28,1457.68,52.06,2026-01-24,Fashion,Wallet,2,1,4.3,English,Active
+CUST-00849,Maria Williams,Regular,26,Male,Barcelona,Spain,2025-09-13,24,5103.16,212.63,2025-09-21,Fitness,Wallet,2,1,3.5,Hindi,Active
+CUST-00850,Priya Martinez,New,68,Male,Vancouver,Canada,2026-04-26,1,124.47,124.47,2026-05-02,Home Appliances,COD,0,0,4.3,English,Active
+CUST-00851,Thomas Miller,Regular,50,Non-Binary,Singapore,Singapore,2024-12-20,9,1994.94,221.66,2026-04-18,Home Appliances,Wallet,0,0,3.1,Spanish,Active
+CUST-00852,Priya Martinez,New,59,Female,Paris,France,2026-04-19,3,162.82,54.27,2026-05-18,Fitness,UPI,0,0,4.6,French,Active
+CUST-00853,Jessica Lee,New,46,Non-Binary,Melbourne,Australia,2026-05-07,3,89.22,29.74,2026-05-12,Fitness,Debit Card,0,0,4.5,English,Active
+CUST-00854,David Thompson,Premium,20,Female,Los Angeles,USA,2022-09-16,80,33431.74,417.9,2025-06-02,Home Appliances,Credit Card,2,0,4.2,English,Active
+CUST-00855,Anthony Smith,Regular,45,Prefer not to say,Manchester,UK,2024-10-09,17,969.35,57.02,2026-02-08,Electronics,Debit Card,2,0,4.4,English,Active
+CUST-00856,Lisa Anderson,Regular,52,Male,Dubai,UAE,2024-03-11,25,1644.33,65.77,2025-06-04,Fashion,UPI,4,1,4.0,French,Active
+CUST-00857,Mary Thomas,Regular,31,Male,London,UK,2024-10-07,14,2026.85,144.78,2025-09-15,Fitness,UPI,1,0,3.7,English,Active
+CUST-00858,Betty Wilson,Regular,30,Male,Vancouver,Canada,2024-12-17,22,2879.38,130.88,2026-02-14,Electronics,Debit Card,2,1,4.4,English,Active
+CUST-00859,Matthew Sanchez,Regular,39,Male,Sydney,Australia,2025-10-03,9,2112.1,234.68,2026-05-06,Electronics,Wallet,1,0,3.5,English,Active
+CUST-00860,Charles Taylor,Regular,53,Non-Binary,Berlin,Germany,2025-01-13,8,785.94,98.24,2025-06-04,Electronics,COD,1,0,3.1,Mandarin,Active
+CUST-00861,William Martin,Regular,63,Male,Dubai,UAE,2023-11-20,19,1741.69,91.67,2026-01-05,Home Appliances,UPI,1,1,4.4,Mandarin,Active
+CUST-00862,Karen Lewis,Regular,19,Female,Delhi,India,2025-07-11,18,1258.34,69.91,2025-11-08,Furniture,COD,3,0,3.2,English,Active
+CUST-00863,Jennifer Ramirez,High-Risk,56,Female,Barcelona,Spain,2024-06-23,45,7394.66,164.33,2025-11-14,Home Appliances,Debit Card,18,13,1.2,French,Active
+CUST-00864,Mark Lewis,Premium,70,Male,Osaka,Japan,2024-06-19,57,27996.75,491.17,2025-06-26,Fashion,Wallet,2,0,4.4,Spanish,Active
+CUST-00865,Mary White,Regular,65,Female,Lyon,France,2024-11-20,18,1099.51,61.08,2026-01-17,Electronics,UPI,2,1,4.4,Mandarin,Active
+CUST-00866,David Smith,Regular,56,Female,London,UK,2025-02-01,16,2548.86,159.3,2026-03-23,Home Appliances,Wallet,1,0,4.3,English,Active
+CUST-00867,Thomas Taylor,Premium,64,Male,Lyon,France,2025-02-07,77,36932.36,479.64,2025-12-31,Home Appliances,UPI,1,1,4.7,English,Active
+CUST-00868,Sarah Moore,Premium,68,Female,Delhi,India,2023-08-01,109,16461.11,151.02,2025-06-22,Furniture,Wallet,1,1,4.7,English,Active
+CUST-00869,Rahul Clark,Premium,49,Prefer not to say,Sydney,Australia,2024-04-08,56,25513.4,455.6,2025-09-10,Furniture,Credit Card,1,0,4.9,English,Active
+CUST-00870,Carlos Wang,High-Risk,37,Female,Osaka,Japan,2026-01-13,15,888.72,59.25,2026-04-07,Home Appliances,Credit Card,6,8,2.9,German,Suspended
+CUST-00871,Jennifer Singh,Premium,21,Non-Binary,Munich,Germany,2024-09-08,96,24123.24,251.28,2025-07-11,Home Appliances,Debit Card,2,1,4.8,French,Active
+CUST-00872,Lisa Smith,New,73,Male,Toronto,Canada,2026-04-28,1,87.23,87.23,2026-05-02,Fitness,UPI,0,0,3.8,English,Active
+CUST-00873,Susan Lewis,New,25,Male,Mumbai,India,2026-04-29,2,159.3,79.65,2026-05-18,Furniture,COD,0,0,4.9,Spanish,Active
+CUST-00874,Margaret Ramirez,Regular,46,Male,Berlin,Germany,2025-09-17,10,1248.53,124.85,2025-12-31,Fashion,UPI,0,0,4.2,French,Inactive
+CUST-00875,Maria Patel,Regular,43,Female,Munich,Germany,2024-07-10,18,1464.13,81.34,2026-01-18,Fitness,COD,1,0,3.9,English,Active
+CUST-00876,Priya Ramirez,Premium,71,Female,Mumbai,India,2024-08-21,53,5127.75,96.75,2026-02-10,Electronics,Debit Card,0,0,4.6,Mandarin,Active
+CUST-00877,Priya Lee,Regular,22,Male,Dubai,UAE,2024-05-04,15,1885.74,125.72,2026-04-12,Furniture,Credit Card,2,1,3.8,Hindi,Active
+CUST-00878,Carlos Martin,Regular,21,Female,Madrid,Spain,2024-01-30,8,501.37,62.67,2026-01-04,Electronics,UPI,0,0,3.7,Spanish,Inactive
+CUST-00879,Priya Lopez,New,61,Male,Vancouver,Canada,2026-04-23,1,136.27,136.27,2026-04-23,Electronics,COD,0,0,4.1,English,Active
+CUST-00880,Matthew Miller,Premium,56,Female,Lyon,France,2024-01-03,91,13999.19,153.84,2025-11-21,Electronics,Wallet,1,1,4.6,Mandarin,Active
+CUST-00881,Charles Patel,Premium,44,Non-Binary,Singapore,Singapore,2024-11-14,149,51846.31,347.96,2025-12-05,Fitness,Wallet,2,1,4.8,Spanish,Active
+CUST-00882,Thomas Rodriguez,Regular,68,Female,Paris,France,2024-11-22,15,3481.08,232.07,2025-09-19,Electronics,Debit Card,2,0,3.1,Mandarin,Active
+CUST-00883,Li Johnson,Regular,22,Prefer not to say,Melbourne,Australia,2025-04-29,30,7786.7,259.56,2026-03-12,Electronics,Credit Card,3,0,4.2,English,Active
+CUST-00884,Margaret Davis,Regular,60,Male,Manchester,UK,2024-09-13,8,1663.9,207.99,2025-11-14,Furniture,Wallet,1,0,4.5,English,Active
+CUST-00885,Karen Miller,Regular,65,Female,Madrid,Spain,2023-11-22,8,1719.69,214.96,2026-01-08,Home Appliances,Wallet,1,0,4.2,Hindi,Active
+CUST-00886,Linda Sanchez,New,65,Female,Sydney,Australia,2026-05-11,1,81.53,81.53,2026-05-14,Electronics,Credit Card,0,0,3.8,English,Active
+CUST-00887,Robert Ramirez,Regular,42,Male,Vancouver,Canada,2024-07-03,19,2038.72,107.3,2025-09-26,Home Appliances,Wallet,1,1,3.6,English,Active
+CUST-00888,Sandra Miller,New,56,Male,Paris,France,2026-05-17,1,90.17,90.17,2026-05-17,Fitness,COD,0,0,4.8,Spanish,Active
+CUST-00889,Maria Smith,High-Risk,45,Male,Munich,Germany,2026-02-19,18,1703.11,94.62,2026-05-13,Fitness,Wallet,12,4,2.3,Mandarin,Suspended
+CUST-00890,Priya Harris,New,36,Female,Tokyo,Japan,2026-05-03,3,405.54,135.18,2026-05-10,Electronics,Debit Card,0,0,4.5,English,Active
+CUST-00891,Robert White,Premium,57,Male,Los Angeles,USA,2023-09-03,93,23876.49,256.74,2026-02-07,Fitness,Debit Card,3,0,4.4,English,Active
+CUST-00892,Richard Thompson,Regular,74,Female,Singapore,Singapore,2025-03-23,19,1994.25,104.96,2025-10-31,Electronics,COD,3,0,3.6,Mandarin,Active
+CUST-00893,Karen Anderson,Premium,72,Male,Lyon,France,2023-02-23,138,56147.41,406.87,2025-09-11,Home Appliances,Debit Card,4,2,4.7,German,Active
+CUST-00894,David Patel,High-Risk,73,Female,Manchester,UK,2025-05-22,19,3542.62,186.45,2025-08-17,Fashion,UPI,8,7,2.2,English,Active
+CUST-00895,Karen Williams,Regular,26,Female,Paris,France,2024-05-17,10,448.87,44.89,2026-04-28,Fashion,COD,1,0,4.2,French,Inactive
+CUST-00896,Nancy Patel,New,41,Non-Binary,Paris,France,2026-05-08,1,100.45,100.45,2026-05-18,Furniture,Debit Card,0,0,4.7,Spanish,Active
+CUST-00897,Sarah Chen,Premium,75,Male,Paris,France,2024-11-29,118,37639.4,318.98,2025-06-01,Furniture,Credit Card,3,0,4.4,Spanish,Active
+CUST-00898,David Patel,High-Risk,51,Male,Toronto,Canada,2024-03-08,36,5222.66,145.07,2025-12-01,Fashion,Debit Card,24,14,1.1,English,Active
+CUST-00899,Betty Thomas,Regular,21,Non-Binary,Singapore,Singapore,2025-12-20,23,1611.35,70.06,2026-01-13,Furniture,Debit Card,1,1,4.4,Spanish,Inactive
+CUST-00900,Mary Sanchez,Premium,51,Male,Manchester,UK,2024-08-16,42,9270.94,220.74,2025-07-19,Home Appliances,UPI,0,0,4.5,English,Active
+CUST-00901,Barbara Perez,Regular,28,Male,Vancouver,Canada,2024-03-27,27,2710.1,100.37,2025-10-17,Home Appliances,Debit Card,2,1,3.8,English,Active
+CUST-00902,James Davis,Premium,72,Female,Madrid,Spain,2024-04-29,27,10832.29,401.2,2025-09-09,Furniture,Wallet,0,0,4.4,German,Active
+CUST-00903,Robert Brown,New,48,Male,Madrid,Spain,2026-04-30,1,148.35,148.35,2026-05-06,Fashion,Wallet,0,0,4.2,Spanish,Active
+CUST-00904,Richard Sanchez,New,43,Prefer not to say,Lyon,France,2026-05-04,3,105.98,35.33,2026-05-14,Home Appliances,Wallet,0,0,3.6,French,Active
+CUST-00905,Robert Garcia,Premium,73,Male,Singapore,Singapore,2024-06-24,115,23440.33,203.83,2025-08-29,Fitness,Debit Card,3,1,4.4,Spanish,Active
+CUST-00906,Priya Martin,New,74,Male,Lyon,France,2026-04-23,1,61.08,61.08,2026-04-29,Electronics,UPI,0,0,3.9,English,Active
+CUST-00907,John Clark,Regular,33,Prefer not to say,Osaka,Japan,2023-12-29,16,2245.81,140.36,2025-11-23,Fashion,COD,1,1,3.7,Hindi,Active
+CUST-00908,Michael Sharma,High-Risk,60,Male,Berlin,Germany,2024-04-15,9,1446.26,160.7,2026-02-28,Furniture,Debit Card,5,2,1.4,English,Suspended
+CUST-00909,Li Harris,Regular,73,Female,Mumbai,India,2025-08-02,19,1991.92,104.84,2025-09-14,Furniture,COD,2,1,4.0,Spanish,Active
+CUST-00910,Barbara Johnson,Regular,59,Prefer not to say,Melbourne,Australia,2023-12-19,26,4297.35,165.28,2025-07-31,Electronics,COD,4,1,3.2,English,Active
+CUST-00911,Nancy Martinez,Regular,53,Male,Manchester,UK,2025-04-25,4,550.73,137.68,2025-10-04,Fashion,COD,0,0,3.7,English,Active
+CUST-00912,Richard Taylor,Regular,72,Female,Munich,Germany,2025-12-02,18,4745.47,263.64,2026-01-08,Furniture,Credit Card,1,1,3.5,English,Active
+CUST-00913,Anthony Lee,Premium,40,Male,Mumbai,India,2022-12-04,112,53817.76,480.52,2025-07-29,Fitness,Debit Card,4,0,4.6,English,Active
+CUST-00914,Priya Sanchez,Regular,46,Male,Barcelona,Spain,2026-04-12,13,3218.43,247.57,2026-05-12,Home Appliances,COD,2,0,3.4,German,Active
+CUST-00915,Robert Brown,Regular,35,Male,Barcelona,Spain,2026-01-11,18,4285.94,238.11,2026-05-02,Fashion,COD,1,1,3.8,Hindi,Active
+CUST-00916,Joseph Lopez,New,52,Female,Singapore,Singapore,2026-04-20,2,247.24,123.62,2026-05-14,Furniture,COD,0,0,4.0,Mandarin,Active
+CUST-00917,Joseph Robinson,Regular,34,Female,New York,USA,2025-02-09,21,3976.45,189.35,2025-08-07,Furniture,Wallet,4,0,3.6,English,Active
+CUST-00918,Lisa Wang,Regular,46,Female,Munich,Germany,2025-10-19,6,272.51,45.42,2026-01-31,Home Appliances,COD,0,0,3.0,Mandarin,Active
+CUST-00919,Margaret Lewis,Regular,31,Male,Vancouver,Canada,2025-02-28,11,793.69,72.15,2025-11-14,Home Appliances,Debit Card,1,0,3.3,English,Active
+CUST-00920,Li Patel,Regular,24,Female,Paris,France,2024-02-04,29,5696.71,196.44,2026-01-15,Fashion,Wallet,2,2,3.5,English,Active
+CUST-00921,Jennifer Miller,New,56,Female,Paris,France,2026-04-19,2,51.42,25.71,2026-05-02,Electronics,COD,0,0,3.8,French,Active
+CUST-00922,Charles Jackson,New,33,Female,Tokyo,Japan,2026-04-23,3,81.19,27.06,2026-04-25,Fitness,UPI,0,0,4.6,Spanish,Active
+CUST-00923,Linda Patel,New,21,Male,Manchester,UK,2026-05-09,1,132.59,132.59,2026-05-16,Fitness,Wallet,0,0,3.9,English,Active
+CUST-00924,Charles Clark,New,44,Non-Binary,Toronto,Canada,2026-05-04,1,27.36,27.36,2026-05-17,Fitness,Wallet,0,0,4.5,English,Active
+CUST-00925,John Patel,High-Risk,26,Male,Barcelona,Spain,2024-04-22,28,3050.22,108.94,2025-08-16,Fashion,Wallet,18,13,1.8,English,Suspended
+CUST-00926,Linda Gonzalez,New,63,Female,Lyon,France,2026-04-24,3,266.57,88.86,2026-05-18,Furniture,UPI,0,0,4.2,Mandarin,Active
+CUST-00927,Maria Chen,Regular,26,Male,Mumbai,India,2025-12-23,4,187.97,46.99,2026-03-16,Electronics,Wallet,0,0,4.4,English,Active
+CUST-00928,Karen Lewis,New,33,Male,Toronto,Canada,2026-04-27,1,26.4,26.4,2026-05-18,Electronics,Credit Card,0,0,4.5,English,Active
+CUST-00929,Amit Patel,New,36,Male,Lyon,France,2026-04-18,3,303.79,101.26,2026-05-09,Fashion,UPI,0,0,4.6,Hindi,Active
+CUST-00930,Maria Sharma,New,71,Female,Madrid,Spain,2026-05-06,3,189.18,63.06,2026-05-11,Home Appliances,Debit Card,0,0,4.3,Hindi,Active
+CUST-00931,Maria Johnson,Regular,26,Female,Singapore,Singapore,2024-12-26,19,954.97,50.26,2025-07-18,Electronics,Wallet,2,1,3.7,English,Active
+CUST-00932,Anthony Chen,Regular,56,Non-Binary,Barcelona,Spain,2025-03-26,4,192.24,48.06,2025-06-08,Electronics,COD,0,0,4.1,French,Active
+CUST-00933,Margaret Rodriguez,High-Risk,35,Male,Melbourne,Australia,2024-09-11,34,3983.65,117.17,2026-01-07,Electronics,Wallet,26,11,1.0,English,Suspended
+CUST-00934,Carlos Anderson,Regular,74,Male,New York,USA,2025-01-13,4,557.94,139.49,2026-04-01,Fitness,Debit Card,0,0,4.0,English,Inactive
+CUST-00935,Nancy Robinson,Premium,27,Non-Binary,Osaka,Japan,2023-08-26,47,9823.82,209.02,2025-12-21,Electronics,Debit Card,0,0,4.3,German,Active
+CUST-00936,Sandra Sharma,Premium,52,Female,Tokyo,Japan,2023-04-03,126,57922.54,459.7,2025-07-09,Home Appliances,Wallet,3,2,4.8,Hindi,Active
+CUST-00937,Rahul Singh,Regular,75,Male,Los Angeles,USA,2026-04-01,28,1508.22,53.87,2026-04-20,Electronics,UPI,4,0,3.4,English,Active
+CUST-00938,Amit Thomas,High-Risk,52,Female,Melbourne,Australia,2025-12-16,49,3143.89,64.16,2026-04-12,Home Appliances,UPI,26,10,1.6,English,Suspended
+CUST-00939,Nancy Martinez,New,65,Male,Manchester,UK,2026-04-20,1,108.56,108.56,2026-04-25,Electronics,Credit Card,0,0,3.8,English,Active
+CUST-00940,James Chen,New,63,Male,Melbourne,Australia,2026-05-04,3,215.62,71.87,2026-05-10,Furniture,UPI,0,0,4.3,English,Active
+CUST-00941,Daniel Ramirez,High-Risk,46,Male,Los Angeles,USA,2024-09-21,38,5372.85,141.39,2025-08-13,Home Appliances,COD,17,21,1.3,English,Inactive
+CUST-00942,Christopher Patel,Regular,63,Male,Paris,France,2025-12-29,5,1189.2,237.84,2026-04-29,Electronics,Credit Card,0,0,3.9,Spanish,Active
+CUST-00943,Priya Davis,Regular,60,Female,London,UK,2024-09-29,12,2249.73,187.48,2025-07-25,Fitness,Debit Card,1,0,3.0,English,Active
+CUST-00944,Linda Lopez,Regular,58,Male,Sydney,Australia,2025-05-21,11,2471.72,224.7,2026-04-15,Electronics,Debit Card,1,0,3.5,English,Active
+CUST-00945,Susan Davis,Premium,48,Female,Berlin,Germany,2023-01-13,54,16003.43,296.36,2025-11-10,Fitness,UPI,1,0,4.8,Hindi,Active
+CUST-00946,David Patel,New,69,Prefer not to say,Toronto,Canada,2026-04-24,2,118.22,59.11,2026-04-25,Fitness,COD,0,0,3.9,English,Active
+CUST-00947,Linda Taylor,Regular,51,Female,Paris,France,2024-01-23,20,1118.91,55.95,2025-09-28,Furniture,COD,1,0,3.8,English,Inactive
+CUST-00948,Patricia Robinson,High-Risk,39,Male,Sydney,Australia,2025-08-06,23,839.86,36.52,2025-11-24,Fashion,COD,15,11,2.0,English,Suspended
+CUST-00949,Linda Ramirez,Regular,22,Female,London,UK,2024-10-03,6,1447.25,241.21,2025-09-07,Fitness,Wallet,0,0,3.2,English,Active
+CUST-00950,James Clark,Regular,35,Male,Sydney,Australia,2024-11-17,23,5536.63,240.72,2025-10-21,Home Appliances,Debit Card,2,1,3.2,English,Active
+CUST-00951,Barbara Miller,High-Risk,62,Female,Lyon,France,2025-05-19,17,1061.52,62.44,2025-08-21,Fitness,Credit Card,6,4,2.7,Hindi,Suspended
+CUST-00952,Wei Johnson,Premium,37,Male,Delhi,India,2024-08-12,94,21443.85,228.13,2026-04-29,Fitness,Debit Card,4,1,4.7,Spanish,Active
+CUST-00953,Linda Rodriguez,High-Risk,35,Female,Sydney,Australia,2024-08-29,39,6603.5,169.32,2025-09-11,Fitness,Credit Card,21,18,2.4,English,Suspended
+CUST-00954,Richard Harris,Regular,64,Female,New York,USA,2024-11-02,17,1510.11,88.83,2026-05-03,Electronics,COD,1,1,3.6,English,Active
+CUST-00955,Rahul Hernandez,Premium,73,Female,London,UK,2024-04-06,43,6957.91,161.81,2026-02-15,Fitness,Debit Card,1,0,4.8,English,Active
+CUST-00956,John Davis,Regular,24,Female,Berlin,Germany,2024-04-20,26,5504.96,211.73,2025-07-11,Fashion,Credit Card,2,0,3.5,Mandarin,Active
+CUST-00957,Li Ramirez,New,46,Male,Paris,France,2026-04-19,3,182.79,60.93,2026-05-04,Furniture,Credit Card,0,0,4.6,Spanish,Active
+CUST-00958,Matthew Taylor,Regular,24,Male,Manchester,UK,2023-12-18,8,1176.39,147.05,2025-11-12,Fitness,Credit Card,1,0,3.7,English,Active
+CUST-00959,Sandra Wang,New,32,Female,New York,USA,2026-05-04,3,112.92,37.64,2026-05-11,Fitness,Credit Card,0,0,3.9,English,Active
+CUST-00960,Rahul Wilson,New,20,Female,Los Angeles,USA,2026-05-11,1,112.6,112.6,2026-05-14,Fashion,Credit Card,0,0,3.5,English,Active
+CUST-00961,Michael Singh,New,56,Female,Berlin,Germany,2026-05-07,3,105.79,35.26,2026-05-16,Electronics,Credit Card,0,0,3.6,English,Active
+CUST-00962,David Ramirez,Regular,67,Female,Madrid,Spain,2026-01-20,12,768.72,64.06,2026-03-18,Home Appliances,Wallet,1,0,3.4,Hindi,Inactive
+CUST-00963,Jennifer Patel,Regular,22,Female,Los Angeles,USA,2024-01-11,17,737.24,43.37,2026-02-27,Fashion,Wallet,1,0,3.5,English,Active
+CUST-00964,Jessica Lopez,New,45,Female,New York,USA,2026-05-11,2,55.99,28.0,2026-05-12,Fitness,UPI,0,0,4.4,English,Active
+CUST-00965,Betty Williams,Regular,61,Male,Munich,Germany,2024-06-03,27,4546.61,168.39,2025-10-17,Fitness,Credit Card,4,2,3.8,English,Inactive
+CUST-00966,David Taylor,Regular,67,Female,Singapore,Singapore,2026-04-09,25,3937.25,157.49,2026-04-16,Fashion,Wallet,4,1,3.4,Mandarin,Active
+CUST-00967,Li Wang,New,47,Female,Osaka,Japan,2026-04-27,3,172.04,57.35,2026-05-10,Electronics,Debit Card,0,0,4.5,German,Active
+CUST-00968,Lisa Wilson,Premium,35,Female,Madrid,Spain,2023-01-10,114,36567.99,320.77,2026-02-14,Fashion,Debit Card,3,1,4.6,Hindi,Active
+CUST-00969,Barbara Clark,Regular,25,Female,Berlin,Germany,2025-07-05,24,1121.37,46.72,2025-09-09,Home Appliances,Wallet,1,0,4.1,Spanish,Active
+CUST-00970,Daniel Robinson,Regular,68,Female,Mumbai,India,2025-11-19,7,408.13,58.3,2025-12-28,Home Appliances,UPI,1,0,3.8,Hindi,Active
+CUST-00971,Joseph Sharma,Premium,74,Male,Singapore,Singapore,2025-09-17,20,4497.73,224.89,2026-01-22,Furniture,UPI,0,0,4.2,Mandarin,Active
+CUST-00972,Anthony Thomas,New,69,Female,Toronto,Canada,2026-05-11,1,127.13,127.13,2026-05-13,Fitness,UPI,0,0,3.5,English,Active
+CUST-00973,Robert Perez,Regular,59,Male,Berlin,Germany,2024-09-22,26,2548.08,98.0,2025-12-11,Fashion,COD,3,1,4.5,English,Active
+CUST-00974,Christopher Singh,High-Risk,27,Female,Dubai,UAE,2024-08-30,40,5071.48,126.79,2025-07-27,Fashion,Debit Card,28,18,2.8,English,Suspended
+CUST-00975,Neha Chen,Regular,37,Male,Lyon,France,2024-03-16,15,2561.41,170.76,2025-09-11,Fitness,COD,2,1,3.9,Mandarin,Active
+CUST-00976,Anthony Moore,Regular,30,Female,Singapore,Singapore,2025-01-09,8,431.26,53.91,2025-07-02,Furniture,Debit Card,1,0,3.8,English,Active
+CUST-00977,Neha Hernandez,Premium,70,Male,Sydney,Australia,2023-03-06,42,13451.47,320.27,2025-06-09,Electronics,Credit Card,1,0,4.4,English,Active
+CUST-00978,Li Thompson,Regular,59,Non-Binary,Barcelona,Spain,2026-02-26,8,1033.67,129.21,2026-04-26,Furniture,Debit Card,1,0,4.0,Mandarin,Active
+CUST-00979,Sandra Chen,Regular,18,Male,Singapore,Singapore,2023-09-28,14,831.95,59.43,2025-11-28,Fitness,UPI,1,0,4.4,Mandarin,Active
+CUST-00980,Sandra Thomas,New,22,Female,Munich,Germany,2026-05-07,1,70.38,70.38,2026-05-17,Furniture,Debit Card,0,0,4.3,French,Active
+CUST-00981,Robert Martin,Regular,36,Female,Dubai,UAE,2023-11-14,30,7446.01,248.2,2025-06-26,Fashion,COD,1,2,3.3,Hindi,Active
+CUST-00982,Daniel Davis,New,59,Female,Lyon,France,2026-05-01,1,139.44,139.44,2026-05-12,Fitness,UPI,0,0,4.8,French,Active
+CUST-00983,Christopher Thomas,New,50,Male,Sydney,Australia,2026-04-29,2,261.72,130.86,2026-05-12,Electronics,Debit Card,0,0,3.8,English,Active
+CUST-00984,William Chen,Regular,62,Male,Munich,Germany,2025-03-28,18,1820.99,101.17,2026-02-11,Home Appliances,Debit Card,3,0,3.5,German,Active
+CUST-00985,Mark Jackson,Regular,58,Male,Manchester,UK,2025-10-07,5,233.2,46.64,2026-05-12,Electronics,UPI,0,0,3.0,English,Active
+CUST-00986,Mary Sharma,New,36,Non-Binary,Manchester,UK,2026-05-05,3,374.64,124.88,2026-05-11,Electronics,Credit Card,0,0,4.9,English,Active
+CUST-00987,John Ramirez,Regular,35,Male,Toronto,Canada,2024-07-24,8,665.53,83.19,2025-05-29,Fashion,Debit Card,1,0,3.5,English,Active
+CUST-00988,Jessica Martinez,High-Risk,29,Female,Lyon,France,2024-02-17,44,3598.15,81.78,2025-09-27,Fashion,COD,32,17,2.7,Spanish,Suspended
+CUST-00989,Priya Ramirez,Regular,68,Female,Berlin,Germany,2025-03-02,4,212.94,53.23,2026-01-09,Electronics,Credit Card,0,0,3.2,French,Inactive
+CUST-00990,Thomas Gonzalez,Premium,55,Female,Toronto,Canada,2022-06-09,137,74632.57,544.76,2025-10-27,Fashion,Credit Card,5,1,4.3,English,Active
+CUST-00991,Karen Gonzalez,New,67,Male,Sydney,Australia,2026-05-11,2,132.17,66.08,2026-05-14,Furniture,COD,0,0,4.2,English,Active
+CUST-00992,Robert Williams,Regular,44,Female,Toronto,Canada,2025-04-24,25,3091.98,123.68,2026-05-09,Electronics,COD,4,1,4.4,English,Active
+CUST-00993,Amit Davis,Regular,33,Male,Tokyo,Japan,2024-03-10,13,1547.14,119.01,2025-06-19,Fashion,Wallet,2,1,4.1,English,Active
+CUST-00994,Mary Taylor,Premium,25,Male,Delhi,India,2023-09-23,148,68680.25,464.06,2026-04-18,Fitness,UPI,2,1,4.5,Mandarin,Active
+CUST-00995,Susan Ramirez,High-Risk,42,Male,Manchester,UK,2024-12-22,18,1662.61,92.37,2026-01-09,Fitness,Credit Card,14,5,1.8,English,Suspended
+CUST-00996,Mark Martin,New,50,Male,Lyon,France,2026-05-12,2,263.66,131.83,2026-05-16,Furniture,Wallet,0,0,4.3,German,Active
+CUST-00997,Jessica Wilson,New,57,Male,Tokyo,Japan,2026-05-03,1,94.74,94.74,2026-05-04,Fitness,Debit Card,0,0,4.3,German,Active
+CUST-00998,William Lopez,Regular,52,Male,Melbourne,Australia,2025-06-24,19,1743.66,91.77,2026-04-21,Furniture,UPI,1,1,4.5,English,Active
+CUST-00999,Mary Martinez,Premium,74,Male,Osaka,Japan,2023-11-20,130,57470.21,442.08,2025-07-16,Electronics,COD,3,0,4.4,French,Active
+CUST-01000,Christopher Moore,Premium,32,Non-Binary,Berlin,Germany,2025-04-11,99,30094.93,303.99,2025-08-20,Furniture,Wallet,0,1,4.7,Spanish,Active

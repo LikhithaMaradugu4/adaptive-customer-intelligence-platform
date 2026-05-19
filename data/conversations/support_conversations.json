@@ -1,0 +1,3495 @@
+[
+    {
+        "conversation_id": "b27e0a0f-50f3-449d-aa64-9341160c56c7",
+        "customer_id": "CUST-72345",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Gaming Mouses manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Morgan. Our Gaming Mouses are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Gaming Mouse happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "45b3b9a3-85d0-4c9a-b4cf-cfa035777cb4",
+        "customer_id": "CUST-61693",
+        "customer_type": "Standard",
+        "intent": [
+            "Delivery delays",
+            "Account/login issues"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "My package is late and now I can't even log in to my account to track it!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Alex. I apologize for the frustration. Let's fix your account access first so we can check on that package."
+            },
+            {
+                "speaker": "customer",
+                "message": "It keeps saying my password is wrong but I know it's not."
+            },
+            {
+                "speaker": "support",
+                "message": "I've just sent a secure reset link to your email. While you do that, I checked order ORD-330912. It was delayed by customs but is cleared for delivery tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I got the link and I'm in. I see the updated tracking now. Thanks for checking both things."
+            },
+            {
+                "speaker": "support",
+                "message": "Of course! Let me know if it doesn't arrive by tomorrow afternoon."
+            }
+        ]
+    },
+    {
+        "conversation_id": "7e73cd22-9e1a-435c-bee7-373a2b049dc0",
+        "customer_id": "CUST-47267",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-154437."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Riley. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Running Shoes and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Running Shoes right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Running Shoes tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "bdb5209c-ffb4-4cfe-b228-ec249ace6759",
+        "customer_id": "CUST-49385",
+        "customer_type": "Standard",
+        "intent": "Order tracking",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Hi! The app says my Laptop Stand was delivered but I wasn't home, where do they usually leave it?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Casey. Let me check the driver's delivery notes for order ORD-414754."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thank you! I appreciate it."
+            },
+            {
+                "speaker": "support",
+                "message": "The driver noted that they securely placed the package behind the planter on your front porch to keep it hidden."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh I see it now! Thanks, that solved it. You guys are the best!"
+            },
+            {
+                "speaker": "support",
+                "message": "So glad you found it! Enjoy your new Laptop Stand!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "8aaf6b21-a273-48e5-bb18-2989c023a300",
+        "customer_id": "CUST-54700",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Wireless Earbudss manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Jordan. Our Wireless Earbudss are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Wireless Earbuds happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "9adcb5be-8028-4e2d-a647-0d0008081013",
+        "customer_id": "CUST-30204",
+        "customer_type": "Premium",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Riley. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-832537."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Gaming Mouse there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "232aee1f-9195-46b8-bb2b-ee41af793974",
+        "customer_id": "CUST-25986",
+        "customer_type": "Premium",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Jordan. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Running Shoes to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "ceabd7f3-9a86-47f2-b1aa-6dfcc522aca7",
+        "customer_id": "CUST-28280",
+        "customer_type": "Premium",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-356158 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Coffee Machine. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "c1b0d5f3-a576-4e94-b83b-d88e20469f5b",
+        "customer_id": "CUST-58621",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Mechanical Keyboard was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "c7d748a4-25f7-4cd9-a87b-aa921a785d7c",
+        "customer_id": "CUST-24269",
+        "customer_type": "Premium",
+        "intent": "Order tracking",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Hi! The app says my Yoga Mat was delivered but I wasn't home, where do they usually leave it?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Taylor. Let me check the driver's delivery notes for order ORD-431674."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thank you! I appreciate it."
+            },
+            {
+                "speaker": "support",
+                "message": "The driver noted that they securely placed the package behind the planter on your front porch to keep it hidden."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh I see it now! Thanks, that solved it. You guys are the best!"
+            },
+            {
+                "speaker": "support",
+                "message": "So glad you found it! Enjoy your new Yoga Mat!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "403ce930-69ab-491c-873c-42f4474a1d48",
+        "customer_id": "CUST-68662",
+        "customer_type": "Premium",
+        "intent": [
+            "Delivery delays",
+            "Account/login issues"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "My package is late and now I can't even log in to my account to track it!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Morgan. I apologize for the frustration. Let's fix your account access first so we can check on that package."
+            },
+            {
+                "speaker": "customer",
+                "message": "It keeps saying my password is wrong but I know it's not."
+            },
+            {
+                "speaker": "support",
+                "message": "I've just sent a secure reset link to your email. While you do that, I checked order ORD-951996. It was delayed by customs but is cleared for delivery tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I got the link and I'm in. I see the updated tracking now. Thanks for checking both things."
+            },
+            {
+                "speaker": "support",
+                "message": "Of course! Let me know if it doesn't arrive by tomorrow afternoon."
+            }
+        ]
+    },
+    {
+        "conversation_id": "fb65c17b-d685-4d57-90fc-9e35b1c71873",
+        "customer_id": "CUST-46165",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Alex. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-806688 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Yoga Mat. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "b38ee176-60fd-42e5-9e3a-a3aa5ab2d5e7",
+        "customer_id": "CUST-84302",
+        "customer_type": "Premium",
+        "intent": [
+            "Delivery delays",
+            "Account/login issues"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "My package is late and now I can't even log in to my account to track it!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Alex. I apologize for the frustration. Let's fix your account access first so we can check on that package."
+            },
+            {
+                "speaker": "customer",
+                "message": "It keeps saying my password is wrong but I know it's not."
+            },
+            {
+                "speaker": "support",
+                "message": "I've just sent a secure reset link to your email. While you do that, I checked order ORD-248510. It was delayed by customs but is cleared for delivery tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I got the link and I'm in. I see the updated tracking now. Thanks for checking both things."
+            },
+            {
+                "speaker": "support",
+                "message": "Of course! Let me know if it doesn't arrive by tomorrow afternoon."
+            }
+        ]
+    },
+    {
+        "conversation_id": "7caf9dbe-dd3e-458f-a653-7a0a1a96d5bc",
+        "customer_id": "CUST-48017",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Blenders manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Casey. Our Blenders are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Blender happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "3a9fa812-f4ea-4195-a50c-a241ca416b9f",
+        "customer_id": "CUST-34122",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Sam. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "50ee1cd7-59f9-484c-b6bd-6edb263b0fc0",
+        "customer_id": "CUST-98417",
+        "customer_type": "Premium",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Taylor. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Gaming Mouse to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "d27e73af-24a9-491f-b039-822f495bc2c9",
+        "customer_id": "CUST-82630",
+        "customer_type": "Standard",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-264194."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Coffee Machine and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Coffee Machine right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Coffee Machine tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "ecaf49e1-e4dd-45bf-b847-51cae74a46e2",
+        "customer_id": "CUST-99587",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Coffee Machines manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Casey. Our Coffee Machines are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Coffee Machine happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "f9166edf-6461-4ee8-8b54-02b61643f2f7",
+        "customer_id": "CUST-67381",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Jordan. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "52e5c046-99d3-4fd9-b622-f4f70cb8f86f",
+        "customer_id": "CUST-10084",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Running Shoes was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Morgan. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "3a553e92-2726-4410-93df-cf02d771c148",
+        "customer_id": "CUST-22841",
+        "customer_type": "Standard",
+        "intent": [
+            "Delivery delays",
+            "Account/login issues"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "My package is late and now I can't even log in to my account to track it!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Taylor. I apologize for the frustration. Let's fix your account access first so we can check on that package."
+            },
+            {
+                "speaker": "customer",
+                "message": "It keeps saying my password is wrong but I know it's not."
+            },
+            {
+                "speaker": "support",
+                "message": "I've just sent a secure reset link to your email. While you do that, I checked order ORD-793568. It was delayed by customs but is cleared for delivery tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I got the link and I'm in. I see the updated tracking now. Thanks for checking both things."
+            },
+            {
+                "speaker": "support",
+                "message": "Of course! Let me know if it doesn't arrive by tomorrow afternoon."
+            }
+        ]
+    },
+    {
+        "conversation_id": "39e4fcd5-44a5-4657-907e-5a75c93add70",
+        "customer_id": "CUST-93612",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Smart TVs manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Casey. Our Smart TVs are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Smart TV happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "cf1b5305-5aa9-4d84-a712-62087a0e81fe",
+        "customer_id": "CUST-83133",
+        "customer_type": "Standard",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-277069."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Riley. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Laptop Stand and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Laptop Stand right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Laptop Stand tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "c93592a7-4858-47c9-8bbf-6ec966b2e201",
+        "customer_id": "CUST-47651",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Sam. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "9cb96e31-40ab-4652-95ee-03d00b7c265f",
+        "customer_id": "CUST-42747",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Coffee Machines manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Taylor. Our Coffee Machines are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Coffee Machine happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "a1dc5678-dc71-4bc8-99b2-2db021fb1a7a",
+        "customer_id": "CUST-72419",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Can I gift-wrap my product?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. Thanks for reaching out! Currently, we do not offer a gift-wrapping service at checkout."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh, that's a bummer. Do you include price tags in the box then?"
+            },
+            {
+                "speaker": "support",
+                "message": "We do include a packing slip, but it does not list the prices, so it works perfectly as a gift receipt!"
+            },
+            {
+                "speaker": "customer",
+                "message": "Alright, I'll just wrap it myself when it gets here. Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "fe71d833-7ed1-406c-9ef9-5cc71e7ae368",
+        "customer_id": "CUST-53846",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-198611."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Blender and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Blender right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Blender tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "0ff0ca07-ba60-42c7-9192-e585dac2effd",
+        "customer_id": "CUST-87047",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Yoga Mats manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Alex. Our Yoga Mats are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Yoga Mat happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "447498d9-63b8-45e4-a50e-35b9a0d1071d",
+        "customer_id": "CUST-46174",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Electric Toothbrush was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Riley. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "b14147bd-0ce4-4d73-a7fe-21d22e23dabe",
+        "customer_id": "CUST-79063",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-549463 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Smart TV. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "b24287ab-98ca-4364-b390-385e6746699a",
+        "customer_id": "CUST-18965",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Coffee Machine was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Jordan. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "65c56789-2877-45a8-90c6-ce2cc7df883a",
+        "customer_id": "CUST-59005",
+        "customer_type": "Premium",
+        "intent": "Order tracking",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Hi! The app says my Electric Toothbrush was delivered but I wasn't home, where do they usually leave it?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Morgan. Let me check the driver's delivery notes for order ORD-836887."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thank you! I appreciate it."
+            },
+            {
+                "speaker": "support",
+                "message": "The driver noted that they securely placed the package behind the planter on your front porch to keep it hidden."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh I see it now! Thanks, that solved it. You guys are the best!"
+            },
+            {
+                "speaker": "support",
+                "message": "So glad you found it! Enjoy your new Electric Toothbrush!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "02f3d3bb-890f-4ba3-bc6a-422e62713ebe",
+        "customer_id": "CUST-59651",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Running Shoes was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Alex. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "d681123c-dd60-4493-a4b0-4147d5cfee22",
+        "customer_id": "CUST-98599",
+        "customer_type": "Premium",
+        "intent": [
+            "Delivery delays",
+            "Account/login issues"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "My package is late and now I can't even log in to my account to track it!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Jordan. I apologize for the frustration. Let's fix your account access first so we can check on that package."
+            },
+            {
+                "speaker": "customer",
+                "message": "It keeps saying my password is wrong but I know it's not."
+            },
+            {
+                "speaker": "support",
+                "message": "I've just sent a secure reset link to your email. While you do that, I checked order ORD-627896. It was delayed by customs but is cleared for delivery tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I got the link and I'm in. I see the updated tracking now. Thanks for checking both things."
+            },
+            {
+                "speaker": "support",
+                "message": "Of course! Let me know if it doesn't arrive by tomorrow afternoon."
+            }
+        ]
+    },
+    {
+        "conversation_id": "4fa25723-6ba7-4bd5-ac9a-c8d7ab6c60c8",
+        "customer_id": "CUST-12196",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Jordan. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "a665fb16-a772-40cd-a8c0-2bce1ce7e9e3",
+        "customer_id": "CUST-77952",
+        "customer_type": "Premium",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Sam. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-492498. Laptop Stand is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "8da2e7cd-4165-4429-9167-18ce734159d0",
+        "customer_id": "CUST-40386",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Alex. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-317692."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Coffee Machine there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "d49c3dc3-0a2f-4443-ad7c-f3ebd5b7ab81",
+        "customer_id": "CUST-65744",
+        "customer_type": "Standard",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Casey. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-560868. Smart TV is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "49f311ef-16d1-447c-9b57-54bcfb6ae89e",
+        "customer_id": "CUST-98039",
+        "customer_type": "Premium",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "What is your return window?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi! I'm Morgan. Our standard return window is 30 days from the date of delivery."
+            },
+            {
+                "speaker": "customer",
+                "message": "Does that apply to electronics like the Blender too?"
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, it applies to all items, including electronics, as long as they are returned in their original packaging."
+            },
+            {
+                "speaker": "customer",
+                "message": "Perfect, thanks for the quick reply."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "cc2c427a-afcb-4d32-97fe-0c04fc1afe9e",
+        "customer_id": "CUST-93866",
+        "customer_type": "Standard",
+        "intent": "Order tracking",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Hi! The app says my Smart TV was delivered but I wasn't home, where do they usually leave it?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Sam. Let me check the driver's delivery notes for order ORD-264560."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thank you! I appreciate it."
+            },
+            {
+                "speaker": "support",
+                "message": "The driver noted that they securely placed the package behind the planter on your front porch to keep it hidden."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh I see it now! Thanks, that solved it. You guys are the best!"
+            },
+            {
+                "speaker": "support",
+                "message": "So glad you found it! Enjoy your new Smart TV!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "6f542c0c-e020-4bf0-8c91-9ce8fc0bac7e",
+        "customer_id": "CUST-59460",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Casey. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-350705."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Electric Toothbrush there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "d90d8625-3199-4d70-b4d8-468bd5648215",
+        "customer_id": "CUST-72579",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Laptop Stands manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Casey. Our Laptop Stands are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Laptop Stand happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "f6e5599e-2ab1-4f40-8ef7-4d25b7925c8f",
+        "customer_id": "CUST-71800",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-474232."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Riley. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Wireless Earbuds and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Wireless Earbuds right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Wireless Earbuds tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "f5b208f8-7b3f-4335-b5ad-1b7958a56788",
+        "customer_id": "CUST-56032",
+        "customer_type": "Standard",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Taylor. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Yoga Mat to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "a1493d09-f406-4734-a9f2-8263ff4d6dfe",
+        "customer_id": "CUST-31796",
+        "customer_type": "Premium",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Casey. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Running Shoes to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "18420fd0-3589-423a-bf35-391f0571c538",
+        "customer_id": "CUST-57199",
+        "customer_type": "Standard",
+        "intent": [
+            "Delivery delays",
+            "Account/login issues"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "My package is late and now I can't even log in to my account to track it!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Alex. I apologize for the frustration. Let's fix your account access first so we can check on that package."
+            },
+            {
+                "speaker": "customer",
+                "message": "It keeps saying my password is wrong but I know it's not."
+            },
+            {
+                "speaker": "support",
+                "message": "I've just sent a secure reset link to your email. While you do that, I checked order ORD-848474. It was delayed by customs but is cleared for delivery tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I got the link and I'm in. I see the updated tracking now. Thanks for checking both things."
+            },
+            {
+                "speaker": "support",
+                "message": "Of course! Let me know if it doesn't arrive by tomorrow afternoon."
+            }
+        ]
+    },
+    {
+        "conversation_id": "3458c2c7-1921-4454-9274-a5c2034e30e4",
+        "customer_id": "CUST-59910",
+        "customer_type": "Premium",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Jordan. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Electric Toothbrush to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "7da527cb-ec48-4d1d-b1ed-a0ed28fc700a",
+        "customer_id": "CUST-13667",
+        "customer_type": "Standard",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Taylor. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-662697. Coffee Machine is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "d148f7ba-a6f5-4f8b-8e8c-8f360e5902cf",
+        "customer_id": "CUST-88369",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-876213."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Alex. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Laptop Stand and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Laptop Stand right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Laptop Stand tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "0bf7d898-463c-4450-9aad-384fe43b95e5",
+        "customer_id": "CUST-71064",
+        "customer_type": "Premium",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Taylor. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Laptop Stand to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "040ea295-e6e3-46cb-8ecd-bb7c500a7689",
+        "customer_id": "CUST-83490",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Coffee Machines manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Riley. Our Coffee Machines are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Coffee Machine happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "ebefcceb-5f42-4328-9a02-a57b4cf3d54d",
+        "customer_id": "CUST-45642",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Can I gift-wrap my product?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. Thanks for reaching out! Currently, we do not offer a gift-wrapping service at checkout."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh, that's a bummer. Do you include price tags in the box then?"
+            },
+            {
+                "speaker": "support",
+                "message": "We do include a packing slip, but it does not list the prices, so it works perfectly as a gift receipt!"
+            },
+            {
+                "speaker": "customer",
+                "message": "Alright, I'll just wrap it myself when it gets here. Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "30d4737c-f89d-4df7-83ef-657c2cb2d0bf",
+        "customer_id": "CUST-90511",
+        "customer_type": "Premium",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Alex. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-487366."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Mechanical Keyboard there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "34a5e782-fdb3-40db-99ae-cadd2d867be6",
+        "customer_id": "CUST-66337",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Casey. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-636425."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Running Shoes there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "e441e14e-a32c-42a4-b3dd-764b0772b618",
+        "customer_id": "CUST-33145",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Yoga Mat was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "d0f859fb-9cb7-455f-9423-c06fa4f95be4",
+        "customer_id": "CUST-61113",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Can I gift-wrap my product?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. Thanks for reaching out! Currently, we do not offer a gift-wrapping service at checkout."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh, that's a bummer. Do you include price tags in the box then?"
+            },
+            {
+                "speaker": "support",
+                "message": "We do include a packing slip, but it does not list the prices, so it works perfectly as a gift receipt!"
+            },
+            {
+                "speaker": "customer",
+                "message": "Alright, I'll just wrap it myself when it gets here. Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "b0b24bba-38a0-4f24-8f9e-99e9e2f9757a",
+        "customer_id": "CUST-76432",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Can I gift-wrap my product?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Casey. Thanks for reaching out! Currently, we do not offer a gift-wrapping service at checkout."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh, that's a bummer. Do you include price tags in the box then?"
+            },
+            {
+                "speaker": "support",
+                "message": "We do include a packing slip, but it does not list the prices, so it works perfectly as a gift receipt!"
+            },
+            {
+                "speaker": "customer",
+                "message": "Alright, I'll just wrap it myself when it gets here. Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "5cac76f7-264f-4702-ba8a-bb3234d9bcd2",
+        "customer_id": "CUST-48605",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Sam. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "04e23b44-701f-45f6-99d7-f66f012e11d5",
+        "customer_id": "CUST-69009",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Riley. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "3b1c2368-a156-43cd-8aa1-2847ba8a81a0",
+        "customer_id": "CUST-59945",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Smart TVs manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Alex. Our Smart TVs are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Smart TV happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "484648a2-0cb5-4cbe-ab24-ea0aadf21a36",
+        "customer_id": "CUST-29471",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Blenders manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Casey. Our Blenders are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Blender happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "3f228a59-a5be-4a35-9446-c10748789a7d",
+        "customer_id": "CUST-14771",
+        "customer_type": "Premium",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Blender was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Alex. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "6ed321e2-eae5-425e-a3a7-822cccaf56cf",
+        "customer_id": "CUST-33626",
+        "customer_type": "Standard",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-861010."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Alex. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Gaming Mouse and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Gaming Mouse right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Gaming Mouse tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "d7abcc5b-b928-4305-9eb6-de38f38a207f",
+        "customer_id": "CUST-21001",
+        "customer_type": "Premium",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Taylor. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-366105."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Laptop Stand there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "dda9491f-647b-489f-bd71-17630b819a75",
+        "customer_id": "CUST-10509",
+        "customer_type": "Premium",
+        "intent": "Order tracking",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Hi! The app says my Gaming Mouse was delivered but I wasn't home, where do they usually leave it?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Alex. Let me check the driver's delivery notes for order ORD-184717."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thank you! I appreciate it."
+            },
+            {
+                "speaker": "support",
+                "message": "The driver noted that they securely placed the package behind the planter on your front porch to keep it hidden."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh I see it now! Thanks, that solved it. You guys are the best!"
+            },
+            {
+                "speaker": "support",
+                "message": "So glad you found it! Enjoy your new Gaming Mouse!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "054652dc-3bee-46a5-9b21-3105be8c63a8",
+        "customer_id": "CUST-38696",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Can I gift-wrap my product?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Jordan. Thanks for reaching out! Currently, we do not offer a gift-wrapping service at checkout."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh, that's a bummer. Do you include price tags in the box then?"
+            },
+            {
+                "speaker": "support",
+                "message": "We do include a packing slip, but it does not list the prices, so it works perfectly as a gift receipt!"
+            },
+            {
+                "speaker": "customer",
+                "message": "Alright, I'll just wrap it myself when it gets here. Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "f1a5fab9-4c47-41ad-a911-657f86dc145c",
+        "customer_id": "CUST-26575",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Riley. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-625725 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Mechanical Keyboard. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "82ca9129-6b7e-4bdc-bf29-80530e6da235",
+        "customer_id": "CUST-89539",
+        "customer_type": "Standard",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-537406."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Smart TV and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Smart TV right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Smart TV tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "19243b70-d46c-4814-a450-6306dfd10d67",
+        "customer_id": "CUST-85818",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Can I gift-wrap my product?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. Thanks for reaching out! Currently, we do not offer a gift-wrapping service at checkout."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh, that's a bummer. Do you include price tags in the box then?"
+            },
+            {
+                "speaker": "support",
+                "message": "We do include a packing slip, but it does not list the prices, so it works perfectly as a gift receipt!"
+            },
+            {
+                "speaker": "customer",
+                "message": "Alright, I'll just wrap it myself when it gets here. Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "2395a6ec-b01c-4693-a914-bc892fc9a622",
+        "customer_id": "CUST-79909",
+        "customer_type": "Premium",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Sam. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-368389. Yoga Mat is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "934a1a19-9d98-41a9-bb5f-4bbfdace01cc",
+        "customer_id": "CUST-73354",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-903676."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Wireless Earbuds and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Wireless Earbuds right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Wireless Earbuds tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "da7acddd-67d0-48d6-8619-4d1ebac51c44",
+        "customer_id": "CUST-14475",
+        "customer_type": "Standard",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Taylor. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-225210. Wireless Earbuds is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "44424785-f39b-419c-94e5-11a4c8cb3936",
+        "customer_id": "CUST-43565",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Jordan. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-606613 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Mechanical Keyboard. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "ddf7ce99-8cfe-4f21-9f0a-1c0687b0555a",
+        "customer_id": "CUST-64057",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Electric Toothbrushs manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Taylor. Our Electric Toothbrushs are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Electric Toothbrush happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "7028b363-299c-4e5c-adb3-2a3f84193db3",
+        "customer_id": "CUST-44422",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Blenders manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Jordan. Our Blenders are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Blender happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "5a67d9ad-ad2f-4bec-b1fc-560e751ed969",
+        "customer_id": "CUST-90059",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-325083 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Gaming Mouse. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "3c181eb3-ae3c-4f2b-9e27-2d9f65037595",
+        "customer_id": "CUST-47131",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Jordan. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-245789 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Yoga Mat. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "d9e25eea-bcc2-4f75-8e73-b7b682ecb73d",
+        "customer_id": "CUST-27075",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Smart TVs manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Taylor. Our Smart TVs are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Smart TV happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "af5a5075-629c-4333-ba0a-ba675f2d65b7",
+        "customer_id": "CUST-49686",
+        "customer_type": "Premium",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Morgan. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-286860. Yoga Mat is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "a91b0973-bfe3-48a4-afd9-782692b6d027",
+        "customer_id": "CUST-70077",
+        "customer_type": "Standard",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-229381."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Gaming Mouse and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Gaming Mouse right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Gaming Mouse tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "7b105b90-d023-4704-8e45-f8c5c03b7aad",
+        "customer_id": "CUST-57694",
+        "customer_type": "Standard",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Jordan. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-925136."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Wireless Earbuds there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "17cddd8e-26c4-42bc-804c-7fcc354d4765",
+        "customer_id": "CUST-16827",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-741327."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Taylor. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Laptop Stand and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Laptop Stand right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Laptop Stand tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "eabc84e2-0639-459a-900d-7da47d27a193",
+        "customer_id": "CUST-86930",
+        "customer_type": "Premium",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Alex. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-710412 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Smart TV. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "0f549fea-3523-40e9-a627-7d4609c703c9",
+        "customer_id": "CUST-39415",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Jordan. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "451489f7-e316-4a61-bb1a-45c995924e69",
+        "customer_id": "CUST-47528",
+        "customer_type": "Standard",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "What is your return window?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi! I'm Riley. Our standard return window is 30 days from the date of delivery."
+            },
+            {
+                "speaker": "customer",
+                "message": "Does that apply to electronics like the Blender too?"
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, it applies to all items, including electronics, as long as they are returned in their original packaging."
+            },
+            {
+                "speaker": "customer",
+                "message": "Perfect, thanks for the quick reply."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Let me know if you have any other questions."
+            }
+        ]
+    },
+    {
+        "conversation_id": "f6c9f50a-8193-4731-97dd-235e15d0ba0f",
+        "customer_id": "CUST-58264",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-529913."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Casey. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Wireless Earbuds and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Wireless Earbuds right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Wireless Earbuds tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "ffe90efc-f671-4e65-9fe7-7bc320deedf8",
+        "customer_id": "CUST-16040",
+        "customer_type": "Standard",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Jordan. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Gaming Mouse to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "5f46e344-091c-4554-bdb5-36c6156b04f0",
+        "customer_id": "CUST-47922",
+        "customer_type": "Standard",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Smart TVs manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Sam. Our Smart TVs are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Smart TV happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "4006acf3-acbb-4083-a4f0-5981c332199c",
+        "customer_id": "CUST-10832",
+        "customer_type": "Standard",
+        "intent": "Account/login issues",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "cnt logn 2 my acct"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Morgan. I'd be happy to help you get back into your account. Are you getting an error message?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ya sys pwd wrong plz hlp"
+            },
+            {
+                "speaker": "support",
+                "message": "No problem. I've just sent a password reset link to your registered email address."
+            },
+            {
+                "speaker": "customer",
+                "message": "got it thx"
+            },
+            {
+                "speaker": "support",
+                "message": "Wonderful! Let me know if you need anything else."
+            }
+        ]
+    },
+    {
+        "conversation_id": "1456abce-d9c1-40b9-9280-3dee34a15679",
+        "customer_id": "CUST-59805",
+        "customer_type": "Premium",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Alex. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-386006. Laptop Stand is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "b4060d51-72c6-479e-8c22-ee7705937dbe",
+        "customer_id": "CUST-32295",
+        "customer_type": "Premium",
+        "intent": [
+            "Payment issues",
+            "Wrong product delivered"
+        ],
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Multi-intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Payment got deducted twice and I also received the wrong item for order ORD-642612."
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Casey. I am so sorry for this double issue. That is definitely not the experience we want for you. Let me look into both immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Please do. I ordered a Running Shoes and got some random cables, and my bank shows two charges."
+            },
+            {
+                "speaker": "support",
+                "message": "I've reviewed your account. The second charge was a pre-authorization glitch that I've just voided. It will disappear shortly. For the wrong item, I am dispatching the correct Running Shoes right now with overnight shipping."
+            },
+            {
+                "speaker": "customer",
+                "message": "Okay, I appreciate the quick fix. What do I do with the cables?"
+            },
+            {
+                "speaker": "support",
+                "message": "You can just keep them or discard them. No need to go through the hassle of a return. You'll get the Running Shoes tomorrow."
+            }
+        ]
+    },
+    {
+        "conversation_id": "98dff3cc-43bb-4cee-833c-2b77c78cc179",
+        "customer_id": "CUST-12949",
+        "customer_type": "Standard",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Morgan. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-350478. Smart TV is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    },
+    {
+        "conversation_id": "ff806710-a94c-43b3-b19c-9ee536b7ac90",
+        "customer_id": "CUST-81844",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-129563 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Wireless Earbuds. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "e6b6fd7f-96ae-4941-b99d-9a4b103550c2",
+        "customer_id": "CUST-68038",
+        "customer_type": "Standard",
+        "intent": "general_inquiry",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "General inquiry",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Do you guys ship internationally?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Alex. We currently ship to the US, Canada, and most of Europe. Where are you looking to ship to?"
+            },
+            {
+                "speaker": "customer",
+                "message": "I want to send a Laptop Stand to my sister in the UK."
+            },
+            {
+                "speaker": "support",
+                "message": "Yes, we absolutely ship to the UK! Standard shipping takes about 7-10 business days."
+            },
+            {
+                "speaker": "customer",
+                "message": "Great, I'll place the order now."
+            },
+            {
+                "speaker": "support",
+                "message": "Fantastic! Let us know if you need help with checkout."
+            }
+        ]
+    },
+    {
+        "conversation_id": "111110db-8c65-41ef-be5c-12721c8c3cc6",
+        "customer_id": "CUST-68360",
+        "customer_type": "Premium",
+        "intent": "unknown_intent",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Unknown intent",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Where are your Yoga Mats manufactured?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Alex. Our Yoga Mats are designed in our headquarters and manufactured across various facilities globally. Is there a specific detail you are looking for?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Just trying to buy local if possible."
+            },
+            {
+                "speaker": "support",
+                "message": "I completely understand! While not all components are locally sourced, the final assembly for the Yoga Mat happens in our domestic facilities."
+            },
+            {
+                "speaker": "customer",
+                "message": "Good to know. Thanks for the info."
+            }
+        ]
+    },
+    {
+        "conversation_id": "4bc17c42-178a-4d6d-986e-a263fa1a10a1",
+        "customer_id": "CUST-56772",
+        "customer_type": "Premium",
+        "intent": "Order tracking",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Hi! The app says my Running Shoes was delivered but I wasn't home, where do they usually leave it?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hello! I'm Riley. Let me check the driver's delivery notes for order ORD-961238."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thank you! I appreciate it."
+            },
+            {
+                "speaker": "support",
+                "message": "The driver noted that they securely placed the package behind the planter on your front porch to keep it hidden."
+            },
+            {
+                "speaker": "customer",
+                "message": "Oh I see it now! Thanks, that solved it. You guys are the best!"
+            },
+            {
+                "speaker": "support",
+                "message": "So glad you found it! Enjoy your new Running Shoes!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "2de52357-856c-40e4-8fb6-99c86c5aa7d3",
+        "customer_id": "CUST-16566",
+        "customer_type": "Standard",
+        "intent": "Delivery delays",
+        "emotion": "Frustrated",
+        "needs_escalation": false,
+        "special_case": "Typos",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "my ordr nt delvrd yet"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Sam. I can help check on your order! Could you please provide the order number?"
+            },
+            {
+                "speaker": "customer",
+                "message": "its ORD-910096 whre is my pckage"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you. I see the order for the Mechanical Keyboard. It looks like the driver attempted delivery but couldn't access the building. They will try again tomorrow."
+            },
+            {
+                "speaker": "customer",
+                "message": "k plz make sure they call me"
+            },
+            {
+                "speaker": "support",
+                "message": "I have added a delivery note for the driver to call your number upon arrival."
+            }
+        ]
+    },
+    {
+        "conversation_id": "cc3d6395-6071-4c26-af6d-f4b78be8d881",
+        "customer_id": "CUST-84751",
+        "customer_type": "Premium",
+        "intent": "Refund requests",
+        "emotion": "Neutral",
+        "needs_escalation": false,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Refund?"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi there! I'm Riley. Are you looking to request a refund for a recent order?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes. order ORD-569079."
+            },
+            {
+                "speaker": "support",
+                "message": "Thanks. I see the Electric Toothbrush there. I've initiated the return process. You should receive a return label in your email momentarily."
+            },
+            {
+                "speaker": "customer",
+                "message": "Thanks."
+            },
+            {
+                "speaker": "support",
+                "message": "You're very welcome! Have a great day."
+            }
+        ]
+    },
+    {
+        "conversation_id": "aefc2d5e-993c-48d6-b768-5adff4d64881",
+        "customer_id": "CUST-10051",
+        "customer_type": "Premium",
+        "intent": "Refund requests",
+        "emotion": "Satisfied",
+        "needs_escalation": false,
+        "special_case": "Satisfied customers",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Just wanted to say the return process for the Coffee Machine was so easy. Thank you!"
+            },
+            {
+                "speaker": "support",
+                "message": "Hi, I'm Casey. Thank you so much for the feedback! We try to make returns as painless as possible. Did your refund post to your account yet?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Yes, it came through this morning. Excellent service."
+            },
+            {
+                "speaker": "support",
+                "message": "That's wonderful to hear. Is there anything else I can assist you with today?"
+            },
+            {
+                "speaker": "customer",
+                "message": "Nope, you're all good. Have a great shift!"
+            },
+            {
+                "speaker": "support",
+                "message": "Thank you! Have a fantastic day!"
+            }
+        ]
+    },
+    {
+        "conversation_id": "c9e0bf24-99a1-4f99-b60f-5d392cdae05a",
+        "customer_id": "CUST-29387",
+        "customer_type": "Premium",
+        "intent": "Damaged product complaints",
+        "emotion": "Angry",
+        "needs_escalation": true,
+        "special_case": "Very short queries",
+        "conversation": [
+            {
+                "speaker": "customer",
+                "message": "Not working."
+            },
+            {
+                "speaker": "support",
+                "message": "Hello, I'm Riley. I'm sorry to hear that. Could you provide your order number and let me know which item isn't working?"
+            },
+            {
+                "speaker": "customer",
+                "message": "ORD-320835. Smart TV is dead on arrival."
+            },
+            {
+                "speaker": "support",
+                "message": "I apologize for that. Since it arrived defective, I can escalate this to get a replacement shipped out immediately."
+            },
+            {
+                "speaker": "customer",
+                "message": "Do it."
+            },
+            {
+                "speaker": "support",
+                "message": "It's done. A priority replacement is on the way. You'll get a confirmation email shortly."
+            }
+        ]
+    }
+]
