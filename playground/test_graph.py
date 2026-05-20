@@ -3,7 +3,7 @@ from app.graph import graph
 
 
 state = CustomerState(
-    query="My payment got deducted but order not confirmed"
+    query="Can I know about refund policy in the cpmpny just want to know?",
 )
 
 result = graph.invoke(
@@ -26,3 +26,35 @@ print(
     "Customer History:",
     result["customer_history"]
 )
+
+print(
+    "\nRetrieved Docs:",
+    result["retrieved_docs"]
+)
+print(
+    "\nCustomer Profile:",
+    result["customer_profile"]
+)
+
+print("\nDecision:", result["decision"])
+print("Priority:", result["priority"])
+
+print(
+    "Clarification Needed:",
+    result["clarification_needed"]
+)
+
+print(
+    "Human Approval Required:",
+    result["human_approval_required"]
+)
+
+
+
+print(
+    "\nEscalation Details:",
+    result.get("escalation_details")
+)
+
+print("\nFinal Response:\n")
+print(result["response"])

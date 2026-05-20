@@ -32,13 +32,13 @@ class CustomerState(BaseModel):
     emotion_confidence: Optional[float] = None
 
     # Memory agent output
-    customer_history: Optional[Dict[str, Any]] = Field(default_factory=dict)
+    customer_history: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
 
     # Customer profile agent output
-    customer_profile: Optional[str] = None
+    customer_profile: Optional[Dict[str, Any]] = None
 
     # RAG agent output
-    retrieved_docs: Optional[List[str]] = Field(default_factory=list)
+    retrieved_docs: Optional[List[Dict[str, Any]]] = Field(default_factory=list)
 
     # Decision agent output
     decision: Optional[str] = None
@@ -58,4 +58,35 @@ class CustomerState(BaseModel):
     trace_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
 
     # Observability / logging
-    metadata: Dict[str, Any] = Field(default_factory=dict)
+    metadata: Dict[str, Any] = Field(default_factory=dict)# Decision system outputs
+    decision: Optional[str] = None
+
+    priority: str = "NORMAL"
+
+    clarification_needed: bool = False
+
+    clarification_question: Optional[str] = None
+
+    human_approval_required: bool = False 
+      
+    approval_reason: Optional[str] = None
+
+
+    # Escalation system
+    escalated: bool = False
+    
+    escalation_type: Optional[str] = None
+    
+    escalation_reason: Optional[str] = None
+    
+    ticket_id: Optional[str] = None
+    
+    workflow_status: str = "ACTIVE"
+
+
+    # Escalation system
+    escalation_details: Optional[
+        Dict[str, Any]
+    ] = None
+
+    response: Optional[str] = None

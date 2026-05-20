@@ -60,7 +60,69 @@ class Supervisor:
         if state.customer_history is None:
             return False
         return True 
+    def validate_rag(
+        self,
+        state: CustomerState
+    ) -> bool:
+        """
+        Validate RAG retrieval output.
+        """
+
+        if state.retrieved_docs is None:
+            return False
+
+        return True
+    def validate_profile(
+        self,
+        state: CustomerState
+    ) -> bool:
+        """
+        Validate profile output.
+        """
+
+        if not state.customer_profile:
+            return False
+        return True 
+    def validate_decision( 
+            self,
+            state: CustomerState
+    ) -> bool:
+        """
+        Validate decision agent output.
+        """
+        if not state.decision:
+            return False
+        return True 
     
+    def validate_escalation(
+        self,
+        state: CustomerState
+    ) -> bool:
+        """
+        Validate if escalation is needed.
+        """
+        if state.decision in [
+            "FRAUD_REVIEW",
+            "ESCALATE",
+            "HUMAN_APPROVAL"
+        ]:
+            if not state.escalation_details:
+                return False
+        return True
+    
+    def validate_response(
+        self,
+        state: CustomerState
+    ) -> bool:
+        """
+        Validate generated response.
+        """
+
+        if not state.response:
+            return False
+
+        return True
+
     def run_agent(
         self,
         agent_callable: Callable,

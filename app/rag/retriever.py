@@ -2,10 +2,7 @@ from langchain_community.embeddings import (
     FastEmbedEmbeddings
 )
 
-from langchain_community.vectorstores import (
-    Chroma
-)
-
+from langchain_chroma import Chroma
 
 CHROMA_PATH = "chroma_db"
 

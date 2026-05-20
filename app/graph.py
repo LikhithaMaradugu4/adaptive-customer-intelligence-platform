@@ -5,7 +5,21 @@ from app.supervisor import supervisor
 from app.agents.intent_agent import IntentAgent
 from app.agents.emotion_agent import EmotionAgent
 from app.agents.memory_agent import MemoryAgent
+from app.agents.rag_agent import RAGAgent
+from app.agents.profile_agent import (
+    ProfileAgent
+)
+from app.agents.decision_agent import (
+    DecisionAgent
+)
 
+from app.agents.escalation_agent import (
+    EscalationAgent
+)
+
+from app.agents.response_agent import (
+    ResponseAgent
+)
 
 # ---------------------------------
 # Initialize agent
@@ -14,6 +28,11 @@ from app.agents.memory_agent import MemoryAgent
 intent_agent = IntentAgent()
 emotion_agent = EmotionAgent()
 memory_agent = MemoryAgent()
+rag_agent = RAGAgent()
+profile_agent = ProfileAgent()
+decision_agent = DecisionAgent()
+escalation_agent = EscalationAgent()
+response_agent = ResponseAgent()
 
 # ---------------------------------
 # Supervisor-controlled node
@@ -47,6 +66,57 @@ def memory_node(
         state=state,
         validator=supervisor.validate_memory
     )
+
+def rag_node(
+    state: CustomerState
+) -> CustomerState:
+
+    return supervisor.run_agent(
+        agent_callable=rag_agent.run,
+        state=state,
+        validator=supervisor.validate_rag
+    )
+
+def profile_node(
+    state: CustomerState
+) -> CustomerState:
+
+    return supervisor.run_agent(
+        agent_callable=profile_agent.run,
+        state=state,
+        validator=supervisor.validate_profile
+    )
+
+def decision_node(
+    state: CustomerState
+) -> CustomerState:
+
+    return supervisor.run_agent(
+        agent_callable=decision_agent.run,
+        state=state,
+        validator=supervisor.validate_decision
+    )
+
+
+def escalation_node(
+    state: CustomerState
+) -> CustomerState:
+
+    return supervisor.run_agent(
+        agent_callable=escalation_agent.run,
+        state=state,
+        validator=supervisor.validate_escalation
+    )
+
+def response_node(
+    state: CustomerState
+) -> CustomerState:
+
+    return supervisor.run_agent(
+        agent_callable=response_agent.run,
+        state=state,
+        validator=supervisor.validate_response
+    )
 # ---------------------------------
 # Build graph
 # ---------------------------------
@@ -70,16 +140,35 @@ builder.add_node(
     memory_node
 )
 
+builder.add_node(
+    "rag_agent",
+    rag_node
+)
+
+builder.add_node(
+    "profile_agent",
+    profile_node
+)
+
+builder.add_node(
+    "decision_agent",
+    decision_node
+)
+
+builder.add_node(
+    "escalation_agent",
+    escalation_node
+)
+
+builder.add_node(
+    "response_agent",
+    response_node
+)
+
 builder.add_edge(
     START,
     "intent_agent"
 )
-
-builder.add_edge(
-    "intent_agent",
-    END
-)
-
 
 builder.add_edge(
     "intent_agent",
@@ -92,8 +181,32 @@ builder.add_edge(
 
 builder.add_edge(
     "memory_agent",
-    END
+    "rag_agent"
 )
 
+builder.add_edge(
+    "rag_agent",
+    "profile_agent"
+)
+
+builder.add_edge(
+    "profile_agent",
+    "decision_agent"
+)   
+
+builder.add_edge(
+    "decision_agent",
+    "escalation_agent"
+)
+
+builder.add_edge(
+    "escalation_agent",
+    "response_agent"
+)  
+
+builder.add_edge(
+    "response_agent",
+    END
+)
 
 graph = builder.compile()
