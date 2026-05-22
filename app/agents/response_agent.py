@@ -1,6 +1,10 @@
 from app.state import CustomerState
+
 from app.schemas import ResponseOutput
-from app.services.llm_service import llm_service
+
+from app.services.llm_service import (
+    llm_service
+)
 
 from app.utils.conversation import (
     build_conversation_context
@@ -20,6 +24,10 @@ class ResponseAgent:
         Build grounded RAG context.
         """
 
+        if not state.retrieved_docs:
+
+            return "No retrieved documents."
+
         retrieved_context = ""
 
         for idx, doc in enumerate(
@@ -34,6 +42,39 @@ class ResponseAgent:
 
         return retrieved_context
 
+    def _build_tool_context(
+        self,
+        state: CustomerState
+    ) -> str:
+        """
+        Build operational tool context.
+        """
+
+        if not getattr(
+            state,
+            "tool_outputs",
+            None
+        ):
+
+            return "No tool outputs."
+
+        formatted_tools = ""
+
+        for idx, tool_output in enumerate(
+            state.tool_outputs,
+            start=1
+        ):
+
+            formatted_tools += (
+                f"\nTool {idx}:\n"
+                f"Tool Name: "
+                f"{tool_output.get('tool_name')}\n"
+                f"Tool Output: "
+                f"{tool_output.get('tool_output')}\n"
+            )
+
+        return formatted_tools
+
     def run(
         self,
         state: CustomerState
@@ -42,12 +83,22 @@ class ResponseAgent:
         try:
 
             # ---------------------------------
-            # Build conversation context
+            # Conversation context
             # ---------------------------------
 
             conversation_context = (
                 build_conversation_context(
                     state.conversation_history
+                )
+            )
+
+            # ---------------------------------
+            # Tool context
+            # ---------------------------------
+
+            tool_context = (
+                self._build_tool_context(
+                    state
                 )
             )
 
@@ -63,8 +114,18 @@ class ResponseAgent:
                 prompt = f"""
 You are a professional customer support assistant.
 
+IMPORTANT:
+- Use conversation history
+- Use operational memory/tool outputs
+- Maintain conversational continuity
+- Avoid repetitive clarification
+- Ask clarification naturally
+
 Conversation Context:
 {conversation_context}
+
+Operational Tool Context:
+{tool_context}
 
 Current Customer Query:
 {state.query}
@@ -73,10 +134,9 @@ Clarification Question:
 {state.clarification_question}
 
 Requirements:
-- Ask the clarification naturally
 - Be conversational
-- Use conversation history for continuity
 - Be concise
+- Be natural
 """
 
                 llm = llm_service._create_llm(
@@ -147,10 +207,13 @@ Requirements:
                 )
 
                 prompt = f"""
-Generate a professional customer support response.
+You are a professional customer support assistant.
 
 Conversation Context:
 {conversation_context}
+
+Operational Tool Context:
+{tool_context}
 
 Customer Emotion:
 {state.emotion}
@@ -164,12 +227,25 @@ Assigned Team:
 Ticket ID:
 {ticket_id}
 
-Requirements:
+IMPORTANT:
+- Use conversation history
+- Use operational memory
 - Be empathetic
+- Maintain conversational continuity
+
+Requirements:
 - Mention escalation
 - Mention ticket ID
-- Use conversation context
 - Keep response concise
+
+If the latest user message appears to answer
+a previous clarification question,
+continue the previous workflow naturally.
+
+IMPORTANT:
+Customer ID is already available in system state.
+Do not ask customer again for customer ID
+unless absolutely necessary.
 """
 
             else:
@@ -185,10 +261,33 @@ Requirements:
                 )
 
                 prompt = f"""
-Generate a professional customer support response.
+You are a professional customer support assistant.
+
+IMPORTANT BEHAVIOR RULES:
+
+1. Use conversation history heavily.
+2. Use operational tool outputs heavily.
+3. Maintain conversational continuity.
+4. Resolve references like:
+   - it
+   - that
+   - earlier product
+   - previous order
+5. If customer asks general policy/process questions:
+   - answer directly
+   - do NOT ask unnecessary clarification
+6. Use retrieved company knowledge whenever available.
+7. If tool outputs contain customer/profile/order/session/product data:
+   use it naturally in response.
+8. Never ignore known conversational context.
+9. Do not repeatedly ask for order IDs
+   unless operational processing is required.
 
 Conversation History:
 {conversation_context}
+
+Operational Tool Outputs:
+{tool_context}
 
 Customer Query:
 {state.query}
@@ -202,20 +301,19 @@ Customer Intent:
 Relevant Knowledge Base Context:
 {retrieved_context}
 
-IMPORTANT:
-- Use conversation history
-- Resolve references like:
-  "it", "that product", "earlier"
-- Maintain conversational continuity
-- Use retrieved knowledge when relevant
-
 Requirements:
 - Do not hallucinate
 - Be concise
 - Be professional
 - Be conversational
+- Maintain continuity
+- Use memory naturally
 - Be empathetic if customer is frustrated or angry
 """
+
+            # ---------------------------------
+            # Create LLM
+            # ---------------------------------
 
             llm = llm_service._create_llm(
                 model_name="llama-3.3-70b-versatile",

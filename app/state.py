@@ -92,3 +92,5 @@ class CustomerState(BaseModel):
     response: Optional[str] = None
 
     requires_rag: bool = False
+
+    tool_outputs: list = []
