@@ -15,6 +15,12 @@ class MemoryAgent:
     ) -> CustomerState:
 
         try:
+            #-----------------------------
+            # Skip if history already exists
+            #-----------------------------
+            if len(state.customer_history) > 0:
+                print("\nCustomer history already exists, skipping retrieval.")
+                return state
 
             customer_id = (
                 state.customer_id

@@ -1,3 +1,4 @@
+from app import state
 from app.state import CustomerState
 from app.schemas import DecisionOutput
 from app.services.llm_service import llm_service
@@ -144,6 +145,10 @@ class DecisionAgent:
 You are a customer support decision engine.
 
 Your job is to determine the correct operational action.
+You must also determine whether external company knowledge retrieval is required based on query.
+
+If retrieved company knowledge is required to answer,
+set requires_rag=True instead of clarification.
 
 IMPORTANT:
 You must also see the conversation context
@@ -151,7 +156,7 @@ to understand the customer's journey
 and past interactions.
 
 You must evaluate whether the retrieved
-documents contain sufficient information
+documents contain sufficient informationinformation
 to answer the customer query.
 
 Decision Rules:
@@ -334,10 +339,15 @@ Customer History:
                 decision_output
                 .approval_reason
             )
-
+            state.requires_rag = (
+                decision_output
+                .requires_rag
+            )
             state.metadata[
                 "decision_source"
             ] = "llm_reasoning"
+            print("\nRequires RAG:")
+            print(state.requires_rag)
 
             return state
 

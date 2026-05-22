@@ -8,36 +8,15 @@ from app.rag.retriever import (
 @tool
 def retrieve_policy_documents(
     query: str
-) -> str:
+):
     """
-    Retrieve relevant support
-    policy documents.
+    Retrieve relevant company policy
+    and support documents.
     """
 
-    docs = retrieve_documents(
-        query=query
+    documents = retrieve_documents(
+        query=query,
+        k=3
     )
 
-    formatted_docs = []
-
-    for idx, doc in enumerate(
-        docs,
-        start=1
-    ):
-
-        formatted_docs.append(
-
-            f"""
-Document {idx}
-
-Source:
-{doc['source']}
-
-Content:
-{doc['content']}
-"""
-        )
-
-    return "\n".join(
-        formatted_docs
-    )
+    return documents

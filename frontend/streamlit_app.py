@@ -7,8 +7,12 @@ sys.path.append(str(ROOT_DIR))
 import streamlit as st
 
 from app.graph import graph
+
 from app.state import CustomerState
 
+from app.services.session_service import (
+    session_service
+)
 
 # ---------------------------------
 # Page configuration
@@ -19,7 +23,6 @@ st.set_page_config(
     page_icon="🤖",
     layout="wide"
 )
-
 
 # ---------------------------------
 # Minimal styling
@@ -54,6 +57,21 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+# ---------------------------------
+# Session state initialization
+# ---------------------------------
+
+if "customer_state" not in st.session_state:
+
+    st.session_state.customer_state = None
+
+if "messages" not in st.session_state:
+
+    st.session_state.messages = []
+
+if "current_session_id" not in st.session_state:
+
+    st.session_state.current_session_id = None
 
 # ---------------------------------
 # Sidebar
@@ -70,37 +88,164 @@ with st.sidebar:
 
     st.markdown("---")
 
+    # ---------------------------------
+    # New chat button
+    # ---------------------------------
+
+    if st.button("➕ New Chat"):
+
+        new_session = (
+            session_service.create_session(
+                customer_id=customer_id,
+                title="New Conversation"
+            )
+        )
+
+        st.session_state.current_session_id = (
+            new_session["session_id"]
+        )
+
+        st.session_state.messages = []
+
+        st.session_state.customer_state = (
+            CustomerState(
+                customer_id=customer_id,
+                session_id=(
+                    new_session["session_id"]
+                ),
+                query=""
+            )
+        )
+
+        st.rerun()
+
+    st.markdown("---")
+
+    st.markdown("### Previous Chats")
+
+    customer_sessions = (
+        session_service.get_customer_sessions(
+            customer_id
+        )
+    )
+
+    # ---------------------------------
+    # Session list
+    # ---------------------------------
+
+    for session in customer_sessions:
+
+        session_title = session.get(
+            "title",
+            "Untitled Chat"
+        )
+
+        session_id = session[
+            "session_id"
+        ]
+
+        if st.button(
+            session_title,
+            key=session_id
+        ):
+
+            # ---------------------------------
+            # Load messages
+            # ---------------------------------
+
+            messages = (
+                session_service
+                .get_session_messages(
+                    session_id
+                )
+            )
+
+            st.session_state.messages = []
+
+            conversation_history = []
+
+            for msg in messages:
+
+                st.session_state.messages.append({
+
+                    "role": msg["role"],
+
+                    "content": msg["message"]
+                })
+
+                conversation_history.append({
+
+                    "role": msg["role"],
+
+                    "message": msg["message"]
+                })
+
+            # ---------------------------------
+            # Restore state
+            # ---------------------------------
+
+            st.session_state.current_session_id = (
+                session_id
+            )
+
+            st.session_state.customer_state = (
+                CustomerState(
+                    customer_id=customer_id,
+                    session_id=session_id,
+                    query="",
+                    conversation_history=(
+                        conversation_history
+                    )
+                )
+            )
+
+            st.rerun()
+
+    st.markdown("---")
+
     st.markdown(
         """
         ### System Features
 
         - Intent Detection
         - Emotion Analysis
-        - RAG Retrieval
+        - Conditional RAG
         - Customer Profiling
         - Decision Engine
         - Escalation Workflow
-        - Conversational Memory
+        - Persistent Memory
         """
     )
 
-
 # ---------------------------------
-# Session state initialization
+# Create default session if none
 # ---------------------------------
 
-if "customer_state" not in st.session_state:
+if (
+    st.session_state.current_session_id
+    is None
+):
 
-    st.session_state.customer_state = CustomerState(
-        customer_id=customer_id,
-        query=""
+    default_session = (
+        session_service.create_session(
+            customer_id=customer_id,
+            title="New Conversation"
+        )
     )
 
+    st.session_state.current_session_id = (
+        default_session["session_id"]
+    )
 
-if "messages" not in st.session_state:
-
-    st.session_state.messages = []
-
+    st.session_state.customer_state = (
+        CustomerState(
+            customer_id=customer_id,
+            session_id=(
+                default_session["session_id"]
+            ),
+            query=""
+        )
+    )
 
 # ---------------------------------
 # Header
@@ -116,17 +261,19 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-
 # ---------------------------------
 # Display chat history
 # ---------------------------------
 
 for message in st.session_state.messages:
 
-    with st.chat_message(message["role"]):
+    with st.chat_message(
+        message["role"]
+    ):
 
-        st.markdown(message["content"])
-
+        st.markdown(
+            message["content"]
+        )
 
 # ---------------------------------
 # Chat input
@@ -136,49 +283,70 @@ user_query = st.chat_input(
     "Type your message here..."
 )
 
-
 # ---------------------------------
 # Handle user input
 # ---------------------------------
 
 if user_query:
 
-    # ---------------------------------
-    # Update customer ID dynamically
-    # ---------------------------------
-
-    st.session_state.customer_state.customer_id = (
-        customer_id
+    current_session_id = (
+        st.session_state
+        .current_session_id
     )
 
     # ---------------------------------
-    # Add user message
+    # Display user message
     # ---------------------------------
-
-    st.session_state.messages.append({
-        "role": "user",
-        "content": user_query
-    })
 
     with st.chat_message("user"):
 
         st.markdown(user_query)
 
     # ---------------------------------
-    # Update query in state
+    # Add to UI memory
+    # ---------------------------------
+
+    st.session_state.messages.append({
+
+        "role": "user",
+
+        "content": user_query
+    })
+
+    # ---------------------------------
+    # Save user message to MongoDB
+    # ---------------------------------
+
+    session_service.save_message(
+        session_id=current_session_id,
+        customer_id=customer_id,
+        role="user",
+        message=user_query
+    )
+
+    # ---------------------------------
+    # Update customer state
     # ---------------------------------
 
     st.session_state.customer_state.query = (
         user_query
     )
 
+    st.session_state.customer_state.customer_id = (
+        customer_id
+    )
+
+    st.session_state.customer_state.session_id = (
+        current_session_id
+    )
+
     # ---------------------------------
-    # Store conversation memory
+    # Update conversation memory
     # ---------------------------------
 
     st.session_state.customer_state.conversation_history.append({
 
-        "role": "customer",
+        "role": "user",
 
         "message": user_query
     })
@@ -195,8 +363,10 @@ if user_query:
             .model_dump()
         )
 
-        updated_state = CustomerState(
-            **result
+        updated_state = (
+            CustomerState(
+                **result
+            )
         )
 
         st.session_state.customer_state = (
@@ -211,17 +381,38 @@ if user_query:
     # Display assistant response
     # ---------------------------------
 
-    with st.chat_message("assistant"):
+    with st.chat_message(
+        "assistant"
+    ):
 
-        st.markdown(assistant_response)
+        st.markdown(
+            assistant_response
+        )
+
+    # ---------------------------------
+    # Add assistant message to UI
+    # ---------------------------------
 
     st.session_state.messages.append({
+
         "role": "assistant",
+
         "content": assistant_response
     })
 
     # ---------------------------------
-    # Store assistant response
+    # Save assistant message
+    # ---------------------------------
+
+    session_service.save_message(
+        session_id=current_session_id,
+        customer_id=customer_id,
+        role="assistant",
+        message=assistant_response
+    )
+
+    # ---------------------------------
+    # Update memory
     # ---------------------------------
 
     st.session_state.customer_state.conversation_history.append({
@@ -231,42 +422,3 @@ if user_query:
         "message": assistant_response
     })
 
-
-# ---------------------------------
-# Footer info
-# ---------------------------------
-
-st.markdown("---")
-
-col1, col2, col3 = st.columns(3)
-
-with col1:
-
-    st.metric(
-        "Current Decision",
-        st.session_state
-        .customer_state
-        .decision
-        or "N/A"
-    )
-
-with col2:
-
-    st.metric(
-        "Detected Emotion",
-        st.session_state
-        .customer_state
-        .emotion
-        or "N/A"
-    )
-
-with col3:
-
-    st.metric(
-        "Escalated",
-        str(
-            st.session_state
-            .customer_state
-            .escalated
-        )
-    )

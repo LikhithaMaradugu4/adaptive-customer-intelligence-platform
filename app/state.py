@@ -90,3 +90,5 @@ class CustomerState(BaseModel):
     ] = None
 
     response: Optional[str] = None
+
+    requires_rag: bool = False
