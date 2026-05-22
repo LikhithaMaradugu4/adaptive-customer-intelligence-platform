@@ -6,6 +6,10 @@ from app.state import CustomerState
 from app.services.llm_service import llm_service
 from app.schemas import IntentOutput
 
+from app.utils.conversation import (
+    build_conversation_context
+)
+
 
 class IntentAgent:
     """
@@ -55,42 +59,66 @@ class IntentAgent:
         Predict using TF-IDF + Logistic Regression.
         """
 
-        probabilities = self.pipeline.predict_proba(
-            [query]
-        )[0]
+        probabilities = (
+            self.pipeline.predict_proba(
+                [query]
+            )[0]
+        )
 
         predicted_index = np.argmax(
             probabilities
         )
 
-        predicted_intent = self.pipeline.classes_[
-            predicted_index
-        ]
+        predicted_intent = (
+            self.pipeline.classes_[
+                predicted_index
+            ]
+        )
 
         confidence = float(
-            probabilities[predicted_index]
+            probabilities[
+                predicted_index
+            ]
         )
 
         return predicted_intent, confidence
 
     def _predict_with_llm(
         self,
-        query: str
+        query: str,
+        conversation_history
     ):
         """
         Structured LLM fallback.
         """
 
-        prompt = f"""
-You are an intent classification system for an e-commerce customer support platform.
+        # ---------------------------------
+        # Build conversation context
+        # ---------------------------------
 
-Classify the customer query into one or more intents.
+        conversation_context = (
+            build_conversation_context(
+                conversation_history
+            )
+        )
+
+        prompt = f"""
+You are an intent classification system
+for an e-commerce customer support platform.
+
+You must classify the customer's
+current intent while also considering
+the past conversation context.
+
+Conversation Context:
+{conversation_context}
 
 Possible intents:
 
 - PAYMENT_ISSUE
 - DELIVERY_ISSUE
 - REFUND_ISSUE
+- RETURN_ISSUE
 - PRODUCT_ISSUE
 - ACCOUNT_ISSUE
 - GENERAL_QUERY
@@ -99,8 +127,13 @@ Possible intents:
 - MULTI_INTENT
 
 Rules:
-- Return MULTI_INTENT if multiple issues are present.
-- Return UNKNOWN_INTENT if unclear.
+- Return MULTI_INTENT if multiple issues are present
+- Return UNKNOWN_INTENT if unclear
+- Use conversation history to resolve ambiguous references
+- Consider conversational continuity
+
+Current Customer Query:
+"{query}"
 """
 
         llm = llm_service._create_llm(
@@ -108,15 +141,20 @@ Rules:
             temperature=0.0
         )
 
-        structured_llm = llm.with_structured_output(
-            IntentOutput
+        structured_llm = (
+            llm.with_structured_output(
+                IntentOutput
+            )
         )
 
         response = structured_llm.invoke(
-            prompt + f'\nCustomer Query: "{query}"'
+            prompt
         )
 
-        return response.intent, response.confidence
+        return (
+            response.intent,
+            response.confidence
+        )
 
     def run(
         self,
@@ -135,7 +173,9 @@ Rules:
             # ---------------------------------
 
             predicted_intent, confidence = (
-                self._predict_with_ml(query)
+                self._predict_with_ml(
+                    query
+                )
             )
 
             print("\nML Prediction:")
@@ -166,11 +206,14 @@ Rules:
             # Low confidence → use LLM fallback
             # ---------------------------------
 
-            print("\nUsing LLM fallback...")
+            print(
+                "\nUsing LLM fallback..."
+            )
 
             intents, llm_confidence = (
                 self._predict_with_llm(
-                    query
+                    query,
+                    state.conversation_history
                 )
             )
 

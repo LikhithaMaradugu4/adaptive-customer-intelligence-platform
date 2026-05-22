@@ -29,6 +29,7 @@ class RAGAgent:
             retrieved_docs = (
                 retrieve_documents(
                     query=query,
+                    intents=state.intent,
                     k=self.top_k
                 )
             )

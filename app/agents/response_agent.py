@@ -2,6 +2,10 @@ from app.state import CustomerState
 from app.schemas import ResponseOutput
 from app.services.llm_service import llm_service
 
+from app.utils.conversation import (
+    build_conversation_context
+)
+
 
 class ResponseAgent:
     """
@@ -38,6 +42,16 @@ class ResponseAgent:
         try:
 
             # ---------------------------------
+            # Build conversation context
+            # ---------------------------------
+
+            conversation_context = (
+                build_conversation_context(
+                    state.conversation_history
+                )
+            )
+
+            # ---------------------------------
             # Clarification Flow
             # ---------------------------------
 
@@ -46,13 +60,60 @@ class ResponseAgent:
                 and state.clarification_question
             ):
 
+                prompt = f"""
+You are a professional customer support assistant.
+
+Conversation Context:
+{conversation_context}
+
+Current Customer Query:
+{state.query}
+
+Clarification Question:
+{state.clarification_question}
+
+Requirements:
+- Ask the clarification naturally
+- Be conversational
+- Use conversation history for continuity
+- Be concise
+"""
+
+                llm = llm_service._create_llm(
+                    model_name="llama-3.3-70b-versatile",
+                    temperature=0.3
+                )
+
+                structured_llm = (
+                    llm.with_structured_output(
+                        ResponseOutput
+                    )
+                )
+
+                result = structured_llm.invoke(
+                    prompt
+                )
+
                 state.response = (
-                    state.clarification_question
+                    result.response
                 )
 
                 state.metadata[
                     "response_source"
                 ] = "clarification"
+
+                return state
+
+            # ---------------------------------
+            # Out-of-scope Flow
+            # ---------------------------------
+
+            if state.decision == "OUT_OF_SCOPE":
+
+                state.response = (
+                    "I can only assist with "
+                    "ShopSphere-related customer support queries."
+                )
 
                 return state
 
@@ -88,6 +149,9 @@ class ResponseAgent:
                 prompt = f"""
 Generate a professional customer support response.
 
+Conversation Context:
+{conversation_context}
+
 Customer Emotion:
 {state.emotion}
 
@@ -104,6 +168,7 @@ Requirements:
 - Be empathetic
 - Mention escalation
 - Mention ticket ID
+- Use conversation context
 - Keep response concise
 """
 
@@ -122,6 +187,9 @@ Requirements:
                 prompt = f"""
 Generate a professional customer support response.
 
+Conversation History:
+{conversation_context}
+
 Customer Query:
 {state.query}
 
@@ -134,11 +202,18 @@ Customer Intent:
 Relevant Knowledge Base Context:
 {retrieved_context}
 
+IMPORTANT:
+- Use conversation history
+- Resolve references like:
+  "it", "that product", "earlier"
+- Maintain conversational continuity
+- Use retrieved knowledge when relevant
+
 Requirements:
-- Use the retrieved context
 - Do not hallucinate
 - Be concise
 - Be professional
+- Be conversational
 - Be empathetic if customer is frustrated or angry
 """
 

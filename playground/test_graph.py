@@ -3,7 +3,7 @@ from app.graph import graph
 
 
 state = CustomerState(
-    query="Can I know about refund policy in the cpmpny just want to know?",
+    query="What is the status of my refund for order?",
 )
 
 result = graph.invoke(

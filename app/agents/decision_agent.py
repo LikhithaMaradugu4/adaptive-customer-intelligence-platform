@@ -2,6 +2,10 @@ from app.state import CustomerState
 from app.schemas import DecisionOutput
 from app.services.llm_service import llm_service
 
+from app.utils.conversation import (
+    build_conversation_context
+)
+
 
 class DecisionAgent:
     """
@@ -52,6 +56,7 @@ class DecisionAgent:
             return {
                 "decision": "ESCALATE",
                 "priority": "HIGH",
+                "clarification_needed": False,
                 "human_approval_required": False
             }
 
@@ -64,26 +69,25 @@ class DecisionAgent:
             return {
                 "decision": "FRAUD_REVIEW",
                 "priority": "HIGH",
+                "clarification_needed": False,
                 "human_approval_required": True,
                 "approval_reason": (
                     "high_risk_customer"
                 )
             }
 
-
-
         # ---------------------------------
         # Repeat issue escalation
         # ---------------------------------
-        
+
         same_intent_count = 0
-        
+
         for history in state.customer_history:
-        
+
             if history["intent"] in state.intent:
-        
+
                 same_intent_count += 1
-        
+
         if (
             same_intent_count >= 2
             and state.emotion in [
@@ -91,10 +95,11 @@ class DecisionAgent:
                 "FRUSTRATED"
             ]
         ):
-        
+
             return {
                 "decision": "ESCALATE",
                 "priority": "HIGH",
+                "clarification_needed": False,
                 "human_approval_required": False
             }
 
@@ -125,19 +130,56 @@ class DecisionAgent:
         LLM reasoning layer.
         """
 
+        # ---------------------------------
+        # Build conversation context
+        # ---------------------------------
+
+        conversation_context = (
+            build_conversation_context(
+                state.conversation_history
+            )
+        )
+
         prompt = f"""
 You are a customer support decision engine.
 
-Based on the customer situation,
-determine the next operational action.
+Your job is to determine the correct operational action.
 
-Possible decisions:
+IMPORTANT:
+You must also see the conversation context
+to understand the customer's journey
+and past interactions.
 
-- RESPOND
-- CLARIFY
-- ESCALATE
-- HUMAN_APPROVAL
-- FRAUD_REVIEW
+You must evaluate whether the retrieved
+documents contain sufficient information
+to answer the customer query.
+
+Decision Rules:
+
+1. RESPOND
+- Retrieved documents are relevant
+- Enough information is available
+
+2. ESCALATE
+- Customer issue requires human intervention
+- High-risk or repeated unresolved issue
+
+3. CLARIFY
+- More customer information is required
+- Missing order ID, payment details, etc.
+- Query is ambiguous
+
+4. OUT_OF_SCOPE
+- Query is unrelated to ShopSphere support
+
+5. HUMAN_APPROVAL
+- Sensitive/high-risk operation
+
+Conversation Context:
+{conversation_context}
+
+Customer Query:
+{state.query}
 
 Customer Intent:
 {state.intent}
@@ -145,14 +187,14 @@ Customer Intent:
 Customer Emotion:
 {state.emotion}
 
+Retrieved Documents:
+{state.retrieved_docs}
+
 Customer Profile:
 {state.customer_profile}
 
 Customer History:
 {state.customer_history}
-
-Retrieved Knowledge:
-{state.retrieved_docs}
 """
 
         llm = llm_service._create_llm(
@@ -160,8 +202,10 @@ Retrieved Knowledge:
             temperature=0.0
         )
 
-        structured_llm = llm.with_structured_output(
-            DecisionOutput
+        structured_llm = (
+            llm.with_structured_output(
+                DecisionOutput
+            )
         )
 
         response = structured_llm.invoke(
@@ -246,6 +290,23 @@ Retrieved Knowledge:
                 )
             )
 
+            # ---------------------------------
+            # Clarification overrides escalation
+            # ---------------------------------
+
+            if (
+                decision_output
+                .clarification_needed
+            ):
+
+                decision_output.decision = (
+                    "CLARIFY"
+                )
+
+            # ---------------------------------
+            # Update state
+            # ---------------------------------
+
             state.decision = (
                 decision_output.decision
             )
@@ -292,5 +353,9 @@ Retrieved Knowledge:
             state.retry_count += 1
 
             state.decision = "ESCALATE"
+
+            state.priority = "HIGH"
+
+            state.clarification_needed = False
 
             return state

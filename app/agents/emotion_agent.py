@@ -6,6 +6,10 @@ from app.state import CustomerState
 from app.services.llm_service import llm_service
 from app.schemas import EmotionOutput
 
+from app.utils.conversation import (
+    build_conversation_context
+)
+
 
 class EmotionAgent:
     """
@@ -47,29 +51,45 @@ class EmotionAgent:
         # ---------------------------------
 
         if compound >= 0.5:
+
             emotion = "SATISFIED"
 
         elif compound >= 0:
+
             emotion = "NEUTRAL"
 
         elif compound >= -0.5:
+
             emotion = "FRUSTRATED"
 
         else:
+
             emotion = "ANGRY"
 
         return emotion, confidence
 
     def _predict_with_llm(
         self,
-        query: str
+        query: str,
+        conversation_history
     ):
         """
         LLM fallback for ambiguous emotion.
         """
 
+        # ---------------------------------
+        # Build conversation context
+        # ---------------------------------
+
+        conversation_context = (
+            build_conversation_context(
+                conversation_history
+            )
+        )
+
         prompt = f"""
-You are an emotion classification system for customer support.
+You are an emotion classification system
+for customer support.
 
 Classify the customer's emotional state.
 
@@ -80,10 +100,20 @@ Possible emotions:
 - NEUTRAL
 - SATISFIED
 
-Return the most appropriate emotion.
+IMPORTANT:
+You must also analyze the customer's
+past conversation context to understand
+emotion progression and emotional continuity.
 
-Customer Query:
+Conversation Context:
+{conversation_context}
+
+Current Customer Query:
 "{query}"
+
+Return:
+- emotion
+- confidence
 """
 
         llm = llm_service._create_llm(
@@ -91,8 +121,10 @@ Customer Query:
             temperature=0.0
         )
 
-        structured_llm = llm.with_structured_output(
-            EmotionOutput
+        structured_llm = (
+            llm.with_structured_output(
+                EmotionOutput
+            )
         )
 
         response = structured_llm.invoke(
@@ -158,7 +190,8 @@ Customer Query:
 
             emotion, llm_confidence = (
                 self._predict_with_llm(
-                    query
+                    query,
+                    state.conversation_history
                 )
             )
 
