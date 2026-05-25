@@ -34,7 +34,9 @@ from app.agents.escalation_agent import (
 from app.agents.response_agent import (
     ResponseAgent
 )
-
+from app.agents.followup_agent import (
+    FollowUpAgent
+)
 # ---------------------------------
 # Initialize agents
 # ---------------------------------
@@ -46,7 +48,7 @@ emotion_agent = EmotionAgent()
 
 rag_agent = RAGAgent()
 
-
+followup_agent = FollowUpAgent()
 decision_agent = DecisionAgent()
 
 escalation_agent = EscalationAgent()
@@ -123,7 +125,15 @@ def response_node(
         state=state,
         validator=supervisor.validate_response
     )
+def followup_node(
+    state: CustomerState
+) -> CustomerState:
 
+    return supervisor.run_agent(
+        agent_callable=followup_agent.run,
+        state=state,
+        validator=None
+    )
 # ---------------------------------
 # Conditional routing
 # ---------------------------------
@@ -213,6 +223,11 @@ builder.add_node(
     response_node
 )
 
+builder.add_node(
+    "followup_agent",
+    followup_node
+)
+
 # ---------------------------------
 # Main execution flow
 # ---------------------------------
@@ -244,31 +259,37 @@ builder.add_conditional_edges(
     {
         "rag": "rag_agent",
         "escalation": "escalation_agent",
-        "response": "response_agent"
+        "response": "followup_agent"
     }
 )
 
 # ---------------------------------
-# RAG → Response
+# RAG → Follow-up 
 # ---------------------------------
 
 builder.add_edge(
     "rag_agent",
-    "response_agent"
+    "followup_agent"
 )
 
 # ---------------------------------
-# Escalation → Response
+# Escalation → Follow-up
 # ---------------------------------
 
 builder.add_edge(
     "escalation_agent",
-    "response_agent"
+    "followup_agent"
 )
 
 # ---------------------------------
 # Final response
 # ---------------------------------
+
+
+builder.add_edge(
+    "followup_agent",
+    "response_agent"
+)
 
 builder.add_edge(
     "response_agent",

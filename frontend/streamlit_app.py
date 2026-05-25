@@ -261,15 +261,10 @@ with st.sidebar:
     st.markdown(
         """
         ### System Features
-
-        - Intent Detection
-        - Emotion Analysis
-        - Conditional RAG
-        - Tool Calling
-        - Decision Engine
-        - Escalation Workflow
-        - Persistent Memory
-        - MongoDB Sessions
+        - Company Policies Information
+        - Inventory Lookup
+        - Ticket Generation
+        - Solves User Queries
         """
     )
 

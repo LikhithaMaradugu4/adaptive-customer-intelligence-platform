@@ -94,3 +94,7 @@ class CustomerState(BaseModel):
     requires_rag: bool = False
 
     tool_outputs: list = []
+    
+    follow_up_required: bool = False
+    follow_up_type: str | None = None
+    follow_up_message: str | None = None
