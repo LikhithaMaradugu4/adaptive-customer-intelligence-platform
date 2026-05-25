@@ -1,10 +1,7 @@
 import uuid
-
 from datetime import datetime
 
-from app.database.mongo import (
-    mongodb
-)
+from app.database.mongo import mongodb
 
 
 class SessionService:
@@ -14,16 +11,12 @@ class SessionService:
 
     def __init__(self):
 
-        self.sessions_collection = (
-            mongodb.get_collection(
-                "sessions"
-            )
+        self.sessions_collection = mongodb.get_collection(
+            "sessions"
         )
 
-        self.messages_collection = (
-            mongodb.get_collection(
-                "messages"
-            )
+        self.messages_collection = mongodb.get_collection(
+            "messages"
         )
 
     # ---------------------------------
@@ -36,9 +29,7 @@ class SessionService:
         title: str = "New Chat"
     ):
 
-        session_id = str(
-            uuid.uuid4()
-        )
+        session_id = str(uuid.uuid4())
 
         session_data = {
             "session_id": session_id,
@@ -52,7 +43,7 @@ class SessionService:
         self.sessions_collection.insert_one(
             session_data
         )
-        
+
         session_data.pop("_id", None)
 
         return session_data
@@ -66,15 +57,13 @@ class SessionService:
         session_id: str
     ):
 
-        session = (
-            self.sessions_collection.find_one(
-                {
-                    "session_id": session_id
-                },
-                {
-                    "_id": 0
-                }
-            )
+        session = self.sessions_collection.find_one(
+            {
+                "session_id": session_id
+            },
+            {
+                "_id": 0
+            }
         )
 
         return session
@@ -167,6 +156,27 @@ class SessionService:
         )
 
         return messages
+
+    # ---------------------------------
+    # Update session title
+    # ---------------------------------
+
+    def update_session_title(
+        self,
+        session_id: str,
+        title: str
+    ):
+
+        self.sessions_collection.update_one(
+            {
+                "session_id": session_id
+            },
+            {
+                "$set": {
+                    "title": title
+                }
+            }
+        )
 
 
 # ---------------------------------

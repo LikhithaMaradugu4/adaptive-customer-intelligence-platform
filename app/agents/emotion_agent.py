@@ -116,8 +116,8 @@ Return:
 - confidence
 """
 
-        llm = llm_service._create_llm(
-            model_name="llama-3.3-70b-versatile",
+        llm = llm_service.get_llm_for_agent(
+            agent_name="emotion",
             temperature=0.0
         )
 

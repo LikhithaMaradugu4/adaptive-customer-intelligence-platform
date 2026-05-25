@@ -16,17 +16,12 @@ from app.agents.emotion_agent import (
     EmotionAgent
 )
 
-from app.agents.memory_agent import (
-    MemoryAgent
-)
+
 
 from app.agents.rag_agent import (
     RAGAgent
 )
 
-from app.agents.profile_agent import (
-    ProfileAgent
-)
 
 from app.agents.decision_agent import (
     DecisionAgent
@@ -48,11 +43,9 @@ intent_agent = IntentAgent()
 
 emotion_agent = EmotionAgent()
 
-memory_agent = MemoryAgent()
 
 rag_agent = RAGAgent()
 
-profile_agent = ProfileAgent()
 
 decision_agent = DecisionAgent()
 
@@ -86,16 +79,6 @@ def emotion_node(
     )
 
 
-def memory_node(
-    state: CustomerState
-) -> CustomerState:
-
-    return supervisor.run_agent(
-        agent_callable=memory_agent.run,
-        state=state,
-        validator=supervisor.validate_memory
-    )
-
 
 def rag_node(
     state: CustomerState
@@ -107,16 +90,6 @@ def rag_node(
         validator=supervisor.validate_rag
     )
 
-
-def profile_node(
-    state: CustomerState
-) -> CustomerState:
-
-    return supervisor.run_agent(
-        agent_callable=profile_agent.run,
-        state=state,
-        validator=supervisor.validate_profile
-    )
 
 
 def decision_node(
@@ -218,20 +191,12 @@ builder.add_node(
     emotion_node
 )
 
-builder.add_node(
-    "memory_agent",
-    memory_node
-)
 
 builder.add_node(
     "rag_agent",
     rag_node
 )
 
-builder.add_node(
-    "profile_agent",
-    profile_node
-)
 
 builder.add_node(
     "decision_agent",
@@ -264,18 +229,10 @@ builder.add_edge(
 
 builder.add_edge(
     "emotion_agent",
-    "memory_agent"
-)
-
-builder.add_edge(
-    "memory_agent",
-    "profile_agent"
-)
-
-builder.add_edge(
-    "profile_agent",
     "decision_agent"
 )
+
+
 
 # ---------------------------------
 # Conditional routing after decision
