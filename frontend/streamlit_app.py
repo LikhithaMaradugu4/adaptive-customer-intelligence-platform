@@ -14,6 +14,10 @@ from app.services.session_service import (
     session_service
 )
 
+from app.services.customer_service import (
+    customer_service
+)
+
 # ---------------------------------
 # Page configuration
 # ---------------------------------
@@ -89,10 +93,43 @@ with st.sidebar:
     st.markdown("---")
 
     # ---------------------------------
-    # New chat button
+    # New Chat
     # ---------------------------------
 
     if st.button("➕ New Chat"):
+
+        # ---------------------------------
+        # Fetch customer profile
+        # ---------------------------------
+
+        customer_profile = (
+            customer_service
+            .get_customer_by_id(
+                customer_id
+            )
+        )
+
+        # ---------------------------------
+        # Auto-create customer
+        # ---------------------------------
+
+        if not customer_profile:
+
+            customer_profile = (
+                customer_service
+                .create_customer(
+                    customer_id
+                )
+            )
+
+            st.success(
+                f"New customer created: "
+                f"{customer_id}"
+            )
+
+        # ---------------------------------
+        # Create new session
+        # ---------------------------------
 
         new_session = (
             session_service.create_session(
@@ -113,6 +150,10 @@ with st.sidebar:
                 session_id=(
                     new_session["session_id"]
                 ),
+                customer_profile=(
+                    customer_profile
+                ),
+                conversation_history=[],
                 query=""
             )
         )
@@ -130,7 +171,7 @@ with st.sidebar:
     )
 
     # ---------------------------------
-    # Session list
+    # Session List
     # ---------------------------------
 
     for session in customer_sessions:
@@ -160,6 +201,17 @@ with st.sidebar:
                 )
             )
 
+            # ---------------------------------
+            # Fetch customer profile
+            # ---------------------------------
+
+            customer_profile = (
+                customer_service
+                .get_customer_by_id(
+                    customer_id
+                )
+            )
+
             st.session_state.messages = []
 
             conversation_history = []
@@ -181,7 +233,7 @@ with st.sidebar:
                 })
 
             # ---------------------------------
-            # Restore state
+            # Restore fully hydrated state
             # ---------------------------------
 
             st.session_state.current_session_id = (
@@ -192,10 +244,13 @@ with st.sidebar:
                 CustomerState(
                     customer_id=customer_id,
                     session_id=session_id,
-                    query="",
+                    customer_profile=(
+                        customer_profile
+                    ),
                     conversation_history=(
                         conversation_history
-                    )
+                    ),
+                    query=""
                 )
             )
 
@@ -210,21 +265,55 @@ with st.sidebar:
         - Intent Detection
         - Emotion Analysis
         - Conditional RAG
-        - Customer Profiling
+        - Tool Calling
         - Decision Engine
         - Escalation Workflow
         - Persistent Memory
+        - MongoDB Sessions
         """
     )
 
 # ---------------------------------
-# Create default session if none
+# Create default session
 # ---------------------------------
 
 if (
     st.session_state.current_session_id
     is None
 ):
+
+    # ---------------------------------
+    # Fetch customer profile
+    # ---------------------------------
+
+    customer_profile = (
+        customer_service
+        .get_customer_by_id(
+            customer_id
+        )
+    )
+
+    # ---------------------------------
+    # Auto-create customer
+    # ---------------------------------
+
+    if not customer_profile:
+
+        customer_profile = (
+            customer_service
+            .create_customer(
+                customer_id
+            )
+        )
+
+        st.success(
+            f"New customer created: "
+            f"{customer_id}"
+        )
+
+    # ---------------------------------
+    # Create session
+    # ---------------------------------
 
     default_session = (
         session_service.create_session(
@@ -243,6 +332,10 @@ if (
             session_id=(
                 default_session["session_id"]
             ),
+            customer_profile=(
+                customer_profile
+            ),
+            conversation_history=[],
             query=""
         )
     )
@@ -252,12 +345,16 @@ if (
 # ---------------------------------
 
 st.markdown(
-    '<div class="title">Adaptive Customer Intelligence Platform</div>',
+    '<div class="title">'
+    'Adaptive Customer Intelligence Platform'
+    '</div>',
     unsafe_allow_html=True
 )
 
 st.markdown(
-    '<div class="subtitle">AI-powered multi-agent customer support assistant</div>',
+    '<div class="subtitle">'
+    'AI-powered multi-agent customer support assistant'
+    '</div>',
     unsafe_allow_html=True
 )
 
@@ -303,7 +400,7 @@ if user_query:
         st.markdown(user_query)
 
     # ---------------------------------
-    # Add to UI memory
+    # Add user message to UI
     # ---------------------------------
 
     st.session_state.messages.append({
@@ -314,7 +411,7 @@ if user_query:
     })
 
     # ---------------------------------
-    # Save user message to MongoDB
+    # Save user message
     # ---------------------------------
 
     session_service.save_message(
@@ -325,23 +422,38 @@ if user_query:
     )
 
     # ---------------------------------
-    # Update customer state
+    # Generate session title
+    # ---------------------------------
+
+    current_messages = (
+        st.session_state.messages
+    )
+
+    if len(current_messages) == 1:
+
+        from app.utils.title_generator import (
+            generate_session_title
+        )
+
+        title = generate_session_title(
+            user_query
+        )
+
+        session_service.update_session_title(
+            session_id=current_session_id,
+            title=title
+        )
+
+    # ---------------------------------
+    # Update state
     # ---------------------------------
 
     st.session_state.customer_state.query = (
         user_query
     )
 
-    st.session_state.customer_state.customer_id = (
-        customer_id
-    )
-
-    st.session_state.customer_state.session_id = (
-        current_session_id
-    )
-
     # ---------------------------------
-    # Update conversation memory
+    # Update conversation history
     # ---------------------------------
 
     st.session_state.customer_state.conversation_history.append({
@@ -412,7 +524,7 @@ if user_query:
     )
 
     # ---------------------------------
-    # Update memory
+    # Update conversation history
     # ---------------------------------
 
     st.session_state.customer_state.conversation_history.append({
@@ -421,4 +533,3 @@ if user_query:
 
         "message": assistant_response
     })
-
