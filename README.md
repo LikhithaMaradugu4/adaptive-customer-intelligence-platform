@@ -458,9 +458,6 @@ python -m training.train_intent_model
 ## Author
 
 **Likhitha Maradugu**
-- Intern ,TechVedika
-
-
 ---
 
 ## License

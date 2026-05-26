@@ -17,6 +17,9 @@ from app.services.session_service import (
 from app.services.customer_service import (
     customer_service
 )
+from dotenv import load_dotenv
+
+load_dotenv()
 
 # ---------------------------------
 # Page configuration

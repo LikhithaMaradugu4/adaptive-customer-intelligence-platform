@@ -1,0 +1,542 @@
+[
+  {
+    "user_question": "What is the timeframe for a standard customer to initiate a return?",
+    "ground_truth_answer": "Standard ShopSphere account holders can initiate a return within 30 calendar days from the date the carrier marks the parcel as 'Delivered'. They then have an additional 14 calendar days to tender the package to an authorized carrier.[cite: 1, 2]",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "Can I still return it? It's been 45 days since it arrived, but I have a ShopSphere Premium membership.",
+    "ground_truth_answer": "Yes, you can still return it. ShopSphere Premium members receive an extended return window of 60 calendar days from the delivery date, plus a 21-day package tender window.[cite: 1, 2]",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "How much does return shipping cost if I am returning a damaged laptop?",
+    "ground_truth_answer": "Return shipping costs are entirely waived for damaged products, and a prepaid overnight or two-day shipping label will be issued. Any standard restocking fees (such as the 15% for electronics) are also absolutely nullified.[cite: 1, 2]",
+    "relevant_document_topic": "Damaged Product Return Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What happens if a warehouse inspector opens a customer's return and the box is completely empty?",
+    "ground_truth_answer": "If an empty box is received, the Refund Processing Workflow is immediately halted. The customer will be informed that an internal investigation with carrier weight logs has been initiated, and refunds are entirely suspended during this period.[cite: 1, 2]",
+    "relevant_document_topic": "Refund Processing Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I want to exchange my large shirt for a medium, but also upgrade to a more expensive jacket. How does that work?",
+    "ground_truth_answer": "The system does not support 'upgrade' exchanges where you pay the difference. Exchanges are strictly limited to even swaps with the exact same retail price. You must process a standard return for a refund, and then create a completely new, separate transaction for the jacket.[cite: 1, 2]",
+    "relevant_document_topic": "Exchange and Replacement Guidelines",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "What is the penalty if a Premium customer doesn't mail back their original defective item during an Advanced Replacement?",
+    "ground_truth_answer": "During an Advanced Replacement, a pre-authorization hold is placed on the credit card. If the original item is not scanned by the carrier within exactly 14 calendar days, or if it fails the condition inspection, the pre-authorization is captured and the customer is permanently charged for both items.[cite: 1, 2]",
+    "relevant_document_topic": "Exchange and Replacement Guidelines",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My tracking shows my package is 6 days late. I am a standard member. What compensation am I eligible for?",
+    "ground_truth_answer": "For a Tier 2 Delay (5 to 10 days past SLA), standard customers are entitled to a refund of any expedited shipping fees paid. If standard free shipping was used, they receive a 10% partial refund of the order subtotal to the original payment method, capped at $50.[cite: 1, 2]",
+    "relevant_document_topic": "Shipping Delay Compensation Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "Will premium support apply here? My package is late by exactly one single day.",
+    "ground_truth_answer": "Yes, Premium members are guaranteed a strict 2-day delivery SLA. If delayed by even a single day, the CRM Concession Engine will automatically trigger a proactive email containing a $15 Store Credit.[cite: 1, 2]",
+    "relevant_document_topic": "Shipping Delay Compensation Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "How long does a tracer investigation normally take when a domestic package is presumed lost?",
+    "ground_truth_answer": "A standard tracer investigation takes up to 5 business days to allow the local delivery depot to perform a physical sweep and interview the final-mile driver.[cite: 5]",
+    "relevant_document_topic": "Lost Package Investigation Procedure",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "I am a ShopSphere Premium member and my package is lost. Do I have to wait 5 days for the depot sweep before getting a replacement?",
+    "ground_truth_answer": "No, ShopSphere Premium members are exempt from the standard 5-day tracer waiting period. If 7 days of shipment scan failures are verified, the CSR must immediately issue a replacement or refund.[cite: 5]",
+    "relevant_document_topic": "Lost Package Investigation Procedure",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "Can I correct my delivery address after the package has already shipped?",
+    "ground_truth_answer": "Once a domestic package is in transit, an address correction requires a formal 'Delivery Intercept' request via the Carrier API, which incurs a $12 fee and is not guaranteed to succeed.[cite: 5]",
+    "relevant_document_topic": "Order Tracking and Shipment Visibility Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What happens if I try to change the address on an international order after it hits Export Processing status?",
+    "ground_truth_answer": "Once an international order updates to 'Export Processing', no address changes can be made. Any attempt to alter it will result in the package being flagged for fraud by customs and destroyed, and no refund will be issued.[cite: 5]",
+    "relevant_document_topic": "International Shipping and Customs Support",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "There is a massive FedEx hub outage and I only received box 1 of 2. Box 2 is stuck in the outage. What is the procedure?",
+    "ground_truth_answer": "During a Courier Failure Event, CSRs must proactively generate an internal replacement order for the trapped items and ship them via a secondary carrier (e.g., UPS) so the customer receives their complete order without waiting for the outage to resolve.[cite: 5]",
+    "relevant_document_topic": "Courier Partner Failure Handling",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "What does gateway error Code 2005 mean and how do I fix it?",
+    "ground_truth_answer": "Code 2005 means 'Issuer Decline', indicating the bank blocked the transaction. You must complete standard bank verification by calling the number on the back of your card to authorize ShopSphere as a trusted merchant.[cite: 3]",
+    "relevant_document_topic": "Payment Failure Troubleshooting",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "My account was locked and I need to upload ID, but I recently moved and have no utility bill. What can I use for secondary verification?",
+    "ground_truth_answer": "As an exception, you must provide the last four digits of the primary credit card on file along with the exact date and amount of your most recent successful purchase.[cite: 3]",
+    "relevant_document_topic": "Account Recovery and Verification Process",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "If I cancel an EMI order, will ShopSphere refund the interest fees charged by my bank?",
+    "ground_truth_answer": "No. ShopSphere will issue a full refund of the principal purchase amount back to the card, but any processing fees or interest charges levied by the bank during the first billing cycle are non-refundable by ShopSphere.[cite: 3]",
+    "relevant_document_topic": "EMI and Installment Payment Support",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My order was canceled because it got a Risk Score of 90. What happens now?",
+    "ground_truth_answer": "A Risk Score of 85-100 places the order in the High Risk category, meaning it is immediately blocked and the transaction is voided.[cite: 3]",
+    "relevant_document_topic": "Fraud Detection and Security Review Workflow",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "If I cancel a TV installation on the same day it's scheduled, is there a penalty?",
+    "ground_truth_answer": "Yes, same-day cancellations for White Glove installation incur a $50 truck-roll fee, which is deducted from any subsequent service refund.[cite: 4]",
+    "relevant_document_topic": "Samsung TV Warranty and Installation Support",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My new washing machine is vibrating violently. I think I forgot to remove the transit bolts.",
+    "ground_truth_answer": "If the transit bolts used for shipping are still installed, running the machine will cause severe damage. This action completely voids the warranty eligibility.[cite: 4]",
+    "relevant_document_topic": "Washing Machine Troubleshooting and Service Requests",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "Under the Lemon Replacement policy, when is a customer entitled to a brand new washing machine?",
+    "ground_truth_answer": "A customer is entitled to a full replacement if the washing machine cannot be repaired within the 14-day timeline, or if the same machine has required three separate major repairs within a 12-month period.[cite: 4]",
+    "relevant_document_topic": "Washing Machine Troubleshooting and Service Requests",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What is the repair turnaround timeline for a laptop sent to the Mail-In Depot under a standard warranty?",
+    "ground_truth_answer": "Standard customers should expect a total turnaround repair timeline of 10 to 14 business days.[cite: 4]",
+    "relevant_document_topic": "Laptop Replacement and Repair Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "What about warranty for that? I accidentally spilled water on my laptop keyboard and don't have the PEPP plan.",
+    "ground_truth_answer": "The standard warranty immediately voids if liquid damage indicators have been tripped. The repair depot will generate an out-of-warranty repair quote, and you have 7 days to pay it before the unrepaired device is shipped back at your expense.[cite: 4]",
+    "relevant_document_topic": "Laptop Replacement and Repair Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My smart thermostat won't connect. Should I make sure my phone is on the 5GHz network?",
+    "ground_truth_answer": "No, you must ensure your mobile device and the smart device are on the same 2.4GHz Wi-Fi band, as most IoT devices do not support 5GHz networks.[cite: 4]",
+    "relevant_document_topic": "Smart Device Technical Support Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "How do I perform a hard reset on my ShopSphere smart device?",
+    "ground_truth_answer": "You can perform a hard reset by holding the device's reset button for 15 seconds until the LED indicator flashes amber.[cite: 4]",
+    "relevant_document_topic": "Smart Device Technical Support Workflow",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "Does the Premium Electronics Protection Plan (PEPP) cover cracked screens if I accidentally drop it?",
+    "ground_truth_answer": "Yes, PEPP covers accidental damage handling (ADH), including drops, liquid spills, and cracked screens with a $0 deductible.[cite: 4]",
+    "relevant_document_topic": "Premium Electronics Protection Plan",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "I have the Premium Electronics Protection Plan. If the repair cost for my broken TV is 80% of its retail value, what happens?",
+    "ground_truth_answer": "If the cost of repair exceeds 75% of the device's current retail value, the Claims Adjuster will immediately approve a 'Buyout', issuing you ShopSphere Store Credit equal to the original purchase price.[cite: 4]",
+    "relevant_document_topic": "Premium Electronics Protection Plan",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "Can I get a full refund if I cancel my ShopSphere Premium membership 10 days after the auto-renewal date?",
+    "ground_truth_answer": "No. A full refund of the subscription fee is only authorized if cancellation is requested within 7 calendar days of the initial charge or auto-renewal date, and provided zero premium customer benefits have been utilized.[cite: 9]",
+    "relevant_document_topic": "Subscription Cancellation and Refund Rules",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What happens to my loyalty points if my Premium account is downgraded because my credit card kept failing?",
+    "ground_truth_answer": "If your account is automatically downgraded to standard status due to failed payments after the 7-day grace period, you will immediately forfeit the accelerated 2x loyalty point accrual rules.[cite: 9]",
+    "relevant_document_topic": "Membership Upgrade and Downgrade Handling",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "How long do promotional campaign points, like those from flash sales, last before they expire?",
+    "ground_truth_answer": "Points earned during special promotional windows are subject to strict expiration thresholds, typically 90 days, compared to the standard 365-day lifecycle for organic points.[cite: 9]",
+    "relevant_document_topic": "Loyalty Points and Rewards Redemption Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "I changed my tier level from Standard to Premium and back 3 times this month. Why is my account locked?",
+    "ground_truth_answer": "If an account executes more than two tier changes within a 30-day window, an automated alert triggers account restrictions for suspected card-testing fraud or promo code exploitation, blocking checkout and point redemptions.[cite: 9]",
+    "relevant_document_topic": "Membership Upgrade and Downgrade Handling",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What happens if a Premium subscription renewal charge fails?",
+    "ground_truth_answer": "The Billing Engine triggers a 7-day subscription grace period. During this time, the status updates to 'Delinquent - Active Retries', keeping premium routing active while the platform attempts automated background re-billing every 48 hours.[cite: 9]",
+    "relevant_document_topic": "Subscription Cancellation and Refund Rules",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What is the required live response time for a VIP customer on a chat session?",
+    "ground_truth_answer": "For VIP customers, the live agent handoff on chat/voice must conclude in under 30 seconds.[cite: 7]",
+    "relevant_document_topic": "Escalation Matrix for High-Priority Customers",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "What is the maximum refund exception a Tier 2 Specialist can authorize?",
+    "ground_truth_answer": "A Tier 2 Specialist is authorized to approve full original-payment-method refunds up to 60 days post-delivery, capped at a maximum item value of $150.[cite: 7]",
+    "relevant_document_topic": "Refund Exception Approval Process",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "A customer is cursing at me over chat and threatening a lawsuit. How should I route this?",
+    "ground_truth_answer": "If a customer uses explicit litigation threats or mentions regulatory reporting, it falls under legal escalation conditions. You must immediately freeze the chat and route the interaction to the Executive Support desk, bypassing standard VIP matrices.[cite: 7]",
+    "relevant_document_topic": "Escalation Matrix for High-Priority Customers",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "What does the EAR protocol stand for when dealing with angry customers?",
+    "ground_truth_answer": "The EAR protocol stands for Empathy, Attention, and Respect.[cite: 7]",
+    "relevant_document_topic": "Angry Customer De-escalation Procedures",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "If I am a 3P seller and a customer complains of non-delivery, how long do I have to provide evidence?",
+    "ground_truth_answer": "The merchant must respond via Seller Central with concrete evidence within an automated 48-hour mediation phase.[cite: 6]",
+    "relevant_document_topic": "Third-Party Seller Dispute Resolution",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I am a seller who shipped via MCS. The carrier lost the package. Who is financially liable?",
+    "ground_truth_answer": "If you handled logistics independently via Merchant Carried Shipping (MCS), you as the seller assume 100% liability for non-delivery claims, delivery delays, or damage in transit.[cite: 6]",
+    "relevant_document_topic": "Marketplace Refund and Liability Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What is the Level 1 automated penalty if a third-party seller dispatches a shipment late?",
+    "ground_truth_answer": "The Level 1 Penalty reduces the listing buy-box visibility for that specific SKU by 50% for 7 calendar days.[cite: 6]",
+    "relevant_document_topic": "Seller Shipping Delay Escalation Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My seller listing was frozen because someone claimed my item was fake. What documentation do I need to provide?",
+    "ground_truth_answer": "You must submit official documentation proving supply chain authenticity within 72 hours, such as direct wholesale invoices from the OEM manufacturer, brand authorization certificates, or clean customs clearance manifests.[cite: 6]",
+    "relevant_document_topic": "Fake Product Investigation and Enforcement",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "What is the maximum allowed Order Defect Rate (ODR) before a seller faces suspension?",
+    "ground_truth_answer": "A seller's Order Defect Rate (ODR) must remain strictly below 1.00%. If it climbs or passes a critical 3.00% threshold, it triggers severe seller suspension criteria and the store is instantly locked.[cite: 6]",
+    "relevant_document_topic": "Marketplace Seller Performance Monitoring",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What is the standard return window for ShopSphere?",
+    "ground_truth_answer": "Standard account holders can initiate a return within 30 calendar days from the date the carrier marks the parcel as 'Delivered'.",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "I am a ShopSphere Premium member. How long do I have to return an item, and how long do I have to hand it to the carrier?",
+    "ground_truth_answer": "Premium members receive an extended return window of 60 calendar days from the delivery date, alongside a 21-day package tender window once the RMA is generated.",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "Is there a restocking fee for returning a television?",
+    "ground_truth_answer": "Yes, high-value electronics and heavy-weight furniture are subject to a 15% restocking fee, calculated based on the purchase price before taxes and shipping.",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "I received my order yesterday and it's completely smashed. How long do I have to report this damaged product?",
+    "ground_truth_answer": "Customers must report a damaged product within 48 hours of the delivery timestamp recorded by the carrier.",
+    "relevant_document_topic": "Damaged Product Return Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "My order failed and gave me a Code 2005. What does that mean and what should I do?",
+    "ground_truth_answer": "Code 2005 means an 'Issuer Decline', indicating the customer's bank blocked the transaction. You must complete standard bank verification by calling the number on the back of your card to authorize ShopSphere as a trusted merchant.",
+    "relevant_document_topic": "Payment Failure Troubleshooting",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "Can I cancel my standard order if I placed it 45 minutes ago?",
+    "ground_truth_answer": "No, standard orders can only be cancelled directly via the self-service portal within 30 minutes of order placement. ShopSphere Premium members have a 60-minute window.",
+    "relevant_document_topic": "Order Cancellation Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My account was locked. What secondary verification document do I need to provide, and how old can it be?",
+    "ground_truth_answer": "You need to provide a recent utility bill or bank statement displaying your name and primary billing address. It must be dated within the last 60 days.",
+    "relevant_document_topic": "Account Recovery and Verification Process",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "What happens if a Medium Risk order fails the secondary background checks by the Fraud Engine?",
+    "ground_truth_answer": "The Fraud Engine generates an alert in the manual review queue. Fraud Analysts have a strict 12-hour SLA to review the ticket. If deemed fraudulent, the order is cancelled, the account is locked, and the user's details are blacklisted.",
+    "relevant_document_topic": "Fraud Detection and Security Review Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My washing machine is showing a 5C error code. Do I need a technician?",
+    "ground_truth_answer": "Not immediately. A 5C error code indicates a drainage issue. You should locate the debris filter door at the bottom of the unit, open the filter, and remove any coins, lint, or blockages.",
+    "relevant_document_topic": "Washing Machine Troubleshooting and Service Requests",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I bought a TV and the screen cracked while I was trying to mount it on my wall. Will the standard OEM warranty cover this?",
+    "ground_truth_answer": "No. The standard OEM warranty explicitly excludes accidental damage handling such as cracked screens from drops or incorrect self-mounting. It is only covered if you purchased the Premium Electronics Protection Plan (PEPP).",
+    "relevant_document_topic": "Samsung TV Warranty and Installation Support",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "How long does a depot repair usually take for a laptop if I have a standard account?",
+    "ground_truth_answer": "Standard laptop hardware repairs take 5 to 7 business days, with a total turnaround expectation (including shipping and diagnostics) of 10 to 14 business days.",
+    "relevant_document_topic": "Laptop Replacement and Repair Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "My smart thermostat won't connect to my Wi-Fi. My router is dual-band. What could be the problem?",
+    "ground_truth_answer": "The thermostat may be trying to connect to a 5GHz network. Ensure your mobile device and the smart device are on the same 2.4GHz Wi-Fi band, as most IoT devices do not support 5GHz networks.",
+    "relevant_document_topic": "Smart Device Technical Support Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My laptop costs $1000 and is covered by PEPP. The depot says it will cost $800 to fix it. What happens next?",
+    "ground_truth_answer": "Because the cost of repair ($800) exceeds 75% of the device's retail value ($1000), the Claims Adjuster will immediately approve a 'Buyout' and issue ShopSphere Store Credit for the original purchase price.",
+    "relevant_document_topic": "Premium Electronics Protection Plan",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "I want to change the delivery address of a package that is already in transit. Is there a fee?",
+    "ground_truth_answer": "Yes, once a package is in the carrier's possession, address corrections require a formal 'Delivery Intercept' request which incurs a $12 intercept fee.",
+    "relevant_document_topic": "Order Tracking and Shipment Visibility Workflow",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "My domestic package hasn't had a tracking scan in 8 days. I am a standard customer. What is the process?",
+    "ground_truth_answer": "Since it has been over 7 days of scan failures, it qualifies as 'Lost in Transit'. You must initiate a 'Tracer Investigation' which takes up to 5 business days for a depot sweep before a refund or replacement is issued.",
+    "relevant_document_topic": "Lost Package Investigation Procedure",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I'm a Premium member and my package has been lost in transit for 8 days. Do I have to wait for the 5-day tracer sweep?",
+    "ground_truth_answer": "No. Premium members are exempt from the standard 5-day tracer waiting period. You will be issued an immediate replacement or refund.",
+    "relevant_document_topic": "Lost Package Investigation Procedure",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "I placed an international order and it's in 'Export Processing'. Can I change the delivery address to a different city?",
+    "ground_truth_answer": "No. Once an international order status updates to 'Export Processing', no address changes can be made. Attempting to do so will result in the package being flagged for fraud and destroyed by customs, with no refund issued.",
+    "relevant_document_topic": "International Shipping and Customs Support",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "What is the Tier 2 penalty for a third-party seller who fails to ship an order on time?",
+    "ground_truth_answer": "The platform deploys automated customer compensation handling, issuing a 10% partial refund to the customer funded entirely by a direct charge to the merchant's account balance.",
+    "relevant_document_topic": "Seller Shipping Delay Escalation Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I bought an item from a 3P merchant, but it was stored, packed, and shipped from a ShopSphere hub (FBS). It arrived damaged in transit. Who takes the financial liability?",
+    "ground_truth_answer": "ShopSphere assumes 100% of the financial liability for transit damage on orders Fulfilled by ShopSphere (FBS).",
+    "relevant_document_topic": "Marketplace Refund and Liability Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "A buyer claimed my product is counterfeit. How long do I have to submit documentation proving it is authentic?",
+    "ground_truth_answer": "You have an absolute 72-hour window to submit official documentation proving supply chain authenticity (Request for Information/RFI).",
+    "relevant_document_topic": "Fake Product Investigation and Enforcement",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "What is the maximum allowable Pre-Fulfillment Cancellation Rate for a marketplace seller?",
+    "ground_truth_answer": "A seller's Pre-Fulfillment Cancellation Rate must not cross 2.50%.",
+    "relevant_document_topic": "Marketplace Seller Performance Monitoring",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "Can I get a prorated refund if I cancel my ShopSphere Premium membership in the middle of the month?",
+    "ground_truth_answer": "No, partial or prorated refunds are strictly disallowed for standard billing structures, unless you are on an active-duty military deployment or face structural multi-month account restrictions.",
+    "relevant_document_topic": "Subscription Cancellation and Refund Rules",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I used my Premium membership for free return shipping yesterday. Can I cancel today and get a full refund?",
+    "ground_truth_answer": "No. A full refund of the current billing period's fee is only authorized if requested within 7 calendar days of the charge AND zero premium customer benefits have been utilized during that period.",
+    "relevant_document_topic": "Subscription Cancellation and Refund Rules",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "My auto-renewal failed, and I tried to manually downgrade to a standard account during the 7-day grace period. Now my account is frozen. What do you need to do?",
+    "ground_truth_answer": "The CSR must manually clear the pending renewal logs, execute the downgrade immediately, and update the account to the standard tier.",
+    "relevant_document_topic": "Membership Upgrade and Downgrade Handling",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "I bought a laptop via EMI and cancelled the order before it shipped. Will I get my bank's processing fees and interest refunded?",
+    "ground_truth_answer": "No. ShopSphere will issue a full refund of the principal purchase amount back to the card, but any processing fees or interest charges levied by the bank during the first billing cycle are non-refundable by ShopSphere.",
+    "relevant_document_topic": "EMI and Installment Payment Support",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "My order failed with an insufficient funds code, but my bank statement shows a pending charge. Give me a formal void receipt right now!",
+    "ground_truth_answer": "ShopSphere has automatically sent a void request to your bank, but a formal void receipt (Acquirer Reference Number memo) can only be generated by Tier 2 Support after 72 hours.",
+    "relevant_document_topic": "Payment Failure Troubleshooting",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I bought two items as part of a Buy One, Get One (BOGO) bundle. If I cancel just one of the items, what happens to my refund?",
+    "ground_truth_answer": "The OMS will automatically recalculate the price of the remaining items, and your expected refund will be reduced to account for the forfeiture of the bundle discount.",
+    "relevant_document_topic": "Order Cancellation Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I am returning a television and the box was opened, but the item is in good condition. Can you waive the 15% restocking fee?",
+    "ground_truth_answer": "No, the restocking fee can only be waived by a CSR if the item is returned unopened with the manufacturer's seal fully intact, upon photographic verification from the receiving warehouse.",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "My washing machine shakes violently. The installer left some large bolts on the back. Did they install it correctly?",
+    "ground_truth_answer": "No, the transit bolts used for shipping were likely not removed. Running the machine with transit bolts installed will cause severe damage and voids the warranty eligibility.",
+    "relevant_document_topic": "Washing Machine Troubleshooting and Service Requests",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "I sent my laptop in for repair. I forgot to backup my files and I left a BIOS password on it. What will happen?",
+    "ground_truth_answer": "ShopSphere is not responsible for lost data. Because there is a locked BIOS, if you cannot be reached to provide the password within 48 hours, the laptop will be returned to you unrepaired.",
+    "relevant_document_topic": "Laptop Replacement and Repair Policy",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "My smart speaker won't pair. Can I just get a replacement right away?",
+    "ground_truth_answer": "If you are a standard customer, you must complete the full Tier 2 diagnostic process (network troubleshooting) before an Advanced Exchange RMA is authorized. If you are a Premium member, you can get a 'No Questions Asked' fast-track replacement for devices under $150.",
+    "relevant_document_topic": "Smart Device Technical Support Workflow",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "What is the battery health threshold required to get a complimentary remediation for a mobile device?",
+    "ground_truth_answer": "The telemetry data must return a maximum capacity below 80% within the standard coverage period to qualify.",
+    "relevant_document_topic": "Mobile Device Battery and Charging Diagnostics",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "My Premium Auto-Renewal payment failed because ShopSphere had an internal gateway outage. Do I get any compensation?",
+    "ground_truth_answer": "Yes, if the failure was caused by an internal gateway outage, you are eligible for a full fee waiver and an additional 14 days of complimentary Premium access.",
+    "relevant_document_topic": "Auto-Renewal Billing and Dispute Resolution",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "A third-party seller didn't respond to my dispute within 48 hours. What happens to my claim?",
+    "ground_truth_answer": "Because the merchant failed to respond, the system defaults to a vendor infraction state. ShopSphere initiates automatic customer compensation, drawing funds directly from the seller's escrow account.",
+    "relevant_document_topic": "Third-Party Seller Dispute Resolution",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I am a VIP account holder and I'm threatening to sue ShopSphere over this delayed order! Get me a manager!",
+    "ground_truth_answer": "Because you have used explicit litigation threats, this matches a legal escalation condition. The front-line VIP matrix is suspended, the chat will be frozen, and the interaction will be routed to the Executive Support desk.",
+    "relevant_document_topic": "Escalation Matrix for High-Priority Customers",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "I ordered an item using a standard account with free shipping, and it arrived 6 days late. Am I eligible for a refund?",
+    "ground_truth_answer": "Yes, a Tier 2 delay (4-7 days late) entitles you to a 15% partial refund of the order subtotal, capped at $40, issued to the original payment method.",
+    "relevant_document_topic": "Late Delivery Escalation Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "If a customer is extremely angry on the phone, what protocol must the CSR deploy?",
+    "ground_truth_answer": "The CSR must deploy the 'EAR' protocol, which stands for Empathy, Attention, and Respect, starting with acknowledging and validating the customer's frustration.",
+    "relevant_document_topic": "Angry Customer De-escalation Procedures",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "I need a refund for an order that was delivered 100 days ago. The item was $300. Can a Tier 2 specialist approve this?",
+    "ground_truth_answer": "No, a Tier 2 specialist can only approve refunds up to 60 days and capped at $150. A refund for 100 days and $300 requires authorization from a Customer Support Manager.",
+    "relevant_document_topic": "Refund Exception Approval Process",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "A massive regional cyberattack knocked out FedEx routing. My package is stuck. Can you do a delivery intercept and send it to my new address?",
+    "ground_truth_answer": "No. During a systemic Courier Failure Event, standard address correction procedures and delivery intercepts are completely disabled to prevent data collisions in the failing carrier's APIs.",
+    "relevant_document_topic": "Courier Partner Failure Handling",
+    "difficulty_level": "hard"
+  },
+  {
+    "user_question": "I purchased an item during a flash sale and earned 5x loyalty points. Do these points expire in a year like normal points?",
+    "ground_truth_answer": "No, points earned during promotional campaign exceptions are subject to strict expiration thresholds, typically 90 days, compared to the standard 365-day lifecycle.",
+    "relevant_document_topic": "Loyalty Points and Rewards Redemption Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "The warehouse opened my returned package and the box was totally empty. When will my refund hit my credit card?",
+    "ground_truth_answer": "An 'Empty Box Return' halts the Refund Processing Workflow immediately. Refunds are entirely suspended while an internal investigation, including carrier weight logs, is initiated.",
+    "relevant_document_topic": "Refund Processing Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I'm a premium member and my package was supposed to arrive today but it didn't. What compensation do I get?",
+    "ground_truth_answer": "If a Premium order is delayed by even a single day, the system will automatically trigger a proactive email notification containing a $20 Store Credit.",
+    "relevant_document_topic": "Late Delivery Escalation Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I want to exchange a shirt for a more expensive jacket. Can I just pay the difference?",
+    "ground_truth_answer": "No, the system does not support 'upgrade' exchanges. Exchanges are strictly limited to even swaps. You must process a standard return for a refund and create a new transaction for the jacket.",
+    "relevant_document_topic": "Exchange and Replacement Guidelines",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What happens if I don't tender my original item to the carrier within 14 days of an advanced replacement exchange?",
+    "ground_truth_answer": "If the original item is not scanned within 14 days, the pre-authorization hold on your credit card is captured, and you are permanently charged for both items.",
+    "relevant_document_topic": "Exchange and Replacement Guidelines",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "How long does a Tier 1 Premium agent have to respond on a chat vector?",
+    "ground_truth_answer": "The premium support path guarantees a live response threshold of under 60 seconds on chat vectors.",
+    "relevant_document_topic": "Premium Membership Benefits and Support Workflow",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "My account was flagged for fraud after upgrading to Premium and then downgrading to Standard twice this month. Why?",
+    "ground_truth_answer": "If an account executes more than two tier changes within a 30-day window, an automated alert triggers account restrictions for suspected card-testing fraud or promotion abuse.",
+    "relevant_document_topic": "Membership Upgrade and Downgrade Handling",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "If my Samsung TV has an audio delay issue, what should I do before calling a technician?",
+    "ground_truth_answer": "You should perform a power cycle (unplugging the TV for 60 seconds) and a factory reset via the settings menu. If it persists, escalate to a Tier 2 Technical Specialist.",
+    "relevant_document_topic": "Samsung TV Warranty and Installation Support",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I bought a connected refrigerator and it won't pair with my ShopSphere app. How do I do a manual power cycle?",
+    "ground_truth_answer": "You must perform a manual microcontroller power cycle by turning off the appliance's dedicated circuit breaker in your home electrical panel for 90 seconds.",
+    "relevant_document_topic": "Smart Appliance Installation and Setup Support",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "The Executive Support Desk took over my complaint case. How fast do they have to resolve it completely?",
+    "ground_truth_answer": "The Executive Support Desk operates under an absolute 2-hour response SLA and a 24-hour total resolution SLA.",
+    "relevant_document_topic": "Executive Support and Priority Resolution Handling",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "My order says 'Delivered' but it's not on my porch. I waited 24 hours. Is it officially lost?",
+    "ground_truth_answer": "No. A package is only deemed lost due to Porch Piracy/Misdelivery if the customer denies receipt and 72 hours have passed since the delivery timestamp.",
+    "relevant_document_topic": "Lost Package Investigation Procedure",
+    "difficulty_level": "hard"
+  }
+]

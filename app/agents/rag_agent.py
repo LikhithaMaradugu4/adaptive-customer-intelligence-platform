@@ -4,13 +4,23 @@ from app.rag.retriever import (
     retrieve_documents
 )
 
+from app.utils.query_rewriter import (
+    rewrite_query
+)
+
+from app.utils.conversation import (
+    build_conversation_context
+)
+
 
 class RAGAgent:
     """
-    Retrieval-Augmented Generation Agent.
+    Enterprise RAG Agent
 
-    Retrieves relevant company knowledge
-    using semantic search.
+    Pipeline:
+    - Query rewriting
+    - Semantic retrieval
+    - Reranking
     """
 
     def __init__(self):
@@ -24,15 +34,55 @@ class RAGAgent:
 
         try:
 
-            query = state.query
+            # ---------------------------------
+            # Build conversation context
+            # ---------------------------------
+
+            conversation_context = (
+                build_conversation_context(
+                    state.conversation_history
+                )
+            )
+
+            # ---------------------------------
+            # Query rewriting
+            # ---------------------------------
+
+            rewritten_query = (
+                rewrite_query(
+                    query=state.query,
+                    conversation_context=(
+                        conversation_context
+                    )
+                )
+            )
+
+            print("\nOriginal Query:")
+            print(state.query)
+
+            print("\nRewritten Query:")
+            print(rewritten_query)
+
+            # ---------------------------------
+            # Retrieve documents
+            # ---------------------------------
 
             retrieved_docs = (
                 retrieve_documents(
-                    query=query,
-                    intents=state.intent,
+                    query=rewritten_query,
                     k=self.top_k
                 )
             )
+
+            print(
+                f"\nRetrieved "
+                f"{len(retrieved_docs)} "
+                f"documents."
+            )
+
+            # ---------------------------------
+            # Update state
+            # ---------------------------------
 
             state.retrieved_docs = (
                 retrieved_docs
@@ -40,7 +90,17 @@ class RAGAgent:
 
             state.metadata[
                 "retrieved_documents"
-            ] = len(retrieved_docs)
+            ] = len(
+                retrieved_docs
+            )
+
+            state.metadata[
+                "rewritten_query"
+            ] = rewritten_query
+
+            state.metadata[
+                "retrieval_source"
+            ] = "reranked_vector_search"
 
             return state
 

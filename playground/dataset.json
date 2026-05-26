@@ -1,0 +1,32 @@
+[
+  {
+    "user_question": "What is the timeframe for a standard customer to initiate a return?",
+    "ground_truth_answer": "Standard ShopSphere account holders can initiate a return within 30 calendar days from the date the carrier marks the parcel as 'Delivered'. They then have an additional 14 calendar days to tender the package to an authorized carrier.[cite: 1, 2]",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "easy"
+  },
+  {
+    "user_question": "Can I still return it? It's been 45 days since it arrived, but I have a ShopSphere Premium membership.",
+    "ground_truth_answer": "Yes, you can still return it. ShopSphere Premium members receive an extended return window of 60 calendar days from the delivery date, plus a 21-day package tender window.[cite: 1, 2]",
+    "relevant_document_topic": "Standard Return Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "How much does return shipping cost if I am returning a damaged laptop?",
+    "ground_truth_answer": "Return shipping costs are entirely waived for damaged products, and a prepaid overnight or two-day shipping label will be issued. Any standard restocking fees (such as the 15% for electronics) are also absolutely nullified.[cite: 1, 2]",
+    "relevant_document_topic": "Damaged Product Return Policy",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "What happens if a warehouse inspector opens a customer's return and the box is completely empty?",
+    "ground_truth_answer": "If an empty box is received, the Refund Processing Workflow is immediately halted. The customer will be informed that an internal investigation with carrier weight logs has been initiated, and refunds are entirely suspended during this period.[cite: 1, 2]",
+    "relevant_document_topic": "Refund Processing Workflow",
+    "difficulty_level": "medium"
+  },
+  {
+    "user_question": "I want to exchange my large shirt for a medium, but also upgrade to a more expensive jacket. How does that work?",
+    "ground_truth_answer": "The system does not support 'upgrade' exchanges where you pay the difference. Exchanges are strictly limited to even swaps with the exact same retail price. You must process a standard return for a refund, and then create a completely new, separate transaction for the jacket.[cite: 1, 2]",
+    "relevant_document_topic": "Exchange and Replacement Guidelines",
+    "difficulty_level": "hard"
+  }
+]

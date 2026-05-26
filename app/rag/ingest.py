@@ -1,10 +1,14 @@
 import os
-import json
 
-from langchain_core.documents import Document
+from pathlib import Path
+
 
 from langchain_text_splitters import (
     RecursiveCharacterTextSplitter
+)
+
+from langchain_community.document_loaders import (
+    PyPDFLoader
 )
 
 from langchain_community.embeddings import (
@@ -13,11 +17,14 @@ from langchain_community.embeddings import (
 
 from langchain_chroma import Chroma
 
+
 # ---------------------------------
 # Embedding model
 # ---------------------------------
 
-embedding_model = FastEmbedEmbeddings()
+embedding_model = (
+    FastEmbedEmbeddings()
+)
 
 # ---------------------------------
 # Vector DB path
@@ -26,92 +33,85 @@ embedding_model = FastEmbedEmbeddings()
 CHROMA_PATH = "chroma_db"
 
 # ---------------------------------
-# Load markdown documents
+# KB folder
 # ---------------------------------
-
-documents = []
 
 KB_PATH = "data/knowledge_base"
 
-for filename in os.listdir(KB_PATH):
-
-    if filename.endswith(".md"):
-
-        file_path = os.path.join(
-            KB_PATH,
-            filename
-        )
-
-        with open(
-            file_path,
-            "r",
-            encoding="utf-8"
-        ) as f:
-
-            content = f.read()
-
-        documents.append(
-            Document(
-                page_content=content,
-                metadata={
-                    "source": filename
-                }
-            )
-        )
-
 # ---------------------------------
-# Load FAQs
+# Chunking strategy
 # ---------------------------------
 
-FAQ_PATH = "data/faqs/faqs.json"
-
-with open(
-    FAQ_PATH,
-    "r",
-    encoding="utf-8"
-) as f:
-
-    faq_data = json.load(f)
-
-for item in faq_data:
-
-    faq_text = (
-        f"Question: {item['question']}\n"
-        f"Answer: {item['answer']}"
+splitter = (
+    RecursiveCharacterTextSplitter(
+        chunk_size=800,
+        chunk_overlap=150
     )
-
-    documents.append(
-        Document(
-            page_content=faq_text,
-            metadata={
-                "source": "faq"
-            }
-        )
-    )
-
-# ---------------------------------
-# Chunk documents
-# ---------------------------------
-
-splitter = RecursiveCharacterTextSplitter(
-    chunk_size=500,
-    chunk_overlap=100
 )
 
-chunks = splitter.split_documents(
-    documents
-)
-
-print(f"\nTotal chunks created: {len(chunks)}")
+all_chunks = []
 
 # ---------------------------------
-# Create Chroma vector DB
+# Load PDFs
+# ---------------------------------
+
+for pdf_path in Path(
+    KB_PATH
+).glob("*.pdf"):
+
+    print(
+        f"\nProcessing: {pdf_path.name}"
+    )
+
+    loader = PyPDFLoader(
+        str(pdf_path)
+    )
+
+    documents = loader.load()
+
+    chunks = splitter.split_documents(
+        documents
+    )
+
+    # ---------------------------------
+    # Metadata enrichment
+    # ---------------------------------
+
+    for chunk in chunks:
+
+        chunk.metadata[
+            "source_file"
+        ] = pdf_path.name
+
+        chunk.metadata[
+            "category"
+        ] = pdf_path.stem
+
+        chunk.metadata[
+            "document_type"
+        ] = "policy"
+
+    all_chunks.extend(chunks)
+
+# ---------------------------------
+# Final stats
+# ---------------------------------
+
+print(
+    f"\nTotal chunks created: "
+    f"{len(all_chunks)}"
+)
+
+# ---------------------------------
+# Create vector DB
 # ---------------------------------
 
 vector_store = Chroma.from_documents(
-    documents=chunks,
+    documents=all_chunks,
     embedding=embedding_model,
     persist_directory=CHROMA_PATH
 )
 
-print("\nChromaDB created successfully.")
+print(
+    "\nChromaDB created successfully."
+)

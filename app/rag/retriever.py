@@ -4,6 +4,9 @@ from langchain_community.embeddings import (
 
 from langchain_chroma import Chroma
 
+from app.utils.reranker import (
+    rerank_documents
+)
 
 # ---------------------------------
 # Vector DB path
@@ -15,10 +18,12 @@ CHROMA_PATH = "chroma_db"
 # Embedding model
 # ---------------------------------
 
-embedding_model = FastEmbedEmbeddings()
+embedding_model = (
+    FastEmbedEmbeddings()
+)
 
 # ---------------------------------
-# Load existing vector DB
+# Load vector DB
 # ---------------------------------
 
 vector_store = Chroma(
@@ -26,115 +31,73 @@ vector_store = Chroma(
     embedding_function=embedding_model
 )
 
-# ---------------------------------
-# Intent-aware retrieval filters
-# ---------------------------------
-
-INTENT_FILTERS = {
-
-    "REFUND_ISSUE": [
-        "refund"
-    ],
-
-    "RETURN_ISSUE": [
-        "return"
-    ],
-
-    "DELIVERY_ISSUE": [
-        "delivery",
-        "shipping"
-    ],
-
-    "PRODUCT_ISSUE": [
-        "product",
-        "warranty"
-    ],
-
-    "PAYMENT_ISSUE": [
-        "payment"
-    ],
-
-    "ACCOUNT_ISSUE": [
-        "account"
-    ]
-}
-
 
 def retrieve_documents(
     query: str,
-    intents=None,
     k: int = 3
 ):
     """
-    Intent-aware semantic retrieval.
+    Enterprise retrieval pipeline.
+
+    - Vector retrieval
+    - Reranking
     """
 
-    results = vector_store.similarity_search(
-        query,
-        k=10
+    # ---------------------------------
+    # Candidate retrieval
+    # ---------------------------------
+
+    candidate_docs = (
+        vector_store.similarity_search(
+            query,
+            k=8
+        )
     )
 
-    filtered_results = []
-
     # ---------------------------------
-    # Intent-aware filtering
+    # Rerank
     # ---------------------------------
 
-    if intents:
-
-        allowed_keywords = []
-
-        for intent in intents:
-
-            allowed_keywords.extend(
-                INTENT_FILTERS.get(
-                    intent,
-                    []
-                )
-            )
-
-        for doc in results:
-
-            content = (
-                doc.page_content.lower()
-            )
-
-            source = (
-                doc.metadata.get(
-                    "source",
-                    ""
-                ).lower()
-            )
-
-            if any(
-                keyword in content
-                or keyword in source
-                for keyword in allowed_keywords
-            ):
-
-                filtered_results.append(
-                    doc
-                )
-
-    # ---------------------------------
-    # Fallback
-    # ---------------------------------
-
-    if not filtered_results:
-
-        filtered_results = results[:k]
+    reranked_docs = (
+        rerank_documents(
+            query=query,
+            documents=candidate_docs
+        )
+    )
 
     retrieved_docs = []
 
-    for doc in filtered_results[:k]:
+    # ---------------------------------
+    # Final formatting
+    # ---------------------------------
+
+    for doc in reranked_docs[:k]:
 
         retrieved_docs.append({
 
-            "content": doc.page_content,
+            "content": (
+                doc.page_content
+            ),
 
-            "source": doc.metadata.get(
-                "source",
-                "unknown"
+            "source": (
+                doc.metadata.get(
+                    "source_file",
+                    "unknown"
+                )
+            ),
+
+            "page": (
+                doc.metadata.get(
+                    "page",
+                    "unknown"
+                )
+            ),
+
+            "category": (
+                doc.metadata.get(
+                    "category",
+                    "unknown"
+                )
             )
         })
 
