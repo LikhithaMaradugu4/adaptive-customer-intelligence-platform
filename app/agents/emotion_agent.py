@@ -3,8 +3,12 @@ from vaderSentiment.vaderSentiment import (
 )
 
 from app.state import CustomerState
-from app.services.llm_service import llm_service
+
 from app.schemas import EmotionOutput
+
+from app.services.llm_service import (
+    llm_service
+)
 
 from app.utils.conversation import (
     build_conversation_context
@@ -13,13 +17,18 @@ from app.utils.conversation import (
 
 class EmotionAgent:
     """
-    Hybrid Emotion Detection Agent
+    Enterprise-grade hybrid emotion agent.
 
-    Stage 1:
-    VADER sentiment analysis
+    Pipeline:
+    1. Fast VADER inference
+    2. LLM fallback for ambiguity
+    3. Conversational emotional continuity
 
-    Stage 2:
-    LLM fallback for ambiguous emotions
+    Goals:
+    - low latency
+    - emotionally aware support
+    - escalation awareness
+    - frustration progression tracking
     """
 
     def __init__(self):
@@ -28,18 +37,79 @@ class EmotionAgent:
             SentimentIntensityAnalyzer()
         )
 
-        self.confidence_threshold = 0.75
+        # ---------------------------------
+        # Confidence threshold
+        # ---------------------------------
+
+        self.confidence_threshold = 0.72
+
+        # ---------------------------------
+        # Strong escalation phrases
+        # ---------------------------------
+
+        self.high_risk_keywords = [
+
+            "worst",
+
+            "terrible",
+
+            "horrible",
+
+            "fraud",
+
+            "angry",
+
+            "useless",
+
+            "disappointed",
+
+            "not happy",
+
+            "cancel everything",
+
+            "ridiculous",
+
+            "pathetic",
+
+            "lawsuit",
+
+            "complaint",
+
+            "never again",
+
+            "very bad service"
+        ]
+
+    # ---------------------------------
+    # Strong keyword override
+    # ---------------------------------
+
+    def _contains_high_risk_keywords(
+        self,
+        query: str
+    ):
+
+        lowered_query = query.lower()
+
+        return any(
+
+            keyword in lowered_query
+
+            for keyword in self.high_risk_keywords
+        )
+
+    # ---------------------------------
+    # VADER prediction
+    # ---------------------------------
 
     def _predict_with_vader(
         self,
         query: str
     ):
-        """
-        Predict emotion using VADER.
-        """
 
-        scores = self.analyzer.polarity_scores(
-            query
+        scores = (
+            self.analyzer
+            .polarity_scores(query)
         )
 
         compound = scores["compound"]
@@ -50,15 +120,15 @@ class EmotionAgent:
         # Emotion mapping
         # ---------------------------------
 
-        if compound >= 0.5:
+        if compound >= 0.55:
 
             emotion = "SATISFIED"
 
-        elif compound >= 0:
+        elif compound >= 0.10:
 
             emotion = "NEUTRAL"
 
-        elif compound >= -0.5:
+        elif compound >= -0.45:
 
             emotion = "FRUSTRATED"
 
@@ -68,18 +138,15 @@ class EmotionAgent:
 
         return emotion, confidence
 
+    # ---------------------------------
+    # LLM emotional reasoning
+    # ---------------------------------
+
     def _predict_with_llm(
         self,
         query: str,
         conversation_history
     ):
-        """
-        LLM fallback for ambiguous emotion.
-        """
-
-        # ---------------------------------
-        # Build conversation context
-        # ---------------------------------
 
         conversation_context = (
             build_conversation_context(
@@ -88,68 +155,191 @@ class EmotionAgent:
         )
 
         prompt = f"""
-You are an emotion classification system
-for customer support.
+You are ShopSphere's emotion intelligence engine.
 
-Classify the customer's emotional state.
+TASK:
+Analyze the customer's emotional state.
 
-Possible emotions:
-
+AVAILABLE EMOTIONS:
 - ANGRY
 - FRUSTRATED
 - NEUTRAL
 - SATISFIED
 
-IMPORTANT:
-You must also analyze the customer's
-past conversation context to understand
-emotion progression and emotional continuity.
+IMPORTANT ANALYSIS RULES:
+
+1. Analyze emotional progression
+across conversation history.
+
+2. Detect escalation patterns:
+   - repeated complaints
+   - disappointment
+   - frustration buildup
+   - passive aggression
+
+3. Customer may sound polite
+while still emotionally frustrated.
+
+4. Use BOTH:
+   - current query
+   - previous conversational tone
+
+5. If customer expresses:
+   - appreciation
+   - gratitude
+   - satisfaction
+   classify as SATISFIED.
+
+6. If customer expresses:
+   - irritation
+   - repeated dissatisfaction
+   - complaint repetition
+   classify as FRUSTRATED.
+
+7. If customer expresses:
+   - anger
+   - threats
+   - strong negative wording
+   classify as ANGRY.
 
 Conversation Context:
 {conversation_context}
 
 Current Customer Query:
-"{query}"
+{query}
 
 Return:
 - emotion
 - confidence
+
+Confidence must be between:
+0.0 and 1.0
 """
 
-        llm = llm_service.get_llm_for_agent(
-            agent_name="emotion",
-            temperature=0.0
-        )
+        response = (
+            llm_service
+            .invoke_with_fallback(
 
-        structured_llm = (
-            llm.with_structured_output(
-                EmotionOutput
+                agent_name="emotion",
+
+                prompt=prompt,
+
+                temperature=0.0,
+
+                structured_output=EmotionOutput
             )
         )
 
-        response = structured_llm.invoke(
-            prompt
-        )
-
         return (
+
             response.emotion,
+
             response.confidence
         )
+
+    # ---------------------------------
+    # Emotional continuity upgrade
+    # ---------------------------------
+
+    def _adjust_using_history(
+        self,
+        current_emotion: str,
+        conversation_history
+    ):
+
+        if not conversation_history:
+
+            return current_emotion
+
+        recent_messages = (
+            conversation_history[-6:]
+        )
+
+        frustration_count = 0
+
+        for item in recent_messages:
+
+            message = (
+                item.get(
+                    "message",
+                    ""
+                ).lower()
+            )
+
+            if any(
+
+                keyword in message
+
+                for keyword in [
+
+                    "refund",
+
+                    "again",
+
+                    "still",
+
+                    "not working",
+
+                    "issue",
+
+                    "problem",
+
+                    "bad",
+
+                    "angry",
+
+                    "frustrated"
+                ]
+            ):
+
+                frustration_count += 1
+
+        # ---------------------------------
+        # Escalate neutral → frustrated
+        # ---------------------------------
+
+        if (
+            frustration_count >= 3
+            and current_emotion == "NEUTRAL"
+        ):
+
+            return "FRUSTRATED"
+
+        return current_emotion
+
+    # ---------------------------------
+    # Main execution
+    # ---------------------------------
 
     def run(
         self,
         state: CustomerState
     ) -> CustomerState:
-        """
-        Main execution workflow.
-        """
 
         try:
 
             query = state.query
 
             # ---------------------------------
-            # Stage 1: VADER prediction
+            # Strong keyword override
+            # ---------------------------------
+
+            if self._contains_high_risk_keywords(
+                query
+            ):
+
+                state.emotion = "ANGRY"
+
+                state.emotion_confidence = 0.95
+
+                state.metadata[
+                    "emotion_source"
+                ] = "keyword_override"
+
+                return state
+
+            # ---------------------------------
+            # Fast VADER stage
             # ---------------------------------
 
             emotion, confidence = (
@@ -160,13 +350,27 @@ Return:
 
             print("\nEmotion Prediction:")
             print(emotion)
+
+            print("\nConfidence:")
             print(confidence)
 
             # ---------------------------------
-            # High confidence → use VADER
+            # High-confidence fast path
             # ---------------------------------
 
-            if confidence >= self.confidence_threshold:
+            if (
+                confidence >=
+                self.confidence_threshold
+            ):
+
+                emotion = (
+                    self._adjust_using_history(
+
+                        emotion,
+
+                        state.conversation_history
+                    )
+                )
 
                 state.emotion = emotion
 
@@ -181,16 +385,31 @@ Return:
                 return state
 
             # ---------------------------------
-            # Low confidence → LLM fallback
+            # LLM fallback
             # ---------------------------------
 
             print(
-                "\nUsing Emotion LLM fallback..."
+                "\nUsing LLM emotion fallback..."
             )
 
             emotion, llm_confidence = (
                 self._predict_with_llm(
+
                     query,
+
+                    state.conversation_history
+                )
+            )
+
+            # ---------------------------------
+            # Historical emotional continuity
+            # ---------------------------------
+
+            emotion = (
+                self._adjust_using_history(
+
+                    emotion,
+
                     state.conversation_history
                 )
             )
@@ -218,8 +437,16 @@ Return:
 
             state.retry_count += 1
 
+            # ---------------------------------
+            # Safe fallback
+            # ---------------------------------
+
             state.emotion = "NEUTRAL"
 
             state.emotion_confidence = 0.0
+
+            state.metadata[
+                "emotion_source"
+            ] = "safe_fallback"
 
             return state

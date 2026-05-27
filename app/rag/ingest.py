@@ -2,13 +2,12 @@ import os
 
 from pathlib import Path
 
-
 from langchain_text_splitters import (
     RecursiveCharacterTextSplitter
 )
 
 from langchain_community.document_loaders import (
-    PyPDFLoader
+    PyMuPDFLoader
 )
 
 from langchain_community.embeddings import (
@@ -33,7 +32,7 @@ embedding_model = (
 CHROMA_PATH = "chroma_db"
 
 # ---------------------------------
-# KB folder
+# Knowledge base folder
 # ---------------------------------
 
 KB_PATH = "data/knowledge_base"
@@ -45,7 +44,14 @@ KB_PATH = "data/knowledge_base"
 splitter = (
     RecursiveCharacterTextSplitter(
         chunk_size=800,
-        chunk_overlap=150
+        chunk_overlap=150,
+        separators=[
+            "\n\n",
+            "\n",
+            ". ",
+            " ",
+            ""
+        ]
     )
 )
 
@@ -55,43 +61,82 @@ all_chunks = []
 # Load PDFs
 # ---------------------------------
 
-for pdf_path in Path(
-    KB_PATH
-).glob("*.pdf"):
+pdf_files = list(
+    Path(KB_PATH).glob("*.pdf")
+)
+
+if not pdf_files:
+
+    print(
+        "\nNo PDF files found."
+    )
+
+    exit()
+
+for pdf_path in pdf_files:
 
     print(
         f"\nProcessing: {pdf_path.name}"
     )
 
-    loader = PyPDFLoader(
-        str(pdf_path)
-    )
+    try:
 
-    documents = loader.load()
+        # ---------------------------------
+        # Load PDF
+        # ---------------------------------
 
-    chunks = splitter.split_documents(
-        documents
-    )
+        loader = PyMuPDFLoader(
+            str(pdf_path)
+        )
 
-    # ---------------------------------
-    # Metadata enrichment
-    # ---------------------------------
+        documents = loader.load()
 
-    for chunk in chunks:
+        print(
+            f"Pages loaded: {len(documents)}"
+        )
 
-        chunk.metadata[
-            "source_file"
-        ] = pdf_path.name
+        # ---------------------------------
+        # Split into chunks
+        # ---------------------------------
 
-        chunk.metadata[
-            "category"
-        ] = pdf_path.stem
+        chunks = splitter.split_documents(
+            documents
+        )
 
-        chunk.metadata[
-            "document_type"
-        ] = "policy"
+        print(
+            f"Chunks created: {len(chunks)}"
+        )
 
-    all_chunks.extend(chunks)
+        # ---------------------------------
+        # Metadata enrichment
+        # ---------------------------------
+
+        for index, chunk in enumerate(chunks):
+
+            chunk.metadata[
+                "source_file"
+            ] = pdf_path.name
+
+            chunk.metadata[
+                "category"
+            ] = pdf_path.stem
+
+            chunk.metadata[
+                "document_type"
+            ] = "policy"
+
+            chunk.metadata[
+                "chunk_id"
+            ] = index
+
+        all_chunks.extend(chunks)
+
+    except Exception as error:
+
+        print(
+            f"Error processing "
+            f"{pdf_path.name}: {error}"
+        )
 
 # ---------------------------------
 # Final stats
@@ -103,15 +148,23 @@ print(
 )
 
 # ---------------------------------
-# Create vector DB
+# Create ChromaDB
 # ---------------------------------
 
-vector_store = Chroma.from_documents(
-    documents=all_chunks,
-    embedding=embedding_model,
-    persist_directory=CHROMA_PATH
-)
+if all_chunks:
 
-print(
-    "\nChromaDB created successfully."
-)
+    vector_store = Chroma.from_documents(
+        documents=all_chunks,
+        embedding=embedding_model,
+        persist_directory=CHROMA_PATH
+    )
+
+    print(
+        "\nChromaDB created successfully."
+    )
+
+else:
+
+    print(
+        "\nNo chunks available."
+    )

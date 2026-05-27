@@ -177,7 +177,42 @@ class SessionService:
                 }
             }
         )
-
+    def delete_session(
+          self,
+          session_id: str
+      ):
+          """
+          Delete chat session and messages.
+          """
+      
+          try:
+      
+              # ---------------------------------
+              # Delete messages
+              # ---------------------------------
+      
+              self.messages_collection.delete_many({
+      
+                  "session_id": session_id
+              })
+      
+              # ---------------------------------
+              # Delete session
+              # ---------------------------------
+      
+              self.sessions_collection.delete_one({
+      
+                  "session_id": session_id
+              })
+      
+              return True
+      
+          except Exception as e:
+      
+              print("\nDelete Session ERROR:")
+              print(str(e))
+      
+              return False
 
 # ---------------------------------
 # Singleton instance

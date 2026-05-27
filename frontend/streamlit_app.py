@@ -6,6 +6,8 @@ sys.path.append(str(ROOT_DIR))
 
 import streamlit as st
 
+from dotenv import load_dotenv
+
 from app.graph import graph
 
 from app.state import CustomerState
@@ -17,7 +19,10 @@ from app.services.session_service import (
 from app.services.customer_service import (
     customer_service
 )
-from dotenv import load_dotenv
+
+from app.utils.title_generator import (
+    generate_session_title
+)
 
 load_dotenv()
 
@@ -26,8 +31,14 @@ load_dotenv()
 # ---------------------------------
 
 st.set_page_config(
-    page_title="Adaptive Customer Intelligence Platform",
+
+    page_title=(
+        "Adaptive Customer "
+        "Intelligence Platform"
+    ),
+
     page_icon="🤖",
+
     layout="wide"
 )
 
@@ -49,7 +60,7 @@ st.markdown(
     }
 
     .title {
-        font-size: 32px;
+        font-size: 34px;
         font-weight: bold;
         margin-bottom: 5px;
     }
@@ -86,10 +97,14 @@ if "current_session_id" not in st.session_state:
 
 with st.sidebar:
 
-    st.markdown("## Customer Session")
+    st.markdown(
+        "## Customer Session"
+    )
 
     customer_id = st.text_input(
+
         "Customer ID",
+
         value="CUST_001"
     )
 
@@ -99,11 +114,10 @@ with st.sidebar:
     # New Chat
     # ---------------------------------
 
-    if st.button("➕ New Chat"):
-
-        # ---------------------------------
-        # Fetch customer profile
-        # ---------------------------------
+    if st.button(
+        "➕ New Chat",
+        use_container_width=True
+    ):
 
         customer_profile = (
             customer_service
@@ -126,17 +140,20 @@ with st.sidebar:
             )
 
             st.success(
-                f"New customer created: "
-                f"{customer_id}"
+                f"New customer created:"
+                f" {customer_id}"
             )
 
         # ---------------------------------
-        # Create new session
+        # Create session
         # ---------------------------------
 
         new_session = (
-            session_service.create_session(
+            session_service
+            .create_session(
+
                 customer_id=customer_id,
+
                 title="New Conversation"
             )
         )
@@ -149,14 +166,19 @@ with st.sidebar:
 
         st.session_state.customer_state = (
             CustomerState(
+
                 customer_id=customer_id,
+
                 session_id=(
                     new_session["session_id"]
                 ),
+
                 customer_profile=(
                     customer_profile
                 ),
+
                 conversation_history=[],
+
                 query=""
             )
         )
@@ -165,10 +187,13 @@ with st.sidebar:
 
     st.markdown("---")
 
-    st.markdown("### Previous Chats")
+    st.markdown(
+        "### Previous Chats"
+    )
 
     customer_sessions = (
-        session_service.get_customer_sessions(
+        session_service
+        .get_customer_sessions(
             customer_id
         )
     )
@@ -180,7 +205,9 @@ with st.sidebar:
     for session in customer_sessions:
 
         session_title = session.get(
+
             "title",
+
             "Untitled Chat"
         )
 
@@ -188,86 +215,222 @@ with st.sidebar:
             "session_id"
         ]
 
-        if st.button(
-            session_title,
-            key=session_id
-        ):
+        col1, col2 = st.columns(
+            [5, 1]
+        )
 
-            # ---------------------------------
-            # Load messages
-            # ---------------------------------
+        # ---------------------------------
+        # Open chat
+        # ---------------------------------
 
-            messages = (
-                session_service
-                .get_session_messages(
+        with col1:
+
+            is_active = (
+
+                st.session_state
+                .current_session_id
+
+                == session_id
+            )
+
+            button_label = (
+
+                f"🟢 {session_title}"
+
+                if is_active
+
+                else session_title
+            )
+
+            if st.button(
+
+                button_label,
+
+                key=f"open_{session_id}",
+
+                use_container_width=True
+            ):
+
+                messages = (
+                    session_service
+                    .get_session_messages(
+                        session_id
+                    )
+                )
+
+                customer_profile = (
+                    customer_service
+                    .get_customer_by_id(
+                        customer_id
+                    )
+                )
+
+                st.session_state.messages = []
+
+                conversation_history = []
+
+                for msg in messages:
+
+                    st.session_state.messages.append({
+
+                        "role": msg["role"],
+
+                        "content": msg["message"]
+                    })
+
+                    conversation_history.append({
+
+                        "role": msg["role"],
+
+                        "message": msg["message"]
+                    })
+
+                st.session_state.current_session_id = (
                     session_id
                 )
-            )
 
-            # ---------------------------------
-            # Fetch customer profile
-            # ---------------------------------
+                st.session_state.customer_state = (
+                    CustomerState(
 
-            customer_profile = (
-                customer_service
-                .get_customer_by_id(
-                    customer_id
+                        customer_id=customer_id,
+
+                        session_id=session_id,
+
+                        customer_profile=(
+                            customer_profile
+                        ),
+
+                        conversation_history=(
+                            conversation_history
+                        ),
+
+                        query=""
+                    )
                 )
-            )
 
-            st.session_state.messages = []
+                st.rerun()
 
-            conversation_history = []
+        # ---------------------------------
+        # Delete chat
+        # ---------------------------------
 
-            for msg in messages:
+        with col2:
 
-                st.session_state.messages.append({
+            if st.button(
 
-                    "role": msg["role"],
+                "🗑️",
 
-                    "content": msg["message"]
-                })
+                key=f"delete_{session_id}"
+            ):
 
-                conversation_history.append({
-
-                    "role": msg["role"],
-
-                    "message": msg["message"]
-                })
-
-            # ---------------------------------
-            # Restore fully hydrated state
-            # ---------------------------------
-
-            st.session_state.current_session_id = (
-                session_id
-            )
-
-            st.session_state.customer_state = (
-                CustomerState(
-                    customer_id=customer_id,
-                    session_id=session_id,
-                    customer_profile=(
-                        customer_profile
-                    ),
-                    conversation_history=(
-                        conversation_history
-                    ),
-                    query=""
+                confirm_key = (
+                    f"confirm_delete_"
+                    f"{session_id}"
                 )
+
+                st.session_state[
+                    confirm_key
+                ] = True
+
+        # ---------------------------------
+        # Delete confirmation
+        # ---------------------------------
+
+        confirm_key = (
+            f"confirm_delete_{session_id}"
+        )
+
+        if st.session_state.get(
+            confirm_key,
+            False
+        ):
+
+            st.warning(
+                f"Delete '{session_title}'?"
             )
 
-            st.rerun()
+            confirm_col1, confirm_col2 = (
+                st.columns([1, 1])
+            )
 
-    st.markdown("---")
+            with confirm_col1:
+
+                if st.button(
+
+                    "Confirm",
+
+                    key=f"confirm_yes_"
+                    f"{session_id}"
+                ):
+
+                    success = (
+                        session_service
+                        .delete_session(
+                            session_id
+                        )
+                    )
+
+                    if success:
+
+                        if (
+
+                            st.session_state
+                            .current_session_id
+
+                            == session_id
+                        ):
+
+                            st.session_state.messages = []
+
+                            st.session_state.customer_state = None
+
+                            st.session_state.current_session_id = None
+
+                        st.success(
+                            "Chat deleted."
+                        )
+
+                    else:
+
+                        st.error(
+                            "Failed to delete chat."
+                        )
+
+                    st.session_state[
+                        confirm_key
+                    ] = False
+
+                    st.rerun()
+
+            with confirm_col2:
+
+                if st.button(
+
+                    "Cancel",
+
+                    key=f"confirm_no_"
+                    f"{session_id}"
+                ):
+
+                    st.session_state[
+                        confirm_key
+                    ] = False
+
+                    st.rerun()
 
     st.markdown(
         """
         ### System Features
-        - Company Policies Information
-        - Inventory Lookup
-        - Ticket Generation
-        - Solves User Queries
+
+        - Intent Detection
+        - Emotion Analysis
+        - Tool Calling
+        - Query Rewriting
+        - RAG Retrieval
+        - Reranking
+        - Escalation Workflow
+        - Follow-Up Agent
+        - MongoDB Memory
         """
     )
 
@@ -280,20 +443,12 @@ if (
     is None
 ):
 
-    # ---------------------------------
-    # Fetch customer profile
-    # ---------------------------------
-
     customer_profile = (
         customer_service
         .get_customer_by_id(
             customer_id
         )
     )
-
-    # ---------------------------------
-    # Auto-create customer
-    # ---------------------------------
 
     if not customer_profile:
 
@@ -304,18 +459,12 @@ if (
             )
         )
 
-        st.success(
-            f"New customer created: "
-            f"{customer_id}"
-        )
-
-    # ---------------------------------
-    # Create session
-    # ---------------------------------
-
     default_session = (
-        session_service.create_session(
+        session_service
+        .create_session(
+
             customer_id=customer_id,
+
             title="New Conversation"
         )
     )
@@ -326,14 +475,19 @@ if (
 
     st.session_state.customer_state = (
         CustomerState(
+
             customer_id=customer_id,
+
             session_id=(
                 default_session["session_id"]
             ),
+
             customer_profile=(
                 customer_profile
             ),
+
             conversation_history=[],
+
             query=""
         )
     )
@@ -343,18 +497,67 @@ if (
 # ---------------------------------
 
 st.markdown(
-    '<div class="title">'
-    'Adaptive Customer Intelligence Platform'
-    '</div>',
+    """
+    <div class="title">
+    Adaptive Customer Intelligence Platform
+    </div>
+    """,
     unsafe_allow_html=True
 )
 
 st.markdown(
-    '<div class="subtitle">'
-    'AI-powered multi-agent customer support assistant'
-    '</div>',
+    """
+    <div class="subtitle">
+    AI-powered multi-agent customer support assistant
+    </div>
+    """,
     unsafe_allow_html=True
 )
+
+# ---------------------------------
+# Global warnings
+# ---------------------------------
+
+if st.session_state.customer_state:
+
+    retry_count = (
+        st.session_state
+        .customer_state
+        .retry_count
+    )
+
+    errors = (
+        st.session_state
+        .customer_state
+        .errors
+    )
+
+    if retry_count >= 2:
+
+        st.warning(
+            " System experienced "
+            "multiple retries."
+        )
+
+    if errors:
+
+        latest_error = errors[-1]
+
+        st.warning(
+            f"System Notice: "
+            f"{latest_error}"
+        )
+
+# ---------------------------------
+# Empty chat placeholder
+# ---------------------------------
+
+if not st.session_state.messages:
+
+    st.info(
+        "👋 Start a conversation "
+        "with the AI assistant."
+    )
 
 # ---------------------------------
 # Display chat history
@@ -398,7 +601,7 @@ if user_query:
         st.markdown(user_query)
 
     # ---------------------------------
-    # Add user message to UI
+    # Update UI memory
     # ---------------------------------
 
     st.session_state.messages.append({
@@ -413,14 +616,18 @@ if user_query:
     # ---------------------------------
 
     session_service.save_message(
+
         session_id=current_session_id,
+
         customer_id=customer_id,
+
         role="user",
+
         message=user_query
     )
 
     # ---------------------------------
-    # Generate session title
+    # Generate title
     # ---------------------------------
 
     current_messages = (
@@ -429,16 +636,14 @@ if user_query:
 
     if len(current_messages) == 1:
 
-        from app.utils.title_generator import (
-            generate_session_title
-        )
-
         title = generate_session_title(
             user_query
         )
 
         session_service.update_session_title(
+
             session_id=current_session_id,
+
             title=title
         )
 
@@ -450,10 +655,6 @@ if user_query:
         user_query
     )
 
-    # ---------------------------------
-    # Update conversation history
-    # ---------------------------------
-
     st.session_state.customer_state.conversation_history.append({
 
         "role": "user",
@@ -462,29 +663,58 @@ if user_query:
     })
 
     # ---------------------------------
-    # Run graph
+    # Execute graph
     # ---------------------------------
 
-    with st.spinner("Processing..."):
+    try:
 
-        result = graph.invoke(
-            st.session_state
-            .customer_state
-            .model_dump()
-        )
+        with st.spinner(
+            "⚡ Running multi-agent workflow..."
+        ):
 
-        updated_state = (
-            CustomerState(
-                **result
+            result = graph.invoke(
+
+                st.session_state
+                .customer_state
+                .model_dump()
             )
-        )
 
-        st.session_state.customer_state = (
-            updated_state
-        )
+            updated_state = (
+                CustomerState(
+                    **result
+                )
+            )
+
+            st.session_state.customer_state = (
+                updated_state
+            )
+
+            assistant_response = (
+                updated_state.response
+            )
+
+    except Exception as e:
+
+        error_text = str(e)
+
+        if (
+            "rate_limit"
+            in error_text.lower()
+        ):
+
+            st.error(
+                "API rate limit reached."
+            )
+
+        else:
+
+            st.error(
+                "Unexpected system error."
+            )
 
         assistant_response = (
-            updated_state.response
+            "We are currently facing "
+            "technical difficulties."
         )
 
     # ---------------------------------
@@ -500,7 +730,30 @@ if user_query:
         )
 
     # ---------------------------------
-    # Add assistant message to UI
+    # Follow-up rendering
+    # ---------------------------------
+
+    if (
+        st.session_state
+        .customer_state
+        .follow_up_required
+    ):
+
+        followup_message = (
+            st.session_state
+            .customer_state
+            .follow_up_message
+        )
+
+        if followup_message:
+
+            st.info(
+                f"💡 "
+                f"{followup_message}"
+            )
+
+    # ---------------------------------
+    # Add assistant response to UI
     # ---------------------------------
 
     st.session_state.messages.append({
@@ -515,9 +768,13 @@ if user_query:
     # ---------------------------------
 
     session_service.save_message(
+
         session_id=current_session_id,
+
         customer_id=customer_id,
+
         role="assistant",
+
         message=assistant_response
     )
 
@@ -531,3 +788,14 @@ if user_query:
 
         "message": assistant_response
     })
+
+# ---------------------------------
+# Footer
+# ---------------------------------
+
+st.markdown("---")
+
+st.caption(
+    "Adaptive Customer Intelligence Platform • "
+    "Enterprise Multi-Agent Customer Support System"
+)

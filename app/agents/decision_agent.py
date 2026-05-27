@@ -37,20 +37,31 @@ from app.tools.retrieval_tools import (
 
 class DecisionAgent:
     """
-    Central operational reasoning agent.
+    Enterprise-grade orchestration agent.
 
-    Tool-calling orchestration layer.
+    Responsibilities:
+    - operational reasoning
+    - tool orchestration
+    - escalation detection
+    - retrieval triggering
+    - clarification minimization
     """
 
     def __init__(self):
 
+        # ---------------------------------
+        # High-risk intents
+        # ---------------------------------
+
         self.high_risk_intents = [
+
             "PAYMENT_ISSUE",
+
             "REFUND_ISSUE"
         ]
 
         # ---------------------------------
-        # Register tools
+        # Registered tools
         # ---------------------------------
 
         self.tools = [
@@ -68,16 +79,18 @@ class DecisionAgent:
             get_order_by_id,
 
             get_product_details,
+
             get_all_products
         ]
+
+    # ---------------------------------
+    # Business rules
+    # ---------------------------------
 
     def _apply_business_rules(
         self,
         state: CustomerState
     ):
-        """
-        Deterministic business rules.
-        """
 
         profile = (
             state.customer_profile or {}
@@ -97,7 +110,7 @@ class DecisionAgent:
         )
 
         # ---------------------------------
-        # Premium angry customer
+        # Premium angry escalation
         # ---------------------------------
 
         if (
@@ -106,31 +119,42 @@ class DecisionAgent:
         ):
 
             return {
+
                 "decision": "ESCALATE",
+
                 "priority": "HIGH",
+
                 "clarification_needed": False,
+
                 "human_approval_required": False,
+
                 "requires_rag": False
             }
 
         # ---------------------------------
-        # High-risk customer
+        # High-risk profile
         # ---------------------------------
 
         if profile_type == "HIGH_RISK":
 
             return {
+
                 "decision": "FRAUD_REVIEW",
+
                 "priority": "HIGH",
+
                 "clarification_needed": False,
+
                 "human_approval_required": True,
+
                 "approval_reason":
                     "high_risk_customer",
+
                 "requires_rag": False
             }
 
         # ---------------------------------
-        # Repeated unresolved issue
+        # Repeat unresolved issue
         # ---------------------------------
 
         same_intent_count = 0
@@ -145,17 +169,24 @@ class DecisionAgent:
 
         if (
             same_intent_count >= 2
-            and state.emotion in [
+            and emotion in [
+
                 "ANGRY",
+
                 "FRUSTRATED"
             ]
         ):
 
             return {
+
                 "decision": "ESCALATE",
+
                 "priority": "HIGH",
+
                 "clarification_needed": False,
+
                 "human_approval_required": False,
+
                 "requires_rag": False
             }
 
@@ -166,31 +197,42 @@ class DecisionAgent:
         if intent == "UNKNOWN_INTENT":
 
             return {
+
                 "decision": "CLARIFY",
+
                 "priority": "NORMAL",
+
                 "clarification_needed": True,
+
                 "clarification_question":
                     (
-                        "Could you please explain your issue in more detail?"
+                        "Could you explain "
+                        "your issue in a bit "
+                        "more detail?"
                     ),
+
                 "human_approval_required": False,
+
                 "requires_rag": False
             }
 
         return None
 
+    # ---------------------------------
+    # Execute tools
+    # ---------------------------------
+
     def _execute_tool_calls(
         self,
         tool_calls
     ):
-        """
-        Execute tool calls dynamically.
-        """
 
         tool_outputs = []
 
         tool_map = {
+
             tool.name: tool
+
             for tool in self.tools
         }
 
@@ -205,7 +247,8 @@ class DecisionAgent:
             )
 
             print(
-                f"\nExecuting Tool: {tool_name}"
+                f"\nExecuting Tool:"
+                f" {tool_name}"
             )
 
             try:
@@ -232,22 +275,97 @@ class DecisionAgent:
             except Exception as e:
 
                 print(
-                    f"\nTool Error: {str(e)}"
+                    f"\nTool ERROR:"
+                    f"\n{str(e)}"
                 )
 
         return tool_outputs
+
+    # ---------------------------------
+    # Build orchestration rules
+    # ---------------------------------
+
+    def _build_system_rules(self):
+
+        return """
+You are ShopSphere's intelligent orchestration engine.
+
+Your responsibilities:
+- determine operational action
+- orchestrate tool usage
+- reduce unnecessary clarification
+- intelligently retrieve customer context
+- intelligently retrieve company policy context
+
+CRITICAL BEHAVIOR RULES:
+
+1. NEVER ask for customer identity
+if customer_id already exists.
+
+2. Use tools aggressively whenever:
+   - customer references past orders
+   - customer references previous chats
+   - customer references purchases
+   - customer references products
+   - operational context is required
+
+3. General informational questions
+should usually become RESPOND.
+
+4. Clarification should ONLY happen if:
+   - information is truly missing
+   - operational action cannot proceed
+   - query is genuinely ambiguous
+
+5. If customer asks about:
+   - returns
+   - refunds
+   - cancellation
+   - shipping
+   - warranty
+   - company policy
+
+   use retrieve_policy_documents.
+
+6. If customer asks about:
+   - orders
+   - purchased products
+   - deliveries
+   - previous purchases
+
+   use commerce tools.
+
+7. Prefer operational grounding
+over asking repetitive questions.
+
+8. Avoid over-escalation.
+
+9. Escalation should happen ONLY for:
+   - sensitive operations
+   - fraud risk
+   - unresolved operational failures
+   - repeated frustration
+
+10. Use conversation history heavily.
+
+11. If enough information exists:
+    choose RESPOND.
+
+12. requires_rag should be TRUE
+ONLY if additional external knowledge
+retrieval is required.
+
+13. Never hallucinate operational actions.
+"""
+
+    # ---------------------------------
+    # Tool orchestration layer
+    # ---------------------------------
 
     def _llm_decision(
         self,
         state: CustomerState
     ):
-        """
-        Tool-calling decision layer.
-        """
-
-        # ---------------------------------
-        # Conversation context
-        # ---------------------------------
 
         conversation_context = (
             build_conversation_context(
@@ -256,81 +374,18 @@ class DecisionAgent:
         )
 
         # ---------------------------------
-        # Initial orchestration prompt
+        # Tool orchestration prompt
         # ---------------------------------
 
-        prompt = f"""
-You are an intelligent customer support orchestration agent.
+        orchestration_prompt = f"""
+{self._build_system_rules()}
 
-You have access to operational tools.
-
-Your responsibilities:
-- understand customer intent
-- determine operational action
-- decide whether retrieval is needed
-- decide whether escalation is needed
-- use tools whenever operational memory
-  or customer data is required
-
-  If customer asks about:
-- orders
-- purchased products
-- returns
-- deliveries
-- refunds
-- product availability at inventory
-
-use commerce tools.
-
-MANDATORY TOOL RULES:
-
-1. If customer asks about:
-   - their identity
-   - their name
-   - their account
-   - previous orders
-   - previous chats
-   - previous purchases
-
-   MUST use:
-   - get_customer_profile
-   - get_recent_messages
-   - get_customer_sessions
-
-2. If customer asks about:
-   - return policy
-   - refund policy
-   - shipping
-   - cancellation
-   - warranty
-   - company process
-
-   MUST use:
-   retrieve_policy_documents
-
-3. Do NOT ask clarification unnecessarily.
-
-4. Prefer answering using:
-   - retrieval
-   - operational memory
-   - tools
-
-5. Clarification should ONLY happen if:
-   - information is truly missing
-   - query is ambiguous
-   - action cannot proceed
-IMPORTANT:
+TASK:
+Determine whether operational tools
+must be used before final decision making.
 
 Current Customer ID:
 {state.customer_id}
-
-If customer_id already exists,
-DO NOT ask customer again for identity.
-Use profile tools directly.
-If they ask about products:
-use get_product_details tool.
-If they ask about orders:
-use get_customer_orders and get_order_by_id (if they specify order id) tools.
 
 Conversation Context:
 {conversation_context}
@@ -344,34 +399,32 @@ Customer Intent:
 Customer Emotion:
 {state.emotion}
 
-
-Retrieved Documents:
+Current Retrieved Documents:
 {state.retrieved_docs}
+
+IMPORTANT:
+Use tools whenever customer context,
+order context,
+policy context,
+or memory context is needed.
 """
 
         # ---------------------------------
-        # Create LLM
+        # Tool-calling inference
         # ---------------------------------
 
-        llm = llm_service.get_llm_for_agent(
-            agent_name="decision",
-            temperature=0.0
-        )
+        orchestration_response = (
+            llm_service
+            .invoke_with_fallback(
 
-        # ---------------------------------
-        # Bind tools
-        # ---------------------------------
+                agent_name="decision",
 
-        tool_llm = llm.bind_tools(
-            self.tools
-        )
+                prompt=orchestration_prompt,
 
-        # ---------------------------------
-        # First reasoning pass
-        # ---------------------------------
+                temperature=0.0,
 
-        response = tool_llm.invoke(
-            prompt
+                tools=self.tools
+            )
         )
 
         # ---------------------------------
@@ -380,11 +433,15 @@ Retrieved Documents:
 
         tool_outputs = []
 
-        if response.tool_calls:
+        if getattr(
+            orchestration_response,
+            "tool_calls",
+            None
+        ):
 
             tool_outputs = (
                 self._execute_tool_calls(
-                    response.tool_calls
+                    orchestration_response.tool_calls
                 )
             )
 
@@ -401,58 +458,39 @@ Retrieved Documents:
         # ---------------------------------
 
         final_prompt = f"""
-You are a customer support decision engine.
+{self._build_system_rules()}
 
-Generate the FINAL structured operational decision.
+TASK:
+Generate the FINAL structured decision.
 
-IMPORTANT RULES:
-
-1. Prefer RESPOND over CLARIFY
-   whenever sufficient knowledge exists.
-
-2. If tool outputs contain:
-   - policies
-   - operational memory
-   - customer context
-
-   then avoid clarification.
-
-3. General informational questions
-   should usually become:
-   RESPOND
-
-4. Escalation should happen ONLY for:
-   - unresolved operational issues
-   - high-risk situations
-   - repeated failures
-   - sensitive actions
-
-5. If retrieval/policy lookup is needed:
-   set requires_rag=True
-IMPORTANT:
-
-Current Customer ID:
-{state.customer_id}
-
-If customer_id already exists,
-DO NOT ask customer again for identity.
-Use profile tools directly.
-If customer asks about:
-- orders
-- purchased products
-- returns
-- deliveries
-- refunds
-- product availability at inventory
-
-use commerce tools.
-
-Decision Types:
+AVAILABLE DECISIONS:
 - RESPOND
 - ESCALATE
 - CLARIFY
 - OUT_OF_SCOPE
 - HUMAN_APPROVAL
+
+DECISION GUIDELINES:
+
+1. Prefer RESPOND whenever possible.
+
+2. Avoid clarification if:
+   - tools already provide context
+   - policies already provide answers
+   - operational context exists
+
+3. Escalate ONLY if truly needed.
+
+4. If additional company knowledge
+must still be retrieved:
+set requires_rag=True
+
+5. If retrieved information already
+appears sufficient:
+set requires_rag=False
+
+Current Customer ID:
+{state.customer_id}
 
 Conversation Context:
 {conversation_context}
@@ -466,26 +504,36 @@ Customer Intent:
 Customer Emotion:
 {state.emotion}
 
-Tool Outputs:
+Operational Tool Outputs:
 {tool_outputs}
 
 Retrieved Documents:
 {state.retrieved_docs}
 """
 
-        structured_llm = (
-            llm.with_structured_output(
-                DecisionOutput
-            )
-        )
+        # ---------------------------------
+        # Structured decision inference
+        # ---------------------------------
 
         final_response = (
-            structured_llm.invoke(
-                final_prompt
+            llm_service
+            .invoke_with_fallback(
+
+                agent_name="decision",
+
+                prompt=final_prompt,
+
+                temperature=0.0,
+
+                structured_output=DecisionOutput
             )
         )
 
         return final_response
+
+    # ---------------------------------
+    # Main execution
+    # ---------------------------------
 
     def run(
         self,
@@ -495,7 +543,8 @@ Retrieved Documents:
         try:
 
             # ---------------------------------
-            # Step 1: Deterministic rules
+            # Step 1
+            # Business rules
             # ---------------------------------
 
             rule_result = (
@@ -505,7 +554,7 @@ Retrieved Documents:
             )
 
             # ---------------------------------
-            # Apply rule-based decision
+            # Apply deterministic rules
             # ---------------------------------
 
             if rule_result:
@@ -561,7 +610,8 @@ Retrieved Documents:
                 return state
 
             # ---------------------------------
-            # Step 2: Tool-calling reasoning
+            # Step 2
+            # LLM orchestration
             # ---------------------------------
 
             decision_output = (
@@ -622,7 +672,7 @@ Retrieved Documents:
 
             state.metadata[
                 "decision_source"
-            ] = "tool_calling_llm"
+            ] = "llm_orchestration"
 
             print("\nDecision:")
             print(state.decision)
@@ -642,6 +692,10 @@ Retrieved Documents:
             )
 
             state.retry_count += 1
+
+            # ---------------------------------
+            # Safe fallback behavior
+            # ---------------------------------
 
             state.decision = "ESCALATE"
 
