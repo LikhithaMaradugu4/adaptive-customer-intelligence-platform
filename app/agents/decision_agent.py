@@ -6,8 +6,13 @@ from app.services.llm_service import (
     llm_service
 )
 
-from app.utils.conversation import (
-    build_conversation_context
+from app.utils.context_manager import (
+    get_agent_context
+)
+
+from app.utils.helpers import (
+    get_rag_reason,
+    should_use_rag
 )
 
 # ---------------------------------
@@ -224,7 +229,8 @@ class DecisionAgent:
 
     def _execute_tool_calls(
         self,
-        tool_calls
+        tool_calls,
+        state: CustomerState
     ):
 
         tool_outputs = []
@@ -246,9 +252,40 @@ class DecisionAgent:
                 tool_call["args"]
             )
 
+            # ---------------------------------
+            # Strict RAG gating
+            # ---------------------------------
+
+            if (
+                tool_name == "retrieve_policy_documents"
+                and not should_use_rag(
+                    state.query,
+                    state.intent,
+                    state.decision,
+                    state.intent_confidence
+                )
+            ):
+
+                state.metadata[
+                    "rag_reason"
+                ] = get_rag_reason(
+                    state.query,
+                    state.intent,
+                    state.decision,
+                    state.intent_confidence,
+                    False
+                )
+
+                print(
+                    f"\nSkipping Tool: "
+                    f"{tool_name}"
+                )
+
+                continue
+
             print(
-                f"\nExecuting Tool:"
-                f" {tool_name}"
+                f"\nExecuting Tool: "
+                f"{tool_name}"
             )
 
             try:
@@ -275,87 +312,77 @@ class DecisionAgent:
             except Exception as e:
 
                 print(
-                    f"\nTool ERROR:"
-                    f"\n{str(e)}"
+                    f"\nTool ERROR:\n{str(e)}"
                 )
 
         return tool_outputs
 
     # ---------------------------------
-    # Build orchestration rules
+    # Optimized orchestration rules
     # ---------------------------------
 
     def _build_system_rules(self):
 
         return """
-You are ShopSphere's intelligent orchestration engine.
+You are ShopSphere's orchestration engine.
 
-Your responsibilities:
-- determine operational action
-- orchestrate tool usage
-- reduce unnecessary clarification
-- intelligently retrieve customer context
-- intelligently retrieve company policy context
+Responsibilities:
+- choose operational action
+- orchestrate tools
+- minimize unnecessary clarification
+- retrieve customer/company context when needed
 
-CRITICAL BEHAVIOR RULES:
+RULES:
 
-1. NEVER ask for customer identity
-if customer_id already exists.
+1. Never ask for identity if customer_id exists.
 
-2. Use tools aggressively whenever:
-   - customer references past orders
-   - customer references previous chats
-   - customer references purchases
-   - customer references products
-   - operational context is required
+2. Use tools only when operational context is required:
+   - orders
+   - products
+   - deliveries
+   - purchases
+   - previous chats
+   - policies
+   - customer history
 
-3. General informational questions
-should usually become RESPOND.
+3. Never use tools for:
+   - greetings
+   - small talk
+   - jokes
+   - general knowledge
+   - unrelated queries
 
-4. Clarification should ONLY happen if:
-   - information is truly missing
-   - operational action cannot proceed
-   - query is genuinely ambiguous
-
-5. If customer asks about:
-   - returns
+4. Use retrieve_policy_documents only for:
    - refunds
-   - cancellation
+   - returns
+   - cancellations
    - shipping
    - warranty
    - company policy
 
-   use retrieve_policy_documents.
-
-6. If customer asks about:
+5. Use commerce tools for:
    - orders
-   - purchased products
    - deliveries
-   - previous purchases
+   - purchased products
+   - product lookup
 
-   use commerce tools.
+6. Prefer RESPOND whenever enough context exists.
 
-7. Prefer operational grounding
-over asking repetitive questions.
+7. Use CLARIFY only if critical information is missing.
 
-8. Avoid over-escalation.
-
-9. Escalation should happen ONLY for:
-   - sensitive operations
+8. Escalate only for:
    - fraud risk
-   - unresolved operational failures
-   - repeated frustration
+   - sensitive operations
+   - repeated unresolved frustration
+   - operational failure
 
-10. Use conversation history heavily.
+9. Set requires_rag=True only if external retrieval is still needed.
 
-11. If enough information exists:
-    choose RESPOND.
+10. If query is unrelated to ShopSphere:
+   - decision=OUT_OF_SCOPE
+   - requires_rag=False
 
-12. requires_rag should be TRUE
-ONLY if additional external knowledge
-retrieval is required.
-
-13. Never hallucinate operational actions.
+11. Never hallucinate policies or operational actions.
 """
 
     # ---------------------------------
@@ -367,9 +394,13 @@ retrieval is required.
         state: CustomerState
     ):
 
+        # ---------------------------------
+        # Lightweight context
+        # ---------------------------------
+
         conversation_context = (
-            build_conversation_context(
-                state.conversation_history
+            get_agent_context(
+                state
             )
         )
 
@@ -381,32 +412,28 @@ retrieval is required.
 {self._build_system_rules()}
 
 TASK:
-Determine whether operational tools
-must be used before final decision making.
+Determine whether tools are needed before final decision-making.
 
-Current Customer ID:
+Customer ID:
 {state.customer_id}
 
-Conversation Context:
-{conversation_context}
-
-Customer Query:
+Query:
 {state.query}
 
-Customer Intent:
+Intent:
 {state.intent}
 
-Customer Emotion:
+Emotion:
 {state.emotion}
 
-Current Retrieved Documents:
-{state.retrieved_docs}
+Conversation:
+{conversation_context}
 
-IMPORTANT:
-Use tools whenever customer context,
-order context,
-policy context,
-or memory context is needed.
+Retrieved Docs:
+{state.retrieved_docs[:2]}
+
+Use tools only if operational/customer/policy context is required.
+Skip tools for general or unrelated queries.
 """
 
         # ---------------------------------
@@ -441,7 +468,8 @@ or memory context is needed.
 
             tool_outputs = (
                 self._execute_tool_calls(
-                    orchestration_response.tool_calls
+                    orchestration_response.tool_calls,
+                    state
                 )
             )
 
@@ -461,54 +489,38 @@ or memory context is needed.
 {self._build_system_rules()}
 
 TASK:
-Generate the FINAL structured decision.
+Generate the final structured decision.
 
-AVAILABLE DECISIONS:
+Allowed Decisions:
 - RESPOND
 - ESCALATE
 - CLARIFY
 - OUT_OF_SCOPE
 - HUMAN_APPROVAL
 
-DECISION GUIDELINES:
+Guidelines:
+- Prefer RESPOND when sufficient context exists
+- Avoid unnecessary clarification
+- Escalate only when necessary
+- requires_rag=True only if more retrieval is needed
 
-1. Prefer RESPOND whenever possible.
-
-2. Avoid clarification if:
-   - tools already provide context
-   - policies already provide answers
-   - operational context exists
-
-3. Escalate ONLY if truly needed.
-
-4. If additional company knowledge
-must still be retrieved:
-set requires_rag=True
-
-5. If retrieved information already
-appears sufficient:
-set requires_rag=False
-
-Current Customer ID:
+Customer ID:
 {state.customer_id}
 
-Conversation Context:
-{conversation_context}
-
-Customer Query:
+Query:
 {state.query}
 
-Customer Intent:
+Intent:
 {state.intent}
 
-Customer Emotion:
+Emotion:
 {state.emotion}
 
-Operational Tool Outputs:
+Tool Outputs:
 {tool_outputs}
 
-Retrieved Documents:
-{state.retrieved_docs}
+Retrieved Docs:
+{state.retrieved_docs[:2]}
 """
 
         # ---------------------------------
@@ -607,6 +619,26 @@ Retrieved Documents:
                     "decision_source"
                 ] = "business_rules"
 
+                state.metadata[
+                    "rag_reason"
+                ] = get_rag_reason(
+                    state.query,
+                    state.intent,
+                    state.decision,
+                    state.intent_confidence,
+                    state.requires_rag
+                )
+
+                print("\nRAG Routing Debug:")
+                print(f"query: {state.query}")
+                print(f"intent: {state.intent}")
+                print(f"confidence: {state.intent_confidence}")
+                print(f"requires_rag: {state.requires_rag}")
+                print(
+                    f"rag_reason: "
+                    f"{state.metadata.get('rag_reason')}"
+                )
+
                 return state
 
             # ---------------------------------
@@ -665,9 +697,26 @@ Retrieved Documents:
                 .approval_reason
             )
 
+            rag_allowed = should_use_rag(
+                state.query,
+                state.intent,
+                decision_output.decision,
+                state.intent_confidence
+            )
+
             state.requires_rag = (
-                decision_output
-                .requires_rag
+                decision_output.requires_rag
+                and rag_allowed
+            )
+
+            state.metadata[
+                "rag_reason"
+            ] = get_rag_reason(
+                state.query,
+                state.intent,
+                decision_output.decision,
+                state.intent_confidence,
+                state.requires_rag
             )
 
             state.metadata[
@@ -679,6 +728,17 @@ Retrieved Documents:
 
             print("\nRequires RAG:")
             print(state.requires_rag)
+
+            print("\nRAG Routing Debug:")
+            print(f"query: {state.query}")
+            print(f"intent: {state.intent}")
+            print(f"confidence: {state.intent_confidence}")
+            print(f"requires_rag: {state.requires_rag}")
+
+            print(
+                f"rag_reason: "
+                f"{state.metadata.get('rag_reason')}"
+            )
 
             return state
 

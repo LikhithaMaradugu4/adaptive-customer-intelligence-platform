@@ -16,6 +16,9 @@ class CustomerState(BaseModel):
     # Current conversation memory
     conversation_history: List[Dict[str, str]] = Field(default_factory=list)
 
+    # Compressed conversation summary
+    summary: str = ""
+
     # Session tracking
     session_id: str = Field(default_factory=lambda: str(uuid.uuid4()))
 

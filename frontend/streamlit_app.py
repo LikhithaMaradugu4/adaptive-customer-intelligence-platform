@@ -91,6 +91,14 @@ if "current_session_id" not in st.session_state:
 
     st.session_state.current_session_id = None
 
+if "selected_customer_id" not in st.session_state:
+
+    st.session_state.selected_customer_id = ""
+
+if "active_customer_id" not in st.session_state:
+
+    st.session_state.active_customer_id = None
+
 # ---------------------------------
 # Sidebar
 # ---------------------------------
@@ -104,9 +112,38 @@ with st.sidebar:
     customer_id = st.text_input(
 
         "Customer ID",
-
-        value="CUST_001"
+        key="selected_customer_id",
+        placeholder="e.g., CUST_123"
     )
+
+    customer_id = (
+        st.session_state
+        .selected_customer_id
+        .strip()
+    )
+
+
+    if not customer_id:
+
+        st.session_state.active_customer_id = None
+
+    elif (
+
+        st.session_state
+        .active_customer_id
+
+        != customer_id
+    ):
+
+        st.session_state.active_customer_id = (
+            customer_id
+        )
+
+        st.session_state.current_session_id = None
+
+        st.session_state.customer_state = None
+
+        st.session_state.messages = []
 
     st.markdown("---")
 
@@ -118,6 +155,15 @@ with st.sidebar:
         "➕ New Chat",
         use_container_width=True
     ):
+
+        if not customer_id:
+
+            st.warning(
+                "Please enter a valid "
+                "customer ID."
+            )
+
+            st.stop()
 
         customer_profile = (
             customer_service
@@ -196,6 +242,8 @@ with st.sidebar:
         .get_customer_sessions(
             customer_id
         )
+        if customer_id
+        else []
     )
 
     # ---------------------------------
@@ -441,6 +489,7 @@ with st.sidebar:
 if (
     st.session_state.current_session_id
     is None
+    and customer_id
 ):
 
     customer_profile = (
@@ -518,6 +567,13 @@ st.markdown(
 # Global warnings
 # ---------------------------------
 
+if not customer_id:
+
+    st.warning(
+        "Please enter a valid "
+        "customer ID to start."
+    )
+
 if st.session_state.customer_state:
 
     retry_count = (
@@ -586,6 +642,23 @@ user_query = st.chat_input(
 # ---------------------------------
 
 if user_query:
+
+    if not customer_id:
+
+        st.warning(
+            "Please enter a "
+            "customer ID to continue."
+        )
+
+        st.stop()
+
+    if not st.session_state.customer_state:
+
+        st.error(
+            "No active customer session."
+        )
+
+        st.stop()
 
     current_session_id = (
         st.session_state
@@ -673,7 +746,6 @@ if user_query:
         ):
 
             result = graph.invoke(
-
                 st.session_state
                 .customer_state
                 .model_dump()

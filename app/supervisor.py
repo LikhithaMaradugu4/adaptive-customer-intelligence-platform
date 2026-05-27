@@ -139,6 +139,12 @@ class Supervisor:
 
             try:
 
+                print(
+                    "[Supervisor] "
+                    f"agent={agent_callable.__self__.__class__.__name__} "
+                    f"customer_id={state.customer_id}"
+                )
+
                 updated_state = agent_callable(
                     state
                 )

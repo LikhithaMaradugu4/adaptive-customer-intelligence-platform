@@ -4,8 +4,8 @@ from app.services.llm_service import (
     llm_service
 )
 
-from app.utils.conversation import (
-    build_conversation_context
+from app.utils.context_manager import (
+    get_agent_context
 )
 
 
@@ -18,14 +18,12 @@ class FollowUpAgent:
     - escalation reassurance
     - emotional recovery
     - workflow continuation
-    - proactive support
-    - conversational retention
     """
 
     def __init__(self):
 
         # ---------------------------------
-        # Follow-up enabled intents
+        # Workflow follow-up intents
         # ---------------------------------
 
         self.workflow_intents = [
@@ -39,60 +37,408 @@ class FollowUpAgent:
             "PAYMENT_ISSUE"
         ]
 
+        # ---------------------------------
+        # High-priority intents
+        # ---------------------------------
+
+        self.high_priority_intents = {
+
+            "PAYMENT_ISSUE",
+
+            "REFUND_ISSUE",
+
+            "DELIVERY_ISSUE",
+
+            "RETURN_ISSUE",
+
+            "ACCOUNT_ISSUE",
+
+            "PRODUCT_ISSUE",
+
+            "COMPLAINT"
+        }
+
+        # ---------------------------------
+        # Low-priority intents
+        # ---------------------------------
+
+        self.low_priority_intents = {
+
+            "GENERAL_QUERY",
+
+            "UNKNOWN_INTENT",
+
+            "NON_SUPPORT"
+        }
+
     # ---------------------------------
-    # Build follow-up system rules
+    # Normalize intents
+    # ---------------------------------
+
+    def _normalize_intents(
+        self,
+        intents
+    ):
+
+        if not intents:
+
+            return set()
+
+        return {
+
+            intent
+
+            for intent in intents
+
+            if isinstance(intent, str)
+        }
+
+    # ---------------------------------
+    # Greeting / casual detection
+    # ---------------------------------
+
+    def _is_greeting_or_small_talk(
+        self,
+        query: str
+    ) -> bool:
+
+        if not query:
+
+            return False
+
+        lowered = query.lower().strip()
+
+        greeting_phrases = [
+
+            "hi",
+
+            "hello",
+
+            "hey",
+
+            "good morning",
+
+            "good afternoon",
+
+            "good evening",
+
+            "how are you",
+
+            "what's up",
+
+            "thanks",
+
+            "thank you",
+
+            "bye",
+
+            "goodbye"
+        ]
+
+        return any(
+
+            lowered == phrase
+
+            or lowered.startswith(
+                f"{phrase} "
+            )
+
+            for phrase in greeting_phrases
+        )
+
+    # ---------------------------------
+    # Response action detection
+    # ---------------------------------
+
+    def _response_requests_action(
+        self,
+        response: str
+    ) -> bool:
+
+        if not response:
+
+            return False
+
+        lowered = response.lower()
+
+        action_markers = [
+
+            "please provide",
+
+            "please share",
+
+            "can you confirm",
+
+            "could you confirm",
+
+            "share your",
+
+            "provide your",
+
+            "confirm your",
+
+            "verify your",
+
+            "order id",
+
+            "order number",
+
+            "email address",
+
+            "phone number",
+
+            "verification",
+
+            "upload",
+
+            "send"
+        ]
+
+        if "?" in lowered:
+
+            return True
+
+        return any(
+
+            marker in lowered
+
+            for marker in action_markers
+        )
+
+    # ---------------------------------
+    # Response completion check
+    # ---------------------------------
+
+    def _response_is_complete(
+        self,
+        response: str
+    ) -> bool:
+
+        if not response:
+
+            return False
+
+        if self._response_requests_action(
+            response
+        ):
+
+            return False
+
+        return True
+
+    # ---------------------------------
+    # Account lock signal
+    # ---------------------------------
+
+    def _has_account_lock_signal(
+        self,
+        query: str
+    ) -> bool:
+
+        if not query:
+
+            return False
+
+        lowered = query.lower()
+
+        return any(
+
+            marker in lowered
+
+            for marker in [
+
+                "account locked",
+
+                "locked out",
+
+                "account suspended",
+
+                "account blocked",
+
+                "disabled account"
+            ]
+        )
+
+    # ---------------------------------
+    # Resolution detection
+    # ---------------------------------
+
+    def _issue_resolved(
+        self,
+        state: CustomerState
+    ) -> bool:
+
+        if state.clarification_needed:
+
+            return False
+
+        if state.decision in [
+
+            "ESCALATE",
+
+            "HUMAN_APPROVAL",
+
+            "FRAUD_REVIEW",
+
+            "CLARIFY"
+        ]:
+
+            return False
+
+        if state.emotion in [
+
+            "ANGRY",
+
+            "FRUSTRATED"
+        ]:
+
+            return False
+
+        if state.workflow_status and (
+
+            state.workflow_status.upper()
+            in [
+
+                "RESOLVED",
+
+                "COMPLETED",
+
+                "CLOSED",
+
+                "DONE"
+            ]
+        ):
+
+            return True
+
+        return self._response_is_complete(
+            state.response
+        )
+
+    # ---------------------------------
+    # Follow-up eligibility gating
+    # ---------------------------------
+
+    def _should_generate_followup(
+        self,
+        state: CustomerState
+    ) -> bool:
+
+        if not state.response:
+
+            return False
+
+        if self._is_greeting_or_small_talk(
+            state.query
+        ):
+
+            return False
+
+        intents = self._normalize_intents(
+            state.intent
+        )
+
+        if intents & self.low_priority_intents:
+
+            return False
+
+        if state.metadata.get(
+            "response_source"
+        ) == "clarification":
+
+            return False
+
+        if self._issue_resolved(state):
+
+            return False
+
+        if self._response_requests_action(
+            state.response
+        ):
+
+            return False
+
+        if state.clarification_needed:
+
+            return True
+
+        if state.decision in [
+
+            "ESCALATE",
+
+            "HUMAN_APPROVAL",
+
+            "FRAUD_REVIEW"
+        ]:
+
+            return True
+
+        if state.emotion in [
+
+            "ANGRY",
+
+            "FRUSTRATED"
+        ]:
+
+            return True
+
+        if self._has_account_lock_signal(
+            state.query
+        ):
+
+            return True
+
+        if intents & self.high_priority_intents:
+
+            return True
+
+        return False
+
+    # ---------------------------------
+    # Optimized system rules
     # ---------------------------------
 
     def _build_system_rules(self):
 
         return """
-You are ShopSphere's intelligent follow-up orchestration engine.
+You are ShopSphere's follow-up engine.
 
-Your role:
-- maintain conversational continuity
-- improve customer satisfaction
-- reduce frustration
-- guide workflow completion
-- provide proactive support
+Goal:
+Generate concise follow-ups only when they improve customer outcome.
 
-CRITICAL BEHAVIOR RULES:
+Rules:
+1. Follow-ups are rare and intentional.
+2. Never add filler or continue conversation unnecessarily.
+3. Never generate follow-ups for:
+   - greetings
+   - small talk
+   - FAQs
+   - resolved queries
+   - simple answered questions
 
-1. Follow-ups must feel:
+4. Generate follow-ups only for:
+   - clarification
+   - escalation reassurance
+   - emotional recovery
+   - incomplete workflows
+   - pending customer action
+   - critical refund/payment/order flows
+
+5. Never repeat the main response.
+
+6. Keep follow-ups:
+   - short
    - natural
-   - conversational
-   - non-robotic
-   - context-aware
+   - supportive
+   - operationally useful
 
-2. NEVER repeat the main response.
+7. Max 1 sentence.
 
-3. Follow-ups should:
-   - guide next steps
-   - reassure customers
-   - reduce confusion
-   - encourage completion
-
-4. If customer is frustrated:
-   prioritize emotional reassurance.
-
-5. If escalation happened:
-   reassure operational continuity.
-
-6. If workflow is incomplete:
-   encourage next-step continuation.
-
-7. Keep follow-ups concise.
-
-8. Avoid sounding pushy.
-
-9. Follow-ups should feel premium
-and human-like.
-
-10. Never hallucinate policies
-or timelines.
+8. Never hallucinate policies, timelines, or actions.
 """
 
     # ---------------------------------
-    # Generate intelligent follow-up
+    # Generate follow-up
     # ---------------------------------
 
     def _generate_followup(
@@ -101,9 +447,13 @@ or timelines.
         followup_type: str
     ):
 
+        # ---------------------------------
+        # Lightweight context
+        # ---------------------------------
+
         conversation_context = (
-            build_conversation_context(
-                state.conversation_history
+            get_agent_context(
+                state
             )
         )
 
@@ -111,32 +461,32 @@ or timelines.
 {self._build_system_rules()}
 
 TASK:
-Generate a concise intelligent follow-up.
+Generate a concise follow-up.
 
-Follow-Up Type:
+Type:
 {followup_type}
 
-Customer Emotion:
+Emotion:
 {state.emotion}
 
-Customer Intent:
+Intent:
 {state.intent}
 
 Decision:
 {state.decision}
 
-Latest Assistant Response:
+Assistant Response:
 {state.response}
 
-Conversation Context:
+Conversation:
 {conversation_context}
 
-IMPORTANT:
-- keep it short
+Requirements:
+- max 1 sentence
+- no filler
+- no repetition
 - conversational
-- supportive
 - context-aware
-- do not repeat previous response
 """
 
         result = (
@@ -147,12 +497,12 @@ IMPORTANT:
 
                 prompt=prompt,
 
-                temperature=0.4
+                temperature=0.3
             )
         )
 
         # ---------------------------------
-        # Handle raw string OR AIMessage
+        # Handle AIMessage or raw string
         # ---------------------------------
 
         if hasattr(
@@ -185,6 +535,20 @@ IMPORTANT:
 
             state.follow_up_message = None
 
+            intents = self._normalize_intents(
+                state.intent
+            )
+
+            # ---------------------------------
+            # Strict gating
+            # ---------------------------------
+
+            if not self._should_generate_followup(
+                state
+            ):
+
+                return state
+
             # ---------------------------------
             # Clarification continuity
             # ---------------------------------
@@ -212,14 +576,26 @@ IMPORTANT:
             # Escalation reassurance
             # ---------------------------------
 
-            if state.decision in [
+            if (
+                state.decision in [
 
-                "ESCALATE",
+                    "ESCALATE",
 
-                "HUMAN_APPROVAL",
+                    "HUMAN_APPROVAL",
 
-                "FRAUD_REVIEW"
-            ]:
+                    "FRAUD_REVIEW"
+                ]
+                and (
+                    state.emotion in [
+
+                        "ANGRY",
+
+                        "FRUSTRATED"
+                    ]
+                    or state.escalated
+                    or state.decision == "FRAUD_REVIEW"
+                )
+            ):
 
                 state.follow_up_required = True
 
@@ -270,11 +646,35 @@ IMPORTANT:
             # Workflow continuation
             # ---------------------------------
 
-            if any(
+            workflow_incomplete = (
 
-                intent in state.intent
+                not state.workflow_status
+                or state.workflow_status.upper()
+                not in [
 
-                for intent in self.workflow_intents
+                    "RESOLVED",
+
+                    "COMPLETED",
+
+                    "CLOSED",
+
+                    "DONE"
+                ]
+            )
+
+            if (
+                workflow_incomplete
+                and (
+                    any(
+
+                        intent in intents
+
+                        for intent in self.workflow_intents
+                    )
+                    or self._has_account_lock_signal(
+                        state.query
+                    )
+                )
             ):
 
                 state.follow_up_required = True
@@ -295,13 +695,29 @@ IMPORTANT:
                 return state
 
             # ---------------------------------
-            # Product recommendation follow-up
+            # Product workflow support
             # ---------------------------------
 
             if (
-                state.intent
-                and "PRODUCT_ISSUE"
-                in state.intent
+                "PRODUCT_ISSUE" in intents
+                and workflow_incomplete
+                and (
+                    state.clarification_needed
+                    or state.emotion in [
+
+                        "ANGRY",
+
+                        "FRUSTRATED"
+                    ]
+                    or state.decision in [
+
+                        "ESCALATE",
+
+                        "HUMAN_APPROVAL",
+
+                        "FRAUD_REVIEW"
+                    ]
+                )
             ):
 
                 state.follow_up_required = True
@@ -316,29 +732,6 @@ IMPORTANT:
                         state,
 
                         "smart_recommendation"
-                    )
-                )
-
-                return state
-
-            # ---------------------------------
-            # Satisfaction reinforcement
-            # ---------------------------------
-
-            if state.emotion == "SATISFIED":
-
-                state.follow_up_required = True
-
-                state.follow_up_type = (
-                    "satisfaction_reinforcement"
-                )
-
-                state.follow_up_message = (
-                    self._generate_followup(
-
-                        state,
-
-                        "satisfaction_reinforcement"
                     )
                 )
 

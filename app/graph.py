@@ -37,6 +37,10 @@ from app.agents.response_agent import (
 from app.agents.followup_agent import (
     FollowUpAgent
 )
+
+from app.utils.summarizer import (
+    update_conversation_summary
+)
 # ---------------------------------
 # Initialize agents
 # ---------------------------------
@@ -134,6 +138,19 @@ def followup_node(
         state=state,
         validator=None
     )
+
+
+def summary_node(
+    state: CustomerState
+) -> CustomerState:
+    """
+    Compress older messages into a summary
+    before heavy agent processing.
+    """
+
+    return update_conversation_summary(
+        state
+    )
 # ---------------------------------
 # Conditional routing
 # ---------------------------------
@@ -228,12 +245,22 @@ builder.add_node(
     followup_node
 )
 
+builder.add_node(
+    "summary_agent",
+    summary_node
+)
+
 # ---------------------------------
 # Main execution flow
 # ---------------------------------
 
 builder.add_edge(
     START,
+    "summary_agent"
+)
+
+builder.add_edge(
+    "summary_agent",
     "intent_agent"
 )
 

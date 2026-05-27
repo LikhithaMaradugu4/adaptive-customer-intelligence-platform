@@ -12,8 +12,13 @@ from app.services.llm_service import (
     llm_service
 )
 
-from app.utils.conversation import (
-    build_conversation_context
+from app.utils.context_manager import (
+    get_agent_context
+)
+
+from app.utils.helpers import (
+    is_domain_relevant,
+    is_non_support_query
 )
 
 
@@ -25,12 +30,6 @@ class IntentAgent:
     1. Fast ML inference
     2. LLM fallback
     3. Conversational continuity reasoning
-
-    Goals:
-    - low latency
-    - high accuracy
-    - multi-intent awareness
-    - contextual continuity
     """
 
     def __init__(self):
@@ -71,7 +70,7 @@ class IntentAgent:
         )
 
         # ---------------------------------
-        # Strong keyword overrides
+        # Keyword overrides
         # ---------------------------------
 
         self.intent_keywords = {
@@ -217,79 +216,63 @@ class IntentAgent:
     def _predict_with_llm(
         self,
         query: str,
-        conversation_history
+        state: CustomerState
     ):
 
+        # ---------------------------------
+        # Lightweight context
+        # ---------------------------------
+
         conversation_context = (
-            build_conversation_context(
-                conversation_history
+            get_agent_context(
+                state
             )
         )
 
         prompt = f"""
-You are ShopSphere's intelligent intent orchestration engine.
+You are ShopSphere's intent engine.
 
 TASK:
-Classify the customer's operational intent.
+Classify customer intent.
 
-AVAILABLE INTENTS:
+Allowed intents:
 - PAYMENT_ISSUE
 - DELIVERY_ISSUE
 - REFUND_ISSUE
 - RETURN_ISSUE
 - PRODUCT_ISSUE
 - ACCOUNT_ISSUE
+- NON_SUPPORT
 - GENERAL_QUERY
 - COMPLAINT
 - UNKNOWN_INTENT
 - MULTI_INTENT
 
-CRITICAL CLASSIFICATION RULES:
-
-1. Use BOTH:
-   - current query
-   - conversation history
-
-2. Resolve conversational references:
+Rules:
+1. Use both current query and conversation context.
+2. Resolve references like:
    - it
    - that
    - previous order
    - earlier product
 
-3. Detect workflow continuation:
-   Example:
-   "Can I return that?"
-   should inherit previous product context.
+3. MULTI_INTENT only if multiple unrelated issues exist.
+4. UNKNOWN_INTENT only if query is unclear.
+5. COMPLAINT = dissatisfaction without clear operational request.
+6. NON_SUPPORT = greetings, jokes, small talk, unrelated queries.
+7. GENERAL_QUERY = informational but non-operational questions.
+8. Do not force operational intents for casual queries.
+9. Prioritize operational meaning over emotional wording.
 
-4. MULTI_INTENT:
-   use ONLY if customer clearly discusses
-   multiple unrelated operational issues.
-
-5. UNKNOWN_INTENT:
-   use ONLY if query is genuinely unclear.
-
-6. COMPLAINT:
-   use when customer primarily expresses
-   dissatisfaction rather than operational action.
-
-7. GENERAL_QUERY:
-   informational questions without operational issue.
-
-8. Prioritize operational intent
-over emotional wording.
-
-Conversation Context:
+Conversation:
 {conversation_context}
 
-Current Customer Query:
+Current Query:
 {query}
 
 Return:
 - intent
-- confidence
-
-Confidence must be:
-0.0 to 1.0
+- confidence (0.0 to 1.0)
 """
 
         response = (
@@ -346,7 +329,12 @@ Confidence must be:
         # ---------------------------------
 
         if (
-            current_intent == "GENERAL_QUERY"
+            current_intent in [
+
+                "GENERAL_QUERY",
+
+                "NON_SUPPORT"
+            ]
             and any(
 
                 keyword in previous_text
@@ -413,6 +401,32 @@ Confidence must be:
                 return state
 
             # ---------------------------------
+            # Stage 0.5
+            # Non-support short-circuit
+            # ---------------------------------
+
+            if (
+                is_non_support_query(query)
+                and not is_domain_relevant(
+                    query,
+                    state.intent
+                )
+            ):
+
+                state.intent = [
+
+                    "NON_SUPPORT"
+                ]
+
+                state.intent_confidence = 0.85
+
+                state.metadata[
+                    "intent_source"
+                ] = "non_support_short_circuit"
+
+                return state
+
+            # ---------------------------------
             # Stage 1
             # ML prediction
             # ---------------------------------
@@ -466,6 +480,27 @@ Confidence must be:
             # LLM fallback
             # ---------------------------------
 
+            if (
+                is_non_support_query(query)
+                and not is_domain_relevant(
+                    query,
+                    state.intent
+                )
+            ):
+
+                state.intent = [
+
+                    "NON_SUPPORT"
+                ]
+
+                state.intent_confidence = 0.75
+
+                state.metadata[
+                    "intent_source"
+                ] = "non_support_low_confidence"
+
+                return state
+
             print(
                 "\nUsing LLM fallback..."
             )
@@ -475,7 +510,7 @@ Confidence must be:
 
                     query,
 
-                    state.conversation_history
+                    state
                 )
             )
 

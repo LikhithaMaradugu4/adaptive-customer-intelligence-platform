@@ -8,12 +8,14 @@ from app.utils.query_rewriter import (
     rewrite_query
 )
 
-from app.utils.conversation import (
-    build_conversation_context
-)
 
 from app.utils.reranker import (
     rerank_documents
+)
+
+from app.utils.helpers import (
+    get_rag_reason,
+    should_use_rag
 )
 
 
@@ -172,14 +174,39 @@ class RAGAgent:
 
         try:
 
+            if not should_use_rag(
+                state.query,
+                state.intent,
+                state.decision,
+                state.intent_confidence
+            ):
+
+                state.retrieved_docs = []
+
+                state.metadata[
+                    "retrieval_source"
+                ] = "skipped_non_domain"
+
+                state.metadata[
+                    "rag_reason"
+                ] = get_rag_reason(
+                    state.query,
+                    state.intent,
+                    state.decision,
+                    state.intent_confidence,
+                    False
+                )
+
+                return state
+
             # ---------------------------------
-            # Build conversation context
+            # Build lightweight retrieval context
             # ---------------------------------
 
-            conversation_context = (
-                build_conversation_context(
-                    state.conversation_history
-                )
+            summary_only_context = (
+                f"Summary:\n{state.summary}"
+                if state.summary
+                else "No summary available."
             )
 
             # ---------------------------------
@@ -191,7 +218,7 @@ class RAGAgent:
 
                     state,
 
-                    conversation_context
+                    summary_only_context
                 )
             )
 

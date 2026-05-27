@@ -63,7 +63,7 @@ class LLMService:
 
                 "llama-3.3-70b-versatile",
 
-                "qwen/qwen3-32b"
+                "qwen/qwen3-32b",
             ],
 
             "response": [

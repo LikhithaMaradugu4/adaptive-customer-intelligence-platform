@@ -6,8 +6,8 @@ from app.services.llm_service import (
     llm_service
 )
 
-from app.utils.conversation import (
-    build_conversation_context
+from app.utils.context_manager import (
+    get_agent_context
 )
 
 
@@ -67,13 +67,7 @@ class ResponseAgent:
             content = doc.get(
                 "content",
                 ""
-            )
-
-            # ---------------------------------
-            # Truncate huge chunks
-            # ---------------------------------
-
-            content = content[:1200]
+            )[:800]
 
             formatted_context += f"""
 
@@ -85,7 +79,6 @@ Category: {category}
 
 Content:
 {content}
-
 """
 
         return formatted_context
@@ -128,88 +121,66 @@ Content:
 
 Tool {idx}
 
-Tool Name:
+Name:
 {tool_name}
 
-Tool Output:
+Output:
 {tool_result}
-
 """
 
         return formatted_tools
 
     # ---------------------------------
-    # Build system instructions
+    # Optimized system rules
     # ---------------------------------
 
     def _build_system_rules(self):
 
         return """
-You are ShopSphere's enterprise AI customer support assistant.
+You are ShopSphere's AI support assistant.
 
-CORE RESPONSIBILITIES:
-- help customers professionally
+Goals:
+- provide accurate support
 - maintain conversational continuity
-- provide grounded policy-based responses
+- use operational context naturally
 - avoid hallucinations
-- use operational context intelligently
 
-CRITICAL BEHAVIOR RULES:
-
-1. NEVER ignore previous conversation context.
-
-2. Resolve references naturally:
+Rules:
+1. Use conversation context naturally.
+2. Resolve references like:
    - it
    - that order
-   - earlier product
    - previous issue
-   - this item
+   - this product
 
-3. NEVER repeatedly ask for:
-   - customer ID
-   - order ID
-   - already known information
-
-4. If customer asks general policy questions:
-   answer directly using knowledge base.
-
-5. Use retrieved documents heavily when available.
-
-6. Use operational tool outputs naturally.
-
-7. Maintain emotional intelligence:
-   - empathetic when frustrated
-   - reassuring during escalation
-   - concise during clarification
-
-8. NEVER hallucinate policies,
-timelines, or operational workflows.
-
-9. If retrieved knowledge is insufficient:
-   politely ask clarification.
-
-10. Responses should feel:
-   - premium
+3. Never ask again for known information.
+4. Use retrieved docs and tool outputs when available.
+5. Never invent policies, timelines, or workflows.
+6. Ask clarification only if required.
+7. Be:
+   - concise
+   - professional
    - conversational
-   - intelligent
-   - operationally accurate
+   - emotionally aware
 
-RESPONSE STYLE:
-- concise but informative
-- clean formatting
-- professional tone
-- natural conversational flow
-- avoid robotic wording
+8. For frustrated users:
+   acknowledge first, then solve.
 
-FORMATTING RULES:
-- use bullet points when helpful
-- use short paragraphs
-- avoid giant text blocks
-- make operational steps easy to follow
+9. Use customer/profile details naturally.
+   Never mention fetching or lookup actions.
+
+10. For casual or unrelated conversation:
+   respond briefly and naturally,
+   then gently redirect to ShopSphere support.
+
+Formatting:
+- short paragraphs
+- bullets when useful
+- avoid large text blocks
 """
 
     # ---------------------------------
-    # Generate clarification response
+    # Clarification response
     # ---------------------------------
 
     def _clarification_flow(
@@ -225,10 +196,10 @@ FORMATTING RULES:
 TASK:
 Generate a natural clarification response.
 
-Conversation Context:
+Conversation:
 {conversation_context}
 
-Operational Tool Context:
+Tool Context:
 {tool_context}
 
 Customer Query:
@@ -237,12 +208,11 @@ Customer Query:
 Clarification Needed:
 {state.clarification_question}
 
-IMPORTANT:
-- avoid repetitive clarification
-- maintain continuity
-- ask naturally
-- sound human
-- do not over-explain
+Requirements:
+- concise
+- natural
+- non-repetitive
+- conversational
 """
 
         result = (
@@ -262,7 +232,7 @@ IMPORTANT:
         return result.response
 
     # ---------------------------------
-    # Generate escalation response
+    # Escalation response
     # ---------------------------------
 
     def _escalation_flow(
@@ -297,13 +267,13 @@ IMPORTANT:
 TASK:
 Generate a professional escalation response.
 
-Conversation Context:
+Conversation:
 {conversation_context}
 
-Operational Tool Context:
+Tool Context:
 {tool_context}
 
-Customer Emotion:
+Emotion:
 {state.emotion}
 
 Decision:
@@ -315,14 +285,12 @@ Assigned Team:
 Ticket ID:
 {ticket_id}
 
-IMPORTANT:
+Requirements:
 - reassure customer
 - acknowledge issue seriously
-- maintain trust
-- mention escalation clearly
-- include ticket ID naturally
-- avoid sounding alarming
-- keep response concise
+- mention escalation naturally
+- include ticket ID
+- concise and calm
 """
 
         result = (
@@ -342,7 +310,7 @@ IMPORTANT:
         return result.response
 
     # ---------------------------------
-    # Generate normal grounded response
+    # Normal grounded response
     # ---------------------------------
 
     def _normal_response_flow(
@@ -357,51 +325,37 @@ IMPORTANT:
 {self._build_system_rules()}
 
 TASK:
-Generate the best possible grounded customer-support response.
+Generate the best grounded customer-support response.
 
-Conversation Context:
+Conversation:
 {conversation_context}
 
-Operational Tool Outputs:
+Tool Outputs:
 {tool_context}
 
 Customer Query:
 {state.query}
 
-Customer Emotion:
+Emotion:
 {state.emotion}
 
-Customer Intent:
+Intent:
 {state.intent}
 
-Retrieved Knowledge Base Context:
+Retrieved Context:
 {retrieved_context}
 
-IMPORTANT:
-- use retrieved documents heavily
-- maintain conversational continuity
-- answer directly when possible
+Requirements:
+- answer directly
+- maintain continuity
+- use retrieved knowledge accurately
 - avoid unnecessary clarification
-- preserve operational correctness
-- use retrieved policy timelines accurately
-- if retrieved docs contain procedural steps:
-  explain them clearly
+- explain steps clearly when needed
+- avoid repetition or robotic wording
 
-IF MULTIPLE STEPS EXIST:
-format them cleanly using bullets.
-
-IF CUSTOMER IS FRUSTRATED:
-be empathetic first before solution.
-
-DO NOT:
-- invent policies
-- invent timelines
-- invent workflows
-- repeat same sentence
-- sound robotic
-
-If the users asks something  that is not realted to customer support like "What is the weather today?" or "Who won the game last night?", or How to cook pasta?, or general queries out of the Shopshere respond with:
-"I'm here to assist with ShopSphere-related support queries.
+If unrelated to ShopSphere:
+- respond briefly
+- gently redirect to ShopSphere support
 """
 
         result = (
@@ -432,12 +386,12 @@ If the users asks something  that is not realted to customer support like "What 
         try:
 
             # ---------------------------------
-            # Build contexts
+            # Lightweight conversation context
             # ---------------------------------
 
             conversation_context = (
-                build_conversation_context(
-                    state.conversation_history
+                get_agent_context(
+                    state
                 )
             )
 
@@ -480,15 +434,15 @@ If the users asks something  that is not realted to customer support like "What 
                 return state
 
             # ---------------------------------
-            # Out of scope
+            # Out-of-scope flow
             # ---------------------------------
 
             if state.decision == "OUT_OF_SCOPE":
 
                 state.response = (
-                    "I can assist only with "
-                    "ShopSphere-related support "
-                    "queries."
+                    "I can help with ShopSphere "
+                    "orders, account, payments, "
+                    "delivery, or support."
                 )
 
                 return state
@@ -558,7 +512,7 @@ If the users asks something  that is not realted to customer support like "What 
             state.retry_count += 1
 
             state.response = (
-                "We are currently facing "
+                "We're currently facing "
                 "technical difficulties. "
                 "Please try again shortly."
             )

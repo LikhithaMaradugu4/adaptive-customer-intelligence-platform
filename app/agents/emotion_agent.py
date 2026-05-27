@@ -10,8 +10,8 @@ from app.services.llm_service import (
     llm_service
 )
 
-from app.utils.conversation import (
-    build_conversation_context
+from app.utils.context_manager import (
+    get_agent_context
 )
 
 
@@ -22,13 +22,7 @@ class EmotionAgent:
     Pipeline:
     1. Fast VADER inference
     2. LLM fallback for ambiguity
-    3. Conversational emotional continuity
-
-    Goals:
-    - low latency
-    - emotionally aware support
-    - escalation awareness
-    - frustration progression tracking
+    3. Emotional continuity tracking
     """
 
     def __init__(self):
@@ -38,13 +32,13 @@ class EmotionAgent:
         )
 
         # ---------------------------------
-        # Confidence threshold
+        # Higher confidence threshold
         # ---------------------------------
 
-        self.confidence_threshold = 0.72
+        self.confidence_threshold = 0.80
 
         # ---------------------------------
-        # Strong escalation phrases
+        # High-risk escalation phrases
         # ---------------------------------
 
         self.high_risk_keywords = [
@@ -77,11 +71,58 @@ class EmotionAgent:
 
             "never again",
 
-            "very bad service"
+            "very bad service",
+
+            "scam",
+
+            "fake",
+
+            "cheated"
+        ]
+
+        # ---------------------------------
+        # Lightweight conversational queries
+        # ---------------------------------
+
+        self.casual_queries = [
+
+            "hi",
+
+            "hello",
+
+            "hey",
+
+            "thanks",
+
+            "thank you",
+
+            "okay",
+
+            "ok",
+
+            "yes",
+
+            "no",
+
+            "hmm",
+
+            "good morning",
+
+            "good evening",
+
+            "good afternoon",
+
+            "who are you",
+
+            "do you know my name",
+
+            "can you help",
+
+            "help me"
         ]
 
     # ---------------------------------
-    # Strong keyword override
+    # High-risk keyword detection
     # ---------------------------------
 
     def _contains_high_risk_keywords(
@@ -99,13 +140,42 @@ class EmotionAgent:
         )
 
     # ---------------------------------
-    # VADER prediction
+    # Casual query detection
+    # ---------------------------------
+
+    def _is_casual_query(
+        self,
+        query: str
+    ):
+
+        query = query.strip().lower()
+
+        if query in self.casual_queries:
+
+            return True
+
+        if len(query.split()) <= 3:
+
+            return True
+
+        return False
+
+    # ---------------------------------
+    # Fast VADER prediction
     # ---------------------------------
 
     def _predict_with_vader(
         self,
         query: str
     ):
+
+        # ---------------------------------
+        # Casual shortcut
+        # ---------------------------------
+
+        if self._is_casual_query(query):
+
+            return "NEUTRAL", 0.95
 
         scores = (
             self.analyzer
@@ -117,18 +187,18 @@ class EmotionAgent:
         confidence = abs(compound)
 
         # ---------------------------------
-        # Emotion mapping
+        # Emotion boundaries
         # ---------------------------------
 
-        if compound >= 0.55:
+        if compound >= 0.60:
 
             emotion = "SATISFIED"
 
-        elif compound >= 0.10:
+        elif compound >= -0.25:
 
             emotion = "NEUTRAL"
 
-        elif compound >= -0.45:
+        elif compound >= -0.65:
 
             emotion = "FRUSTRATED"
 
@@ -145,75 +215,46 @@ class EmotionAgent:
     def _predict_with_llm(
         self,
         query: str,
-        conversation_history
+        state: CustomerState
     ):
 
         conversation_context = (
-            build_conversation_context(
-                conversation_history
+            get_agent_context(
+                state
             )
         )
 
         prompt = f"""
-You are ShopSphere's emotion intelligence engine.
+You are ShopSphere's emotion engine.
 
 TASK:
-Analyze the customer's emotional state.
+Classify customer emotion.
 
-AVAILABLE EMOTIONS:
+Allowed emotions:
 - ANGRY
 - FRUSTRATED
 - NEUTRAL
 - SATISFIED
 
-IMPORTANT ANALYSIS RULES:
+Rules:
+1. Greetings and casual queries are usually NEUTRAL.
+2. Use both current query and recent conversation tone.
+3. Detect repeated frustration, disappointment, or escalation patterns.
+4. Polite wording may still indicate frustration.
+5. Appreciation or gratitude -> SATISFIED.
+6. Complaints or repeated dissatisfaction -> FRUSTRATED.
+7. Aggression, threats, or strong negativity -> ANGRY.
+8. Avoid overpredicting frustration.
 
-1. Analyze emotional progression
-across conversation history.
-
-2. Detect escalation patterns:
-   - repeated complaints
-   - disappointment
-   - frustration buildup
-   - passive aggression
-
-3. Customer may sound polite
-while still emotionally frustrated.
-
-4. Use BOTH:
-   - current query
-   - previous conversational tone
-
-5. If customer expresses:
-   - appreciation
-   - gratitude
-   - satisfaction
-   classify as SATISFIED.
-
-6. If customer expresses:
-   - irritation
-   - repeated dissatisfaction
-   - complaint repetition
-   classify as FRUSTRATED.
-
-7. If customer expresses:
-   - anger
-   - threats
-   - strong negative wording
-   classify as ANGRY.
-
-Conversation Context:
+Conversation:
 {conversation_context}
 
-Current Customer Query:
+Current Query:
 {query}
 
 Return:
 - emotion
-- confidence
-
-Confidence must be between:
-0.0 and 1.0
+- confidence (0.0 to 1.0)
 """
 
         response = (
@@ -238,7 +279,7 @@ Confidence must be between:
         )
 
     # ---------------------------------
-    # Emotional continuity upgrade
+    # Emotional continuity adjustment
     # ---------------------------------
 
     def _adjust_using_history(
@@ -257,6 +298,31 @@ Confidence must be between:
 
         frustration_count = 0
 
+        strong_frustration_keywords = [
+
+            "refund",
+
+            "cancel",
+
+            "angry",
+
+            "frustrated",
+
+            "worst",
+
+            "bad service",
+
+            "still not working",
+
+            "again and again",
+
+            "very disappointed",
+
+            "terrible",
+
+            "useless"
+        ]
+
         for item in recent_messages:
 
             message = (
@@ -270,36 +336,17 @@ Confidence must be between:
 
                 keyword in message
 
-                for keyword in [
-
-                    "refund",
-
-                    "again",
-
-                    "still",
-
-                    "not working",
-
-                    "issue",
-
-                    "problem",
-
-                    "bad",
-
-                    "angry",
-
-                    "frustrated"
-                ]
+                for keyword in strong_frustration_keywords
             ):
 
                 frustration_count += 1
 
         # ---------------------------------
-        # Escalate neutral → frustrated
+        # Escalate repeated frustration
         # ---------------------------------
 
         if (
-            frustration_count >= 3
+            frustration_count >= 4
             and current_emotion == "NEUTRAL"
         ):
 
@@ -318,10 +365,13 @@ Confidence must be between:
 
         try:
 
-            query = state.query
+            query = (
+                state.query
+                .strip()
+            )
 
             # ---------------------------------
-            # Strong keyword override
+            # High-risk keyword override
             # ---------------------------------
 
             if self._contains_high_risk_keywords(
@@ -397,7 +447,7 @@ Confidence must be between:
 
                     query,
 
-                    state.conversation_history
+                    state
                 )
             )
 
